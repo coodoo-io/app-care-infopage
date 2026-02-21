@@ -4,5 +4,6 @@ import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
   integrations: [tailwind(), sitemap()],
-  site: 'https://app-care.de',
+  site: 'https://mkuehle.github.io',
+  base: '/app-care-infopage',
 });
