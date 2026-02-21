@@ -1,0 +1,71 @@
+---
+const problems = [
+  {
+    icon: '📬',
+    title: 'User-Feedback geht unter',
+    description: 'Wichtiges Nutzerfeedback aus App Stores und Feedback-Kanälen wird nicht systematisch erfasst und geht verloren. Du weißt nicht, was deine Nutzer wirklich wollen.',
+  },
+  {
+    icon: '📊',
+    title: 'Keine Daten, keine Klarheit',
+    description: 'Deine App ist im Store und du weißt nicht, wie sie wirklich genutzt wird. Wie oft wird sie installiert? Wie lange bleiben Nutzer? Diese Fragen bleiben unbeantwortet.',
+  },
+  {
+    icon: '💸',
+    title: 'Zu hohe Entwicklungskosten',
+    description: 'Für überschaubare Features und regelmäßige Pflege ein eigenes Entwicklerteam einzustellen ist schlicht zu teuer. Die Kosten stehen in keinem Verhältnis zum Nutzen.',
+  },
+  {
+    icon: '🔧',
+    title: 'Kein Entwickler verfügbar',
+    description: 'Du besitzt kein technisches Know-how für die Weiterentwicklung und findest auf dem freien Markt kein ausfallsicheres Team mit allen notwendigen Skills.',
+  },
+  {
+    icon: '🆘',
+    title: 'Kein 2nd Level Support',
+    description: 'Wenn kritische Bugs auftreten die deine gesamte Nutzerbasis betreffen, fehlt ein kompetenter Partner der schnell, unkompliziert und verständlich reagiert.',
+  },
+  {
+    icon: '⚠️',
+    title: 'Technische Instabilität',
+    description: 'Deine App ist "unter der Haube" instabil und du bekommst es im schlimmsten Fall nicht mit — bis die Abstürze zu schlechten Bewertungen führen.',
+  },
+];
+---
+
+<section class="section-padding bg-gray-50">
+  <div class="section-container">
+    <div class="text-center max-w-2xl mx-auto mb-12">
+      <span class="badge-brand mb-4 inline-block">Das kennen wir</span>
+      <h2 class="section-title mb-4">
+        6 Probleme, die App-Betreiber täglich bremsen
+      </h2>
+      <p class="section-subtitle">
+        Du hast eine App — aber ohne die richtigen Daten, das richtige Team und die richtigen Prozesse bleibt ihr Potenzial ungenutzt.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {problems.map((problem) => (
+        <div class="card group hover:border-brand-200 hover:border transition-all duration-200">
+          <div class="text-3xl mb-4">{problem.icon}</div>
+          <h3 class="font-display font-semibold text-lg text-gray-900 mb-2">
+            {problem.title}
+          </h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            {problem.description}
+          </p>
+        </div>
+      ))}
+    </div>
+
+    <div class="text-center mt-10">
+      <p class="text-gray-500 text-sm">
+        Erkennst du dich wieder?
+        <a href="/leistungen" class="text-brand-600 font-semibold hover:underline ml-1">
+          So löst App-Care diese Probleme →
+        </a>
+      </p>
+    </div>
+  </div>
+</section>

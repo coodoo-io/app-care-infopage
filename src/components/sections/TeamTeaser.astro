@@ -1,0 +1,35 @@
+---
+---
+
+<section class="section-padding bg-brand-950 text-white">
+  <div class="section-container">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <span class="badge bg-brand-800 text-brand-300 mb-4 inline-block">Das Team hinter App-Care</span>
+        <h2 class="font-display font-bold text-3xl md:text-4xl text-white mb-6">
+          11 Experten. Ein Team.<br />
+          <span class="text-gradient">Deine App.</span>
+        </h2>
+        <p class="text-brand-200 text-lg leading-relaxed mb-8">
+          App-Care wird von coodoo GmbH betrieben — einem erfahrenen Flutter & Mobile App Studio aus Mainz. Unsere crossfunktionalen Experten decken alle Bereiche ab: Flutter-Entwicklung, Design, Analyse, Projektmanagement und App-Store-Management.
+        </p>
+        <div class="flex flex-wrap gap-4 mb-8">
+          {['Flutter Entwicklung', 'UX/UI Design', 'KPI Analyse', 'Projektmanagement', 'App Store Optimierung'].map((skill) => (
+            <span class="badge bg-brand-800 text-brand-300">{skill}</span>
+          ))}
+        </div>
+        <a href="/team" class="inline-flex items-center gap-2 bg-white text-brand-700 font-semibold px-6 py-3 rounded-xl hover:bg-brand-50 transition-colors">
+          Team kennenlernen →
+        </a>
+      </div>
+
+      <div class="grid grid-cols-3 gap-3">
+        {Array.from({ length: 9 }).map((_, i) => (
+          <div class="aspect-square bg-brand-800 rounded-xl flex items-center justify-center text-brand-400 text-2xl">
+            👤
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>

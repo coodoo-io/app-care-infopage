@@ -1,0 +1,18 @@
+---
+interface Props {
+  variant?: 'brand' | 'accent' | 'gray';
+  class?: string;
+}
+
+const { variant = 'brand', class: className = '' } = Astro.props;
+
+const variantClasses = {
+  brand: 'badge-brand',
+  accent: 'badge-accent',
+  gray: 'badge-gray',
+};
+---
+
+<span class={`${variantClasses[variant]} ${className}`}>
+  <slot />
+</span>

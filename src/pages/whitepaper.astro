@@ -1,0 +1,148 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const topics = [
+  { icon: '👥', title: 'Engagement KPIs', desc: 'MAU, DAU, Stickiness, Retention, Churn — welche wirklich zählen' },
+  { icon: '⚡', title: 'Performance KPIs', desc: 'Crash Rate, Loading Speed, ANR Rate — Stabilität messen' },
+  { icon: '💰', title: 'Revenue KPIs', desc: 'ARPU, LTV, Subscription Churn — Monetarisierung optimieren' },
+  { icon: '⭐', title: 'App Store KPIs', desc: 'Ratings, Conversions, Installationen — Sichtbarkeit steigern' },
+];
+---
+
+<BaseLayout
+  title="Whitepaper: Mobile App Erfolg durch KPIs | App-Care"
+  description="Kostenloses Whitepaper: Alle wichtigen KPIs für Mobile Apps, Benchmark-Werte und Handlungsempfehlungen. Jetzt kostenlos herunterladen."
+  noindex={false}
+>
+  <!-- Minimal header for conversion focus -->
+  <style>
+    header { display: none; }
+    footer { display: none; }
+  </style>
+
+  <div class="min-h-screen bg-gray-50 flex flex-col">
+    <!-- Minimal Nav -->
+    <div class="bg-white border-b border-gray-100 py-4">
+      <div class="max-w-5xl mx-auto px-4 flex items-center justify-between">
+        <a href="/" class="flex items-center gap-2">
+          <div class="w-7 h-7 bg-brand-600 rounded-lg flex items-center justify-center">
+            <span class="text-white font-bold text-xs">AC</span>
+          </div>
+          <span class="font-display font-bold text-lg text-gray-900">App-Care</span>
+        </a>
+        <span class="text-sm text-gray-400">Kostenlos & ohne Risiko</span>
+      </div>
+    </div>
+
+    <main class="flex-1">
+      <!-- Hero -->
+      <section class="gradient-hero text-white py-16">
+        <div class="max-w-5xl mx-auto px-4">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <span class="badge bg-white/10 text-brand-200 mb-4 inline-block">Kostenlos herunterladen</span>
+              <h1 class="font-display font-bold text-4xl md:text-5xl text-white mb-6 leading-tight">
+                Mobile App Erfolg durch KPIs
+              </h1>
+              <p class="text-brand-200 text-lg leading-relaxed mb-6">
+                Über 25 KPIs aus 4 Kategorien — was sie bedeuten, wie du sie misst und welche Benchmarks gelten. Kompakt als PDF, sofort nutzbar.
+              </p>
+              <div class="flex flex-wrap gap-3 mb-6">
+                {topics.map((t) => (
+                  <div class="flex items-center gap-2 text-sm text-brand-200">
+                    <span>{t.icon}</span>
+                    <span>{t.title}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
+              <h2 class="font-display font-bold text-2xl text-white mb-2">Jetzt kostenlos herunterladen</h2>
+              <p class="text-brand-200 text-sm mb-6">Gib deine E-Mail-Adresse ein und erhalte das Whitepaper sofort.</p>
+
+              <form
+                action="https://formspree.io/f/placeholder"
+                method="POST"
+                class="space-y-4"
+              >
+                <div>
+                  <label for="name" class="block text-sm font-medium text-brand-200 mb-1">Dein Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Max Mustermann"
+                    required
+                    class="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-brand-300 focus:outline-none focus:ring-2 focus:ring-white/50"
+                  />
+                </div>
+                <div>
+                  <label for="email" class="block text-sm font-medium text-brand-200 mb-1">Deine E-Mail-Adresse</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="max@meinestartup.de"
+                    required
+                    class="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-brand-300 focus:outline-none focus:ring-2 focus:ring-white/50"
+                  />
+                </div>
+                <input type="hidden" name="_subject" value="Whitepaper Download Anfrage" />
+                <input type="hidden" name="_next" value="/whitepaper/danke" />
+                <button
+                  type="submit"
+                  class="w-full py-4 bg-white text-brand-700 font-semibold rounded-xl hover:bg-brand-50 transition-colors text-lg"
+                >
+                  Whitepaper kostenlos herunterladen →
+                </button>
+                <p class="text-xs text-brand-300 text-center">
+                  Kein Spam. Keine Weitergabe. Jederzeit abmeldbar.
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Content Preview -->
+      <section class="py-16 bg-white">
+        <div class="max-w-5xl mx-auto px-4">
+          <h2 class="font-display font-bold text-2xl text-gray-900 text-center mb-10">
+            Was steht im Whitepaper?
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {topics.map((topic) => (
+              <div class="card border border-gray-100">
+                <div class="flex items-start gap-4">
+                  <span class="text-3xl">{topic.icon}</span>
+                  <div>
+                    <h3 class="font-display font-semibold text-gray-900 mb-1">{topic.title}</h3>
+                    <p class="text-gray-600 text-sm">{topic.desc}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div class="mt-10 bg-brand-50 rounded-2xl p-8 text-center">
+            <p class="text-gray-600 mb-4">
+              <strong class="text-gray-900">Plus:</strong> Formeln, Benchmark-Werte, Daten-Quellen und konkrete Handlungsempfehlungen für jeden KPI.
+            </p>
+            <p class="text-sm text-gray-500">Ca. 20 Seiten · PDF · Kostenlos</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="py-12 bg-gray-50 border-t border-gray-100">
+        <div class="max-w-3xl mx-auto px-4 text-center">
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Das Whitepaper wurde von <strong>Markus Kühle</strong>, Gründer der coodoo GmbH, auf Basis von 15+ Jahren Mobile App Erfahrung und hunderten monatlichen App-Reports erstellt.
+            <a href="/" class="text-brand-600 hover:underline ml-1">Mehr über App-Care →</a>
+          </p>
+        </div>
+      </section>
+    </main>
+  </div>
+</BaseLayout>

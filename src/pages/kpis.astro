@@ -1,0 +1,150 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const kpiCategories = [
+  {
+    id: 'engagement',
+    title: 'Engagement KPIs',
+    icon: '👥',
+    description: 'Wie aktiv sind deine Nutzer? Diese KPIs messen, wie oft und wie intensiv deine App genutzt wird.',
+    kpis: [
+      { name: 'Monthly Active Users (MAU)', description: 'Anzahl einzigartiger Nutzer die deine App mindestens einmal im Monat öffnen. Wichtigste Kennzahl für App-Popularität.', tool: 'Firebase Analytics' },
+      { name: 'Daily Active Users (DAU)', description: 'Nutzer die deine App täglich öffnen. Im Verhältnis zu MAU (Stickiness) zeigt dieser Wert die Engagement-Qualität.', tool: 'Firebase Analytics' },
+      { name: 'Stickiness (DAU/MAU)', description: 'Verhältnis von DAU zu MAU. Ein Wert von 20%+ gilt als gut. Zeigt wie "klebrig" deine App ist.', tool: 'Berechnung aus Firebase' },
+      { name: 'Average Session Length', description: 'Durchschnittliche Dauer einer Nutzungssitzung. Hohe Werte deuten auf gutes Engagement hin.', tool: 'Firebase Analytics' },
+      { name: 'Average Session Depth', description: 'Wie viele Screens/Aktionen pro Session? Zeigt die Tiefe der Nutzung.', tool: 'Firebase Analytics' },
+      { name: 'Average Retention Rate', description: 'Prozentsatz der Nutzer die nach einer bestimmten Zeit zurückkehren. Day-1, Day-7, Day-30 Retention sind Standard.', tool: 'Firebase Analytics' },
+      { name: 'Churn Rate', description: 'Gegenpart zur Retention: Welcher Anteil der Nutzer verlässt die App und kommt nicht zurück?', tool: 'Firebase / RevenueCat' },
+      { name: 'Uninstall Rate', description: 'Deinstallationsrate über Zeit. Ein Anstieg kann auf UX-Probleme oder schlechte Onboarding-Erlebnisse hindeuten.', tool: 'App Store Connect / Play Console' },
+    ],
+  },
+  {
+    id: 'performance',
+    title: 'Performance KPIs',
+    icon: '⚡',
+    description: 'Wie stabil und schnell läuft deine App technisch? Diese KPIs helfen, technische Probleme früh zu erkennen.',
+    kpis: [
+      { name: 'Crash Rate', description: 'Prozentsatz der Sessions in denen ein Crash aufgetreten ist. Ziel: unter 1%. Über 2% ist kritisch.', tool: 'Crashlytics' },
+      { name: 'Crash-freie Nutzer', description: 'Anteil der Nutzer ohne Absturz im Berichtszeitraum. Formel: 1 - (gecrashe Nutzer / alle Nutzer).', tool: 'Crashlytics' },
+      { name: 'Crash-freie Sessions', description: 'Anteil der Sessions ohne Absturz. Gibt einen anderen Blickwinkel als crash-freie Nutzer.', tool: 'Crashlytics' },
+      { name: 'App Loading Speed', description: 'Zeit bis die App vollständig geladen ist. Jede Sekunde Ladezeit kostet Nutzer. Ziel: unter 2 Sekunden.', tool: 'Firebase Performance' },
+      { name: 'Network Latency', description: 'Antwortzeiten bei API-Anfragen. Hohe Latenzen führen zu schlechter User Experience.', tool: 'Firebase Performance' },
+      { name: 'ANR Rate (Android)', description: 'Application Not Responding: App reagiert nicht auf Nutzereingaben. Kritisch für Play Store Ranking.', tool: 'Google Play Console' },
+    ],
+  },
+  {
+    id: 'revenue',
+    title: 'Revenue KPIs',
+    icon: '💰',
+    description: 'Wie monetarisiert deine App? Diese KPIs geben Aufschluss über Umsatz, Subscriptions und die Wirtschaftlichkeit.',
+    kpis: [
+      { name: 'Average Revenue Per User (ARPU)', description: 'Durchschnittlicher Umsatz pro aktivem Nutzer. ARPU = Gesamtumsatz / Aktive Nutzer.', tool: 'RevenueCat' },
+      { name: 'Customer Lifetime Value (LTV)', description: 'Gesamter Umsatz den ein Nutzer im Laufe seiner "App-Karriere" generiert. Entscheidend für User-Acquisition Budgets.', tool: 'RevenueCat / Berechnung' },
+      { name: 'Aktive Subscriptions', description: 'Anzahl aktiver (nicht abgelaufener) kostenpflichtiger Subscriptions am Ende eines Zeitraums.', tool: 'RevenueCat' },
+      { name: 'Neue Subscriptions', description: 'Im Berichtszeitraum neu konvertierte Subscriptions — aus Trials, Intro-Angeboten oder Direktkauf.', tool: 'RevenueCat' },
+      { name: 'Subscription Churn Rate', description: 'Anteil der Subscriptions die in einem Zeitraum verloren gehen. Formel: Verlorene Subscriptions / Aktive zu Periodenbeginn.', tool: 'RevenueCat' },
+      { name: 'Cost Per Install (CPI)', description: 'Kosten pro App-Installation aus bezahlten Kanälen. Vergleich mit LTV zeigt ob Akquise wirtschaftlich ist.', tool: 'Werbekanäle / Berechnung' },
+      { name: 'App Store Conversion Rate', description: 'Prozentsatz der Store-Besucher die die App installieren. Beeinflusst durch Screenshots, Beschreibung, Bewertungen.', tool: 'App Store Connect / Play Console' },
+    ],
+  },
+  {
+    id: 'appstore',
+    title: 'App Store KPIs',
+    icon: '⭐',
+    description: 'Wie performt deine App in den Stores? Diese KPIs beeinflussen Sichtbarkeit, Downloads und Vertrauen.',
+    kpis: [
+      { name: 'App Store Rating', description: 'Durchschnittliche Bewertung im App Store und Play Store. Beeinflusst maßgeblich die Conversion und das Store-Ranking.', tool: 'App Store Connect / Play Console' },
+      { name: 'Rating Velocity', description: 'Wie schnell kommen neue Bewertungen rein? Wichtig für Store-Algorithmen. Negative Trends frühzeitig erkennen.', tool: 'App Store Connect / Play Console' },
+      { name: 'Installationen (iOS)', description: 'Anzahl der App-Installationen auf iOS-Geräten. Monatliche Entwicklung zeigt Wachstum oder Stagnation.', tool: 'App Store Connect' },
+      { name: 'Installationen (Android)', description: 'Aktive Geräte mit installierter App, die in den letzten 30 Tagen mindestens einmal eingeschaltet wurden.', tool: 'Google Play Console' },
+      { name: 'Impressions & Store Views', description: 'Wie oft wird deine App-Store-Seite angezeigt? Verhältnis zu Installationen zeigt Store-Listing Effektivität.', tool: 'App Store Connect / Play Console' },
+    ],
+  },
+];
+---
+
+<BaseLayout
+  title="Mobile App KPIs — Der vollständige Ratgeber | App-Care"
+  description="Alle wichtigen KPIs für Mobile Apps erklärt: Engagement, Performance, Revenue und App Store. Wo du sie findest und wie du sie interpretierst."
+>
+  <!-- Hero -->
+  <section class="gradient-hero text-white py-20">
+    <div class="section-container">
+      <div class="max-w-3xl">
+        <span class="badge bg-white/10 text-brand-200 mb-4 inline-block">Kostenloser Ratgeber</span>
+        <h1 class="font-display font-bold text-4xl md:text-5xl text-white mb-6">
+          Mobile App KPIs: Der vollständige Ratgeber
+        </h1>
+        <p class="text-brand-200 text-xl leading-relaxed mb-8">
+          Über 25 KPIs aus 4 Kategorien — was sie bedeuten, wo du sie findest und wie du sie richtig interpretierst.
+        </p>
+        <div class="flex flex-wrap gap-3">
+          {kpiCategories.map((cat) => (
+            <a href={`#${cat.id}`} class="badge bg-white/10 text-brand-200 hover:bg-white/20 transition-colors">
+              {cat.icon} {cat.title}
+            </a>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Intro -->
+  <section class="py-12 bg-white border-b border-gray-100">
+    <div class="section-container max-w-3xl mx-auto">
+      <h2 class="font-display font-bold text-2xl text-gray-900 mb-4">Was ist ein KPI?</h2>
+      <p class="text-gray-600 leading-relaxed mb-4">
+        KPI steht für <strong>Key Performance Indicator</strong> — eine messbare Kennzahl, die zeigt, wie gut eine App ihre Ziele erreicht. Für Mobile Apps reichen KPIs von der Nutzeraktivität über die technische Stabilität bis hin zu Umsatzkennzahlen.
+      </p>
+      <p class="text-gray-600 leading-relaxed">
+        Das Problem: Es gibt hunderte mögliche KPIs. Die Kunst liegt darin, die <em>richtigen</em> zu verfolgen — die, die wirklich Aussagen über den Erfolg deiner App treffen. Genau das tun wir bei App-Care jeden Monat.
+      </p>
+    </div>
+  </section>
+
+  <!-- KPI Categories -->
+  {kpiCategories.map((category) => (
+    <section id={category.id} class="section-padding bg-white border-b border-gray-100">
+      <div class="section-container">
+        <div class="max-w-3xl mx-auto mb-10">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="text-4xl">{category.icon}</span>
+            <h2 class="section-title">{category.title}</h2>
+          </div>
+          <p class="section-subtitle">{category.description}</p>
+        </div>
+
+        <div class="max-w-4xl mx-auto space-y-4">
+          {category.kpis.map((kpi) => (
+            <div class="card border border-gray-100">
+              <div class="flex flex-col sm:flex-row sm:items-start gap-4">
+                <div class="flex-1">
+                  <h3 class="font-display font-semibold text-gray-900 mb-2">{kpi.name}</h3>
+                  <p class="text-gray-600 text-sm leading-relaxed">{kpi.description}</p>
+                </div>
+                <div class="flex-shrink-0">
+                  <span class="badge-gray text-xs whitespace-nowrap">{kpi.tool}</span>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  ))}
+
+  <!-- Whitepaper CTA -->
+  <section class="section-padding bg-gradient-to-r from-brand-600 to-brand-800 text-white">
+    <div class="section-container max-w-3xl mx-auto text-center">
+      <h2 class="font-display font-bold text-3xl text-white mb-4">
+        Mehr Details im kostenlosen Whitepaper
+      </h2>
+      <p class="text-brand-200 text-lg mb-8">
+        Alle KPIs kompakt zusammengefasst, mit Formeln, Benchmark-Werten und konkreten Handlungsempfehlungen. Als PDF zum Mitnehmen.
+      </p>
+      <a href="/whitepaper" class="inline-flex items-center gap-2 bg-white text-brand-700 font-semibold px-8 py-4 rounded-xl hover:bg-brand-50 transition-colors text-lg">
+        Whitepaper kostenlos herunterladen →
+      </a>
+    </div>
+  </section>
+</BaseLayout>

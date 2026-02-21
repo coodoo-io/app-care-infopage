@@ -1,0 +1,18 @@
+---
+interface Props {
+  variant?: 'default' | 'highlight' | 'bordered';
+  class?: string;
+}
+
+const { variant = 'default', class: className = '' } = Astro.props;
+
+const variantClasses = {
+  default: 'card',
+  highlight: 'card-highlight',
+  bordered: 'card border-2 border-brand-200',
+};
+---
+
+<div class={`${variantClasses[variant]} ${className}`}>
+  <slot />
+</div>

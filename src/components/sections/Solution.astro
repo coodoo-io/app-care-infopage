@@ -1,0 +1,92 @@
+---
+const pillars = [
+  {
+    icon: '📈',
+    title: 'Messen & Analysieren',
+    description: 'Monatlicher Management Summary mit allen wichtigen KPIs aus Firebase, Crashlytics, App Store Connect und RevenueCat.',
+  },
+  {
+    icon: '🔍',
+    title: 'Überwachen & Reagieren',
+    description: 'Kontinuierliches Monitoring deiner App-Stabilität, Crash-Analyse und schnelle Reaktion bei kritischen Problemen.',
+  },
+  {
+    icon: '🚀',
+    title: 'Weiterentwickeln & Wachsen',
+    description: 'Agile Weiterentwicklung basierend auf Nutzerfeedback und KPI-Daten — mit einem erfahrenen Flutter-Expertenteam.',
+  },
+  {
+    icon: '🎯',
+    title: 'Strategie & Handlungsempfehlungen',
+    description: 'Datenbasierte Empfehlungen von App-Experten: Was tun wir als nächstes, warum und welchen Impact hat es?',
+  },
+];
+
+const tools = ['Firebase', 'Crashlytics', 'App Store Connect', 'RevenueCat', 'ClickUp', 'Google Play Console'];
+---
+
+<section class="section-padding bg-white">
+  <div class="section-container">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <!-- Left: Content -->
+      <div>
+        <span class="badge-brand mb-4 inline-block">Was ist App-Care?</span>
+        <h2 class="section-title mb-6">
+          Dein externes App-Team — ohne Festanstellung
+        </h2>
+        <p class="section-subtitle mb-8">
+          App-Care ist ein monatliches Betreuungspaket für bestehende Mobile Apps. Wir werden dein dauerhafter, verlässlicher Partner: Wir messen, analysieren, überwachen und entwickeln deine App KPI-getrieben weiter.
+        </p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+          {pillars.map((pillar) => (
+            <div class="flex gap-3">
+              <span class="text-2xl flex-shrink-0">{pillar.icon}</span>
+              <div>
+                <h3 class="font-semibold text-gray-900 text-sm mb-1">{pillar.title}</h3>
+                <p class="text-gray-600 text-sm leading-relaxed">{pillar.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div>
+          <p class="text-sm text-gray-500 mb-3">Unsere Tools:</p>
+          <div class="flex flex-wrap gap-2">
+            {tools.map((tool) => (
+              <span class="badge-gray text-xs">{tool}</span>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Visual -->
+      <div class="relative">
+        <div class="bg-gradient-to-br from-brand-50 to-brand-100 rounded-3xl p-8">
+          <div class="bg-white rounded-2xl shadow-sm p-6 mb-4">
+            <div class="flex items-center justify-between mb-4">
+              <span class="font-display font-semibold text-gray-900">Management Summary</span>
+              <span class="badge-accent text-xs">Januar 2026</span>
+            </div>
+            <div class="grid grid-cols-2 gap-3">
+              {[
+                { label: 'Aktive Nutzer', value: '+12%', positive: true },
+                { label: 'Crash-freie Sessions', value: '99,2%', positive: true },
+                { label: 'App Store Rating', value: '4,8 ⭐', positive: true },
+                { label: 'Neue Subscriptions', value: '+28', positive: true },
+              ].map((kpi) => (
+                <div class="bg-gray-50 rounded-xl p-3">
+                  <p class="text-xs text-gray-500 mb-1">{kpi.label}</p>
+                  <p class="font-display font-bold text-brand-600">{kpi.value}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div class="text-center text-sm text-brand-600 font-medium">
+            📋 So sieht dein monatlicher Report aus
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

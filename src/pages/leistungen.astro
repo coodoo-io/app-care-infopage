@@ -1,0 +1,146 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const services = [
+  {
+    icon: '📊',
+    title: 'KPI-Analyse & Monitoring',
+    description: 'Wir sammeln und analysieren alle relevanten App-KPIs aus Firebase Analytics, Crashlytics, App Store Connect und RevenueCat. Du erhältst jeden Monat einen klaren Überblick — in einem verständlichen Management Summary.',
+    details: ['Firebase Analytics', 'Crashlytics', 'App Store Connect', 'Google Play Console', 'RevenueCat', 'Monatlicher Report'],
+  },
+  {
+    icon: '🔍',
+    title: 'App-Monitoring & Stabilität',
+    description: 'Wir überwachen kontinuierlich den technischen Zustand deiner App. Crash-Reports werden analysiert, Fehler priorisiert und Lösungsempfehlungen erarbeitet — bevor deine Nutzer sich beschweren.',
+    details: ['Crash-Rate Monitoring', 'Error-freie Sessions', 'Technische Aufwandseinschätzung', 'Lösungsempfehlungen', 'Schnelle Reaktion bei kritischen Bugs'],
+  },
+  {
+    icon: '🛠️',
+    title: 'App-Wartung & Flutter-Updates',
+    description: 'Regelmäßige Flutter-Updates, Package-Upgrades und Plattform-Kompatibilität: Wir stellen sicher, dass deine App auf allen aktuellen iOS- und Android-Versionen einwandfrei läuft.',
+    details: ['Flutter OS Updates', 'Package Upgrades', 'iOS & Android Kompatibilität', 'Bugfixing', 'Regression Tests', 'Release Management'],
+  },
+  {
+    icon: '💬',
+    title: 'User-Feedback & App-Store Management',
+    description: 'Kein wichtiges Nutzerfeedback geht mehr unter. Wir überwachen App-Store Reviews, informieren dich zeitnah über neue Bewertungen und können auf Wunsch direkt antworten.',
+    details: ['App Store Review Monitoring', 'Play Store Reviews', 'Feedback-Zusammenfassung', 'Review-Antworten (auf Wunsch)', 'Trend-Analyse Nutzerfeedback'],
+  },
+  {
+    icon: '🚀',
+    title: 'Weiterentwicklung & neue Features',
+    description: 'Basierend auf KPI-Daten und Nutzerfeedback entwickeln wir deine App agil weiter. Unser Flutter-Expertenteam setzt Tickets aus dem gemeinsamen Task-Board um — priorisiert nach Business Impact.',
+    details: ['Flutter Feature-Entwicklung', 'UI/UX Iterationen', 'Agiles Task-Board (ClickUp)', 'Ticketbewertung & Priorisierung', 'Tests & Release'],
+  },
+  {
+    icon: '🎯',
+    title: 'Strategie & Handlungsempfehlungen',
+    description: 'Daten ohne Strategie sind wertlos. Unsere Experten interpretieren die KPIs und leiten konkrete Handlungsempfehlungen ab: Was tun wir als nächstes? Warum? Und welchen Impact ist zu erwarten?',
+    details: ['Monatliche Experteneinschätzung', 'Priorisierungsberatung', 'Business-Impact Einschätzung', 'Roadmap-Unterstützung'],
+  },
+];
+
+const tools = [
+  { name: 'Firebase', description: 'Analytics & Performance' },
+  { name: 'Crashlytics', description: 'Crash Reporting' },
+  { name: 'App Store Connect', description: 'iOS Store Management' },
+  { name: 'Google Play Console', description: 'Android Store Management' },
+  { name: 'RevenueCat', description: 'Subscription Analytics' },
+  { name: 'ClickUp', description: 'Task & Project Management' },
+];
+---
+
+<BaseLayout
+  title="Leistungen | App-Care"
+  description="Was macht App-Care konkret? KPI-Analyse, Monitoring, Wartung, Weiterentwicklung und Strategie für deine Mobile App — alles aus einer Hand."
+>
+  <!-- Hero -->
+  <section class="gradient-hero text-white py-20">
+    <div class="section-container">
+      <div class="max-w-3xl">
+        <span class="badge bg-white/10 text-brand-200 mb-4 inline-block">Was wir tun</span>
+        <h1 class="font-display font-bold text-4xl md:text-5xl text-white mb-6">
+          Deine App in den besten Händen
+        </h1>
+        <p class="text-brand-200 text-xl leading-relaxed">
+          App-Care übernimmt alles, was für eine erfolgreiche Mobile App notwendig ist — von der Datenanalyse über das Monitoring bis zur aktiven Weiterentwicklung.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section-padding bg-white">
+    <div class="section-container">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {services.map((service) => (
+          <div class="card border border-gray-100 hover:border-brand-200 transition-colors">
+            <div class="text-3xl mb-4">{service.icon}</div>
+            <h2 class="font-display font-bold text-xl text-gray-900 mb-3">{service.title}</h2>
+            <p class="text-gray-600 leading-relaxed mb-4">{service.description}</p>
+            <div class="flex flex-wrap gap-2">
+              {service.details.map((detail) => (
+                <span class="badge-gray text-xs">{detail}</span>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Tools -->
+  <section class="section-padding bg-gray-50">
+    <div class="section-container">
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <h2 class="section-title mb-4">Unsere Tools</h2>
+        <p class="section-subtitle">Wir nutzen die bewährtesten Tools der Branche — keine Experimente, nur das was funktioniert.</p>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 max-w-4xl mx-auto">
+        {tools.map((tool) => (
+          <div class="bg-white rounded-xl p-4 text-center border border-gray-100 shadow-sm">
+            <p class="font-semibold text-gray-900 text-sm">{tool.name}</p>
+            <p class="text-gray-400 text-xs mt-1">{tool.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="section-padding bg-white">
+    <div class="section-container">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <h2 class="section-title mb-4">So arbeiten wir zusammen</h2>
+      </div>
+      <div class="max-w-3xl mx-auto">
+        {[
+          { step: '01', title: 'Onboarding & Setup', desc: 'Wir richten alle Monitoring-Tools ein, verbinden Firebase, Crashlytics und App Store Accounts und erstellen das ClickUp-Taskboard.' },
+          { step: '02', title: 'Erste Analyse', desc: 'Im ersten Report erfassen wir den IST-Zustand deiner App: KPIs, Stabilität, Nutzerfeedback und technische Basis.' },
+          { step: '03', title: 'Monatlicher Rhythmus', desc: 'Jeden Monat erhältst du deinen Management Summary mit allen KPIs, Auffälligkeiten und konkreten Handlungsempfehlungen.' },
+          { step: '04', title: 'Umsetzung (Growth)', desc: 'Im Growth-Paket setzen wir Maßnahmen direkt um: Flutter-Entwicklung, Bugfixes, Feature-Iterationen — alles transparent im ClickUp-Board.' },
+        ].map((item) => (
+          <div class="flex gap-6 mb-8">
+            <div class="font-display font-bold text-3xl text-brand-200 w-12 flex-shrink-0">{item.step}</div>
+            <div>
+              <h3 class="font-display font-bold text-lg text-gray-900 mb-1">{item.title}</h3>
+              <p class="text-gray-600">{item.desc}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section-padding gradient-section">
+    <div class="section-container text-center">
+      <h2 class="section-title mb-4">Bereit loszulegen?</h2>
+      <p class="section-subtitle mb-8">Vereinbare ein kostenloses Gespräch und wir schauen gemeinsam, welches Paket am besten zu deiner App passt.</p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="/kontakt" class="btn-primary">Kostenloses Gespräch buchen</a>
+        <a href="/pakete" class="btn-secondary">Pakete ansehen</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

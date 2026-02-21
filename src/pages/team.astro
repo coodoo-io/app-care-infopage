@@ -1,0 +1,167 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const teamMembers = [
+  {
+    name: 'Markus Kühle',
+    role: 'Gründer & CEO',
+    bio: '15+ Jahre Erfahrung in Mobile App Entwicklung. Flutter-Experte seit 2018. Gründer der coodoo GmbH und Initiator von App-Care.',
+    skills: ['Flutter', 'Strategie', 'App-Care'],
+  },
+  {
+    name: 'Sebastian Schulz',
+    role: 'Lead Flutter Developer',
+    bio: 'Senior Flutter Entwickler mit Fokus auf performante und skalierbare App-Architekturen.',
+    skills: ['Flutter', 'Dart', 'Firebase'],
+  },
+  {
+    name: 'Anna Weber',
+    role: 'UX/UI Designerin',
+    bio: 'Spezialisiert auf Mobile App Design und User Experience. Über 50 App-Projekte erfolgreich umgesetzt.',
+    skills: ['UI/UX', 'Figma', 'Mobile Design'],
+  },
+  {
+    name: 'Tim Hoffmann',
+    role: 'Flutter Developer',
+    bio: 'Flutter-Entwickler mit Schwerpunkt auf State Management und App-Performance.',
+    skills: ['Flutter', 'Bloc', 'Testing'],
+  },
+  {
+    name: 'Lisa Bauer',
+    role: 'Projektmanagerin',
+    bio: 'Agile Projektmanagerin die komplexe App-Projekte strukturiert und Kundenkommunikation auf Augenhöhe führt.',
+    skills: ['Agile', 'ClickUp', 'Scrum'],
+  },
+  {
+    name: 'Jonas Fischer',
+    role: 'Flutter Developer',
+    bio: 'Full-Stack App-Entwickler mit Erfahrung in Flutter und Backend-Integration.',
+    skills: ['Flutter', 'Node.js', 'APIs'],
+  },
+  {
+    name: 'Marie Braun',
+    role: 'KPI-Analystin',
+    bio: 'Datenanalystin die App-KPIs interpretiert und daraus strategische Handlungsempfehlungen ableitet.',
+    skills: ['Firebase', 'Analytics', 'RevenueCat'],
+  },
+  {
+    name: 'David Krause',
+    role: 'Flutter Developer',
+    bio: 'Spezialist für Flutter-Animationen und komplexe UI-Implementierungen.',
+    skills: ['Flutter', 'Animations', 'iOS/Android'],
+  },
+  {
+    name: 'Sarah Müller',
+    role: 'App Store Managerin',
+    bio: 'Expertin für App Store Optimierung, Review-Management und Store-Listing Verbesserungen.',
+    skills: ['ASO', 'App Store Connect', 'Play Console'],
+  },
+];
+
+const values = [
+  { icon: '🎯', title: 'KPI-getrieben', desc: 'Wir entscheiden auf Basis von Daten — nicht auf Basis von Bauchgefühl.' },
+  { icon: '🤝', title: 'Partnerschaftlich', desc: 'Wir sind dein verlässlicher Partner, kein anonymer Dienstleister.' },
+  { icon: '🚀', title: 'Flutter First', desc: 'Flutter ist unsere Kernkompetenz — seit 2018, bevor es cool war.' },
+  { icon: '💬', title: 'Transparent', desc: 'Alle Tasks, alle Fortschritte, alle Entscheidungen — immer für dich sichtbar.' },
+];
+---
+
+<BaseLayout
+  title="Team | App-Care"
+  description="Das coodoo GmbH Team hinter App-Care: 11 Flutter & Mobile App Experten aus Mainz."
+>
+  <!-- Hero -->
+  <section class="gradient-hero text-white py-20">
+    <div class="section-container text-center">
+      <span class="badge bg-white/10 text-brand-200 mb-4 inline-block">Das Team</span>
+      <h1 class="font-display font-bold text-4xl md:text-5xl text-white mb-6">
+        11 Experten. Ein Team. Deine App.
+      </h1>
+      <p class="text-brand-200 text-xl max-w-2xl mx-auto">
+        App-Care wird betrieben von coodoo GmbH — einem erfahrenen Flutter & Mobile App Studio aus Mainz. Persönlich, kompetent, verlässlich.
+      </p>
+    </div>
+  </section>
+
+  <!-- Values -->
+  <section class="py-12 bg-white border-b border-gray-100">
+    <div class="section-container">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        {values.map((value) => (
+          <div class="text-center">
+            <div class="text-3xl mb-3">{value.icon}</div>
+            <h3 class="font-display font-semibold text-gray-900 mb-1">{value.title}</h3>
+            <p class="text-gray-600 text-sm">{value.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Grid -->
+  <section class="section-padding bg-gray-50">
+    <div class="section-container">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <h2 class="section-title mb-4">Das coodoo Team</h2>
+        <p class="section-subtitle">Crossfunktionale Experten die alle Bereiche deiner App abdecken.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {teamMembers.map((member) => (
+          <div class="card border border-gray-100 text-center">
+            <div class="w-16 h-16 bg-brand-100 rounded-full mx-auto mb-4 flex items-center justify-center text-2xl">
+              👤
+            </div>
+            <h3 class="font-display font-bold text-gray-900 mb-1">{member.name}</h3>
+            <p class="text-brand-600 text-sm font-medium mb-3">{member.role}</p>
+            <p class="text-gray-600 text-sm leading-relaxed mb-4">{member.bio}</p>
+            <div class="flex flex-wrap justify-center gap-2">
+              {member.skills.map((skill) => (
+                <span class="badge-gray text-xs">{skill}</span>
+              ))}
+            </div>
+          </div>
+        ))}
+
+        <!-- Placeholder for remaining team member -->
+        <div class="card border border-dashed border-gray-200 text-center flex flex-col items-center justify-center py-8">
+          <div class="w-16 h-16 bg-gray-100 rounded-full mx-auto mb-4 flex items-center justify-center text-2xl text-gray-400">
+            +2
+          </div>
+          <p class="text-gray-500 text-sm">Und weitere Experten im Team</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About coodoo -->
+  <section class="section-padding bg-white">
+    <div class="section-container max-w-3xl mx-auto text-center">
+      <span class="badge-brand mb-4 inline-block">Über coodoo GmbH</span>
+      <h2 class="section-title mb-6">Das Unternehmen hinter App-Care</h2>
+      <p class="text-gray-600 leading-relaxed mb-4">
+        coodoo GmbH wurde in Mainz gegründet und hat sich auf Flutter & Mobile App Entwicklung spezialisiert. Mit über 15 Jahren Erfahrung und einem crossfunktionalen Team haben wir hunderte Mobile Apps entwickelt und betreut.
+      </p>
+      <p class="text-gray-600 leading-relaxed mb-8">
+        App-Care ist unsere Antwort auf eine echte Marktlücke: App-Betreiber brauchen verlässliche Partner für die kontinuierliche Betreuung ihrer App — kein großes Entwicklungsprojekt, sondern ein dauerhaftes, strukturiertes Betreuungsmodell.
+      </p>
+      <a
+        href="https://coodoo.de"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn-secondary"
+      >
+        coodoo GmbH Website →
+      </a>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section-padding gradient-section">
+    <div class="section-container text-center">
+      <h2 class="section-title mb-4">Lerne uns persönlich kennen</h2>
+      <p class="section-subtitle mb-8">Buche ein kostenloses 30-Minuten-Gespräch — kein Pitch, nur ehrliche Beratung.</p>
+      <a href="/kontakt" class="btn-primary">Gespräch buchen</a>
+    </div>
+  </section>
+</BaseLayout>

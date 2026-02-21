@@ -1,0 +1,46 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Impressum | App-Care"
+  description="Impressum der App-Care Website — ein Service der coodoo GmbH."
+  noindex={true}
+>
+  <section class="section-padding bg-white">
+    <div class="section-container max-w-2xl mx-auto">
+      <h1 class="font-display font-bold text-3xl text-gray-900 mb-8">Impressum</h1>
+
+      <div class="prose prose-gray max-w-none">
+        <h2>Angaben gemäß § 5 TMG</h2>
+        <p>
+          coodoo GmbH<br />
+          [Straße und Hausnummer]<br />
+          55[PLZ] Mainz<br />
+          Deutschland
+        </p>
+
+        <h2>Kontakt</h2>
+        <p>
+          E-Mail: info@app-care.de
+        </p>
+
+        <h2>Vertreten durch</h2>
+        <p>Markus Kühle (Geschäftsführer)</p>
+
+        <h2>Handelsregister</h2>
+        <p>
+          Registergericht: Amtsgericht Mainz<br />
+          Registernummer: [HRB Nummer]
+        </p>
+
+        <h2>Umsatzsteuer-ID</h2>
+        <p>Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz: [USt-ID]</p>
+
+        <p class="text-sm text-gray-400 mt-8">
+          Hinweis: Dieses Impressum muss vor Veröffentlichung mit vollständigen Unternehmensdaten ergänzt werden.
+        </p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

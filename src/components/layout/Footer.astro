@@ -1,0 +1,130 @@
+---
+const currentYear = new Date().getFullYear();
+
+const links = {
+  service: [
+    { href: '/leistungen', label: 'Leistungen' },
+    { href: '/pakete', label: 'Pakete & Preise' },
+    { href: '/management-summary', label: 'Management Summary' },
+    { href: '/kpis', label: 'App KPIs Ratgeber' },
+  ],
+  company: [
+    { href: '/team', label: 'Team' },
+    { href: '/referenzen', label: 'Referenzen' },
+    { href: '/blog', label: 'Blog' },
+    { href: '/kontakt', label: 'Kontakt' },
+  ],
+  legal: [
+    { href: '/impressum', label: 'Impressum' },
+    { href: '/datenschutz', label: 'Datenschutz' },
+  ],
+};
+---
+
+<footer class="bg-gray-950 text-gray-300">
+  <!-- Lead Magnet Bar -->
+  <div class="bg-brand-700 py-6">
+    <div class="section-container flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>
+        <span class="font-display font-semibold text-white">Kostenloses Whitepaper:</span>
+        <span class="text-brand-200 ml-2">Mobile App Erfolg durch KPIs</span>
+      </div>
+      <a
+        href="/whitepaper"
+        class="inline-flex items-center gap-2 bg-white text-brand-700 font-semibold px-5 py-2.5 rounded-xl hover:bg-brand-50 transition-colors text-sm whitespace-nowrap"
+      >
+        Jetzt kostenlos herunterladen →
+      </a>
+    </div>
+  </div>
+
+  <div class="section-container py-12">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <!-- Brand -->
+      <div class="md:col-span-1">
+        <a href="/" class="flex items-center gap-2 mb-4">
+          <div class="w-8 h-8 bg-brand-500 rounded-lg flex items-center justify-center">
+            <span class="text-white font-bold text-sm">AC</span>
+          </div>
+          <span class="font-display font-bold text-xl text-white">App-Care</span>
+        </a>
+        <p class="text-sm text-gray-400 leading-relaxed mb-4">
+          Monatliches Betreuungspaket für Mobile Apps — KPI-getrieben, messbar, verlässlich.
+        </p>
+        <p class="text-xs text-gray-500">
+          Ein Service der{' '}
+          <a
+            href="https://coodoo.de"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-gray-400 hover:text-white transition-colors underline"
+          >
+            coodoo GmbH
+          </a>
+        </p>
+      </div>
+
+      <!-- Service Links -->
+      <div>
+        <h3 class="font-display font-semibold text-white mb-4">Service</h3>
+        <ul class="space-y-2">
+          {links.service.map(link => (
+            <li>
+              <a href={link.href} class="text-sm text-gray-400 hover:text-white transition-colors">
+                {link.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <!-- Company Links -->
+      <div>
+        <h3 class="font-display font-semibold text-white mb-4">Unternehmen</h3>
+        <ul class="space-y-2">
+          {links.company.map(link => (
+            <li>
+              <a href={link.href} class="text-sm text-gray-400 hover:text-white transition-colors">
+                {link.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <h3 class="font-display font-semibold text-white mb-4">Kontakt</h3>
+        <address class="not-italic text-sm text-gray-400 space-y-1">
+          <p>coodoo GmbH</p>
+          <p>Mainz, Deutschland</p>
+          <a
+            href="mailto:info@app-care.de"
+            class="block mt-2 text-brand-400 hover:text-brand-300 transition-colors"
+          >
+            info@app-care.de
+          </a>
+        </address>
+        <a
+          href="/kontakt"
+          class="inline-flex mt-4 items-center gap-1 text-sm font-medium text-brand-400 hover:text-brand-300 transition-colors"
+        >
+          Gespräch buchen →
+        </a>
+      </div>
+    </div>
+
+    <div class="border-t border-gray-800 mt-10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
+      <p class="text-xs text-gray-500">
+        &copy; {currentYear} App-Care / coodoo GmbH. Alle Rechte vorbehalten.
+      </p>
+      <div class="flex items-center gap-4">
+        {links.legal.map(link => (
+          <a href={link.href} class="text-xs text-gray-500 hover:text-gray-400 transition-colors">
+            {link.label}
+          </a>
+        ))}
+      </div>
+    </div>
+  </div>
+</footer>

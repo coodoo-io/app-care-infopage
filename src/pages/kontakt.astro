@@ -1,0 +1,178 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Kontakt & Gespräch buchen | App-Care"
+  description="Kontaktiere App-Care für ein kostenloses Beratungsgespräch. Buche direkt einen Termin oder schreib uns."
+>
+  <!-- Hero -->
+  <section class="gradient-hero text-white py-20">
+    <div class="section-container text-center">
+      <span class="badge bg-white/10 text-brand-200 mb-4 inline-block">Kostenloses Erstgespräch</span>
+      <h1 class="font-display font-bold text-4xl md:text-5xl text-white mb-6">
+        Lass uns reden
+      </h1>
+      <p class="text-brand-200 text-xl max-w-2xl mx-auto">
+        30 Minuten. Kein Pitch. Kein Druck. Wir schauen gemeinsam, ob und wie App-Care deiner App helfen kann.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Options -->
+  <section class="section-padding bg-white">
+    <div class="section-container max-w-5xl mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+
+        <!-- Left: Form -->
+        <div>
+          <h2 class="font-display font-bold text-2xl text-gray-900 mb-2">Schreib uns</h2>
+          <p class="text-gray-600 mb-6">Wir antworten innerhalb von 48 Stunden.</p>
+
+          <form
+            action="https://formspree.io/f/placeholder"
+            method="POST"
+            class="space-y-5"
+          >
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name *</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  placeholder="Max Mustermann"
+                  class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition-shadow"
+                />
+              </div>
+              <div>
+                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">E-Mail *</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="max@meinapp.de"
+                  class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition-shadow"
+                />
+              </div>
+            </div>
+
+            <div>
+              <label for="app" class="block text-sm font-medium text-gray-700 mb-1">Deine App</label>
+              <input
+                type="text"
+                id="app"
+                name="app"
+                placeholder="Name deiner App (optional)"
+                class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition-shadow"
+              />
+            </div>
+
+            <div>
+              <label for="paket" class="block text-sm font-medium text-gray-700 mb-1">Interesse an</label>
+              <select
+                id="paket"
+                name="paket"
+                class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent bg-white transition-shadow"
+              >
+                <option value="">Paket auswählen (optional)</option>
+                <option value="essentials">App-Care Essentials (€1.500/Monat)</option>
+                <option value="growth">App-Care Growth (€5.000/Monat)</option>
+                <option value="unsicher">Noch unsicher</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Nachricht *</label>
+              <textarea
+                id="message"
+                name="message"
+                required
+                rows="4"
+                placeholder="Erzähl uns kurz von deiner App und was du dir von App-Care erhoffst..."
+                class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition-shadow resize-none"
+              ></textarea>
+            </div>
+
+            <input type="hidden" name="_subject" value="Neue App-Care Anfrage" />
+
+            <button
+              type="submit"
+              class="btn-primary w-full text-base"
+            >
+              Anfrage senden →
+            </button>
+
+            <p class="text-xs text-gray-400 text-center">
+              Deine Daten werden nur zur Bearbeitung deiner Anfrage genutzt.
+            </p>
+          </form>
+        </div>
+
+        <!-- Right: Calendly + Info -->
+        <div class="space-y-8">
+          <!-- Calendly -->
+          <div class="card border-2 border-brand-100 bg-brand-50">
+            <h2 class="font-display font-bold text-xl text-gray-900 mb-2">Direkt Termin buchen</h2>
+            <p class="text-gray-600 text-sm mb-4">
+              Lieber gleich einen Gesprächstermin auswählen? Buche direkt einen freien Slot in unserem Kalender.
+            </p>
+            <!-- Calendly Embed Placeholder -->
+            <div class="bg-white rounded-xl border border-brand-100 p-8 text-center">
+              <div class="text-4xl mb-3">📅</div>
+              <p class="font-semibold text-gray-900 mb-1">Calendly-Terminbuchung</p>
+              <p class="text-sm text-gray-500 mb-4">30 Min · kostenlos · unverbindlich</p>
+              <a
+                href="https://calendly.com/placeholder"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-primary text-sm"
+              >
+                Termin buchen →
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="card border border-gray-100">
+            <h3 class="font-display font-semibold text-gray-900 mb-4">Kontaktdaten</h3>
+            <address class="not-italic space-y-3 text-sm">
+              <div class="flex items-start gap-3">
+                <span class="text-lg">🏢</span>
+                <div>
+                  <p class="font-medium text-gray-900">coodoo GmbH</p>
+                  <p class="text-gray-600">Mainz, Deutschland</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-lg">✉️</span>
+                <a href="mailto:info@app-care.de" class="text-brand-600 hover:underline">
+                  info@app-care.de
+                </a>
+              </div>
+            </address>
+          </div>
+
+          <!-- Trust signals -->
+          <div class="space-y-3">
+            {[
+              'Antwort innerhalb von 48 Stunden',
+              'Kostenlos & unverbindlich',
+              'Kein Pitch, nur ehrliche Beratung',
+              '15+ Jahre Mobile App Erfahrung',
+            ].map((item) => (
+              <div class="flex items-center gap-2 text-sm text-gray-600">
+                <svg class="w-4 h-4 text-accent-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                {item}
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

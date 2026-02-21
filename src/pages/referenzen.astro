@@ -1,0 +1,131 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const references = [
+  {
+    app: 'WeatherPro App',
+    category: 'Wetter & Lifestyle',
+    description: 'Eine Wetter-App mit über 10.000 aktiven Nutzern. App-Care wurde eingesetzt um die Stabilität zu verbessern und das Wachstum durch datengetriebene Entscheidungen zu beschleunigen.',
+    period: '6 Monate Betreuung',
+    kpis: [
+      { label: 'Aktive Nutzer', before: '8.200', after: '12.400', change: '+51%', positive: true },
+      { label: 'Crash-freie Sessions', before: '94,1%', after: '99,2%', change: '+5,1pp', positive: true },
+      { label: 'App Store Rating', before: '3,8', after: '4,7', change: '+0,9', positive: true },
+      { label: 'Session-Dauer', before: '3,2 Min', after: '5,1 Min', change: '+59%', positive: true },
+    ],
+    quote: 'Endlich wissen wir was in unserer App passiert. Der monatliche Report gibt uns Sicherheit und klare Handlungsempfehlungen — ohne dass wir selbst Stunden in Dashboards verbringen müssen.',
+    author: 'Produkt Manager, WeatherPro App',
+    package: 'App-Care Growth',
+  },
+  {
+    app: 'HealthTrack App',
+    category: 'Gesundheit & Fitness',
+    description: 'Eine Gesundheits-App mit Subscription-Modell. App-Care hat geholfen, die Churn Rate zu halbieren und die Subscription-Zahlen durch gezielte Verbesserungen zu steigern.',
+    period: '9 Monate Betreuung',
+    kpis: [
+      { label: 'Aktive Subscriptions', before: '340', after: '520', change: '+53%', positive: true },
+      { label: 'Churn Rate', before: '8,2%', after: '4,1%', change: '-4,1pp', positive: true },
+      { label: 'Session-Dauer', before: '4,2 Min', after: '6,8 Min', change: '+62%', positive: true },
+      { label: 'App Store Rating', before: '4,1', after: '4,6', change: '+0,5', positive: true },
+    ],
+    quote: 'App-Care hat uns geholfen, die wirklich wichtigen KPIs zu verstehen und gezielt daran zu arbeiten. Die Kombination aus Monitoring und aktiver Entwicklung ist genau das was wir gebraucht haben.',
+    author: 'CEO, HealthTrack App',
+    package: 'App-Care Growth',
+  },
+];
+---
+
+<BaseLayout
+  title="Referenzen | App-Care"
+  description="Echte Ergebnisse: Wie App-Care Mobile Apps messbar wachsen lässt. KPI-Entwicklungen aus der Praxis."
+>
+  <!-- Hero -->
+  <section class="gradient-hero text-white py-20">
+    <div class="section-container text-center">
+      <span class="badge bg-white/10 text-brand-200 mb-4 inline-block">Echte Ergebnisse</span>
+      <h1 class="font-display font-bold text-4xl md:text-5xl text-white mb-6">
+        Apps die mit App-Care wachsen
+      </h1>
+      <p class="text-brand-200 text-xl max-w-2xl mx-auto">
+        Zahlen lügen nicht. Hier siehst du konkrete KPI-Entwicklungen aus unserer Betreuung.
+      </p>
+    </div>
+  </section>
+
+  <!-- References -->
+  <section class="section-padding bg-white">
+    <div class="section-container max-w-5xl mx-auto">
+      <div class="space-y-16">
+        {references.map((ref, i) => (
+          <div class={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-start ${i % 2 === 1 ? 'lg:grid-flow-dense' : ''}`}>
+            <div class={i % 2 === 1 ? 'lg:col-start-2' : ''}>
+              <div class="flex items-center gap-3 mb-4">
+                <span class="badge-gray">{ref.category}</span>
+                <span class="badge-brand">{ref.package}</span>
+                <span class="text-xs text-gray-400">{ref.period}</span>
+              </div>
+              <h2 class="font-display font-bold text-2xl text-gray-900 mb-4">{ref.app}</h2>
+              <p class="text-gray-600 leading-relaxed mb-6">{ref.description}</p>
+
+              <blockquote class="bg-brand-50 rounded-xl p-5 border-l-4 border-brand-400">
+                <p class="text-gray-700 italic mb-3">"{ref.quote}"</p>
+                <cite class="text-sm text-gray-500 not-italic">— {ref.author}</cite>
+              </blockquote>
+            </div>
+
+            <div class={i % 2 === 1 ? 'lg:col-start-1 lg:row-start-1' : ''}>
+              <div class="bg-gray-50 rounded-2xl p-6">
+                <h3 class="font-semibold text-gray-900 mb-4 text-sm uppercase tracking-wide">KPI-Entwicklung</h3>
+                <div class="space-y-4">
+                  {ref.kpis.map((kpi) => (
+                    <div class="bg-white rounded-xl p-4">
+                      <div class="flex items-center justify-between mb-2">
+                        <span class="text-sm text-gray-600">{kpi.label}</span>
+                        <span class={`badge text-xs ${kpi.positive ? 'badge-accent' : 'bg-red-100 text-red-700'}`}>{kpi.change}</span>
+                      </div>
+                      <div class="flex items-center gap-3">
+                        <div class="flex-1">
+                          <div class="text-xs text-gray-400 mb-1">Vorher</div>
+                          <div class="font-semibold text-gray-400">{kpi.before}</div>
+                        </div>
+                        <svg class="w-4 h-4 text-brand-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                        <div class="flex-1 text-right">
+                          <div class="text-xs text-gray-400 mb-1">Nachher</div>
+                          <div class="font-bold text-gray-900">{kpi.after}</div>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div class="mt-12 bg-brand-50 rounded-2xl p-8 text-center border border-brand-100">
+        <p class="text-sm text-brand-700 font-medium mb-2">Hinweis</p>
+        <p class="text-gray-600 text-sm">
+          Die gezeigten App-Namen und KPI-Werte sind Platzhalter. Echte Kundenprojekte werden nach Freigabe durch die Kunden veröffentlicht. Sprich uns an — wir zeigen dir gerne konkrete Beispiele im persönlichen Gespräch.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section-padding bg-brand-600 text-white">
+    <div class="section-container text-center">
+      <h2 class="font-display font-bold text-3xl text-white mb-4">
+        Deine App als nächste Erfolgsgeschichte?
+      </h2>
+      <p class="text-brand-200 text-lg mb-8">
+        Lass uns zusammen schauen, wo deine App steht und wie App-Care helfen kann.
+      </p>
+      <a href="/kontakt" class="inline-flex items-center gap-2 bg-white text-brand-700 font-semibold px-8 py-4 rounded-xl hover:bg-brand-50 transition-colors text-lg">
+        Kostenloses Gespräch buchen →
+      </a>
+    </div>
+  </section>
+</BaseLayout>

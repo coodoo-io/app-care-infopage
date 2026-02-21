@@ -1,0 +1,108 @@
+---
+const packages = [
+  {
+    name: 'App-Care Essentials',
+    price: '1.500',
+    period: '/Monat',
+    subtitle: 'Klarheit & Überblick',
+    description: 'Perfekt für App-Betreiber die verstehen wollen, wie ihre App performt — mit konkreten Handlungsempfehlungen.',
+    minDuration: 'Mindestlaufzeit: 6 Monate',
+    highlights: [
+      'Monatlicher Management Summary',
+      'KPI-Monitoring & Analyse',
+      'Firebase, Crashlytics, App Store',
+      'Eigenes Task-Board (ClickUp)',
+      'Handlungsempfehlungen der Experten',
+    ],
+    cta: 'Essentials starten',
+    ctaHref: '/kontakt?paket=essentials',
+    featured: false,
+  },
+  {
+    name: 'App-Care Growth',
+    price: '5.000',
+    period: '/Monat',
+    subtitle: 'Aktives Wachstum',
+    description: 'Für App-Betreiber die ihre App nicht nur beobachten wollen — sondern aktiv weiterentwickeln, optimieren und wachsen lassen.',
+    minDuration: 'Mindestlaufzeit: 3 Monate',
+    highlights: [
+      'Alles aus Essentials',
+      'Ganzes Expertenteam aktiv dabei',
+      'Flutter-Entwicklung & Bugfixing',
+      'Strategie & Weiterentwicklung',
+      'Direktkommunikation & Reporting',
+    ],
+    cta: 'Growth starten',
+    ctaHref: '/kontakt?paket=growth',
+    featured: true,
+  },
+];
+---
+
+<section class="section-padding gradient-section">
+  <div class="section-container">
+    <div class="text-center max-w-2xl mx-auto mb-12">
+      <span class="badge-brand mb-4 inline-block">Transparent & Fair</span>
+      <h2 class="section-title mb-4">
+        Zwei Pakete. Klare Preise. Kein Risiko.
+      </h2>
+      <p class="section-subtitle">
+        Günstiger als ein einziger Festangestellter — und du bekommst ein ganzes Expertenteam.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+      {packages.map((pkg) => (
+        <div class={`rounded-2xl p-8 border-2 relative ${pkg.featured ? 'border-brand-500 bg-brand-600 text-white shadow-xl shadow-brand-200' : 'border-gray-200 bg-white'}`}>
+          {pkg.featured && (
+            <div class="absolute -top-3 left-1/2 -translate-x-1/2">
+              <span class="bg-accent-500 text-white text-xs font-semibold px-4 py-1 rounded-full">Empfohlen</span>
+            </div>
+          )}
+
+          <div class="mb-6">
+            <p class={`text-sm font-medium mb-1 ${pkg.featured ? 'text-brand-200' : 'text-brand-600'}`}>{pkg.subtitle}</p>
+            <h3 class={`font-display font-bold text-xl mb-1 ${pkg.featured ? 'text-white' : 'text-gray-900'}`}>{pkg.name}</h3>
+            <div class="flex items-baseline gap-1 mt-3">
+              <span class={`font-display font-bold text-4xl ${pkg.featured ? 'text-white' : 'text-gray-900'}`}>€{pkg.price}</span>
+              <span class={`text-sm ${pkg.featured ? 'text-brand-200' : 'text-gray-500'}`}>{pkg.period}</span>
+            </div>
+            <p class={`text-xs mt-1 ${pkg.featured ? 'text-brand-300' : 'text-gray-400'}`}>{pkg.minDuration}</p>
+          </div>
+
+          <p class={`text-sm leading-relaxed mb-6 ${pkg.featured ? 'text-brand-100' : 'text-gray-600'}`}>
+            {pkg.description}
+          </p>
+
+          <ul class="space-y-3 mb-8">
+            {pkg.highlights.map((item) => (
+              <li class="flex items-start gap-2 text-sm">
+                <svg class={`w-4 h-4 mt-0.5 flex-shrink-0 ${pkg.featured ? 'text-accent-400' : 'text-accent-500'}`} fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <span class={pkg.featured ? 'text-brand-100' : 'text-gray-600'}>{item}</span>
+              </li>
+            ))}
+          </ul>
+
+          <a
+            href={pkg.ctaHref}
+            class={`block w-full text-center font-semibold py-3 px-6 rounded-xl transition-colors ${
+              pkg.featured
+                ? 'bg-white text-brand-700 hover:bg-brand-50'
+                : 'bg-brand-600 text-white hover:bg-brand-700'
+            }`}
+          >
+            {pkg.cta}
+          </a>
+        </div>
+      ))}
+    </div>
+
+    <div class="text-center mt-8">
+      <a href="/pakete" class="text-brand-600 font-semibold hover:underline text-sm">
+        Detaillierter Paketvergleich ansehen →
+      </a>
+    </div>
+  </div>
+</section>

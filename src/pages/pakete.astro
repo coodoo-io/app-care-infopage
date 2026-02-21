@@ -1,0 +1,215 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const features = [
+  {
+    category: 'Reporting & Analyse',
+    items: [
+      { feature: 'Monatlicher Management Summary', essentials: true, growth: true },
+      { feature: 'Firebase Analytics Auswertung', essentials: true, growth: true },
+      { feature: 'Crashlytics Crash-Analyse', essentials: true, growth: true },
+      { feature: 'App Store Review Monitoring', essentials: true, growth: true },
+      { feature: 'RevenueCat Subscription-Analyse', essentials: true, growth: true },
+      { feature: 'Handlungsempfehlungen der Experten', essentials: true, growth: true },
+    ],
+  },
+  {
+    category: 'Taskboard & Organisation',
+    items: [
+      { feature: 'Eigenes ClickUp-Taskboard', essentials: true, growth: true },
+      { feature: 'Ticket-Bewertung & Aufwandsschätzung', essentials: true, growth: true },
+      { feature: 'Aktive Ticket-Priorisierung', essentials: false, growth: true },
+      { feature: 'Direkte Entwickler-Kommunikation', essentials: false, growth: true },
+    ],
+  },
+  {
+    category: 'Entwicklung & Wartung',
+    items: [
+      { feature: 'Flutter OS & Package Updates', essentials: false, growth: true },
+      { feature: 'Bugfixing', essentials: false, growth: true },
+      { feature: 'Kritische Bug-Reaktion', essentials: false, growth: true },
+      { feature: 'Feature-Weiterentwicklung', essentials: false, growth: true },
+      { feature: 'Tests & Release Management', essentials: false, growth: true },
+      { feature: 'UI/UX Iterationen', essentials: false, growth: true },
+    ],
+  },
+  {
+    category: 'Support & Beratung',
+    items: [
+      { feature: 'E-Mail Support', essentials: true, growth: true },
+      { feature: '2nd Level Bug Support', essentials: false, growth: true },
+      { feature: 'Strategie-Beratung', essentials: false, growth: true },
+      { feature: 'Direktkommunikation (Slack/Teams)', essentials: false, growth: true },
+    ],
+  },
+];
+---
+
+<BaseLayout
+  title="Pakete & Preise | App-Care"
+  description="App-Care Essentials ab €1.500/Monat oder Growth ab €5.000/Monat. Transparente Preise, klare Leistungen, kein Risiko."
+>
+  <!-- Hero -->
+  <section class="gradient-hero text-white py-20">
+    <div class="section-container text-center">
+      <span class="badge bg-white/10 text-brand-200 mb-4 inline-block">Transparent & Fair</span>
+      <h1 class="font-display font-bold text-4xl md:text-5xl text-white mb-6">
+        Pakete & Preise
+      </h1>
+      <p class="text-brand-200 text-xl max-w-2xl mx-auto">
+        Zwei klare Pakete. Kein verstecktes Kleingedrucktes. Kündbar nach Mindestlaufzeit.
+      </p>
+    </div>
+  </section>
+
+  <!-- Package Cards -->
+  <section class="section-padding bg-white">
+    <div class="section-container">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-16">
+        <!-- Essentials -->
+        <div class="border-2 border-gray-200 rounded-2xl p-8">
+          <div class="mb-6">
+            <p class="text-sm font-medium text-brand-600 mb-1">Klarheit & Überblick</p>
+            <h2 class="font-display font-bold text-2xl text-gray-900">App-Care Essentials</h2>
+            <div class="flex items-baseline gap-1 mt-4">
+              <span class="font-display font-bold text-5xl text-gray-900">€1.500</span>
+              <span class="text-gray-500">/Monat (netto)</span>
+            </div>
+            <p class="text-gray-400 text-sm mt-1">Mindestlaufzeit: 6 Monate · Verlängerung: 6 Monate</p>
+          </div>
+          <p class="text-gray-600 mb-6">
+            Perfekt für App-Betreiber die verstehen wollen wie ihre App performt und konkrete Handlungsempfehlungen erhalten möchten — ohne eigenes Entwicklerteam.
+          </p>
+          <a href="/kontakt?paket=essentials" class="block w-full text-center bg-brand-600 text-white font-semibold py-3 px-6 rounded-xl hover:bg-brand-700 transition-colors mb-6">
+            Essentials anfragen
+          </a>
+          <div class="border-t pt-6">
+            <p class="text-sm font-semibold text-gray-500 mb-3">Im Paket enthalten:</p>
+            {['Monatlicher Management Summary', 'Firebase, Crashlytics, App Store Analyse', 'RevenueCat Subscription-Monitoring', 'ClickUp-Taskboard mit Ticket-Bewertung', 'Handlungsempfehlungen der App-Experten', 'E-Mail Support'].map((item) => (
+              <div class="flex items-center gap-2 mb-2">
+                <svg class="w-4 h-4 text-accent-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <span class="text-sm text-gray-600">{item}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <!-- Growth -->
+        <div class="border-2 border-brand-500 rounded-2xl p-8 bg-brand-600 text-white relative">
+          <div class="absolute -top-3 left-1/2 -translate-x-1/2">
+            <span class="bg-accent-500 text-white text-xs font-semibold px-4 py-1 rounded-full">Empfohlen</span>
+          </div>
+          <div class="mb-6">
+            <p class="text-sm font-medium text-brand-200 mb-1">Aktives Wachstum</p>
+            <h2 class="font-display font-bold text-2xl text-white">App-Care Growth</h2>
+            <div class="flex items-baseline gap-1 mt-4">
+              <span class="font-display font-bold text-5xl text-white">€5.000</span>
+              <span class="text-brand-200">/Monat (netto)</span>
+            </div>
+            <p class="text-brand-300 text-sm mt-1">Mindestlaufzeit: 3 Monate · Verlängerung: 3 Monate</p>
+          </div>
+          <p class="text-brand-100 mb-6">
+            Für App-Betreiber die ihre App nicht nur beobachten — sondern aktiv weiterentwickeln, optimieren und systematisch wachsen lassen wollen.
+          </p>
+          <a href="/kontakt?paket=growth" class="block w-full text-center bg-white text-brand-700 font-semibold py-3 px-6 rounded-xl hover:bg-brand-50 transition-colors mb-6">
+            Growth anfragen
+          </a>
+          <div class="border-t border-brand-500 pt-6">
+            <p class="text-sm font-semibold text-brand-300 mb-3">Alles aus Essentials, plus:</p>
+            {['Ganzes Expertenteam aktiv dabei', 'Flutter-Entwicklung & Bugfixing', 'Feature-Weiterentwicklung', 'Tests & Release Management', 'Kritische Bug-Sofortreaktion', 'Strategie & Priorisierungsberatung', 'Direktkommunikation (Slack/Teams)'].map((item) => (
+              <div class="flex items-center gap-2 mb-2">
+                <svg class="w-4 h-4 text-accent-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <span class="text-sm text-brand-100">{item}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature Comparison Table -->
+      <div class="max-w-4xl mx-auto">
+        <h2 class="font-display font-bold text-2xl text-gray-900 text-center mb-8">Detaillierter Vergleich</h2>
+        <div class="overflow-x-auto rounded-2xl border border-gray-200">
+          <table class="w-full text-sm">
+            <thead>
+              <tr class="bg-gray-50 border-b border-gray-200">
+                <th class="text-left px-6 py-4 font-semibold text-gray-600">Leistung</th>
+                <th class="text-center px-6 py-4 font-semibold text-gray-900">Essentials</th>
+                <th class="text-center px-6 py-4 font-semibold text-brand-600">Growth</th>
+              </tr>
+            </thead>
+            <tbody>
+              {features.map((category) => (
+                <>
+                  <tr class="bg-brand-50">
+                    <td colspan="3" class="px-6 py-3 font-semibold text-brand-700 text-xs uppercase tracking-wide">
+                      {category.category}
+                    </td>
+                  </tr>
+                  {category.items.map((item) => (
+                    <tr class="border-t border-gray-100 hover:bg-gray-50">
+                      <td class="px-6 py-3 text-gray-700">{item.feature}</td>
+                      <td class="px-6 py-3 text-center">
+                        {item.essentials ? (
+                          <svg class="w-5 h-5 text-accent-500 mx-auto" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                          </svg>
+                        ) : (
+                          <span class="text-gray-300">—</span>
+                        )}
+                      </td>
+                      <td class="px-6 py-3 text-center">
+                        {item.growth ? (
+                          <svg class="w-5 h-5 text-accent-500 mx-auto" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                          </svg>
+                        ) : (
+                          <span class="text-gray-300">—</span>
+                        )}
+                      </td>
+                    </tr>
+                  ))}
+                </>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section-padding bg-gray-50">
+    <div class="section-container max-w-3xl mx-auto">
+      <h2 class="section-title text-center mb-10">Häufige Fragen</h2>
+      <div class="space-y-6">
+        {[
+          { q: 'Kann ich das Paket nach der Mindestlaufzeit kündigen?', a: 'Ja. Nach der Mindestlaufzeit ist das Paket monatlich kündbar. Essentials hat eine Mindestlaufzeit von 6 Monaten, Growth von 3 Monaten.' },
+          { q: 'Was passiert nach dem Onboarding?', a: 'Wir richten alle Tools ein, verbinden deine App-Accounts und erstellen den ersten Management Summary. Das dauert in der Regel 1-2 Wochen.' },
+          { q: 'Welches Paket ist das richtige für mich?', a: 'Essentials empfehlen wir wenn du zunächst Klarheit über deine App-Performance brauchst. Growth wenn du aktiv entwickeln und wachsen möchtest.' },
+          { q: 'Sind die Preise verhandelbar?', a: 'Die Paketpreise sind fest. Bei besonderen Anforderungen können wir individuelle Angebote erstellen — sprich uns einfach an.' },
+        ].map((faq) => (
+          <div class="bg-white rounded-xl p-6 border border-gray-100">
+            <h3 class="font-display font-semibold text-gray-900 mb-2">{faq.q}</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">{faq.a}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section-padding bg-brand-600 text-white">
+    <div class="section-container text-center">
+      <h2 class="font-display font-bold text-3xl text-white mb-4">Noch unsicher welches Paket passt?</h2>
+      <p class="text-brand-200 text-lg mb-8">In einem kostenlosen Gespräch finden wir gemeinsam die richtige Lösung für deine App.</p>
+      <a href="/kontakt" class="inline-flex items-center gap-2 bg-white text-brand-700 font-semibold px-8 py-4 rounded-xl hover:bg-brand-50 transition-colors text-lg">
+        Kostenloses Gespräch buchen →
+      </a>
+    </div>
+  </section>
+</BaseLayout>
