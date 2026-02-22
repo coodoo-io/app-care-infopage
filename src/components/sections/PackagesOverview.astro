@@ -1,6 +1,24 @@
 ---
 const packages = [
   {
+    name: 'App-Care Insight',
+    price: '299',
+    period: '/Monat',
+    subtitle: 'Einstieg & Überblick',
+    description: 'Für App-Betreiber die wissen wollen, wo ihre App steht — mit monatlichem Report und konkreten Handlungsempfehlungen.',
+    minDuration: 'Mindestlaufzeit: 3 Monate',
+    highlights: [
+      'Monatlicher Management Summary',
+      'KPI-Auswertung (Firebase, Crashlytics)',
+      'App Store Connect Analyse',
+      'Handlungsempfehlungen',
+      'E-Mail Support',
+    ],
+    cta: 'Insight starten',
+    ctaHref: '/kontakt?paket=insight',
+    featured: false,
+  },
+  {
     name: 'App-Care Essentials',
     price: '1.500',
     period: '/Monat',
@@ -16,11 +34,11 @@ const packages = [
     ],
     cta: 'Essentials starten',
     ctaHref: '/kontakt?paket=essentials',
-    featured: false,
+    featured: true,
   },
   {
     name: 'App-Care Growth',
-    price: '5.000',
+    price: '4.500',
     period: '/Monat',
     subtitle: 'Aktives Wachstum',
     description: 'Für App-Betreiber die ihre App nicht nur beobachten wollen — sondern aktiv weiterentwickeln, optimieren und wachsen lassen.',
@@ -34,7 +52,7 @@ const packages = [
     ],
     cta: 'Growth starten',
     ctaHref: '/kontakt?paket=growth',
-    featured: true,
+    featured: false,
   },
 ];
 ---
@@ -44,14 +62,14 @@ const packages = [
     <div class="text-center max-w-2xl mx-auto mb-12">
       <span class="badge-brand mb-4 inline-block">Transparent & Fair</span>
       <h2 class="section-title mb-4">
-        Zwei Pakete. Klare Preise. Kein Risiko.
+        Drei Pakete. Klare Preise. Kein Risiko.
       </h2>
       <p class="section-subtitle">
         Günstiger als ein einziger Festangestellter — und du bekommst ein ganzes Expertenteam.
       </p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
       {packages.map((pkg) => (
         <div class={`rounded-2xl p-8 border-2 relative ${pkg.featured ? 'border-brand-500 bg-brand-600 text-white shadow-xl shadow-brand-200' : 'border-gray-200 bg-white'}`}>
           {pkg.featured && (
