@@ -4,6 +4,6 @@ import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
   integrations: [tailwind(), sitemap()],
-  site: 'https://mkuehle.github.io',
+  site: 'https://coodoo-io.github.io',
   base: '/app-care-infopage',
 });
