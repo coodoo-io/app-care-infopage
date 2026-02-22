@@ -48,10 +48,14 @@ const problems = [
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       {problems.map((problem) => (
         <div class="card group hover:border-brand-200 hover:border transition-all duration-200">
-          <div class="text-3xl mb-4">{problem.icon}</div>
-          <h3 class="font-display font-semibold text-lg text-gray-900 mb-2">
-            {problem.title}
-          </h3>
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-9 h-9 rounded-xl bg-brand-50 flex items-center justify-center flex-shrink-0 text-lg">
+              {problem.icon}
+            </div>
+            <h3 class="font-display font-semibold text-lg text-gray-900">
+              {problem.title}
+            </h3>
+          </div>
           <p class="text-gray-600 text-sm leading-relaxed">
             {problem.description}
           </p>

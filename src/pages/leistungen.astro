@@ -75,8 +75,12 @@ const tools = [
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         {services.map((service) => (
           <div class="card border border-gray-100 hover:border-brand-200 transition-colors">
-            <div class="text-3xl mb-4">{service.icon}</div>
-            <h2 class="font-display font-bold text-xl text-gray-900 mb-3">{service.title}</h2>
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-9 h-9 rounded-xl bg-brand-50 flex items-center justify-center flex-shrink-0 text-lg">
+                {service.icon}
+              </div>
+              <h2 class="font-display font-bold text-xl text-gray-900">{service.title}</h2>
+            </div>
             <p class="text-gray-600 leading-relaxed mb-4">{service.description}</p>
             <div class="flex flex-wrap gap-2">
               {service.details.map((detail) => (
@@ -98,8 +102,10 @@ const tools = [
       </div>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
         <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
-          <div class="text-2xl mb-3">📱</div>
-          <h3 class="font-display font-bold text-gray-900 mb-3">Cross-Platform</h3>
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-9 h-9 rounded-xl bg-brand-50 flex items-center justify-center flex-shrink-0 text-lg">📱</div>
+            <h3 class="font-display font-bold text-gray-900">Cross-Platform</h3>
+          </div>
           <div class="flex flex-wrap gap-2">
             {['Flutter', 'React Native', 'Capacitor', 'Ionic', 'Xamarin'].map((t) => (
               <span class="badge-brand text-xs">{t}</span>
@@ -107,8 +113,10 @@ const tools = [
           </div>
         </div>
         <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
-          <div class="text-2xl mb-3">🍎</div>
-          <h3 class="font-display font-bold text-gray-900 mb-3">Nativ iOS</h3>
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-9 h-9 rounded-xl bg-brand-50 flex items-center justify-center flex-shrink-0 text-lg">🍎</div>
+            <h3 class="font-display font-bold text-gray-900">Nativ iOS</h3>
+          </div>
           <div class="flex flex-wrap gap-2">
             {['Swift', 'SwiftUI', 'Objective-C'].map((t) => (
               <span class="badge-brand text-xs">{t}</span>
@@ -116,8 +124,10 @@ const tools = [
           </div>
         </div>
         <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
-          <div class="text-2xl mb-3">🤖</div>
-          <h3 class="font-display font-bold text-gray-900 mb-3">Nativ Android</h3>
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-9 h-9 rounded-xl bg-brand-50 flex items-center justify-center flex-shrink-0 text-lg">🤖</div>
+            <h3 class="font-display font-bold text-gray-900">Nativ Android</h3>
+          </div>
           <div class="flex flex-wrap gap-2">
             {['Kotlin', 'Jetpack Compose', 'Java'].map((t) => (
               <span class="badge-brand text-xs">{t}</span>
