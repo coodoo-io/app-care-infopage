@@ -5,5 +5,5 @@ import sitemap from '@astrojs/sitemap';
 export default defineConfig({
   integrations: [tailwind(), sitemap()],
   site: 'https://coodoo-io.github.io',
-  base: '/app-care-infopage',
+  base: process.env.DEPLOY_PATH ?? '/',
 });
