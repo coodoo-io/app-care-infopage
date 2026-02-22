@@ -1,15 +1,38 @@
 ---
+const kpiChips = [
+  { label: '+51% MAU',            x: '8%',   y: '20%', delay: '0s',    duration: '9s'  },
+  { label: '99,2% Crash-frei',    x: '82%',  y: '15%', delay: '1.5s',  duration: '11s' },
+  { label: '4,8 ⭐ Rating',       x: '72%',  y: '62%', delay: '3s',    duration: '8s'  },
+  { label: '+53% Subscriptions',  x: '5%',   y: '65%', delay: '2s',    duration: '12s' },
+  { label: '-50% Churn',          x: '88%',  y: '40%', delay: '4.5s',  duration: '10s' },
+  { label: '+62% Session-Dauer',  x: '14%',  y: '45%', delay: '6s',    duration: '9s'  },
+];
 ---
 
 <section class="gradient-hero text-white py-20 md:py-32 relative overflow-hidden">
-  <!-- Background decoration -->
-  <div class="absolute inset-0 overflow-hidden pointer-events-none">
-    <div class="absolute -top-40 -right-40 w-96 h-96 bg-brand-500/20 rounded-full blur-3xl"></div>
-    <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-accent-500/10 rounded-full blur-3xl"></div>
+
+  <!-- Aurora orbs -->
+  <div class="absolute inset-0 pointer-events-none">
+    <div class="aurora-orb orb-1"></div>
+    <div class="aurora-orb orb-2"></div>
+    <div class="aurora-orb orb-3"></div>
   </div>
 
-  <div class="section-container relative">
+  <!-- Floating KPI chips -->
+  <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
+    {kpiChips.map((chip) => (
+      <div
+        class="kpi-chip"
+        style={`left:${chip.x}; top:${chip.y}; animation-delay:${chip.delay}; animation-duration:${chip.duration};`}
+      >
+        {chip.label}
+      </div>
+    ))}
+  </div>
+
+  <div class="section-container relative z-10">
     <div class="max-w-3xl mx-auto text-center">
+
       <!-- Badge -->
       <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 text-sm font-medium text-brand-200 mb-8">
         <span class="w-2 h-2 bg-accent-400 rounded-full animate-pulse"></span>
@@ -53,3 +76,86 @@
     </div>
   </div>
 </section>
+
+<style>
+  /* ── Aurora orbs ─────────────────────────────────────── */
+  .aurora-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.35;
+    animation: orb-drift 14s ease-in-out infinite alternate;
+  }
+
+  .orb-1 {
+    width: 520px;
+    height: 520px;
+    top: -160px;
+    right: -120px;
+    background: radial-gradient(circle, #818cf8 0%, #4f46e5 60%, transparent 100%);
+    animation-duration: 14s;
+    animation-delay: 0s;
+  }
+
+  .orb-2 {
+    width: 400px;
+    height: 400px;
+    bottom: -140px;
+    left: -100px;
+    background: radial-gradient(circle, #34d399 0%, #059669 60%, transparent 100%);
+    animation-duration: 18s;
+    animation-delay: -5s;
+    opacity: 0.2;
+  }
+
+  .orb-3 {
+    width: 300px;
+    height: 300px;
+    top: 30%;
+    left: 20%;
+    background: radial-gradient(circle, #6366f1 0%, #3730a3 60%, transparent 100%);
+    animation-duration: 22s;
+    animation-delay: -9s;
+    opacity: 0.25;
+  }
+
+  @keyframes orb-drift {
+    0%   { transform: translate(0px,   0px)  scale(1);    }
+    25%  { transform: translate(40px, -30px) scale(1.08); }
+    50%  { transform: translate(-20px, 40px) scale(0.94); }
+    75%  { transform: translate(30px,  20px) scale(1.04); }
+    100% { transform: translate(-40px,-20px) scale(1);    }
+  }
+
+  /* ── Floating KPI chips ──────────────────────────────── */
+  .kpi-chip {
+    position: absolute;
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    color: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    white-space: nowrap;
+    animation: chip-float linear infinite;
+    opacity: 0;
+
+    /* hide on small screens so they don't overlap text */
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    .kpi-chip { display: block; }
+  }
+
+  @keyframes chip-float {
+    0%   { transform: translateY(30px);  opacity: 0; }
+    8%   { opacity: 1; }
+    85%  { opacity: 1; }
+    100% { transform: translateY(-60px); opacity: 0; }
+  }
+</style>
