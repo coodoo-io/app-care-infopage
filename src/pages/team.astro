@@ -161,7 +161,7 @@ const values = [
     <div class="section-container text-center">
       <h2 class="section-title mb-4">Lerne uns persönlich kennen</h2>
       <p class="section-subtitle mb-8">Buche ein kostenloses 30-Minuten-Gespräch — kein Pitch, nur ehrliche Beratung.</p>
-      <a href={`${import.meta.env.BASE_URL}kontakt`} class="btn-primary">Gespräch buchen</a>
+      <a href={`${import.meta.env.BASE_URL.replace(/\/?$/, '')}/kontakt`} class="btn-primary">Gespräch buchen</a>
     </div>
   </section>
 </BaseLayout>

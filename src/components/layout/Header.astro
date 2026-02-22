@@ -1,12 +1,12 @@
 ---
-const base = import.meta.env.BASE_URL;
+const base = import.meta.env.BASE_URL.replace(/\/?$/, '');
 
 const navLinks = [
-  { href: `${base}leistungen`, label: 'Leistungen' },
-  { href: `${base}pakete`, label: 'Pakete' },
-  { href: `${base}referenzen`, label: 'Referenzen' },
-  { href: `${base}blog`, label: 'Blog' },
-  { href: `${base}kontakt`, label: 'Kontakt' },
+  { href: `${base}/leistungen`, label: 'Leistungen' },
+  { href: `${base}/pakete`, label: 'Pakete' },
+  { href: `${base}/referenzen`, label: 'Referenzen' },
+  { href: `${base}/blog`, label: 'Blog' },
+  { href: `${base}/kontakt`, label: 'Kontakt' },
 ];
 
 const currentPath = Astro.url.pathname;
@@ -18,7 +18,7 @@ const currentPath = Astro.url.pathname;
       <!-- Logo -->
       <a href={import.meta.env.BASE_URL} class="flex items-center">
         <img
-          src={`${import.meta.env.BASE_URL}assets/App-Care_Logo_mit_Schriftzug.jpg`}
+          src={`${import.meta.env.BASE_URL.replace(/\/?$/, '')}/assets/App-Care_Logo_mit_Schriftzug.jpg`}
           alt="App-Care"
           class="h-10 w-auto"
         />
@@ -43,7 +43,7 @@ const currentPath = Astro.url.pathname;
       <!-- CTA -->
       <div class="flex items-center gap-3">
         <a
-          href={`${import.meta.env.BASE_URL}kontakt`}
+          href={`${import.meta.env.BASE_URL.replace(/\/?$/, '')}/kontakt`}
           class="hidden sm:inline-flex btn-primary px-4 py-2 text-sm"
         >
           Gespräch buchen
@@ -78,7 +78,7 @@ const currentPath = Astro.url.pathname;
         </a>
       ))}
       <div class="pt-3 px-4">
-        <a href={`${import.meta.env.BASE_URL}kontakt`} class="btn-primary w-full text-sm">Gespräch buchen</a>
+        <a href={`${import.meta.env.BASE_URL.replace(/\/?$/, '')}/kontakt`} class="btn-primary w-full text-sm">Gespräch buchen</a>
       </div>
     </div>
   </div>

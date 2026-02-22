@@ -154,8 +154,8 @@ const sections = [
       <h2 class="section-title mb-4">Management Summary in deinem Paket</h2>
       <p class="section-subtitle mb-8">Der Management Summary ist in beiden App-Care Paketen enthalten — Essentials und Growth.</p>
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-        <a href={`${import.meta.env.BASE_URL}pakete`} class="btn-primary">Pakete ansehen</a>
-        <a href={`${import.meta.env.BASE_URL}kontakt`} class="btn-secondary">Gespräch buchen</a>
+        <a href={`${import.meta.env.BASE_URL.replace(/\/?$/, '')}/pakete`} class="btn-primary">Pakete ansehen</a>
+        <a href={`${import.meta.env.BASE_URL.replace(/\/?$/, '')}/kontakt`} class="btn-secondary">Gespräch buchen</a>
       </div>
     </div>
   </section>

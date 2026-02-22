@@ -12,10 +12,10 @@
       </p>
 
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
-        <a href={`${import.meta.env.BASE_URL}kontakt`} class="btn-primary text-lg px-8 py-4">
+        <a href={`${import.meta.env.BASE_URL.replace(/\/?$/, '')}/kontakt`} class="btn-primary text-lg px-8 py-4">
           Kostenloses Gespräch buchen
         </a>
-        <a href={`${import.meta.env.BASE_URL}pakete`} class="btn-secondary text-lg px-8 py-4">
+        <a href={`${import.meta.env.BASE_URL.replace(/\/?$/, '')}/pakete`} class="btn-secondary text-lg px-8 py-4">
           Pakete vergleichen
         </a>
       </div>
@@ -28,7 +28,7 @@
 
       <div class="flex items-center justify-center gap-4 bg-gray-50 rounded-2xl px-6 py-4 max-w-sm mx-auto">
         <img
-          src={`${import.meta.env.BASE_URL}assets/Markus.jpg`}
+          src={`${import.meta.env.BASE_URL.replace(/\/?$/, '')}/assets/Markus.jpg`}
           alt="Markus Kühle"
           class="w-12 h-12 rounded-full object-cover flex-shrink-0"
         />
