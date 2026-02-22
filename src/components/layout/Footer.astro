@@ -1,22 +1,23 @@
 ---
 const currentYear = new Date().getFullYear();
+const base = import.meta.env.BASE_URL;
 
 const links = {
   service: [
-    { href: '/leistungen', label: 'Leistungen' },
-    { href: '/pakete', label: 'Pakete & Preise' },
-    { href: '/management-summary', label: 'Management Summary' },
-    { href: '/kpis', label: 'App KPIs Ratgeber' },
+    { href: `${base}leistungen`, label: 'Leistungen' },
+    { href: `${base}pakete`, label: 'Pakete & Preise' },
+    { href: `${base}management-summary`, label: 'Management Summary' },
+    { href: `${base}kpis`, label: 'App KPIs Ratgeber' },
   ],
   company: [
-    { href: '/team', label: 'Team' },
-    { href: '/referenzen', label: 'Referenzen' },
-    { href: '/blog', label: 'Blog' },
-    { href: '/kontakt', label: 'Kontakt' },
+    { href: `${base}team`, label: 'Team' },
+    { href: `${base}referenzen`, label: 'Referenzen' },
+    { href: `${base}blog`, label: 'Blog' },
+    { href: `${base}kontakt`, label: 'Kontakt' },
   ],
   legal: [
-    { href: '/impressum', label: 'Impressum' },
-    { href: '/datenschutz', label: 'Datenschutz' },
+    { href: `${base}impressum`, label: 'Impressum' },
+    { href: `${base}datenschutz`, label: 'Datenschutz' },
   ],
 };
 ---
@@ -30,7 +31,7 @@ const links = {
         <span class="text-brand-200 ml-2">Mobile App Erfolg durch KPIs</span>
       </div>
       <a
-        href="/whitepaper"
+        href={`${import.meta.env.BASE_URL}whitepaper`}
         class="inline-flex items-center gap-2 bg-white text-brand-700 font-semibold px-5 py-2.5 rounded-xl hover:bg-brand-50 transition-colors text-sm whitespace-nowrap"
       >
         Jetzt kostenlos herunterladen →
@@ -42,7 +43,7 @@ const links = {
     <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
       <!-- Brand -->
       <div class="md:col-span-1">
-        <a href="/" class="inline-flex mb-4">
+        <a href={import.meta.env.BASE_URL} class="inline-flex mb-4">
           <img
             src={`${import.meta.env.BASE_URL}assets/App-Care_Logo_mit_Schriftzug.jpg`}
             alt="App-Care"
@@ -107,7 +108,7 @@ const links = {
           </a>
         </address>
         <a
-          href="/kontakt"
+          href={`${import.meta.env.BASE_URL}kontakt`}
           class="inline-flex mt-4 items-center gap-1 text-sm font-medium text-brand-400 hover:text-brand-300 transition-colors"
         >
           Gespräch buchen →

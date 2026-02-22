@@ -1,10 +1,12 @@
 ---
+const base = import.meta.env.BASE_URL;
+
 const navLinks = [
-  { href: '/leistungen', label: 'Leistungen' },
-  { href: '/pakete', label: 'Pakete' },
-  { href: '/referenzen', label: 'Referenzen' },
-  { href: '/blog', label: 'Blog' },
-  { href: '/kontakt', label: 'Kontakt' },
+  { href: `${base}leistungen`, label: 'Leistungen' },
+  { href: `${base}pakete`, label: 'Pakete' },
+  { href: `${base}referenzen`, label: 'Referenzen' },
+  { href: `${base}blog`, label: 'Blog' },
+  { href: `${base}kontakt`, label: 'Kontakt' },
 ];
 
 const currentPath = Astro.url.pathname;
@@ -14,7 +16,7 @@ const currentPath = Astro.url.pathname;
   <div class="section-container">
     <nav class="flex items-center justify-between h-16">
       <!-- Logo -->
-      <a href="/" class="flex items-center">
+      <a href={import.meta.env.BASE_URL} class="flex items-center">
         <img
           src={`${import.meta.env.BASE_URL}assets/App-Care_Logo_mit_Schriftzug.jpg`}
           alt="App-Care"
@@ -41,7 +43,7 @@ const currentPath = Astro.url.pathname;
       <!-- CTA -->
       <div class="flex items-center gap-3">
         <a
-          href="/kontakt"
+          href={`${import.meta.env.BASE_URL}kontakt`}
           class="hidden sm:inline-flex btn-primary px-4 py-2 text-sm"
         >
           Gespräch buchen
@@ -76,7 +78,7 @@ const currentPath = Astro.url.pathname;
         </a>
       ))}
       <div class="pt-3 px-4">
-        <a href="/kontakt" class="btn-primary w-full text-sm">Gespräch buchen</a>
+        <a href={`${import.meta.env.BASE_URL}kontakt`} class="btn-primary w-full text-sm">Gespräch buchen</a>
       </div>
     </div>
   </div>

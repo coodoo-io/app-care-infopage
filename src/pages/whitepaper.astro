@@ -24,7 +24,7 @@ const topics = [
     <!-- Minimal Nav -->
     <div class="bg-white border-b border-gray-100 py-4">
       <div class="max-w-5xl mx-auto px-4 flex items-center justify-between">
-        <a href="/" class="flex items-center gap-2">
+        <a href={import.meta.env.BASE_URL} class="flex items-center gap-2">
           <div class="w-7 h-7 bg-brand-600 rounded-lg flex items-center justify-center">
             <span class="text-white font-bold text-xs">AC</span>
           </div>
@@ -139,7 +139,7 @@ const topics = [
         <div class="max-w-3xl mx-auto px-4 text-center">
           <p class="text-gray-600 text-sm leading-relaxed">
             Das Whitepaper wurde von <strong>Markus Kühle</strong>, Geschäftsführer der coodoo GmbH, auf Basis von 20+ Jahren Berufserfahrung und hunderten monatlichen App-Reports erstellt.
-            <a href="/" class="text-brand-600 hover:underline ml-1">Mehr über App-Care →</a>
+            <a href={import.meta.env.BASE_URL} class="text-brand-600 hover:underline ml-1">Mehr über App-Care →</a>
           </p>
         </div>
       </section>

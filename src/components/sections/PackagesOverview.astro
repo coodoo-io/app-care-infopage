@@ -1,4 +1,6 @@
 ---
+const base = import.meta.env.BASE_URL;
+
 const packages = [
   {
     name: 'App-Care Insight',
@@ -15,7 +17,7 @@ const packages = [
       'E-Mail Support',
     ],
     cta: 'Insight starten',
-    ctaHref: '/kontakt?paket=insight',
+    ctaHref: `${base}kontakt?paket=insight`,
     featured: false,
   },
   {
@@ -33,7 +35,7 @@ const packages = [
       'Handlungsempfehlungen der Experten',
     ],
     cta: 'Essentials starten',
-    ctaHref: '/kontakt?paket=essentials',
+    ctaHref: `${base}kontakt?paket=essentials`,
     featured: true,
   },
   {
@@ -51,7 +53,7 @@ const packages = [
       'Direktkommunikation & Reporting',
     ],
     cta: 'Growth starten',
-    ctaHref: '/kontakt?paket=growth',
+    ctaHref: `${base}kontakt?paket=growth`,
     featured: false,
   },
 ];
@@ -118,7 +120,7 @@ const packages = [
     </div>
 
     <div class="text-center mt-8">
-      <a href="/pakete" class="text-brand-600 font-semibold hover:underline text-sm">
+      <a href={`${import.meta.env.BASE_URL}pakete`} class="text-brand-600 font-semibold hover:underline text-sm">
         Detaillierter Paketvergleich ansehen →
       </a>
     </div>
