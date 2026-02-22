@@ -16,9 +16,9 @@ const services = [
   },
   {
     icon: '🛠️',
-    title: 'App-Wartung & Flutter-Updates',
-    description: 'Regelmäßige Flutter-Updates, Package-Upgrades und Plattform-Kompatibilität: Wir stellen sicher, dass deine App auf allen aktuellen iOS- und Android-Versionen einwandfrei läuft.',
-    details: ['Flutter OS Updates', 'Package Upgrades', 'iOS & Android Kompatibilität', 'Bugfixing', 'Regression Tests', 'Release Management'],
+    title: 'App-Wartung & Framework-Updates',
+    description: 'Regelmäßige Framework-Updates, Package-Upgrades und Plattform-Kompatibilität: Wir stellen sicher, dass deine App auf allen aktuellen iOS- und Android-Versionen einwandfrei läuft — egal welchen Tech-Stack du nutzt.',
+    details: ['Framework & OS Updates', 'Package Upgrades', 'iOS & Android Kompatibilität', 'Bugfixing', 'Regression Tests', 'Release Management'],
   },
   {
     icon: '💬',
@@ -29,8 +29,8 @@ const services = [
   {
     icon: '🚀',
     title: 'Weiterentwicklung & neue Features',
-    description: 'Basierend auf KPI-Daten und Nutzerfeedback entwickeln wir deine App agil weiter. Unser Flutter-Expertenteam setzt Tickets aus dem gemeinsamen Task-Board um — priorisiert nach Business Impact.',
-    details: ['Flutter Feature-Entwicklung', 'UI/UX Iterationen', 'Agiles Task-Board (ClickUp)', 'Ticketbewertung & Priorisierung', 'Tests & Release'],
+    description: 'Basierend auf KPI-Daten und Nutzerfeedback entwickeln wir deine App agil weiter. Unser Expertenteam setzt Tickets aus dem gemeinsamen Task-Board um — priorisiert nach Business Impact.',
+    details: ['App-Entwicklung & Features', 'UI/UX Iterationen', 'Agiles Task-Board (ClickUp)', 'Ticketbewertung & Priorisierung', 'Tests & Release'],
   },
   {
     icon: '🎯',
@@ -89,8 +89,47 @@ const tools = [
     </div>
   </section>
 
-  <!-- Tools -->
+  <!-- Tech Stack -->
   <section class="section-padding bg-gray-50">
+    <div class="section-container">
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <h2 class="section-title mb-4">Technologie-unabhängig</h2>
+        <p class="section-subtitle">Wir arbeiten mit allen gängigen App-Technologien — egal ob Cross-Platform oder nativ. Du musst nichts umstellen, wir kommen zu dir.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+        <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
+          <div class="text-2xl mb-3">📱</div>
+          <h3 class="font-display font-bold text-gray-900 mb-3">Cross-Platform</h3>
+          <div class="flex flex-wrap gap-2">
+            {['Flutter', 'React Native', 'Capacitor', 'Ionic', 'Xamarin'].map((t) => (
+              <span class="badge-brand text-xs">{t}</span>
+            ))}
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
+          <div class="text-2xl mb-3">🍎</div>
+          <h3 class="font-display font-bold text-gray-900 mb-3">Nativ iOS</h3>
+          <div class="flex flex-wrap gap-2">
+            {['Swift', 'SwiftUI', 'Objective-C'].map((t) => (
+              <span class="badge-brand text-xs">{t}</span>
+            ))}
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
+          <div class="text-2xl mb-3">🤖</div>
+          <h3 class="font-display font-bold text-gray-900 mb-3">Nativ Android</h3>
+          <div class="flex flex-wrap gap-2">
+            {['Kotlin', 'Jetpack Compose', 'Java'].map((t) => (
+              <span class="badge-brand text-xs">{t}</span>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tools -->
+  <section class="section-padding bg-white">
     <div class="section-container">
       <div class="text-center max-w-2xl mx-auto mb-10">
         <h2 class="section-title mb-4">Unsere Tools</h2>
@@ -118,7 +157,7 @@ const tools = [
           { step: '01', title: 'Onboarding & Setup', desc: 'Wir richten alle Monitoring-Tools ein, verbinden Firebase, Crashlytics und App Store Accounts und erstellen das ClickUp-Taskboard.' },
           { step: '02', title: 'Erste Analyse', desc: 'Im ersten Report erfassen wir den IST-Zustand deiner App: KPIs, Stabilität, Nutzerfeedback und technische Basis.' },
           { step: '03', title: 'Monatlicher Rhythmus', desc: 'Jeden Monat erhältst du deinen Management Summary mit allen KPIs, Auffälligkeiten und konkreten Handlungsempfehlungen.' },
-          { step: '04', title: 'Umsetzung (Growth)', desc: 'Im Growth-Paket setzen wir Maßnahmen direkt um: Flutter-Entwicklung, Bugfixes, Feature-Iterationen — alles transparent im ClickUp-Board.' },
+          { step: '04', title: 'Umsetzung (Growth)', desc: 'Im Growth-Paket setzen wir Maßnahmen direkt um: App-Entwicklung, Bugfixes, Feature-Iterationen — alles transparent im ClickUp-Board.' },
         ].map((item) => (
           <div class="flex gap-6 mb-8">
             <div class="font-display font-bold text-3xl text-brand-200 w-12 flex-shrink-0">{item.step}</div>
