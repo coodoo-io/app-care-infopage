@@ -30,7 +30,7 @@ const services = [
     icon: '🚀',
     title: 'Weiterentwicklung & neue Features',
     description: 'Basierend auf KPI-Daten und Nutzerfeedback entwickeln wir deine App agil weiter. Unser Expertenteam setzt Tickets aus dem gemeinsamen Task-Board um — priorisiert nach Business Impact.',
-    details: ['App-Entwicklung & Features', 'UI/UX Iterationen', 'Agiles Task-Board (ClickUp)', 'Ticketbewertung & Priorisierung', 'Tests & Release'],
+    details: ['App-Entwicklung & Features', 'UI/UX Iterationen', 'Agiles Task-Board', 'Ticketbewertung & Priorisierung', 'Tests & Release'],
   },
   {
     icon: '🎯',
@@ -46,7 +46,7 @@ const tools = [
   { name: 'App Store Connect', description: 'iOS Store Management' },
   { name: 'Google Play Console', description: 'Android Store Management' },
   { name: 'RevenueCat', description: 'Subscription Analytics' },
-  { name: 'ClickUp', description: 'Task & Project Management' },
+  { name: 'Task-Board', description: 'Task & Project Management' },
 ];
 ---
 
@@ -164,10 +164,10 @@ const tools = [
       </div>
       <div class="max-w-3xl mx-auto">
         {[
-          { step: '01', title: 'Onboarding & Setup', desc: 'Wir richten alle Monitoring-Tools ein, verbinden Firebase, Crashlytics und App Store Accounts und erstellen das ClickUp-Taskboard.' },
+          { step: '01', title: 'Onboarding & Setup', desc: 'Wir richten alle Monitoring-Tools ein, verbinden Firebase, Crashlytics und App Store Accounts und erstellen das gemeinsame Task-Board.' },
           { step: '02', title: 'Erste Analyse', desc: 'Im ersten Report erfassen wir den IST-Zustand deiner App: KPIs, Stabilität, Nutzerfeedback und technische Basis.' },
           { step: '03', title: 'Monatlicher Rhythmus', desc: 'Jeden Monat erhältst du deinen Management Summary mit allen KPIs, Auffälligkeiten und konkreten Handlungsempfehlungen.' },
-          { step: '04', title: 'Umsetzung (Growth)', desc: 'Im Growth-Paket setzen wir Maßnahmen direkt um: App-Entwicklung, Bugfixes, Feature-Iterationen — alles transparent im ClickUp-Board.' },
+          { step: '04', title: 'Umsetzung (Growth)', desc: 'Im Growth-Paket setzen wir Maßnahmen direkt um: App-Entwicklung, Bugfixes, Feature-Iterationen — alles transparent im Task-Board.' },
         ].map((item) => (
           <div class="flex gap-6 mb-8">
             <div class="font-display font-bold text-3xl text-brand-200 w-12 flex-shrink-0">{item.step}</div>

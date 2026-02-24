@@ -1,68 +1,109 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 
+const base = import.meta.env.BASE_URL.replace(/\/?$/, '');
+
 const teamMembers = [
   {
+    file: 'Markus',
     name: 'Markus Kühle',
-    role: 'Gründer & CEO',
-    bio: '20+ Jahre Berufserfahrung. Geschäftsführer der coodoo GmbH und Initiator von App-Care.',
-    skills: ['Mobile Strategy', 'App-Care', 'Leadership'],
+    role: 'Gründer & CEO · Projektmanager',
+    quote: 'Eine gute App hört nach dem Launch erst an zu arbeiten.',
+    skills: ['Mobile Strategy', 'Projektmanagement', 'Leadership'],
   },
   {
-    name: 'Sebastian Schulz',
-    role: 'Lead Mobile Developer',
-    bio: 'Senior Mobile Entwickler mit Fokus auf performante und skalierbare App-Architekturen — cross-platform und nativ.',
-    skills: ['Flutter', 'React Native', 'Firebase'],
+    file: 'Eike',
+    name: 'Eike',
+    role: 'Projektmanager & QS-Experte',
+    quote: 'Qualität ist kein Zufall — sie ist das Ergebnis von Prozess.',
+    skills: ['Projektmanagement', 'QS', 'Testing'],
   },
   {
-    name: 'Anna Weber',
-    role: 'UX/UI Designerin',
-    bio: 'Spezialisiert auf Mobile App Design und User Experience. Über 50 App-Projekte erfolgreich umgesetzt.',
-    skills: ['UI/UX', 'Figma', 'Mobile Design'],
+    file: 'Arend',
+    name: 'Arend',
+    role: 'Senior Mobile Developer',
+    quote: 'Clean Code ist kein Luxus, sondern die Voraussetzung für Wachstum.',
+    skills: ['iOS', 'Android', 'Swift'],
   },
   {
-    name: 'Tim Hoffmann',
-    role: 'Mobile App Developer',
-    bio: 'Mobile Entwickler mit Schwerpunkt auf State Management und App-Performance.',
-    skills: ['Flutter', 'Swift', 'Testing'],
+    file: 'Erik',
+    name: 'Erik',
+    role: 'Senior Mobile Developer',
+    quote: 'Performance ist ein Feature — das wichtigste.',
+    skills: ['Flutter', 'Firebase', 'Performance'],
   },
   {
-    name: 'Lisa Bauer',
-    role: 'Projektmanagerin',
-    bio: 'Agile Projektmanagerin die komplexe App-Projekte strukturiert und Kundenkommunikation auf Augenhöhe führt.',
-    skills: ['Agile', 'ClickUp', 'Scrum'],
+    file: 'Flo',
+    name: 'Flo',
+    role: 'Senior Mobile Developer',
+    quote: 'Gute Apps entstehen durch Iteration, nicht durch Perfektion.',
+    skills: ['React Native', 'UX', 'Cross-Platform'],
   },
   {
-    name: 'Jonas Fischer',
-    role: 'Mobile App Developer',
-    bio: 'Full-Stack App-Entwickler mit Erfahrung in Cross-Platform-Technologien und Backend-Integration.',
+    file: 'Jan',
+    name: 'Jan',
+    role: 'Senior Mobile Architekt',
+    quote: 'Der beste Code ist der, den Nutzer nie bemerken.',
+    skills: ['Flutter', 'Kotlin', 'Architecture'],
+  },
+  {
+    file: 'Klemens',
+    name: 'Klemens',
+    role: 'Senior Mobile Developer',
+    quote: 'Ich baue keine Apps — ich löse Probleme mit Code.',
+    skills: ['Swift', 'iOS', 'App Architecture'],
+  },
+  {
+    file: 'Marcel',
+    name: 'Marcel',
+    role: 'Senior Mobile Developer',
+    quote: 'Cross-Platform bedeutet nicht Kompromiss — sondern Effizienz.',
     skills: ['Flutter', 'React Native', 'APIs'],
   },
   {
-    name: 'Marie Braun',
-    role: 'KPI-Analystin',
-    bio: 'Datenanalystin die App-KPIs interpretiert und daraus strategische Handlungsempfehlungen ableitet.',
-    skills: ['Firebase', 'Analytics', 'RevenueCat'],
+    file: 'Nico',
+    name: 'Nico',
+    role: 'Senior Mobile Developer',
+    quote: 'Von der Idee bis zum Release — ich kenne jeden Schritt.',
+    skills: ['Android', 'Kotlin', 'CI/CD'],
   },
   {
-    name: 'David Krause',
-    role: 'Mobile App Developer',
-    bio: 'Spezialist für komplexe UI-Implementierungen und Animationen auf iOS und Android.',
-    skills: ['Swift', 'Kotlin', 'iOS/Android'],
+    file: 'Richard',
+    name: 'Richard',
+    role: 'Senior Mobile Developer',
+    quote: 'Stabilität ist die Grundlage für alles andere.',
+    skills: ['iOS', 'Crashlytics', 'Testing'],
   },
   {
-    name: 'Sarah Müller',
-    role: 'App Store Managerin',
-    bio: 'Expertin für App Store Optimierung, Review-Management und Store-Listing Verbesserungen.',
-    skills: ['ASO', 'App Store Connect', 'Play Console'],
+    file: 'Thanh',
+    name: 'Thanh',
+    role: 'Senior Mobile Developer',
+    quote: 'Nutzerfeedback ist das wertvollste KPI, das es gibt.',
+    skills: ['Flutter', 'Analytics', 'Firebase'],
   },
 ];
 
 const values = [
-  { icon: '🎯', title: 'KPI-getrieben', desc: 'Wir entscheiden auf Basis von Daten — nicht auf Basis von Bauchgefühl.' },
-  { icon: '🤝', title: 'Partnerschaftlich', desc: 'Wir sind dein verlässlicher Partner, kein anonymer Dienstleister.' },
-  { icon: '🛠️', title: 'Tech-Agnostisch', desc: 'Cross-Platform oder nativ — wir arbeiten mit dem Tech-Stack deiner App, nicht unserer Präferenz.' },
-  { icon: '💬', title: 'Transparent', desc: 'Alle Tasks, alle Fortschritte, alle Entscheidungen — immer für dich sichtbar.' },
+  {
+    title: 'KPI-getrieben',
+    desc: 'Wir entscheiden auf Basis von Daten — nicht auf Basis von Bauchgefühl.',
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z" /></svg>`,
+  },
+  {
+    title: 'Partnerschaftlich',
+    desc: 'Wir sind dein verlässlicher Partner, kein anonymer Dienstleister.',
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" /></svg>`,
+  },
+  {
+    title: 'Tech-Agnostisch',
+    desc: 'Cross-Platform oder nativ — wir arbeiten mit dem Tech-Stack deiner App, nicht unserer Präferenz.',
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" /></svg>`,
+  },
+  {
+    title: 'Transparent',
+    desc: 'Alle Tasks, alle Fortschritte, alle Entscheidungen — immer für dich sichtbar.',
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7"><path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" /><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" /></svg>`,
+  },
 ];
 ---
 
@@ -86,12 +127,12 @@ const values = [
   <!-- Values -->
   <section class="py-12 bg-white border-b border-gray-100">
     <div class="section-container">
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
         {values.map((value) => (
           <div class="text-center">
-            <div class="text-3xl mb-3">{value.icon}</div>
-            <h3 class="font-display font-semibold text-gray-900 mb-1">{value.title}</h3>
-            <p class="text-gray-600 text-sm">{value.desc}</p>
+            <div class="w-14 h-14 rounded-2xl bg-brand-50 text-brand-600 flex items-center justify-center mx-auto mb-4" set:html={value.svg} />
+            <h3 class="font-display font-bold text-gray-900 text-base mb-2">{value.title}</h3>
+            <p class="text-gray-500 text-sm leading-relaxed">{value.desc}</p>
           </div>
         ))}
       </div>
@@ -108,28 +149,26 @@ const values = [
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {teamMembers.map((member) => (
-          <div class="card border border-gray-100 text-center">
-            <div class="w-16 h-16 bg-brand-100 rounded-full mx-auto mb-4 flex items-center justify-center text-2xl">
-              👤
+          <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-200">
+            <div class="aspect-[4/3] overflow-hidden bg-brand-100">
+              <img
+                src={`${base}/assets/team/${member.file}.avif`}
+                alt={member.name}
+                class="w-full h-full object-cover object-top"
+              />
             </div>
-            <h3 class="font-display font-bold text-gray-900 mb-1">{member.name}</h3>
-            <p class="text-brand-600 text-sm font-medium mb-3">{member.role}</p>
-            <p class="text-gray-600 text-sm leading-relaxed mb-4">{member.bio}</p>
-            <div class="flex flex-wrap justify-center gap-2">
-              {member.skills.map((skill) => (
-                <span class="badge-gray text-xs">{skill}</span>
-              ))}
+            <div class="p-5">
+              <h3 class="font-display font-bold text-gray-900 text-lg mb-0.5">{member.name}</h3>
+              <p class="text-brand-600 text-sm font-medium mb-3">{member.role}</p>
+              <p class="text-gray-500 text-sm italic leading-relaxed mb-4">„{member.quote}"</p>
+              <div class="flex flex-wrap gap-1.5">
+                {member.skills.map((skill) => (
+                  <span class="badge-gray text-xs">{skill}</span>
+                ))}
+              </div>
             </div>
           </div>
         ))}
-
-        <!-- Placeholder for remaining team member -->
-        <div class="card border border-dashed border-gray-200 text-center flex flex-col items-center justify-center py-8">
-          <div class="w-16 h-16 bg-gray-100 rounded-full mx-auto mb-4 flex items-center justify-center text-2xl text-gray-400">
-            +2
-          </div>
-          <p class="text-gray-500 text-sm">Und weitere Experten im Team</p>
-        </div>
       </div>
     </div>
   </section>
@@ -161,7 +200,15 @@ const values = [
     <div class="section-container text-center">
       <h2 class="section-title mb-4">Lerne uns persönlich kennen</h2>
       <p class="section-subtitle mb-8">Buche ein kostenloses 30-Minuten-Gespräch — kein Pitch, nur ehrliche Beratung.</p>
-      <a href={`${import.meta.env.BASE_URL.replace(/\/?$/, '')}/kontakt`} class="btn-primary">Gespräch buchen</a>
+      <div class="flex flex-col items-center gap-3 mb-8">
+        <img src={`${base}/assets/team/Markus.avif`} alt="Markus Kühle" class="w-20 h-20 rounded-full object-cover object-top shadow-md" />
+        <div>
+          <p class="font-display font-bold text-gray-900">Markus Kühle</p>
+          <p class="text-brand-600 text-sm font-medium">Gründer & CEO</p>
+          <p class="text-gray-500 text-sm mt-1">Das Gespräch führst du persönlich mit mir.</p>
+        </div>
+      </div>
+      <a href={`${base}/kontakt`} class="btn-primary">Gespräch buchen</a>
     </div>
   </section>
 </BaseLayout>

@@ -16,7 +16,7 @@ const features = [
   {
     category: 'Taskboard & Organisation',
     items: [
-      { feature: 'Eigenes ClickUp-Taskboard', insight: false, essentials: true, growth: true },
+      { feature: 'Eigenes Task-Board', insight: false, essentials: true, growth: true },
       { feature: 'Ticket-Bewertung & Aufwandsschätzung', insight: false, essentials: true, growth: true },
       { feature: 'Aktive Ticket-Priorisierung', insight: false, essentials: false, growth: true },
       { feature: 'Direkte Entwickler-Kommunikation', insight: false, essentials: false, growth: true },
@@ -108,7 +108,7 @@ const features = [
               <span class="font-display font-bold text-5xl text-white">€1.500</span>
               <span class="text-brand-200">/Monat (netto)</span>
             </div>
-            <p class="text-brand-300 text-sm mt-1">Mindestlaufzeit: 6 Monate · Verlängerung: 6 Monate</p>
+            <p class="text-brand-300 text-sm mt-1">Mindestlaufzeit: 3 Monate · Verlängerung: 1 Monat</p>
           </div>
           <p class="text-brand-100 mb-6">
             Perfekt für App-Betreiber die verstehen wollen wie ihre App performt und konkrete Handlungsempfehlungen erhalten möchten — ohne eigenes Entwicklerteam.
@@ -118,7 +118,7 @@ const features = [
           </a>
           <div class="border-t border-brand-500 pt-6">
             <p class="text-sm font-semibold text-brand-300 mb-3">Alles aus Insight, plus:</p>
-            {['Firebase, Crashlytics, App Store Analyse', 'RevenueCat Subscription-Monitoring', 'ClickUp-Taskboard mit Ticket-Bewertung', 'Handlungsempfehlungen der App-Experten'].map((item) => (
+            {['Firebase, Crashlytics, App Store Analyse', 'RevenueCat Subscription-Monitoring', 'Task-Board mit Ticket-Bewertung', 'Handlungsempfehlungen der App-Experten'].map((item) => (
               <div class="flex items-center gap-2 mb-2">
                 <svg class="w-4 h-4 text-accent-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
@@ -228,7 +228,7 @@ const features = [
       <h2 class="section-title text-center mb-10">Häufige Fragen</h2>
       <div class="space-y-6">
         {[
-          { q: 'Kann ich das Paket nach der Mindestlaufzeit kündigen?', a: 'Ja. Nach der Mindestlaufzeit ist das Paket monatlich kündbar. Insight und Growth haben eine Mindestlaufzeit von 3 Monaten, Essentials von 6 Monaten.' },
+          { q: 'Kann ich das Paket nach der Mindestlaufzeit kündigen?', a: 'Ja. Alle Pakete haben eine Mindestlaufzeit von 3 Monaten und sind danach monatlich kündbar.' },
           { q: 'Was passiert nach dem Onboarding?', a: 'Wir richten alle Tools ein, verbinden deine App-Accounts und erstellen den ersten Management Summary. Das dauert in der Regel 1-2 Wochen.' },
           { q: 'Welches Paket ist das richtige für mich?', a: 'Insight empfehlen wir als Einstieg um erste Einblicke zu bekommen. Essentials wenn du laufendes Monitoring mit Taskboard brauchst. Growth wenn du aktiv entwickeln und wachsen möchtest.' },
           { q: 'Sind die Preise verhandelbar?', a: 'Die Paketpreise sind fest. Bei besonderen Anforderungen können wir individuelle Angebote erstellen — sprich uns einfach an.' },

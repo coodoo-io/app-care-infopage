@@ -1,28 +1,30 @@
 ---
 const pillars = [
   {
-    icon: '📈',
     title: 'Messen & Analysieren',
-    description: 'Monatlicher Management Summary mit allen wichtigen KPIs aus Firebase, Crashlytics, App Store Connect und RevenueCat.',
+    description: 'Monatlicher Management Summary mit allen wichtigen KPIs — aus Firebase, Crashlytics, App Store Connect und deinen Monetarisierungstools.',
   },
   {
-    icon: '🔍',
     title: 'Überwachen & Reagieren',
     description: 'Kontinuierliches Monitoring deiner App-Stabilität, Crash-Analyse und schnelle Reaktion bei kritischen Problemen.',
   },
   {
-    icon: '🚀',
     title: 'Weiterentwickeln & Wachsen',
     description: 'Agile Weiterentwicklung basierend auf Nutzerfeedback und KPI-Daten — mit einem erfahrenen Mobile App Expertenteam.',
   },
   {
-    icon: '🎯',
     title: 'Strategie & Handlungsempfehlungen',
-    description: 'Datenbasierte Empfehlungen von App-Experten: Was tun wir als nächstes, warum und welchen Impact hat es?',
+    description: 'Aus Daten werden Entscheidungen: Unsere Experten liefern konkrete nächste Schritte — mit Begründung und erwartetem Impact.',
   },
 ];
 
-const tools = ['Firebase', 'Crashlytics', 'App Store Connect', 'RevenueCat', 'ClickUp', 'Google Play Console'];
+const tools = [
+  'Firebase', 'Crashlytics', 'App Store Connect', 'Google Play Console',
+  'RevenueCat', 'Mixpanel', 'Amplitude', 'Sentry',
+  'Fastlane', 'Bitrise', 'GitHub Actions', 'TestFlight',
+  'Figma', 'Jira', 'Confluence', 'Slack',
+  'Flutter', 'React Native', 'Swift', 'Kotlin',
+];
 ---
 
 <section class="section-padding bg-white">
@@ -30,22 +32,19 @@ const tools = ['Firebase', 'Crashlytics', 'App Store Connect', 'RevenueCat', 'Cl
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
       <!-- Left: Content -->
       <div>
-        <span class="badge-brand mb-4 inline-block">Was ist App-Care?</span>
+        <span class="badge-brand mb-4 inline-block">Management Summary</span>
         <h2 class="section-title mb-6">
-          Dein externes App-Team — ohne Festanstellung
+          Jeden Monat weißt du genau, wo deine App steht.
         </h2>
         <p class="section-subtitle mb-8">
-          App-Care ist ein monatliches Betreuungspaket für bestehende Mobile Apps. Wir werden dein dauerhafter, verlässlicher Partner: Wir messen, analysieren, überwachen und entwickeln deine App KPI-getrieben weiter.
+          Der monatliche Management Summary ist das Herzstück von App-Care: alle wichtigen KPIs, Auffälligkeiten und konkrete nächste Schritte — verständlich aufbereitet, ohne dass du selbst in die Daten musst.
         </p>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
           {pillars.map((pillar) => (
-            <div class="flex gap-3">
-              <span class="text-2xl flex-shrink-0">{pillar.icon}</span>
-              <div>
-                <h3 class="font-semibold text-gray-900 text-sm mb-1">{pillar.title}</h3>
-                <p class="text-gray-600 text-sm leading-relaxed">{pillar.description}</p>
-              </div>
+            <div class="border-l-2 border-brand-500 pl-4">
+              <h3 class="font-semibold text-gray-900 text-sm mb-1">{pillar.title}</h3>
+              <p class="text-gray-600 text-sm leading-relaxed">{pillar.description}</p>
             </div>
           ))}
         </div>
@@ -59,58 +58,54 @@ const tools = ['Firebase', 'Crashlytics', 'App Store Connect', 'RevenueCat', 'Cl
           </div>
         </div>
 
-        <div class="mt-8 pt-8 border-t border-gray-100 grid grid-cols-1 sm:grid-cols-3 gap-5">
-          <div class="flex items-start gap-3">
-            <div class="w-9 h-9 rounded-xl bg-brand-50 flex items-center justify-center flex-shrink-0 text-lg">👥</div>
-            <div>
-              <p class="font-semibold text-gray-900 text-sm">2 feste Ansprechpartner</p>
-              <p class="text-gray-500 text-xs leading-relaxed">Dediziert für deine App — durchgehend</p>
-            </div>
-          </div>
-          <div class="flex items-start gap-3">
-            <div class="w-9 h-9 rounded-xl bg-brand-50 flex items-center justify-center flex-shrink-0 text-lg">📍</div>
-            <div>
-              <p class="font-semibold text-gray-900 text-sm">Lokal in Mainz</p>
-              <p class="text-gray-500 text-xs leading-relaxed">Kein Off- oder Nearshore</p>
-            </div>
-          </div>
-          <div class="flex items-start gap-3">
-            <div class="w-9 h-9 rounded-xl bg-brand-50 flex items-center justify-center flex-shrink-0 text-lg">🎓</div>
-            <div>
-              <p class="font-semibold text-gray-900 text-sm">Ausgebildete Informatiker</p>
-              <p class="text-gray-500 text-xs leading-relaxed">Mobile App Experten mit Studium</p>
-            </div>
-          </div>
-        </div>
       </div>
 
-      <!-- Right: Visual -->
-      <div class="relative">
-        <div class="bg-gradient-to-br from-brand-50 to-brand-100 rounded-3xl p-8">
-          <div class="bg-white rounded-2xl shadow-sm p-6 mb-4">
-            <div class="flex items-center justify-between mb-4">
-              <span class="font-display font-semibold text-gray-900">Management Summary</span>
-              <span class="badge-accent text-xs">Januar 2026</span>
-            </div>
-            <div class="grid grid-cols-2 gap-3">
-              {[
-                { label: 'Aktive Nutzer', value: '+12%', positive: true },
-                { label: 'Crash-freie Sessions', value: '99,2%', positive: true },
-                { label: 'App Store Rating', value: '4,8 ⭐', positive: true },
-                { label: 'Neue Subscriptions', value: '+28', positive: true },
-              ].map((kpi) => (
-                <div class="bg-gray-50 rounded-xl p-3">
-                  <p class="text-xs text-gray-500 mb-1">{kpi.label}</p>
-                  <p class="font-display font-bold text-brand-600">{kpi.value}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-          <div class="text-center text-sm text-brand-600 font-medium">
-            📋 So sieht dein monatlicher Report aus
-          </div>
+      <!-- Right: Two slides stacked vertically -->
+      <div class="flex flex-col gap-4">
+        <div class="rounded-2xl overflow-hidden shadow-xl border border-gray-100 -rotate-1">
+          <img
+            src={`${import.meta.env.BASE_URL.replace(/\/?$/, '')}/assets/mgmt-summary/meteosol-Management-Summary.jpg`}
+            alt="Management Summary — Deckblatt meteosol"
+            class="w-full"
+          />
         </div>
+        <div class="rounded-2xl overflow-hidden shadow-lg border border-gray-100 rotate-1">
+          <img
+            src={`${import.meta.env.BASE_URL.replace(/\/?$/, '')}/assets/mgmt-summary/meteosol-Management-Summary-nutzerdaten.png`}
+            alt="Management Summary — Nutzerbasis & Engagement"
+            class="w-full"
+          />
+        </div>
+        <p class="text-center text-xs text-gray-400">Echtes Beispiel: Management Summary der meteosol App</p>
       </div>
     </div>
   </div>
 </section>
+
+<div class="bg-gradient-to-r from-brand-900 via-brand-800 to-brand-700 py-12">
+  <div class="section-container">
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
+      <div class="flex flex-col items-center gap-4">
+        <div class="w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center text-3xl">👥</div>
+        <div>
+          <p class="font-display font-bold text-white text-lg">Dein festes 2er-Team</p>
+          <p class="text-brand-200 text-sm mt-1">Beide kennen deine App bis ins Detail.</p>
+        </div>
+      </div>
+      <div class="flex flex-col items-center gap-4">
+        <div class="w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center text-3xl">📍</div>
+        <div>
+          <p class="font-display font-bold text-white text-lg">Lokal in Mainz</p>
+          <p class="text-brand-200 text-sm mt-1">Kein Off- oder Nearshore</p>
+        </div>
+      </div>
+      <div class="flex flex-col items-center gap-4">
+        <div class="w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center text-3xl">🏆</div>
+        <div>
+          <p class="font-display font-bold text-white text-lg">Senior-Entwickler</p>
+          <p class="text-brand-200 text-sm mt-1">Jahre Erfahrung. Hunderte Apps. Ein Team.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

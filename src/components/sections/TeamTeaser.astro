@@ -1,4 +1,30 @@
 ---
+const skills = [
+  'iOS & Android Entwicklung',
+  'Cross-Platform',
+  'UX/UI Design',
+  'KPI Analyse',
+  'App Store Optimierung',
+  'Performance Optimierung',
+  'Push Notifications',
+  'Crash Monitoring',
+  'In-App Analytics',
+  'Subscription Management',
+  'A/B Testing',
+  'User Retention',
+  'CI/CD & Releases',
+  'App Monetarisierung',
+  'Rating & Reviews',
+];
+
+const styles = [
+  'bg-brand-700/60 text-brand-200 border border-brand-600/40',
+  'bg-white/10 text-white border border-white/10',
+  'bg-accent-500/20 text-accent-300 border border-accent-500/20',
+];
+
+const teamMembers = ['Arend', 'Eike', 'Erik', 'Flo', 'Jan', 'Klemens', 'Marcel', 'Markus', 'Nico', 'Richard', 'Thanh'];
+const base = import.meta.env.BASE_URL.replace(/\/?$/, '');
 ---
 
 <section class="section-padding bg-brand-950 text-white">
@@ -8,18 +34,20 @@
         <span class="badge bg-brand-800 text-brand-300 mb-4 inline-block">Das Team hinter App-Care</span>
         <h2 class="font-display font-bold text-3xl md:text-4xl text-white mb-6">
           11 Experten. Ein Team.<br />
-          <span class="text-gradient">Deine App.</span>
+          <span class="text-gradient">Deine Mobile App.</span>
         </h2>
         <p class="text-brand-200 text-lg leading-relaxed mb-6">
-          App-Care wird von coodoo GmbH betrieben — einem erfahrenen Mobile App Studio aus Mainz. Jede App bekommt zwei feste Ansprechpartner: ausgebildete Informatiker und Mobile App Experten, die dauerhaft für deine App da sind.
+          App-Care wird von <a href="https://coodoo.de" target="_blank" rel="noopener noreferrer" class="text-white underline hover:text-brand-200 transition-colors">coodoo GmbH</a> betrieben — einem erfahrenen Mobile App Studio aus Mainz. Jede App bekommt zwei feste Ansprechpartner: ausgebildete Informatiker und Mobile App Experten, die dauerhaft für deine App da sind.
         </p>
         <div class="flex items-center gap-2 bg-brand-800/50 rounded-xl px-4 py-3 mb-8 text-sm text-brand-200">
           <span class="text-base">📍</span>
           <span>Lokal in Mainz — kein Off- oder Nearshore. Du bekommst die Qualität, die du von einem lokalen Partner erwartest.</span>
         </div>
-        <div class="flex flex-wrap gap-4 mb-8">
-          {['iOS & Android Entwicklung', 'Cross-Platform', 'UX/UI Design', 'KPI Analyse', 'App Store Optimierung'].map((skill) => (
-            <span class="badge bg-brand-800 text-brand-300">{skill}</span>
+        <div class="flex flex-wrap gap-2 mb-8">
+          {skills.map((skill, i) => (
+            <span class={`inline-flex items-center px-4 py-1.5 rounded-full text-sm font-medium ${styles[i % 3]}`}>
+              {skill}
+            </span>
           ))}
         </div>
         <a href={`${import.meta.env.BASE_URL.replace(/\/?$/, '')}/team`} class="inline-flex items-center gap-2 bg-white text-brand-700 font-semibold px-6 py-3 rounded-xl hover:bg-brand-50 transition-colors">
@@ -27,13 +55,25 @@
         </a>
       </div>
 
-      <div class="grid grid-cols-3 gap-3">
+      <div id="team-grid" class="grid grid-cols-3 gap-3">
         {Array.from({ length: 9 }).map((_, i) => (
-          <div class="aspect-square bg-brand-800 rounded-xl flex items-center justify-center text-brand-400 text-2xl">
-            👤
+          <div class="aspect-square rounded-xl overflow-hidden bg-brand-800">
+            <img
+              data-slot={i}
+              alt=""
+              class="w-full h-full object-cover object-top opacity-0 transition-opacity duration-300"
+            />
           </div>
         ))}
       </div>
     </div>
   </div>
 </section>
+
+<script define:vars={{ teamMembers, base }}>
+  const shuffled = [...teamMembers].sort(() => Math.random() - 0.5).slice(0, 9);
+  document.querySelectorAll('#team-grid img[data-slot]').forEach((img, i) => {
+    img.src = `${base}/assets/team/${shuffled[i]}.avif`;
+    img.onload = () => img.classList.replace('opacity-0', 'opacity-100');
+  });
+</script>

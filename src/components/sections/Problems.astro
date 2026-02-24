@@ -1,34 +1,35 @@
 ---
-const problems = [
+const items = [
   {
-    icon: '📬',
-    title: 'User-Feedback geht unter',
-    description: 'Wichtiges Nutzerfeedback aus App Stores und Feedback-Kanälen wird nicht systematisch erfasst und geht verloren. Du weißt nicht, was deine Nutzer wirklich wollen.',
+    icon: '💬',
+    title: 'Nutzerfeedback gezielt nutzen',
+    description: 'Jede Bewertung, jedes Feedback wird systematisch erfasst und in konkrete Verbesserungen übersetzt. Du weißt immer, was deine Nutzer wirklich wollen.',
   },
   {
     icon: '📊',
-    title: 'Keine Daten, keine Klarheit',
-    description: 'Deine App ist im Store und du weißt nicht, wie sie wirklich genutzt wird. Wie oft wird sie installiert? Wie lange bleiben Nutzer? Diese Fragen bleiben unbeantwortet.',
+    title: 'Volle Klarheit über deine App',
+    description: 'Du siehst jederzeit wie deine App wirklich genutzt wird: Installationen, Verweildauer, Abbruchraten — alle KPIs verständlich aufbereitet im monatlichen Management Summary.',
+    link: { href: '/management-summary', label: 'Was ist der Management Summary?' },
   },
   {
-    icon: '💸',
-    title: 'Zu hohe Entwicklungskosten',
-    description: 'Für überschaubare Features und regelmäßige Pflege ein eigenes Entwicklerteam einzustellen ist schlicht zu teuer. Die Kosten stehen in keinem Verhältnis zum Nutzen.',
+    icon: '💡',
+    title: 'Expertise ohne Fixkosten',
+    description: 'Kein eigenes Entwicklerteam, keine Festanstellung. Du bekommst genau die Expertise die du brauchst — flexibel und monatlich kündbar.',
   },
   {
-    icon: '🔧',
-    title: 'Kein Entwickler verfügbar',
-    description: 'Du besitzt kein technisches Know-how für die Weiterentwicklung und findest auf dem freien Markt kein ausfallsicheres Team mit allen notwendigen Skills.',
+    icon: '👥',
+    title: 'Dein Expertenteam — immer verfügbar',
+    description: '11 Mobile App Experten mit allen nötigen Skills, dauerhaft an deiner Seite — ohne aufwändige Suche oder Einarbeitung.',
   },
   {
-    icon: '🆘',
-    title: 'Kein 2nd Level Support',
-    description: 'Wenn kritische Bugs auftreten die deine gesamte Nutzerbasis betreffen, fehlt ein kompetenter Partner der schnell, unkompliziert und verständlich reagiert.',
+    icon: '🚨',
+    title: 'Sofortreaktion bei kritischen Problemen',
+    description: 'Bei kritischen Bugs reagieren wir sofort — bevor deine Nutzer sie bemerken oder deine Store-Bewertungen darunter leiden.',
   },
   {
-    icon: '⚠️',
-    title: 'Technische Instabilität',
-    description: 'Deine App ist "unter der Haube" instabil und du bekommst es im schlimmsten Fall nicht mit — bis die Abstürze zu schlechten Bewertungen führen.',
+    icon: '✅',
+    title: 'Stabile App, begeisterte Nutzer',
+    description: 'Kontinuierliches Monitoring sorgt für technische Stabilität — Probleme werden erkannt und behoben bevor sie zum Problem werden.',
   },
 ];
 ---
@@ -36,40 +37,40 @@ const problems = [
 <section class="section-padding bg-gray-50">
   <div class="section-container">
     <div class="text-center max-w-2xl mx-auto mb-12">
-      <span class="badge-brand mb-4 inline-block">Das kennen wir</span>
+      <span class="badge-brand mb-4 inline-block">Was wir möglich machen</span>
       <h2 class="section-title mb-4">
-        6 Probleme, die App-Betreiber täglich bremsen
+        So schöpft deine App ihr volles Potenzial aus
       </h2>
       <p class="section-subtitle">
-        Du hast eine App — aber ohne die richtigen Daten, das richtige Team und die richtigen Prozesse bleibt ihr Potenzial ungenutzt.
+        Mit den richtigen Daten, dem richtigen Team und den richtigen Prozessen wächst deine App — messbar und verlässlich.
       </p>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      {problems.map((problem) => (
+      {items.map((item) => (
         <div class="card group hover:border-brand-200 hover:border transition-all duration-200">
           <div class="flex items-center gap-3 mb-3">
             <div class="w-9 h-9 rounded-xl bg-brand-50 flex items-center justify-center flex-shrink-0 text-lg">
-              {problem.icon}
+              {item.icon}
             </div>
             <h3 class="font-display font-semibold text-lg text-gray-900">
-              {problem.title}
+              {item.title}
             </h3>
           </div>
           <p class="text-gray-600 text-sm leading-relaxed">
-            {problem.description}
+            {item.description}
           </p>
+          {item.link && (
+            <a
+              href={`${import.meta.env.BASE_URL.replace(/\/?$/, '')}${item.link.href}`}
+              class="inline-flex items-center gap-1 text-brand-600 text-xs font-semibold mt-3 hover:underline"
+            >
+              {item.link.label} →
+            </a>
+          )}
         </div>
       ))}
     </div>
 
-    <div class="text-center mt-10">
-      <p class="text-gray-500 text-sm">
-        Erkennst du dich wieder?
-        <a href={`${import.meta.env.BASE_URL.replace(/\/?$/, '')}/leistungen`} class="text-brand-600 font-semibold hover:underline ml-1">
-          So löst App-Care diese Probleme →
-        </a>
-      </p>
-    </div>
   </div>
 </section>
