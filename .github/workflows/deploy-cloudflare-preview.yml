@@ -18,9 +18,17 @@ jobs:
       - run: npm ci
       - run: npm run build
       - uses: cloudflare/pages-action@v1
+        id: deploy
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           projectName: app-care
           directory: dist
           branch: preview-main
+      - name: Summary
+        run: |
+          echo "### Preview deployed" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**URL:** ${{ steps.deploy.outputs.url }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Alias:** https://preview-main.app-care.pages.dev" >> $GITHUB_STEP_SUMMARY
