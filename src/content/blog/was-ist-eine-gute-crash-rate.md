@@ -23,9 +23,9 @@ Dieser Guide erklärt, was eine Crash Rate ist, welche Werte gut oder kritisch s
   </ul>
 </div>
 
-<div class="not-prose my-6 rounded-xl border border-gray-200 bg-gray-50 p-6">
-  <p class="text-sm font-semibold text-gray-700 mb-3">Inhaltsverzeichnis</p>
-  <ol class="list-decimal list-inside space-y-1.5 text-sm text-gray-700 m-0 p-0">
+<div class="not-prose my-6 rounded-xl border border-stone-200 bg-stone-50 p-6">
+  <p class="text-sm font-semibold text-stone-700 mb-3">Inhaltsverzeichnis</p>
+  <ol class="list-decimal list-inside space-y-1.5 text-sm text-stone-700 m-0 p-0">
     <li><a href="#was-ist-eine-crash-rate" class="text-brand-600 hover:underline">Was ist eine Crash Rate?</a></li>
     <li><a href="#benchmark-werte-was-ist-eine-gute-crash-rate" class="text-brand-600 hover:underline">Benchmark-Werte im Überblick</a></li>
     <li><a href="#google-play-und-app-store-was-passiert-bei-schlechten-werten" class="text-brand-600 hover:underline">Google Play und App Store Auswirkungen</a></li>
@@ -158,10 +158,10 @@ Firebase Crashlytics ist das Standard-Tool für Mobile App Crash-Monitoring — 
 4. Wichtig: Den Filter auf **"Crashes"** lassen — nicht ANRs, das ist eine separate Metrik
 5. Den **Platform-Switcher** nutzen: iOS und Android separat auswerten
 
-<div class="not-prose my-8 rounded-xl border-2 border-dashed border-gray-200 bg-gray-50 p-8 text-center">
-  <p class="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-2">Abbildung</p>
-  <p class="text-gray-600 text-sm font-medium">Firebase Crashlytics Dashboard</p>
-  <p class="text-gray-500 text-sm mt-1">Crash Rate Verlauf mit Zeitraum-Filter, Platform-Switcher (iOS/Android) und sortierter Top-Crashes-Liste nach betroffenen Sessions</p>
+<div class="not-prose my-8 rounded-xl border-2 border-dashed border-stone-200 bg-stone-50 p-8 text-center">
+  <p class="text-xs font-semibold text-stone-400 uppercase tracking-wide mb-2">Abbildung</p>
+  <p class="text-stone-600 text-sm font-medium">Firebase Crashlytics Dashboard</p>
+  <p class="text-stone-500 text-sm mt-1">Crash Rate Verlauf mit Zeitraum-Filter, Platform-Switcher (iOS/Android) und sortierter Top-Crashes-Liste nach betroffenen Sessions</p>
 </div>
 
 Die **Top Crashes-Liste** ist das Herzstück: Sie zeigt alle Crash-Typen sortiert nach Häufigkeit (betroffene Sessions in Prozent), Trend und betroffenen Geräten. Das ist der Ausgangspunkt für jede Analyse.

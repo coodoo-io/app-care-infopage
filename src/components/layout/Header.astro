@@ -12,7 +12,7 @@ const navLinks = [
 const currentPath = Astro.url.pathname;
 ---
 
-<header class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
+<header class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-stone-100">
   <div class="section-container">
     <nav class="flex items-center justify-between h-16">
       <!-- Logo -->
@@ -22,7 +22,7 @@ const currentPath = Astro.url.pathname;
           alt=""
           class="h-9 w-9"
         />
-        <span class="font-display font-extrabold text-xl text-brand-950 tracking-tight">App-Care</span>
+        <span class="font-display font-extrabold text-xl text-stone-900 tracking-tight">App-Care</span>
       </a>
 
       <!-- Desktop Navigation -->
@@ -30,10 +30,10 @@ const currentPath = Astro.url.pathname;
         {navLinks.map(link => (
           <a
             href={link.href}
-            class={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
+            class={`px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-150 ${
               currentPath.startsWith(link.href)
                 ? 'text-brand-600 bg-brand-50'
-                : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'
+                : 'text-stone-600 hover:text-stone-900 hover:bg-stone-50'
             }`}
           >
             {link.label}
@@ -53,7 +53,7 @@ const currentPath = Astro.url.pathname;
         <!-- Mobile menu button -->
         <button
           id="mobile-menu-toggle"
-          class="md:hidden p-2 rounded-lg text-gray-600 hover:text-gray-900 hover:bg-gray-50"
+          class="md:hidden p-2 rounded-lg text-stone-600 hover:text-stone-900 hover:bg-stone-50 transition-colors"
           aria-label="Menü öffnen"
           aria-expanded="false"
         >
@@ -65,14 +65,14 @@ const currentPath = Astro.url.pathname;
     </nav>
 
     <!-- Mobile Navigation -->
-    <div id="mobile-menu" class="hidden md:hidden border-t border-gray-100 py-3">
+    <div id="mobile-menu" class="hidden md:hidden border-t border-stone-100 py-3">
       {navLinks.map(link => (
         <a
           href={link.href}
           class={`block px-4 py-3 text-sm font-medium rounded-lg transition-colors ${
             currentPath.startsWith(link.href)
               ? 'text-brand-600 bg-brand-50'
-              : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'
+              : 'text-stone-600 hover:text-stone-900 hover:bg-stone-50'
           }`}
         >
           {link.label}

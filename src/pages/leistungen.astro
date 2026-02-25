@@ -55,14 +55,14 @@ const tools = [
   description="Was macht App-Care konkret? KPI-Analyse, Monitoring, Wartung, Weiterentwicklung und Strategie für deine Mobile App — alles aus einer Hand."
 >
   <!-- Hero -->
-  <section class="gradient-hero text-white py-20">
+  <section class="bg-stone-50 border-b border-stone-100 py-20">
     <div class="section-container">
       <div class="max-w-3xl">
-        <span class="badge bg-white/10 text-brand-200 mb-4 inline-block">Was wir tun</span>
-        <h1 class="font-display font-bold text-4xl md:text-5xl text-white mb-6">
+        <span class="badge-gray mb-4 inline-block">Was wir tun</span>
+        <h1 class="font-display font-bold text-4xl md:text-5xl text-stone-900 mb-6">
           Deine App in den besten Händen
         </h1>
-        <p class="text-brand-200 text-xl leading-relaxed">
+        <p class="text-stone-500 text-xl leading-relaxed">
           App-Care übernimmt alles, was für eine erfolgreiche Mobile App notwendig ist — von der Datenanalyse über das Monitoring bis zur aktiven Weiterentwicklung.
         </p>
       </div>
@@ -74,14 +74,14 @@ const tools = [
     <div class="section-container">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         {services.map((service) => (
-          <div class="card border border-gray-100 hover:border-brand-200 transition-colors">
+          <div class="card border border-stone-100 hover:border-stone-200 transition-colors">
             <div class="flex items-center gap-3 mb-3">
-              <div class="w-9 h-9 rounded-xl bg-brand-50 flex items-center justify-center flex-shrink-0 text-lg">
+              <div class="w-9 h-9 rounded-lg bg-stone-50 flex items-center justify-center flex-shrink-0 text-lg">
                 {service.icon}
               </div>
-              <h2 class="font-display font-bold text-xl text-gray-900">{service.title}</h2>
+              <h2 class="font-display font-bold text-xl text-stone-900">{service.title}</h2>
             </div>
-            <p class="text-gray-600 leading-relaxed mb-4">{service.description}</p>
+            <p class="text-stone-600 leading-relaxed mb-4">{service.description}</p>
             <div class="flex flex-wrap gap-2">
               {service.details.map((detail) => (
                 <span class="badge-gray text-xs">{detail}</span>
@@ -94,17 +94,17 @@ const tools = [
   </section>
 
   <!-- Tech Stack -->
-  <section class="section-padding bg-gray-50">
+  <section class="section-padding bg-stone-50">
     <div class="section-container">
       <div class="text-center max-w-2xl mx-auto mb-10">
         <h2 class="section-title mb-4">Technologie-unabhängig</h2>
         <p class="section-subtitle">Wir arbeiten mit allen gängigen App-Technologien — egal ob Cross-Platform oder nativ. Du musst nichts umstellen, wir kommen zu dir.</p>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-        <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
+        <div class="bg-white rounded-xl p-6 border border-stone-100 shadow-sm">
           <div class="flex items-center gap-3 mb-3">
-            <div class="w-9 h-9 rounded-xl bg-brand-50 flex items-center justify-center flex-shrink-0 text-lg">📱</div>
-            <h3 class="font-display font-bold text-gray-900">Cross-Platform</h3>
+            <div class="w-9 h-9 rounded-lg bg-stone-50 flex items-center justify-center flex-shrink-0 text-lg">📱</div>
+            <h3 class="font-display font-bold text-stone-900">Cross-Platform</h3>
           </div>
           <div class="flex flex-wrap gap-2">
             {['Flutter', 'React Native', 'Capacitor', 'Ionic', 'Xamarin'].map((t) => (
@@ -112,10 +112,10 @@ const tools = [
             ))}
           </div>
         </div>
-        <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
+        <div class="bg-white rounded-xl p-6 border border-stone-100 shadow-sm">
           <div class="flex items-center gap-3 mb-3">
-            <div class="w-9 h-9 rounded-xl bg-brand-50 flex items-center justify-center flex-shrink-0 text-lg">🍎</div>
-            <h3 class="font-display font-bold text-gray-900">Nativ iOS</h3>
+            <div class="w-9 h-9 rounded-lg bg-stone-50 flex items-center justify-center flex-shrink-0 text-lg">🍎</div>
+            <h3 class="font-display font-bold text-stone-900">Nativ iOS</h3>
           </div>
           <div class="flex flex-wrap gap-2">
             {['Swift', 'SwiftUI', 'Objective-C'].map((t) => (
@@ -123,10 +123,10 @@ const tools = [
             ))}
           </div>
         </div>
-        <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
+        <div class="bg-white rounded-xl p-6 border border-stone-100 shadow-sm">
           <div class="flex items-center gap-3 mb-3">
-            <div class="w-9 h-9 rounded-xl bg-brand-50 flex items-center justify-center flex-shrink-0 text-lg">🤖</div>
-            <h3 class="font-display font-bold text-gray-900">Nativ Android</h3>
+            <div class="w-9 h-9 rounded-lg bg-stone-50 flex items-center justify-center flex-shrink-0 text-lg">🤖</div>
+            <h3 class="font-display font-bold text-stone-900">Nativ Android</h3>
           </div>
           <div class="flex flex-wrap gap-2">
             {['Kotlin', 'Jetpack Compose', 'Java'].map((t) => (
@@ -147,9 +147,9 @@ const tools = [
       </div>
       <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 max-w-4xl mx-auto">
         {tools.map((tool) => (
-          <div class="bg-white rounded-xl p-4 text-center border border-gray-100 shadow-sm">
-            <p class="font-semibold text-gray-900 text-sm">{tool.name}</p>
-            <p class="text-gray-400 text-xs mt-1">{tool.description}</p>
+          <div class="bg-white rounded-lg p-4 text-center border border-stone-100 shadow-sm">
+            <p class="font-semibold text-stone-900 text-sm">{tool.name}</p>
+            <p class="text-stone-400 text-xs mt-1">{tool.description}</p>
           </div>
         ))}
       </div>
@@ -157,7 +157,7 @@ const tools = [
   </section>
 
   <!-- Stack Expertise -->
-  <section class="section-padding bg-gray-50">
+  <section class="section-padding bg-stone-50">
     <div class="section-container">
       <div class="text-center max-w-2xl mx-auto mb-10">
         <h2 class="section-title mb-4">Wir kennen euren Stack</h2>
@@ -187,10 +187,10 @@ const tools = [
           },
         ].map((group) => (
           <div class="flex flex-col sm:flex-row gap-3 sm:items-start">
-            <span class="text-xs font-semibold text-gray-400 uppercase tracking-wide sm:w-52 sm:flex-shrink-0 sm:pt-1">{group.label}</span>
+            <span class="text-xs font-semibold text-stone-400 uppercase tracking-wide sm:w-52 sm:flex-shrink-0 sm:pt-1">{group.label}</span>
             <div class="flex flex-wrap gap-2">
               {group.tools.map((tool) => (
-                <span class="bg-white border border-gray-200 text-gray-700 text-sm font-medium px-3 py-1 rounded-lg shadow-sm">{tool}</span>
+                <span class="bg-white border border-stone-200 text-stone-700 text-sm font-medium px-3 py-1 rounded-lg shadow-sm">{tool}</span>
               ))}
             </div>
           </div>
@@ -213,10 +213,10 @@ const tools = [
           { step: '04', title: 'Umsetzung (Growth)', desc: 'Im Growth-Paket setzen wir Maßnahmen direkt um: App-Entwicklung, Bugfixes, Feature-Iterationen — alles transparent im Task-Board.' },
         ].map((item) => (
           <div class="flex gap-6 mb-8">
-            <div class="font-display font-bold text-3xl text-brand-200 w-12 flex-shrink-0">{item.step}</div>
+            <div class="font-display font-bold text-3xl text-stone-500 w-12 flex-shrink-0">{item.step}</div>
             <div>
-              <h3 class="font-display font-bold text-lg text-gray-900 mb-1">{item.title}</h3>
-              <p class="text-gray-600">{item.desc}</p>
+              <h3 class="font-display font-bold text-lg text-stone-900 mb-1">{item.title}</h3>
+              <p class="text-stone-600">{item.desc}</p>
             </div>
           </div>
         ))}

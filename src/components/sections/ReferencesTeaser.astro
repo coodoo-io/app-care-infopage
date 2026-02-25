@@ -1,4 +1,6 @@
 ---
+const base = import.meta.env.BASE_URL.replace(/\/?$/, '');
+
 const references = [
   {
     app: 'WeatherPro App',
@@ -6,7 +8,7 @@ const references = [
     kpis: [
       { label: 'Aktive Nutzer', before: '8.200', after: '12.400', change: '+51%' },
       { label: 'Crash-freie Sessions', before: '94,1%', after: '99,2%', change: '+5,1pp' },
-      { label: 'App Store Rating', before: '3,8 ⭐', after: '4,7 ⭐', change: '+0,9' },
+      { label: 'App Store Rating', before: '3,8', after: '4,7', change: '+0,9' },
     ],
     testimonial: 'Endlich wissen wir, was in unserer App passiert. Der monatliche Report gibt uns Sicherheit und klare Handlungsempfehlungen.',
   },
@@ -23,10 +25,10 @@ const references = [
 ];
 ---
 
-<section class="section-padding bg-white">
+<section class="section-padding bg-stone-50">
   <div class="section-container">
     <div class="text-center max-w-2xl mx-auto mb-12">
-      <span class="badge-brand mb-4 inline-block">Echte Ergebnisse</span>
+      <span class="badge-gray mb-4 inline-block">Echte Ergebnisse</span>
       <h2 class="section-title mb-4">
         Apps die mit App-Care wachsen
       </h2>
@@ -37,10 +39,10 @@ const references = [
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
       {references.map((ref) => (
-        <div class="card border border-gray-100">
+        <div class="card">
           <div class="flex items-start justify-between mb-6">
             <div>
-              <h3 class="font-display font-bold text-gray-900">{ref.app}</h3>
+              <h3 class="font-display font-bold text-stone-900">{ref.app}</h3>
               <span class="badge-gray text-xs mt-1">{ref.category}</span>
             </div>
           </div>
@@ -48,17 +50,17 @@ const references = [
           <div class="space-y-3 mb-6">
             {ref.kpis.map((kpi) => (
               <div class="flex items-center justify-between text-sm">
-                <span class="text-gray-600">{kpi.label}</span>
+                <span class="text-stone-500">{kpi.label}</span>
                 <div class="flex items-center gap-3">
-                  <span class="text-gray-400 line-through">{kpi.before}</span>
-                  <span class="font-semibold text-gray-900">{kpi.after}</span>
+                  <span class="text-stone-400 line-through">{kpi.before}</span>
+                  <span class="font-semibold text-stone-900">{kpi.after}</span>
                   <span class="badge-accent text-xs">{kpi.change}</span>
                 </div>
               </div>
             ))}
           </div>
 
-          <blockquote class="border-l-2 border-brand-200 pl-4 text-sm text-gray-600 italic">
+          <blockquote class="border-l-2 border-stone-200 pl-4 text-sm text-stone-500 italic">
             "{ref.testimonial}"
           </blockquote>
         </div>
@@ -66,8 +68,11 @@ const references = [
     </div>
 
     <div class="text-center mt-8">
-      <a href={`${import.meta.env.BASE_URL.replace(/\/?$/, '')}/referenzen`} class="text-brand-600 font-semibold hover:underline text-sm">
-        Alle Referenzen ansehen →
+      <a href={`${base}/referenzen`} class="inline-flex items-center gap-1.5 text-brand-600 font-semibold text-sm hover:gap-2.5 transition-all duration-200">
+        Alle Referenzen ansehen
+        <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+        </svg>
       </a>
     </div>
   </div>

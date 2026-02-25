@@ -23,7 +23,7 @@ const links = {
 };
 ---
 
-<footer class="bg-gray-950 text-gray-300">
+<footer class="bg-stone-950 text-stone-300">
   <div class="section-container py-12">
     <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
       <!-- Brand -->
@@ -36,16 +36,16 @@ const links = {
           />
           <span class="font-display font-extrabold text-lg text-white tracking-tight">App-Care</span>
         </a>
-        <p class="text-sm text-gray-400 leading-relaxed mb-4">
+        <p class="text-sm text-stone-400 leading-relaxed mb-4">
           Monatliches Betreuungspaket für Mobile Apps — KPI-getrieben, messbar, verlässlich.
         </p>
-        <p class="text-xs text-gray-500">
+        <p class="text-xs text-stone-500">
           Ein Service der{' '}
           <a
             href="https://coodoo.de"
             target="_blank"
             rel="noopener noreferrer"
-            class="text-gray-400 hover:text-white transition-colors underline"
+            class="text-stone-400 hover:text-white transition-colors underline"
           >
             coodoo GmbH
           </a>
@@ -58,7 +58,7 @@ const links = {
         <ul class="space-y-2">
           {links.service.map(link => (
             <li>
-              <a href={link.href} class="text-sm text-gray-400 hover:text-white transition-colors">
+              <a href={link.href} class="text-sm text-stone-400 hover:text-white transition-colors">
                 {link.label}
               </a>
             </li>
@@ -72,7 +72,7 @@ const links = {
         <ul class="space-y-2">
           {links.company.map(link => (
             <li>
-              <a href={link.href} class="text-sm text-gray-400 hover:text-white transition-colors">
+              <a href={link.href} class="text-sm text-stone-400 hover:text-white transition-colors">
                 {link.label}
               </a>
             </li>
@@ -83,7 +83,7 @@ const links = {
       <!-- Contact -->
       <div>
         <h3 class="font-display font-semibold text-white mb-4">Kontakt</h3>
-        <address class="not-italic text-sm text-gray-400 space-y-1">
+        <address class="not-italic text-sm text-stone-400 space-y-1">
           <p>coodoo GmbH</p>
           <p>Mainz, Deutschland</p>
           <a
@@ -102,13 +102,13 @@ const links = {
       </div>
     </div>
 
-    <div class="border-t border-gray-800 mt-10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
-      <p class="text-xs text-gray-500">
+    <div class="border-t border-stone-800 mt-10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
+      <p class="text-xs text-stone-500">
         &copy; {currentYear} App-Care / coodoo GmbH. Alle Rechte vorbehalten. (v{version})
       </p>
       <div class="flex items-center gap-4">
         {links.legal.map(link => (
-          <a href={link.href} class="text-xs text-gray-500 hover:text-gray-400 transition-colors">
+          <a href={link.href} class="text-xs text-stone-500 hover:text-stone-400 transition-colors">
             {link.label}
           </a>
         ))}
