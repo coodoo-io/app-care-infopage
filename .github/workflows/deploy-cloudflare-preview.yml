@@ -4,11 +4,12 @@ on:
   push:
     branches:
       - main
+  pull_request:
 
 jobs:
   preview:
     runs-on: ubuntu-latest
-    if: "!startsWith(github.event.head_commit.message, 'Release v')"
+    if: "github.event_name == 'pull_request' || !startsWith(github.event.head_commit.message, 'Release v')"
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -24,7 +25,7 @@ jobs:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           projectName: app-care
           directory: dist
-          branch: preview-main
+          branch: ${{ github.event_name == 'pull_request' && format('pr-{0}', github.event.pull_request.number) || 'preview-main' }}
       - name: Summary
         run: |
           echo "### Preview deployed" >> $GITHUB_STEP_SUMMARY
