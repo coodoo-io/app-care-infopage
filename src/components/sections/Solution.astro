@@ -20,7 +20,7 @@ const pillars = [
 
 const tools = [
   'Firebase', 'Crashlytics', 'App Store Connect', 'Google Play Console',
-  'RevenueCat', 'Mixpanel', 'Amplitude', 'Sentry',
+  'Mixpanel', 'Amplitude', 'Sentry',
   'Fastlane', 'Bitrise', 'GitHub Actions', 'TestFlight',
   'Figma', 'Jira', 'Confluence', 'Slack',
   'Flutter', 'React Native', 'Swift', 'Kotlin',
@@ -56,6 +56,18 @@ const tools = [
               <span class="badge-gray text-xs">{tool}</span>
             ))}
           </div>
+        </div>
+
+        <div class="mt-8">
+          <button
+            id="mgmt-summary-btn"
+            class="btn-primary inline-flex items-center gap-2"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+            Beispiel Management Summary herunterladen
+          </button>
         </div>
 
       </div>
@@ -109,3 +121,41 @@ const tools = [
     </div>
   </div>
 </div>
+
+<!-- Dialog: PDF kommt bald -->
+<dialog
+  id="mgmt-summary-dialog"
+  class="rounded-2xl shadow-2xl p-8 max-w-sm w-full backdrop:bg-gray-900/50 backdrop:backdrop-blur-sm"
+>
+  <div class="flex flex-col items-center text-center gap-4">
+    <div class="w-12 h-12 rounded-full bg-brand-50 flex items-center justify-center">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-brand-600" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd" />
+      </svg>
+    </div>
+    <div>
+      <h3 class="font-display font-bold text-gray-900 text-lg mb-2">Kommt bald</h3>
+      <p class="text-gray-600 text-sm leading-relaxed">
+        Das Beispiel-PDF steht in Kürze zum Download bereit. Bis dahin kannst du uns einfach direkt ansprechen — wir schicken es dir gerne zu.
+      </p>
+    </div>
+    <button
+      id="mgmt-summary-dialog-close"
+      class="text-sm text-gray-400 hover:text-gray-600 transition-colors"
+    >
+      Schließen
+    </button>
+  </div>
+</dialog>
+
+<script>
+  const btn = document.getElementById('mgmt-summary-btn');
+  const dialog = document.getElementById('mgmt-summary-dialog') as HTMLDialogElement;
+  const closeBtn = document.getElementById('mgmt-summary-dialog-close');
+
+  btn?.addEventListener('click', () => dialog?.showModal());
+  closeBtn?.addEventListener('click', () => dialog?.close());
+  dialog?.addEventListener('click', (e) => {
+    if (e.target === dialog) dialog.close();
+  });
+</script>

@@ -9,8 +9,9 @@ const features = [
       { feature: 'Firebase Analytics Auswertung', insight: true, essentials: true, growth: true },
       { feature: 'Crashlytics Crash-Analyse', insight: true, essentials: true, growth: true },
       { feature: 'App Store Review Monitoring', insight: true, essentials: true, growth: true },
-      { feature: 'RevenueCat Subscription-Analyse', insight: false, essentials: true, growth: true },
+      { feature: 'Subscription & Payment Analyse', insight: true, essentials: true, growth: true },
       { feature: 'Handlungsempfehlungen der Experten', insight: true, essentials: true, growth: true },
+      { feature: 'Monatliches Review-Gespräch', insight: true, essentials: true, growth: true },
     ],
   },
   {
@@ -18,28 +19,49 @@ const features = [
     items: [
       { feature: 'Eigenes Task-Board', insight: false, essentials: true, growth: true },
       { feature: 'Ticket-Bewertung & Aufwandsschätzung', insight: false, essentials: true, growth: true },
+      { feature: 'Backlog-Pflege', insight: false, essentials: true, growth: true },
+      { feature: 'Roadmap-Planung', insight: false, essentials: true, growth: true },
       { feature: 'Aktive Ticket-Priorisierung', insight: false, essentials: false, growth: true },
-      { feature: 'Direkte Entwickler-Kommunikation', insight: false, essentials: false, growth: true },
     ],
   },
   {
     category: 'Entwicklung & Wartung',
     items: [
-      { feature: 'Framework & Package Updates', insight: false, essentials: false, growth: true },
-      { feature: 'Bugfixing', insight: false, essentials: false, growth: true },
-      { feature: 'Kritische Bug-Reaktion', insight: false, essentials: false, growth: true },
-      { feature: 'Feature-Weiterentwicklung', insight: false, essentials: false, growth: true },
-      { feature: 'Tests & Release Management', insight: false, essentials: false, growth: true },
+      { feature: 'Framework & Package Updates', insight: false, essentials: true, growth: true },
+      { feature: 'Bugfixing', insight: false, essentials: true, growth: true },
+      { feature: 'Kritische Bug-Reaktion', insight: false, essentials: true, growth: true },
+      { feature: 'Schrittweise Weiterentwicklung', insight: false, essentials: true, growth: true },
+      { feature: 'Feature-Weiterentwicklung', insight: false, essentials: true, growth: true },
+      { feature: 'Intensive Feature-Entwicklung', insight: false, essentials: true, growth: true },
+      { feature: 'Tests & Release Management', insight: false, essentials: true, growth: true },
       { feature: 'UI/UX Iterationen', insight: false, essentials: false, growth: true },
+    ],
+  },
+  {
+    category: 'Projektmanagement & Planung',
+    items: [
+      { feature: 'Aktives Projektmanagement', insight: false, essentials: false, growth: true },
+      { feature: 'Feature-Planung & Ausarbeitung', insight: false, essentials: false, growth: true },
+    ],
+  },
+  {
+    category: 'Kapazität & Skalierung',
+    items: [
+      { feature: 'Sprint-Phasen auf Abruf', insight: false, essentials: false, growth: true },
+      { feature: 'Flexible Kapazitätsskalierung', insight: false, essentials: false, growth: true },
+      { feature: 'App-Portierung (iOS ↔ Android)', insight: false, essentials: false, growth: true },
+      { feature: 'Framework-Migration & Modernisierung', insight: false, essentials: false, growth: true },
+      { feature: 'App-Neuentwicklung', insight: false, essentials: false, growth: true },
     ],
   },
   {
     category: 'Support & Beratung',
     items: [
       { feature: 'E-Mail Support', insight: true, essentials: true, growth: true },
-      { feature: '2nd Level Bug Support', insight: false, essentials: false, growth: true },
+      { feature: 'Weekly mit den Projektverantwortlichen', insight: false, essentials: true, growth: true },
+      { feature: '2nd Level Support', insight: false, essentials: true, growth: true },
       { feature: 'Strategie-Beratung', insight: false, essentials: false, growth: true },
-      { feature: 'Direktkommunikation (Slack/Teams)', insight: false, essentials: false, growth: true },
+      { feature: 'Direktkommunikation (Slack/Teams)', insight: false, essentials: true, growth: true },
     ],
   },
 ];
@@ -47,7 +69,7 @@ const features = [
 
 <BaseLayout
   title="Pakete & Preise | App-Care"
-  description="App-Care Insight ab €299/Monat, Essentials ab €1.500/Monat oder Growth ab €4.500/Monat. Transparente Preise, klare Leistungen, kein Risiko."
+  description="App-Care Insight ab €299/Monat, Essentials ab €3.500/Monat oder Growth ab €7.000/Monat. Transparente Preise, klare Leistungen, kein Risiko."
 >
   <!-- Hero -->
   <section class="gradient-hero text-white py-20">
@@ -57,7 +79,7 @@ const features = [
         Pakete & Preise
       </h1>
       <p class="text-brand-200 text-xl max-w-2xl mx-auto">
-        Drei klare Pakete. Kein verstecktes Kleingedrucktes. Kündbar nach Mindestlaufzeit.
+        Drei klare Pakete. Kein verstecktes Kleingedrucktes. Nach Mindestlaufzeit mit 4 Wochen Frist monatlich kündbar.
       </p>
     </div>
   </section>
@@ -75,7 +97,7 @@ const features = [
               <span class="font-display font-bold text-5xl text-gray-900">€299</span>
               <span class="text-gray-500">/Monat (netto)</span>
             </div>
-            <p class="text-gray-400 text-sm mt-1">Mindestlaufzeit: 3 Monate · Verlängerung: 1 Monat</p>
+            <p class="text-gray-400 text-sm mt-1">Mindestlaufzeit: 3 Monate · danach 4 Wochen Kündigungsfrist</p>
           </div>
           <p class="text-gray-600 mb-6">
             Für App-Betreiber die wissen wollen, wo ihre App steht — mit monatlichem Report und konkreten Handlungsempfehlungen.
@@ -85,7 +107,7 @@ const features = [
           </a>
           <div class="border-t pt-6">
             <p class="text-sm font-semibold text-gray-500 mb-3">Im Paket enthalten:</p>
-            {['Monatlicher Management Summary', 'KPI-Auswertung (Firebase, Crashlytics)', 'App Store Connect Analyse', 'Handlungsempfehlungen der Experten', 'E-Mail Support'].map((item) => (
+            {['Monatlicher Management Summary', 'KPI-Auswertung (Firebase, Crashlytics)', 'App Store Connect Analyse', 'Handlungsempfehlungen der Experten', 'Monatliches Review-Gespräch', 'E-Mail Support'].map((item) => (
               <div class="flex items-center gap-2 mb-2">
                 <svg class="w-4 h-4 text-accent-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
@@ -102,23 +124,23 @@ const features = [
             <span class="bg-accent-500 text-white text-xs font-semibold px-4 py-1 rounded-full">Empfohlen</span>
           </div>
           <div class="mb-6">
-            <p class="text-sm font-medium text-brand-200 mb-1">Klarheit & Überblick</p>
+            <p class="text-sm font-medium text-brand-200 mb-1">Aktive Weiterentwicklung</p>
             <h2 class="font-display font-bold text-2xl text-white">App-Care Essentials</h2>
             <div class="flex items-baseline gap-1 mt-4">
-              <span class="font-display font-bold text-5xl text-white">€1.500</span>
+              <span class="font-display font-bold text-5xl text-white">€3.500</span>
               <span class="text-brand-200">/Monat (netto)</span>
             </div>
-            <p class="text-brand-300 text-sm mt-1">Mindestlaufzeit: 3 Monate · Verlängerung: 1 Monat</p>
+            <p class="text-brand-300 text-sm mt-1">Mindestlaufzeit: 3 Monate · danach 4 Wochen Kündigungsfrist</p>
           </div>
           <p class="text-brand-100 mb-6">
-            Perfekt für App-Betreiber die verstehen wollen wie ihre App performt und konkrete Handlungsempfehlungen erhalten möchten — ohne eigenes Entwicklerteam.
+            Aktive Betreuung, laufendes Monitoring und stetige Verbesserungen — deine App bleibt stabil und entwickelt sich weiter.
           </p>
           <a href={`${import.meta.env.BASE_URL.replace(/\/?$/, '')}/kontakt?paket=essentials`} class="block w-full text-center bg-white text-brand-700 font-semibold py-3 px-6 rounded-xl hover:bg-brand-50 transition-colors mb-6">
             Essentials anfragen
           </a>
           <div class="border-t border-brand-500 pt-6">
             <p class="text-sm font-semibold text-brand-300 mb-3">Alles aus Insight, plus:</p>
-            {['Firebase, Crashlytics, App Store Analyse', 'RevenueCat Subscription-Monitoring', 'Task-Board mit Ticket-Bewertung', 'Handlungsempfehlungen der App-Experten'].map((item) => (
+            {['Firebase, Crashlytics, App Store Analyse', 'Subscription & Payment Monitoring', 'Framework & Package Updates', 'Bugfixing & kritische Bug-Reaktion', 'Schrittweise Weiterentwicklung', 'Task-Board mit Ticket-Bewertung', 'Direktkommunikation (Slack/Teams)'].map((item) => (
               <div class="flex items-center gap-2 mb-2">
                 <svg class="w-4 h-4 text-accent-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
@@ -132,23 +154,23 @@ const features = [
         <!-- Growth -->
         <div class="border-2 border-gray-200 rounded-2xl p-8">
           <div class="mb-6">
-            <p class="text-sm font-medium text-brand-600 mb-1">Aktives Wachstum</p>
+            <p class="text-sm font-medium text-brand-600 mb-1">Boost-Modus</p>
             <h2 class="font-display font-bold text-2xl text-gray-900">App-Care Growth</h2>
             <div class="flex items-baseline gap-1 mt-4">
-              <span class="font-display font-bold text-5xl text-gray-900">€4.500</span>
+              <span class="font-display font-bold text-5xl text-gray-900">€7.000</span>
               <span class="text-gray-500">/Monat (netto)</span>
             </div>
-            <p class="text-gray-400 text-sm mt-1">Mindestlaufzeit: 3 Monate · Verlängerung: 3 Monate</p>
+            <p class="text-gray-400 text-sm mt-1">Mindestlaufzeit: 3 Monate · danach 4 Wochen Kündigungsfrist</p>
           </div>
           <p class="text-gray-600 mb-6">
-            Für App-Betreiber die ihre App nicht nur beobachten — sondern aktiv weiterentwickeln, optimieren und systematisch wachsen lassen wollen.
+            Du willst in kurzer Zeit viele Features umsetzen, die App portieren oder einfach Vollgas geben? Growth ist dein Intensivpaket — maximaler Fokus, maximales Tempo, maximaler Output.
           </p>
           <a href={`${import.meta.env.BASE_URL.replace(/\/?$/, '')}/kontakt?paket=growth`} class="block w-full text-center bg-brand-600 text-white font-semibold py-3 px-6 rounded-xl hover:bg-brand-700 transition-colors mb-6">
             Growth anfragen
           </a>
           <div class="border-t pt-6">
             <p class="text-sm font-semibold text-gray-500 mb-3">Alles aus Essentials, plus:</p>
-            {['Ganzes Expertenteam aktiv dabei', 'App-Entwicklung & Bugfixing', 'Feature-Weiterentwicklung', 'Tests & Release Management', 'Kritische Bug-Sofortreaktion', 'Strategie & Priorisierungsberatung', 'Direktkommunikation (Slack/Teams)'].map((item) => (
+            {['Projektmanagement inklusive', 'Intensive Feature-Planung', 'Fachliche Feature-Ausarbeitung', 'Tests & Release Management', 'Aktive Ticket-Priorisierung', 'Sprint-Phasen auf Abruf', 'Flexible Kapazitätsskalierung', 'App-Portierung, Migration & Neuentwicklung', 'Strategie & Priorisierungsberatung'].map((item) => (
               <div class="flex items-center gap-2 mb-2">
                 <svg class="w-4 h-4 text-accent-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
@@ -228,10 +250,12 @@ const features = [
       <h2 class="section-title text-center mb-10">Häufige Fragen</h2>
       <div class="space-y-6">
         {[
-          { q: 'Kann ich das Paket nach der Mindestlaufzeit kündigen?', a: 'Ja. Alle Pakete haben eine Mindestlaufzeit von 3 Monaten und sind danach monatlich kündbar.' },
+          { q: 'Kann ich das Paket nach der Mindestlaufzeit kündigen?', a: 'Ja. Alle Pakete haben eine Mindestlaufzeit von 3 Monaten und sind danach mit einer Frist von 4 Wochen zum Monatsende kündbar.' },
           { q: 'Was passiert nach dem Onboarding?', a: 'Wir richten alle Tools ein, verbinden deine App-Accounts und erstellen den ersten Management Summary. Das dauert in der Regel 1-2 Wochen.' },
-          { q: 'Welches Paket ist das richtige für mich?', a: 'Insight empfehlen wir als Einstieg um erste Einblicke zu bekommen. Essentials wenn du laufendes Monitoring mit Taskboard brauchst. Growth wenn du aktiv entwickeln und wachsen möchtest.' },
+          { q: 'Welches Paket ist das richtige für mich?', a: 'Insight empfehlen wir als Einstieg für erste Einblicke. Essentials ist für die meisten Apps die richtige Wahl — deine App wächst stetig im Monatsrhythmus, mit aktivem Mitdenken des Teams. Growth ist der Boost-Modus: wenn du in kurzer Zeit viele Features umsetzen, die App portieren oder einfach alles geben willst.' },
           { q: 'Sind die Preise verhandelbar?', a: 'Die Paketpreise sind fest. Bei besonderen Anforderungen können wir individuelle Angebote erstellen — sprich uns einfach an.' },
+          { q: 'Arbeitet ihr auch auf Festpreisbasis?', a: 'Ja. Neben den monatlichen Paketen bieten wir Festpreisprojekte an. Gerade zu Essentials lässt sich jederzeit ein Festpreis-Boost hinzubuchen — zum Beispiel für ein größeres Feature, eine Portierung oder einen definierten Entwicklungssprint. So bleibt der laufende Rhythmus erhalten und du bekommst trotzdem Vollgas, wenn es gefragt ist.' },
+          { q: 'Kann auch eine komplett neue App zum Festpreis entwickelt werden?', a: 'Ja, auf jeden Fall. App-Neuentwicklungen setzen wir gerne auf Festpreisbasis um — mit klarem Scope, transparentem Angebot und dem gleichen Expertenteam. Sprich uns einfach an und wir schauen gemeinsam, was passt.' },
         ].map((faq) => (
           <div class="bg-white rounded-xl p-6 border border-gray-100">
             <h3 class="font-display font-semibold text-gray-900 mb-2">{faq.q}</h3>

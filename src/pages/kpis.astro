@@ -14,7 +14,7 @@ const kpiCategories = [
       { name: 'Average Session Length', description: 'Durchschnittliche Dauer einer Nutzungssitzung. Hohe Werte deuten auf gutes Engagement hin.', tool: 'Firebase Analytics' },
       { name: 'Average Session Depth', description: 'Wie viele Screens/Aktionen pro Session? Zeigt die Tiefe der Nutzung.', tool: 'Firebase Analytics' },
       { name: 'Average Retention Rate', description: 'Prozentsatz der Nutzer die nach einer bestimmten Zeit zurückkehren. Day-1, Day-7, Day-30 Retention sind Standard.', tool: 'Firebase Analytics' },
-      { name: 'Churn Rate', description: 'Gegenpart zur Retention: Welcher Anteil der Nutzer verlässt die App und kommt nicht zurück?', tool: 'Firebase / RevenueCat' },
+      { name: 'Churn Rate', description: 'Gegenpart zur Retention: Welcher Anteil der Nutzer verlässt die App und kommt nicht zurück?', tool: 'Firebase / Payment Tool' },
       { name: 'Uninstall Rate', description: 'Deinstallationsrate über Zeit. Ein Anstieg kann auf UX-Probleme oder schlechte Onboarding-Erlebnisse hindeuten.', tool: 'App Store Connect / Play Console' },
     ],
   },
@@ -38,11 +38,11 @@ const kpiCategories = [
     icon: '💰',
     description: 'Wie monetarisiert deine App? Diese KPIs geben Aufschluss über Umsatz, Subscriptions und die Wirtschaftlichkeit.',
     kpis: [
-      { name: 'Average Revenue Per User (ARPU)', description: 'Durchschnittlicher Umsatz pro aktivem Nutzer. ARPU = Gesamtumsatz / Aktive Nutzer.', tool: 'RevenueCat' },
-      { name: 'Customer Lifetime Value (LTV)', description: 'Gesamter Umsatz den ein Nutzer im Laufe seiner "App-Karriere" generiert. Entscheidend für User-Acquisition Budgets.', tool: 'RevenueCat / Berechnung' },
-      { name: 'Aktive Subscriptions', description: 'Anzahl aktiver (nicht abgelaufener) kostenpflichtiger Subscriptions am Ende eines Zeitraums.', tool: 'RevenueCat' },
-      { name: 'Neue Subscriptions', description: 'Im Berichtszeitraum neu konvertierte Subscriptions — aus Trials, Intro-Angeboten oder Direktkauf.', tool: 'RevenueCat' },
-      { name: 'Subscription Churn Rate', description: 'Anteil der Subscriptions die in einem Zeitraum verloren gehen. Formel: Verlorene Subscriptions / Aktive zu Periodenbeginn.', tool: 'RevenueCat' },
+      { name: 'Average Revenue Per User (ARPU)', description: 'Durchschnittlicher Umsatz pro aktivem Nutzer. ARPU = Gesamtumsatz / Aktive Nutzer.', tool: 'Payment Tool' },
+      { name: 'Customer Lifetime Value (LTV)', description: 'Gesamter Umsatz den ein Nutzer im Laufe seiner "App-Karriere" generiert. Entscheidend für User-Acquisition Budgets.', tool: 'Payment Tool / Berechnung' },
+      { name: 'Aktive Subscriptions', description: 'Anzahl aktiver (nicht abgelaufener) kostenpflichtiger Subscriptions am Ende eines Zeitraums.', tool: 'Payment Tool' },
+      { name: 'Neue Subscriptions', description: 'Im Berichtszeitraum neu konvertierte Subscriptions — aus Trials, Intro-Angeboten oder Direktkauf.', tool: 'Payment Tool' },
+      { name: 'Subscription Churn Rate', description: 'Anteil der Subscriptions die in einem Zeitraum verloren gehen. Formel: Verlorene Subscriptions / Aktive zu Periodenbeginn.', tool: 'Payment Tool' },
       { name: 'Cost Per Install (CPI)', description: 'Kosten pro App-Installation aus bezahlten Kanälen. Vergleich mit LTV zeigt ob Akquise wirtschaftlich ist.', tool: 'Werbekanäle / Berechnung' },
       { name: 'App Store Conversion Rate', description: 'Prozentsatz der Store-Besucher die die App installieren. Beeinflusst durch Screenshots, Beschreibung, Bewertungen.', tool: 'App Store Connect / Play Console' },
     ],
@@ -133,17 +133,17 @@ const kpiCategories = [
     </section>
   ))}
 
-  <!-- Whitepaper CTA -->
+  <!-- CTA -->
   <section class="section-padding bg-gradient-to-r from-brand-600 to-brand-800 text-white">
     <div class="section-container max-w-3xl mx-auto text-center">
       <h2 class="font-display font-bold text-3xl text-white mb-4">
-        Mehr Details im kostenlosen Whitepaper
+        Deine KPIs professionell auswerten lassen
       </h2>
       <p class="text-brand-200 text-lg mb-8">
-        Alle KPIs kompakt zusammengefasst, mit Formeln, Benchmark-Werten und konkreten Handlungsempfehlungen. Als PDF zum Mitnehmen.
+        App-Care überwacht und analysiert diese KPIs jeden Monat für deine App — mit konkreten Handlungsempfehlungen statt Datenbergen.
       </p>
-      <a href={`${import.meta.env.BASE_URL.replace(/\/?$/, '')}/whitepaper`} class="inline-flex items-center gap-2 bg-white text-brand-700 font-semibold px-8 py-4 rounded-xl hover:bg-brand-50 transition-colors text-lg">
-        Whitepaper kostenlos herunterladen →
+      <a href={`${import.meta.env.BASE_URL.replace(/\/?$/, '')}/kontakt`} class="inline-flex items-center gap-2 bg-white text-brand-700 font-semibold px-8 py-4 rounded-xl hover:bg-brand-50 transition-colors text-lg">
+        Kostenloses Erstgespräch buchen →
       </a>
     </div>
   </section>
