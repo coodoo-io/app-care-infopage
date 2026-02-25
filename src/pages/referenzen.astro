@@ -42,11 +42,11 @@ const references = [
   <!-- Hero -->
   <section class="gradient-hero text-white py-20">
     <div class="section-container text-center">
-      <span class="badge bg-white/10 text-brand-200 mb-4 inline-block">Echte Ergebnisse</span>
+      <span class="badge bg-white/5 text-slate-300 mb-4 inline-block">Echte Ergebnisse</span>
       <h1 class="font-display font-bold text-4xl md:text-5xl text-white mb-6">
         Apps die mit App-Care wachsen
       </h1>
-      <p class="text-brand-200 text-xl max-w-2xl mx-auto">
+      <p class="text-slate-300 text-xl max-w-2xl mx-auto">
         Zahlen lügen nicht. Hier siehst du konkrete KPI-Entwicklungen aus unserer Betreuung.
       </p>
     </div>
@@ -62,38 +62,38 @@ const references = [
               <div class="flex items-center gap-3 mb-4">
                 <span class="badge-gray">{ref.category}</span>
                 <span class="badge-brand">{ref.package}</span>
-                <span class="text-xs text-gray-400">{ref.period}</span>
+                <span class="text-xs text-slate-400">{ref.period}</span>
               </div>
-              <h2 class="font-display font-bold text-2xl text-gray-900 mb-4">{ref.app}</h2>
-              <p class="text-gray-600 leading-relaxed mb-6">{ref.description}</p>
+              <h2 class="font-display font-bold text-2xl text-slate-900 mb-4">{ref.app}</h2>
+              <p class="text-slate-600 leading-relaxed mb-6">{ref.description}</p>
 
               <blockquote class="bg-brand-50 rounded-xl p-5 border-l-4 border-brand-400">
-                <p class="text-gray-700 italic mb-3">"{ref.quote}"</p>
-                <cite class="text-sm text-gray-500 not-italic">— {ref.author}</cite>
+                <p class="text-slate-700 italic mb-3">"{ref.quote}"</p>
+                <cite class="text-sm text-slate-500 not-italic">— {ref.author}</cite>
               </blockquote>
             </div>
 
             <div class={i % 2 === 1 ? 'lg:col-start-1 lg:row-start-1' : ''}>
-              <div class="bg-gray-50 rounded-2xl p-6">
-                <h3 class="font-semibold text-gray-900 mb-4 text-sm uppercase tracking-wide">KPI-Entwicklung</h3>
+              <div class="bg-slate-50 rounded-xl p-6">
+                <h3 class="font-semibold text-slate-900 mb-4 text-sm uppercase tracking-wide">KPI-Entwicklung</h3>
                 <div class="space-y-4">
                   {ref.kpis.map((kpi) => (
                     <div class="bg-white rounded-xl p-4">
                       <div class="flex items-center justify-between mb-2">
-                        <span class="text-sm text-gray-600">{kpi.label}</span>
-                        <span class={`badge text-xs ${kpi.positive ? 'badge-accent' : 'bg-red-100 text-red-700'}`}>{kpi.change}</span>
+                        <span class="text-sm text-slate-600">{kpi.label}</span>
+                        <span class={`badge text-xs ${kpi.positive ? 'badge-brand' : 'bg-red-100 text-red-700'}`}>{kpi.change}</span>
                       </div>
                       <div class="flex items-center gap-3">
                         <div class="flex-1">
-                          <div class="text-xs text-gray-400 mb-1">Vorher</div>
-                          <div class="font-semibold text-gray-400">{kpi.before}</div>
+                          <div class="text-xs text-slate-400 mb-1">Vorher</div>
+                          <div class="font-semibold text-slate-400">{kpi.before}</div>
                         </div>
                         <svg class="w-4 h-4 text-brand-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                         </svg>
                         <div class="flex-1 text-right">
-                          <div class="text-xs text-gray-400 mb-1">Nachher</div>
-                          <div class="font-bold text-gray-900">{kpi.after}</div>
+                          <div class="text-xs text-slate-400 mb-1">Nachher</div>
+                          <div class="font-bold text-slate-900">{kpi.after}</div>
                         </div>
                       </div>
                     </div>
@@ -105,9 +105,9 @@ const references = [
         ))}
       </div>
 
-      <div class="mt-12 bg-brand-50 rounded-2xl p-8 text-center border border-brand-100">
+      <div class="mt-12 bg-brand-50 rounded-xl p-8 text-center border border-brand-100">
         <p class="text-sm text-brand-700 font-medium mb-2">Hinweis</p>
-        <p class="text-gray-600 text-sm">
+        <p class="text-slate-600 text-sm">
           Die gezeigten App-Namen und KPI-Werte sind Platzhalter. Echte Kundenprojekte werden nach Freigabe durch die Kunden veröffentlicht. Sprich uns an — wir zeigen dir gerne konkrete Beispiele im persönlichen Gespräch.
         </p>
       </div>
@@ -115,12 +115,12 @@ const references = [
   </section>
 
   <!-- CTA -->
-  <section class="section-padding bg-brand-600 text-white">
+  <section class="section-padding bg-brand-950 text-white">
     <div class="section-container text-center">
       <h2 class="font-display font-bold text-3xl text-white mb-4">
         Deine App als nächste Erfolgsgeschichte?
       </h2>
-      <p class="text-brand-200 text-lg mb-8">
+      <p class="text-slate-300 text-lg mb-8">
         Lass uns zusammen schauen, wo deine App steht und wie App-Care helfen kann.
       </p>
       <a href={`${import.meta.env.BASE_URL.replace(/\/?$/, '')}/kontakt`} class="inline-flex items-center gap-2 bg-white text-brand-700 font-semibold px-8 py-4 rounded-xl hover:bg-brand-50 transition-colors text-lg">

@@ -74,11 +74,11 @@ const features = [
   <!-- Hero -->
   <section class="gradient-hero text-white py-20">
     <div class="section-container text-center">
-      <span class="badge bg-white/10 text-brand-200 mb-4 inline-block">Transparent & Fair</span>
+      <span class="badge bg-white/5 text-slate-300 mb-4 inline-block">Transparent & Fair</span>
       <h1 class="font-display font-bold text-4xl md:text-5xl text-white mb-6">
         Pakete & Preise
       </h1>
-      <p class="text-brand-200 text-xl max-w-2xl mx-auto">
+      <p class="text-slate-300 text-xl max-w-2xl mx-auto">
         Drei klare Pakete. Kein verstecktes Kleingedrucktes. Nach Mindestlaufzeit mit 4 Wochen Frist monatlich kündbar.
       </p>
     </div>
@@ -89,93 +89,93 @@ const features = [
     <div class="section-container">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16">
         <!-- Insight -->
-        <div class="border-2 border-gray-200 rounded-2xl p-8">
+        <div class="border-2 border-slate-200 rounded-xl p-8">
           <div class="mb-6">
             <p class="text-sm font-medium text-brand-600 mb-1">Einstieg & Überblick</p>
-            <h2 class="font-display font-bold text-2xl text-gray-900">App-Care Insight</h2>
+            <h2 class="font-display font-bold text-2xl text-slate-900">App-Care Insight</h2>
             <div class="flex items-baseline gap-1 mt-4">
-              <span class="font-display font-bold text-5xl text-gray-900">€299</span>
-              <span class="text-gray-500">/Monat (netto)</span>
+              <span class="font-display font-bold text-5xl text-slate-900">€299</span>
+              <span class="text-slate-500">/Monat (netto)</span>
             </div>
-            <p class="text-gray-400 text-sm mt-1">Mindestlaufzeit: 3 Monate · danach 4 Wochen Kündigungsfrist</p>
+            <p class="text-slate-400 text-sm mt-1">Mindestlaufzeit: 3 Monate · danach 4 Wochen Kündigungsfrist</p>
           </div>
-          <p class="text-gray-600 mb-6">
+          <p class="text-slate-600 mb-6">
             Für App-Betreiber die wissen wollen, wo ihre App steht — mit monatlichem Report und konkreten Handlungsempfehlungen.
           </p>
           <a href={`${import.meta.env.BASE_URL.replace(/\/?$/, '')}/kontakt?paket=insight`} class="block w-full text-center bg-brand-600 text-white font-semibold py-3 px-6 rounded-xl hover:bg-brand-700 transition-colors mb-6">
             Insight anfragen
           </a>
           <div class="border-t pt-6">
-            <p class="text-sm font-semibold text-gray-500 mb-3">Im Paket enthalten:</p>
+            <p class="text-sm font-semibold text-slate-500 mb-3">Im Paket enthalten:</p>
             {['Monatlicher Management Summary', 'KPI-Auswertung (Firebase, Crashlytics)', 'App Store Connect Analyse', 'Handlungsempfehlungen der Experten', 'Monatliches Review-Gespräch', 'E-Mail Support'].map((item) => (
               <div class="flex items-center gap-2 mb-2">
-                <svg class="w-4 h-4 text-accent-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <svg class="w-4 h-4 text-brand-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                 </svg>
-                <span class="text-sm text-gray-600">{item}</span>
+                <span class="text-sm text-slate-600">{item}</span>
               </div>
             ))}
           </div>
         </div>
 
         <!-- Essentials -->
-        <div class="border-2 border-brand-500 rounded-2xl p-8 bg-brand-600 text-white relative">
+        <div class="border-2 border-brand-500 rounded-xl p-8 bg-brand-950 text-white relative">
           <div class="absolute -top-3 left-1/2 -translate-x-1/2">
-            <span class="bg-accent-500 text-white text-xs font-semibold px-4 py-1 rounded-full">Empfohlen</span>
+            <span class="bg-brand-600 text-white text-xs font-semibold px-4 py-1 rounded-full">Empfohlen</span>
           </div>
           <div class="mb-6">
-            <p class="text-sm font-medium text-brand-200 mb-1">Aktive Weiterentwicklung</p>
+            <p class="text-sm font-medium text-slate-300 mb-1">Aktive Weiterentwicklung</p>
             <h2 class="font-display font-bold text-2xl text-white">App-Care Essentials</h2>
             <div class="flex items-baseline gap-1 mt-4">
               <span class="font-display font-bold text-5xl text-white">€3.500</span>
-              <span class="text-brand-200">/Monat (netto)</span>
+              <span class="text-slate-300">/Monat (netto)</span>
             </div>
-            <p class="text-brand-300 text-sm mt-1">Mindestlaufzeit: 3 Monate · danach 4 Wochen Kündigungsfrist</p>
+            <p class="text-slate-400 text-sm mt-1">Mindestlaufzeit: 3 Monate · danach 4 Wochen Kündigungsfrist</p>
           </div>
-          <p class="text-brand-100 mb-6">
+          <p class="text-slate-200 mb-6">
             Aktive Betreuung, laufendes Monitoring und stetige Verbesserungen — deine App bleibt stabil und entwickelt sich weiter.
           </p>
           <a href={`${import.meta.env.BASE_URL.replace(/\/?$/, '')}/kontakt?paket=essentials`} class="block w-full text-center bg-white text-brand-700 font-semibold py-3 px-6 rounded-xl hover:bg-brand-50 transition-colors mb-6">
             Essentials anfragen
           </a>
           <div class="border-t border-brand-500 pt-6">
-            <p class="text-sm font-semibold text-brand-300 mb-3">Alles aus Insight, plus:</p>
+            <p class="text-sm font-semibold text-slate-400 mb-3">Alles aus Insight, plus:</p>
             {['Firebase, Crashlytics, App Store Analyse', 'Subscription & Payment Monitoring', 'Framework & Package Updates', 'Bugfixing & kritische Bug-Reaktion', 'Schrittweise Weiterentwicklung', 'Task-Board mit Ticket-Bewertung', 'Direktkommunikation (Slack/Teams)'].map((item) => (
               <div class="flex items-center gap-2 mb-2">
-                <svg class="w-4 h-4 text-accent-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <svg class="w-4 h-4 text-brand-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                 </svg>
-                <span class="text-sm text-brand-100">{item}</span>
+                <span class="text-sm text-slate-200">{item}</span>
               </div>
             ))}
           </div>
         </div>
 
         <!-- Growth -->
-        <div class="border-2 border-gray-200 rounded-2xl p-8">
+        <div class="border-2 border-slate-200 rounded-xl p-8">
           <div class="mb-6">
             <p class="text-sm font-medium text-brand-600 mb-1">Boost-Modus</p>
-            <h2 class="font-display font-bold text-2xl text-gray-900">App-Care Growth</h2>
+            <h2 class="font-display font-bold text-2xl text-slate-900">App-Care Growth</h2>
             <div class="flex items-baseline gap-1 mt-4">
-              <span class="font-display font-bold text-5xl text-gray-900">€7.000</span>
-              <span class="text-gray-500">/Monat (netto)</span>
+              <span class="font-display font-bold text-5xl text-slate-900">€7.000</span>
+              <span class="text-slate-500">/Monat (netto)</span>
             </div>
-            <p class="text-gray-400 text-sm mt-1">Mindestlaufzeit: 3 Monate · danach 4 Wochen Kündigungsfrist</p>
+            <p class="text-slate-400 text-sm mt-1">Mindestlaufzeit: 3 Monate · danach 4 Wochen Kündigungsfrist</p>
           </div>
-          <p class="text-gray-600 mb-6">
+          <p class="text-slate-600 mb-6">
             Du willst in kurzer Zeit viele Features umsetzen, die App portieren oder einfach Vollgas geben? Growth ist dein Intensivpaket — maximaler Fokus, maximales Tempo, maximaler Output.
           </p>
           <a href={`${import.meta.env.BASE_URL.replace(/\/?$/, '')}/kontakt?paket=growth`} class="block w-full text-center bg-brand-600 text-white font-semibold py-3 px-6 rounded-xl hover:bg-brand-700 transition-colors mb-6">
             Growth anfragen
           </a>
           <div class="border-t pt-6">
-            <p class="text-sm font-semibold text-gray-500 mb-3">Alles aus Essentials, plus:</p>
+            <p class="text-sm font-semibold text-slate-500 mb-3">Alles aus Essentials, plus:</p>
             {['Projektmanagement inklusive', 'Intensive Feature-Planung', 'Fachliche Feature-Ausarbeitung', 'Tests & Release Management', 'Aktive Ticket-Priorisierung', 'Sprint-Phasen auf Abruf', 'Flexible Kapazitätsskalierung', 'App-Portierung, Migration & Neuentwicklung', 'Strategie & Priorisierungsberatung'].map((item) => (
               <div class="flex items-center gap-2 mb-2">
-                <svg class="w-4 h-4 text-accent-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <svg class="w-4 h-4 text-brand-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                 </svg>
-                <span class="text-sm text-gray-600">{item}</span>
+                <span class="text-sm text-slate-600">{item}</span>
               </div>
             ))}
           </div>
@@ -184,15 +184,15 @@ const features = [
 
       <!-- Feature Comparison Table -->
       <div class="max-w-5xl mx-auto">
-        <h2 class="font-display font-bold text-2xl text-gray-900 text-center mb-8">Detaillierter Vergleich</h2>
-        <div class="overflow-x-auto rounded-2xl border border-gray-200">
+        <h2 class="font-display font-bold text-2xl text-slate-900 text-center mb-8">Detaillierter Vergleich</h2>
+        <div class="overflow-x-auto rounded-xl border border-slate-200">
           <table class="w-full text-sm">
             <thead>
-              <tr class="bg-gray-50 border-b border-gray-200">
-                <th class="text-left px-6 py-4 font-semibold text-gray-600">Leistung</th>
-                <th class="text-center px-6 py-4 font-semibold text-gray-900">Insight</th>
+              <tr class="bg-slate-50 border-b border-slate-200">
+                <th class="text-left px-6 py-4 font-semibold text-slate-600">Leistung</th>
+                <th class="text-center px-6 py-4 font-semibold text-slate-900">Insight</th>
                 <th class="text-center px-6 py-4 font-semibold text-brand-600">Essentials</th>
-                <th class="text-center px-6 py-4 font-semibold text-gray-900">Growth</th>
+                <th class="text-center px-6 py-4 font-semibold text-slate-900">Growth</th>
               </tr>
             </thead>
             <tbody>
@@ -204,33 +204,33 @@ const features = [
                     </td>
                   </tr>
                   {category.items.map((item) => (
-                    <tr class="border-t border-gray-100 hover:bg-gray-50">
-                      <td class="px-6 py-3 text-gray-700">{item.feature}</td>
+                    <tr class="border-t border-slate-100 hover:bg-slate-50">
+                      <td class="px-6 py-3 text-slate-700">{item.feature}</td>
                       <td class="px-6 py-3 text-center">
                         {item.insight ? (
-                          <svg class="w-5 h-5 text-accent-500 mx-auto" fill="currentColor" viewBox="0 0 20 20">
+                          <svg class="w-5 h-5 text-brand-600 mx-auto" fill="currentColor" viewBox="0 0 20 20">
                             <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                           </svg>
                         ) : (
-                          <span class="text-gray-300">—</span>
+                          <span class="text-slate-300">—</span>
                         )}
                       </td>
                       <td class="px-6 py-3 text-center">
                         {item.essentials ? (
-                          <svg class="w-5 h-5 text-accent-500 mx-auto" fill="currentColor" viewBox="0 0 20 20">
+                          <svg class="w-5 h-5 text-brand-600 mx-auto" fill="currentColor" viewBox="0 0 20 20">
                             <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                           </svg>
                         ) : (
-                          <span class="text-gray-300">—</span>
+                          <span class="text-slate-300">—</span>
                         )}
                       </td>
                       <td class="px-6 py-3 text-center">
                         {item.growth ? (
-                          <svg class="w-5 h-5 text-accent-500 mx-auto" fill="currentColor" viewBox="0 0 20 20">
+                          <svg class="w-5 h-5 text-brand-600 mx-auto" fill="currentColor" viewBox="0 0 20 20">
                             <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                           </svg>
                         ) : (
-                          <span class="text-gray-300">—</span>
+                          <span class="text-slate-300">—</span>
                         )}
                       </td>
                     </tr>
@@ -245,7 +245,7 @@ const features = [
   </section>
 
   <!-- FAQ -->
-  <section class="section-padding bg-gray-50">
+  <section class="section-padding bg-slate-50">
     <div class="section-container max-w-3xl mx-auto">
       <h2 class="section-title text-center mb-10">Häufige Fragen</h2>
       <div class="space-y-6">
@@ -257,9 +257,9 @@ const features = [
           { q: 'Arbeitet ihr auch auf Festpreisbasis?', a: 'Ja. Neben den monatlichen Paketen bieten wir Festpreisprojekte an. Gerade zu Essentials lässt sich jederzeit ein Festpreis-Boost hinzubuchen — zum Beispiel für ein größeres Feature, eine Portierung oder einen definierten Entwicklungssprint. So bleibt der laufende Rhythmus erhalten und du bekommst trotzdem Vollgas, wenn es gefragt ist.' },
           { q: 'Kann auch eine komplett neue App zum Festpreis entwickelt werden?', a: 'Ja, auf jeden Fall. App-Neuentwicklungen setzen wir gerne auf Festpreisbasis um — mit klarem Scope, transparentem Angebot und dem gleichen Expertenteam. Sprich uns einfach an und wir schauen gemeinsam, was passt.' },
         ].map((faq) => (
-          <div class="bg-white rounded-xl p-6 border border-gray-100">
-            <h3 class="font-display font-semibold text-gray-900 mb-2">{faq.q}</h3>
-            <p class="text-gray-600 text-sm leading-relaxed">{faq.a}</p>
+          <div class="bg-white rounded-xl p-6 border border-slate-100">
+            <h3 class="font-display font-semibold text-slate-900 mb-2">{faq.q}</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">{faq.a}</p>
           </div>
         ))}
       </div>
@@ -267,10 +267,10 @@ const features = [
   </section>
 
   <!-- CTA -->
-  <section class="section-padding bg-brand-600 text-white">
+  <section class="section-padding bg-brand-950 text-white">
     <div class="section-container text-center">
       <h2 class="font-display font-bold text-3xl text-white mb-4">Noch unsicher welches Paket passt?</h2>
-      <p class="text-brand-200 text-lg mb-8">In einem kostenlosen Gespräch finden wir gemeinsam die richtige Lösung für deine App.</p>
+      <p class="text-slate-300 text-lg mb-8">In einem kostenlosen Gespräch finden wir gemeinsam die richtige Lösung für deine App.</p>
       <a href={`${import.meta.env.BASE_URL.replace(/\/?$/, '')}/kontakt`} class="inline-flex items-center gap-2 bg-white text-brand-700 font-semibold px-8 py-4 rounded-xl hover:bg-brand-50 transition-colors text-lg">
         Kostenloses Gespräch buchen →
       </a>
