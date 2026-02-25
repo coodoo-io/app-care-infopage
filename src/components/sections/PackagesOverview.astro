@@ -3,12 +3,12 @@ const base = import.meta.env.BASE_URL.replace(/\/?$/, '');
 
 const packages = [
   {
-    name: 'App-Care Insight',
+    name: 'Insight',
     price: '299',
     period: '/Monat',
-    subtitle: 'Einstieg & Überblick',
-    description: 'Für App-Betreiber die wissen wollen, wo ihre App steht — mit monatlichem Report und konkreten Handlungsempfehlungen.',
-    minDuration: 'Mindestlaufzeit: 3 Monate · danach 4 Wochen Frist',
+    subtitle: 'Überblick',
+    description: 'Wissen, wo deine App steht — mit monatlichem Report und konkreten Empfehlungen.',
+    minDuration: 'Min. 3 Monate, danach monatlich kündbar',
     highlights: [
       'Monatlicher Management Summary',
       'KPI-Auswertung (Firebase, Crashlytics)',
@@ -22,37 +22,36 @@ const packages = [
     featured: false,
   },
   {
-    name: 'App-Care Essentials',
+    name: 'Essentials',
     price: '3.500',
     period: '/Monat',
-    subtitle: 'Aktive Weiterentwicklung',
-    description: 'Deine App wächst jeden Monat — stetig, verlässlich, mit aktivem Experten-Knowhow. Monitoring, Bugfixing und kontinuierliche Weiterentwicklung in einem festen Rhythmus.',
-    minDuration: 'Mindestlaufzeit: 3 Monate · danach 4 Wochen Frist',
+    subtitle: 'Weiterentwicklung',
+    description: 'Monitoring, Bugfixing und stetige Weiterentwicklung — in einem festen Rhythmus.',
+    minDuration: 'Min. 3 Monate, danach monatlich kündbar',
     highlights: [
       'Alles aus Insight',
       'Aktiver 2nd Level Support',
-      'App-Stabilität & Crash-Monitoring',
-      'Bugfixing & kleinere Fixes',
+      'Crash-Monitoring & Bugfixing',
       'Stetige Weiterentwicklung',
       'Eigenes Task-Board',
-      'Direktkommunikation (Slack/Teams)',
+      'Direktkanal (Slack/Teams)',
     ],
     cta: 'Essentials starten',
     ctaHref: `${base}/kontakt?paket=essentials`,
     featured: true,
   },
   {
-    name: 'App-Care Growth',
+    name: 'Growth',
     price: '7.000',
     period: '/Monat',
-    subtitle: 'Boost-Modus',
-    description: 'Du willst in kurzer Zeit viele Features umsetzen, die App portieren oder einfach Vollgas geben? Growth ist dein Intensivpaket — maximaler Fokus, maximales Tempo, maximaler Output.',
-    minDuration: 'Mindestlaufzeit: 3 Monate · danach 4 Wochen Frist',
+    subtitle: 'Intensiv',
+    description: 'Maximaler Fokus, maximales Tempo. Für Feature-Sprints, Portierungen und Vollgas-Phasen.',
+    minDuration: 'Min. 3 Monate, danach monatlich kündbar',
     highlights: [
       'Alles aus Essentials',
       'Projektmanagement inklusive',
       'Intensive Feature-Planung',
-      'Fachliche Feature-Ausarbeitung',
+      'Fachliche Ausarbeitung',
       'Tests & Release Management',
     ],
     cta: 'Growth starten',
@@ -62,58 +61,62 @@ const packages = [
 ];
 ---
 
-<section class="section-padding gradient-section">
+<section class="section-padding bg-white">
   <div class="section-container">
-    <div class="text-center max-w-2xl mx-auto mb-12">
-      <span class="badge-brand mb-4 inline-block">Transparent & Fair</span>
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <div class="flex items-center justify-center gap-3 mb-6">
+        <span class="w-8 h-px bg-brand-600"></span>
+        <span class="font-display text-xs font-bold tracking-widest uppercase text-brand-600">Pakete</span>
+        <span class="w-8 h-px bg-brand-600"></span>
+      </div>
       <h2 class="section-title mb-4">
-        Drei Pakete. Klare Preise. Kein Risiko.
+        Klare Preise. Kein Risiko.
       </h2>
       <p class="section-subtitle">
-        Günstiger als ein einziger Festangestellter — und du bekommst ein ganzes Expertenteam.
+        Günstiger als ein Festangestellter — und du bekommst ein ganzes Expertenteam.
       </p>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
       {packages.map((pkg) => (
-        <div class={`rounded-2xl p-8 border-2 relative ${pkg.featured ? 'border-brand-500 bg-brand-600 text-white shadow-xl shadow-brand-200' : 'border-gray-200 bg-white'}`}>
+        <div class={`rounded-xl p-8 relative transition-all duration-300 ${pkg.featured ? 'bg-brand-950 text-white border-2 border-brand-800 shadow-xl hover:-translate-y-1 hover:shadow-2xl' : 'bg-white border-2 border-slate-200 hover:-translate-y-1 hover:shadow-lg hover:border-slate-300'}`}>
           {pkg.featured && (
             <div class="absolute -top-3 left-1/2 -translate-x-1/2">
-              <span class="bg-accent-500 text-white text-xs font-semibold px-4 py-1 rounded-full">Empfohlen</span>
+              <span class="bg-brand-600 text-white text-xs font-display font-bold tracking-wider uppercase px-4 py-1 rounded-full">Empfohlen</span>
             </div>
           )}
 
           <div class="mb-6">
-            <p class={`text-sm font-medium mb-1 ${pkg.featured ? 'text-brand-200' : 'text-brand-600'}`}>{pkg.subtitle}</p>
-            <h3 class={`font-display font-bold text-xl mb-1 ${pkg.featured ? 'text-white' : 'text-gray-900'}`}>{pkg.name}</h3>
-            <div class="flex items-baseline gap-1 mt-3">
-              <span class={`font-display font-bold text-4xl ${pkg.featured ? 'text-white' : 'text-gray-900'}`}>€{pkg.price}</span>
-              <span class={`text-sm ${pkg.featured ? 'text-brand-200' : 'text-gray-500'}`}>{pkg.period}</span>
+            <p class={`font-display text-xs font-bold tracking-widest uppercase mb-2 ${pkg.featured ? 'text-brand-400' : 'text-brand-600'}`}>{pkg.subtitle}</p>
+            <h3 class={`font-display font-bold text-xl mb-3 ${pkg.featured ? 'text-white' : 'text-slate-900'}`}>{pkg.name}</h3>
+            <div class="flex items-baseline gap-1">
+              <span class={`font-display font-extrabold text-4xl ${pkg.featured ? 'text-white' : 'text-slate-900'}`}>{pkg.price}€</span>
+              <span class={`text-sm ${pkg.featured ? 'text-slate-400' : 'text-slate-400'}`}>{pkg.period}</span>
             </div>
-            <p class={`text-xs mt-1 ${pkg.featured ? 'text-brand-300' : 'text-gray-400'}`}>{pkg.minDuration}</p>
+            <p class={`text-xs mt-2 ${pkg.featured ? 'text-slate-400' : 'text-slate-400'}`}>{pkg.minDuration}</p>
           </div>
 
-          <p class={`text-sm leading-relaxed mb-6 ${pkg.featured ? 'text-brand-100' : 'text-gray-600'}`}>
+          <p class={`text-sm leading-relaxed mb-6 ${pkg.featured ? 'text-slate-300' : 'text-slate-500'}`}>
             {pkg.description}
           </p>
 
           <ul class="space-y-3 mb-8">
             {pkg.highlights.map((item) => (
               <li class="flex items-start gap-2 text-sm">
-                <svg class={`w-4 h-4 mt-0.5 flex-shrink-0 ${pkg.featured ? 'text-accent-400' : 'text-accent-500'}`} fill="currentColor" viewBox="0 0 20 20">
+                <svg class={`w-4 h-4 mt-0.5 flex-shrink-0 ${pkg.featured ? 'text-brand-400' : 'text-brand-600'}`} fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                 </svg>
-                <span class={pkg.featured ? 'text-brand-100' : 'text-gray-600'}>{item}</span>
+                <span class={pkg.featured ? 'text-slate-300' : 'text-slate-600'}>{item}</span>
               </li>
             ))}
           </ul>
 
           <a
             href={pkg.ctaHref}
-            class={`block w-full text-center font-semibold py-3 px-6 rounded-xl transition-colors ${
+            class={`block w-full text-center font-display font-bold text-sm tracking-wide uppercase py-3 px-6 rounded-lg transition-all duration-200 hover:-translate-y-px ${
               pkg.featured
-                ? 'bg-white text-brand-700 hover:bg-brand-50'
-                : 'bg-brand-600 text-white hover:bg-brand-700'
+                ? 'bg-brand-600 text-white hover:bg-brand-500 hover:shadow-md'
+                : 'bg-brand-600 text-white hover:bg-brand-700 hover:shadow-md'
             }`}
           >
             {pkg.cta}
@@ -122,9 +125,10 @@ const packages = [
       ))}
     </div>
 
-    <div class="text-center mt-8">
-      <a href={`${import.meta.env.BASE_URL.replace(/\/?$/, '')}/pakete`} class="text-brand-600 font-semibold hover:underline text-sm">
-        Detaillierter Paketvergleich ansehen →
+    <div class="text-center mt-10">
+      <a href={`${base}/pakete`} class="text-brand-600 font-semibold hover:underline decoration-2 underline-offset-4 text-sm inline-flex items-center gap-1">
+        Detaillierter Paketvergleich
+        <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
       </a>
     </div>
   </div>
