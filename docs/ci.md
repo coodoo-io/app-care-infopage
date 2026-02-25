@@ -15,45 +15,43 @@
 
 ## Farben
 
-### Primärfarbe — Indigo/Violett
+### Primärfarbe — Coral/Orange
 
 | Token | Hex | Verwendung |
 |---|---|---|
-| brand-50 | `#eef2ff` | Hintergründe, Hover-Flächen |
-| brand-100 | `#e0e7ff` | Badges, Akzentflächen |
-| brand-200 | `#c7d2fe` | Borders |
-| brand-300 | `#a5b4fc` | |
-| brand-400 | `#818cf8` | Text-Gradient (Start) |
-| brand-500 | `#6366f1` | |
-| brand-600 | `#4f46e5` | Primärbuttons, Favicon-Hintergrund |
-| brand-700 | `#4338ca` | Hover-States, sekundärer Button-Text |
-| brand-800 | `#3730a3` | |
-| brand-900 | `#312e81` | Hero-Gradient Mitte |
-| brand-950 | `#1e1b4b` | Hero-Hintergrund (dunkelster Wert) |
+| brand-50 | `#FFF7ED` | Hintergründe, Hover-Flächen, Badge-Hintergründe |
+| brand-100 | `#FFEDD5` | Badge-Borders, leichte Akzente |
+| brand-200 | `#FED7AA` | Borders |
+| brand-300 | `#FDBA74` | |
+| brand-400 | `#FB923C` | Akzent auf dunklen Flächen |
+| brand-500 | `#F97316` | Primärbuttons, Akzent-Headlines, Favicon |
+| brand-600 | `#EA580C` | Hover-States, Ghost-Button-Text |
+| brand-700 | `#C2410C` | Starke Links, Badge-Text |
+| brand-800 | `#9A3412` | |
+| brand-900 | `#7C2D12` | |
+| brand-950 | `#431407` | |
 
-### Akzentfarbe — Emerald/Grün
+### Neutrale Farben — Warm Stone
 
 | Token | Hex | Verwendung |
 |---|---|---|
-| accent-400 | `#34d399` | Text-Gradient (Ende) |
-| accent-500 | `#10b981` | Primärer Akzent |
-| accent-600 | `#059669` | Hover |
+| stone-50 | `#fafaf9` | Leichte Hintergründe, Alternating Sections |
+| stone-100 | `#f5f5f4` | Borders (subtil) |
+| stone-200 | `#e7e5e4` | Borders, Dividers, Card-Rahmen |
+| stone-400 | `#a8a29e` | Placeholder-Text, Labels |
+| stone-500 | `#78716c` | Sekundärer Text, Untertitel |
+| stone-800 | `#292524` | Fließtext |
+| stone-900 | `#1c1917` | Headlines, dunkle Sections |
+| stone-950 | `#0c0a09` | Footer-Hintergrund |
 
-### Neutrale Farben
+### Semantische Farben
 
 | | Hex | Verwendung |
 |---|---|---|
-| Weiß | `#ffffff` | Karten, Hintergründe |
-| Gray-800 | `#1f2937` | Fließtext |
-| Gray-950 | `#030712` | Footer-Hintergrund |
+| Emerald-50/700 | `#ECFDF5` / `#047857` | Positive KPI-Badges |
+| Red-400 | `#f87171` | Negative Indikatoren |
 
-### Gradienten
-
-| Name | Definition |
-|---|---|
-| Hero | `135deg` → `#1e1b4b` (0%) → `#312e81` (40%) → `#4338ca` (100%) |
-| Section | `180deg` → `#f8fafc` (0%) → `#eef2ff` (100%) |
-| Text | `brand-400` → `accent-400` (via `bg-clip-text`) |
+**Entfernt:** Kein Emerald-Akzent mehr. Kein Indigo/Violett. Keine Gradient-Hintergründe auf Hero/Sections.
 
 ---
 
@@ -61,19 +59,20 @@
 
 | Verwendung | Familie | Gewichte |
 |---|---|---|
-| Headlines (H1–H6) | Plus Jakarta Sans | 600, 700, 800 |
-| Fließtext | Inter | 400, 500, 600, 700 |
-| Fallback | system-ui, sans-serif | |
+| Headlines (H1–H6) | Manrope | 500, 600, 700, 800 |
+| Fließtext | Inter | 400, 500, 600 |
+| Fallback | system-ui, -apple-system, sans-serif | |
 
 Quelle: Google Fonts
 ```
-https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap
+https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap
 ```
 
 **Regeln:**
 - Keine Serifenschriften
-- H1: text-4xl / text-6xl (responsive)
-- Section-Titles: text-3xl / text-4xl
+- H1: text-4xl / text-6xl (responsive), font-extrabold, tracking-tight
+- Section-Titles: text-3xl / text-4xl, font-bold, tracking-tight
+- Body: text-stone-800, leading-relaxed
 
 ---
 
@@ -81,29 +80,39 @@ https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+
 
 Alle Dateien unter `/public/assets/`:
 
-| Datei | Format | Maße | Verwendung |
-|---|---|---|---|
-| `App-Care_Logo_mit_Schriftzug.jpg` | JPG | 1324 × 386 px | Header, Footer (Wortmarke) |
-| `App-Care_Logo.png` | PNG | 386 × 664 px | Icon ohne Text |
-| `Favicon.svg` | SVG | — | „AC" auf `#4f46e5`-Hintergrund, abgerundetes Quadrat |
+| Datei | Format | Verwendung |
+|---|---|---|
+| `app-care-logo.png` | PNG | Header, Footer (Logo-Icon) |
+| `favicon.svg` | SVG | Coral-Gradient-Hintergrund, weiße Chart-Bars + Pulse-Linie |
 
 ---
 
 ## Visueller Stil
 
-**Ästhetik:** Modern, professionell, datengetrieben mit zugänglicher Wärme
+**Ästhetik:** Minimalistisch, modern, datengetrieben — viel Weißraum, ein starker Akzent
 
 **Formensprache:**
-- Abgerundete Ecken: `rounded-xl` (8 px), `rounded-2xl` (16 px), `rounded-3xl` (24 px)
+- Buttons: `rounded-lg` (8 px)
+- Cards: `rounded-xl` (12 px)
 - Weiche, gestaffelte Schatten (kein harter Drop-Shadow)
-- Glassmorphism-Effekte (Backdrop Blur)
 - Viel Weißraum
+- Kein Glassmorphism, keine Aurora-Orbs
+
+**Hintergründe:**
+- Hero: Weiß mit dezenter Dot-Grid-Textur
+- Sections: Abwechselnd `bg-white` und `bg-stone-50`
+- Eine dunkle Section pro Seite: `bg-stone-900` (warm, nicht kalt)
+- CTA-Highlight: `bg-brand-500` (Coral)
+
+**Hover-Effekte:**
+- Buttons: `-translate-y-px` + shadow-Verstärkung (200ms ease-out)
+- Cards: `-translate-y-0.5` + shadow-lg (200ms ease-out)
+- Links mit Pfeilen: `gap` vergrößert sich beim Hover
 
 **Animationen:**
-- Schwebende Gradient-Orbs im Hero
+- Hero-KPI-Cards: fade-in + translateY (gestaffelt)
 - Smooth Scroll
-- Hover-Transitions (200 ms)
-- Fade-in für KPI-Chips
+- Hover-Transitions: 200ms ease-out
 
 ---
 
@@ -128,13 +137,17 @@ Alle Dateien unter `/public/assets/`:
 ## Do's & Don'ts
 
 **Do:**
-- Indigo als Primärfarbe für Aktionen und Schwerpunkte
-- Emerald sparsam als Akzent einsetzen
-- Plus Jakarta Sans für Headlines
-- Weiche Schatten und Gradienten für Tiefe
+- Coral (brand-500) als Primärfarbe für CTAs und Akzente
+- Stone-Palette für alle neutralen Flächen (warm, nicht kalt)
+- Manrope für Headlines, Inter für Fließtext
+- Weiche Schatten mit Brand-tinted opacity
+- Viel Weißraum zwischen Sections (py-24 md:py-32)
 
 **Don't:**
 - Keine Serifenschriften
-- Kein harter oder übermäßiger Schattenwurf
-- Akzentfarbe nicht überbenutzen
+- Kein Indigo/Violett mehr
+- Keine Gradient-Hintergründe auf Sections
+- Keine Aurora-Orbs oder Floating-Chips
+- Kein Glassmorphism
 - Kontrast mind. WCAG AA einhalten
+- Keine Emojis in UI (außer wo explizit behalten)

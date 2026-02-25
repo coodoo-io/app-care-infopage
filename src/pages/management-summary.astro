@@ -30,14 +30,14 @@ const sections = [
   description="Was ist der App-Care Management Summary? Aufbau, Struktur und welche Entscheidungen du daraus ableiten kannst."
 >
   <!-- Hero -->
-  <section class="gradient-hero text-white py-20">
+  <section class="bg-stone-50 border-b border-stone-100 py-20 md:py-24">
     <div class="section-container">
       <div class="max-w-3xl">
-        <span class="badge bg-white/10 text-brand-200 mb-4 inline-block">Monatlicher Bericht</span>
-        <h1 class="font-display font-bold text-4xl md:text-5xl text-white mb-6">
+        <span class="badge-gray mb-4 inline-block">Monatlicher Bericht</span>
+        <h1 class="font-display font-bold text-4xl md:text-5xl text-stone-900 mb-6">
           Der Management Summary
         </h1>
-        <p class="text-brand-200 text-xl leading-relaxed">
+        <p class="text-stone-500 text-xl leading-relaxed">
           Jeden Monat. Alle wichtigen KPIs. Klare Handlungsempfehlungen. Kein Datendschungel — nur das, was wirklich zählt.
         </p>
       </div>
@@ -51,23 +51,23 @@ const sections = [
         <div>
           <span class="badge-brand mb-4 inline-block">Was ist das?</span>
           <h2 class="section-title mb-6">Dein monatliches App-Briefing</h2>
-          <p class="text-gray-600 leading-relaxed mb-4">
+          <p class="text-stone-600 leading-relaxed mb-4">
             Der Management Summary ist das Herzstück von App-Care. Jeden Monat erstellen wir für dich einen strukturierten Bericht mit allen wichtigen KPIs deiner App — aus Firebase, Crashlytics, App Store Connect und deinen Payment-Daten.
           </p>
-          <p class="text-gray-600 leading-relaxed mb-4">
+          <p class="text-stone-600 leading-relaxed mb-4">
             Der Report ist kein Datendump. Er enthält die wichtigsten Kennzahlen, Trends im Vergleich zum Vormonat und — das Wichtigste — konkrete Handlungsempfehlungen unserer Experten.
           </p>
-          <p class="text-gray-600 leading-relaxed">
+          <p class="text-stone-600 leading-relaxed">
             So kannst du fundierte Entscheidungen treffen, ohne selbst stundenlang in Dashboards zu graben.
           </p>
         </div>
 
-        <div class="bg-gray-50 rounded-2xl p-6">
+        <div class="bg-stone-50 rounded-xl p-6">
           <div class="bg-white rounded-xl shadow-sm p-5 mb-3">
             <div class="flex items-center justify-between mb-4">
               <div>
-                <p class="font-display font-bold text-gray-900">Management Summary</p>
-                <p class="text-xs text-gray-400">App-Care · Januar 2026</p>
+                <p class="font-display font-bold text-stone-900">Management Summary</p>
+                <p class="text-xs text-stone-400">App-Care · Januar 2026</p>
               </div>
               <span class="badge-accent text-xs">Neu</span>
             </div>
@@ -79,23 +79,23 @@ const sections = [
                 { label: 'App Store Rating', value: '4,8 ⭐', change: '+0,1' },
               ].map((kpi) => (
                 <div class="flex items-center justify-between text-sm">
-                  <span class="text-gray-600">{kpi.label}</span>
+                  <span class="text-stone-600">{kpi.label}</span>
                   <div class="flex items-center gap-2">
-                    <span class="font-semibold text-gray-900">{kpi.value}</span>
+                    <span class="font-semibold text-stone-900">{kpi.value}</span>
                     <span class="badge-accent text-xs">{kpi.change}</span>
                   </div>
                 </div>
               ))}
             </div>
           </div>
-          <p class="text-center text-xs text-gray-400">Beispiel-Darstellung (anonymisiert)</p>
+          <p class="text-center text-xs text-stone-400">Beispiel-Darstellung (anonymisiert)</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Sections -->
-  <section class="section-padding bg-gray-50">
+  <section class="section-padding bg-stone-50">
     <div class="section-container">
       <div class="text-center max-w-2xl mx-auto mb-12">
         <h2 class="section-title mb-4">Was steht im Report?</h2>
@@ -103,15 +103,15 @@ const sections = [
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
         {sections.map((section) => (
-          <div class="card border border-gray-100">
+          <div class="card border border-stone-100">
             <div class="flex items-center gap-3 mb-4">
               <span class="text-3xl">{section.icon}</span>
-              <h3 class="font-display font-bold text-lg text-gray-900">{section.title}</h3>
+              <h3 class="font-display font-bold text-lg text-stone-900">{section.title}</h3>
             </div>
             <ul class="space-y-2">
               {section.kpis.map((kpi) => (
-                <li class="flex items-center gap-2 text-sm text-gray-600">
-                  <svg class="w-4 h-4 text-accent-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <li class="flex items-center gap-2 text-sm text-stone-600">
+                  <svg class="w-4 h-4 text-emerald-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                   </svg>
                   {kpi}
@@ -137,10 +137,10 @@ const sections = [
           { kpi: 'Sitzungsdauer sinkt', decision: 'Welche Screens werden verlassen? Heatmap-Analyse, UX-Überarbeitung der kritischen Flows.' },
         ].map((item) => (
           <div class="flex gap-4">
-            <div class="flex-shrink-0 w-2 bg-brand-200 rounded-full"></div>
+            <div class="flex-shrink-0 w-2 bg-stone-200 rounded-full"></div>
             <div>
-              <p class="font-semibold text-gray-900 mb-1">KPI: {item.kpi}</p>
-              <p class="text-gray-600 text-sm">→ {item.decision}</p>
+              <p class="font-semibold text-stone-900 mb-1">KPI: {item.kpi}</p>
+              <p class="text-stone-600 text-sm">→ {item.decision}</p>
             </div>
           </div>
         ))}
@@ -149,7 +149,7 @@ const sections = [
   </section>
 
   <!-- CTA -->
-  <section class="section-padding gradient-section">
+  <section class="section-padding bg-stone-50">
     <div class="section-container text-center">
       <h2 class="section-title mb-4">Management Summary in deinem Paket</h2>
       <p class="section-subtitle mb-8">Der Management Summary ist in beiden App-Care Paketen enthalten — Essentials und Growth.</p>

@@ -19,17 +19,17 @@ const formatDate = (date: Date) =>
 
 <BaseLayout title={post.data.title} description={post.data.description}>
   <!-- Hero -->
-  <section class="gradient-hero text-white py-16">
+  <section class="bg-stone-50 border-b border-stone-100 py-20 md:py-24">
     <div class="section-container max-w-3xl mx-auto">
       <div class="flex items-center gap-2 mb-4">
-        <a href={`${import.meta.env.BASE_URL.replace(/\/?$/, '')}/blog`} class="text-brand-200 hover:text-white text-sm transition-colors">← Blog</a>
-        <span class="text-brand-400">/</span>
-        <span class="badge-brand text-xs bg-white/10 text-brand-200">{post.data.category}</span>
+        <a href={`${import.meta.env.BASE_URL.replace(/\/?$/, '')}/blog`} class="text-stone-500 hover:text-stone-900 text-sm transition-colors">← Blog</a>
+        <span class="text-stone-400">/</span>
+        <span class="badge-gray text-xs">{post.data.category}</span>
       </div>
-      <h1 class="font-display font-bold text-3xl md:text-4xl text-white mb-4">
+      <h1 class="font-display font-bold text-3xl md:text-4xl text-stone-900 mb-4">
         {post.data.title}
       </h1>
-      <div class="flex items-center gap-3 text-brand-200 text-sm">
+      <div class="flex items-center gap-3 text-stone-500 text-sm">
         <span>von {post.data.author}</span>
         <span>·</span>
         <time>{formatDate(post.data.pubDate)}</time>
@@ -40,18 +40,18 @@ const formatDate = (date: Date) =>
   <!-- Content -->
   <section class="section-padding bg-white">
     <div class="section-container max-w-3xl mx-auto">
-      <div class="prose prose-lg prose-gray max-w-none
-        prose-headings:font-display prose-headings:font-bold prose-headings:text-gray-900
-        prose-a:text-brand-600 prose-a:no-underline hover:prose-a:underline
-        prose-strong:text-gray-900
-        prose-code:text-brand-700 prose-code:bg-brand-50 prose-code:px-1 prose-code:rounded">
+      <div class="prose prose-lg prose-stone max-w-none
+        prose-headings:font-display prose-headings:font-bold prose-headings:text-stone-900
+        prose-a:text-brand-500 prose-a:no-underline hover:prose-a:underline
+        prose-strong:text-stone-900
+        prose-code:text-brand-600 prose-code:bg-stone-50 prose-code:px-1 prose-code:rounded">
         <Content />
       </div>
     </div>
   </section>
 
   <!-- CTA -->
-  <section class="section-padding gradient-section">
+  <section class="section-padding bg-stone-50">
     <div class="section-container text-center max-w-2xl mx-auto">
       <h2 class="section-title mb-4">App-Care für deine App?</h2>
       <p class="section-subtitle mb-8">Lass uns in einem kostenlosen Gespräch schauen, wie App-Care helfen kann.</p>
