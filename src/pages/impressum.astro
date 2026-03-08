@@ -9,33 +9,53 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 >
   <section class="section-padding bg-white">
     <div class="section-container max-w-2xl mx-auto">
-      <h1 class="font-display font-bold text-3xl text-slate-900 mb-8">Impressum</h1>
 
-      <div class="prose prose-slate max-w-none">
-        <h2>Angaben gemäß § 5 TMG</h2>
-        <p>
-          coodoo GmbH<br />
-          Jakob-Anstatt-Str. 2<br />
-          55130 Mainz
-        </p>
+      <div class="mb-12">
+        <span class="font-display text-xs font-bold tracking-widest uppercase text-brand-600">Rechtliches</span>
+        <h1 class="font-display font-bold text-3xl text-slate-900 mt-3">Impressum</h1>
+      </div>
 
-        <h2>Kontakt</h2>
-        <p>
-          Telefon: 06131 / 4640270<br />
-          E-Mail: mail@coodoo.de
-        </p>
+      <div class="divide-y divide-slate-100">
 
-        <h2>Geschäftsführung</h2>
-        <p>Markus Kühle, Jan Marsh</p>
+        <div class="py-8 grid grid-cols-1 sm:grid-cols-3 gap-2">
+          <p class="font-display font-bold text-xs tracking-widest uppercase text-slate-400">Angaben gemäß § 5 TMG</p>
+          <div class="sm:col-span-2 text-slate-700 text-sm leading-relaxed">
+            coodoo GmbH<br />
+            Jakob-Anstatt-Str. 2<br />
+            55130 Mainz
+          </div>
+        </div>
 
-        <h2>Handelsregister</h2>
-        <p>
-          Registergericht: Amtsgericht Mainz<br />
-          Registernummer: HRB 44076
-        </p>
+        <div class="py-8 grid grid-cols-1 sm:grid-cols-3 gap-2">
+          <p class="font-display font-bold text-xs tracking-widest uppercase text-slate-400">Kontakt</p>
+          <div class="sm:col-span-2 text-slate-700 text-sm leading-relaxed">
+            Telefon: 06131 / 4640270<br />
+            E-Mail: <a href="mailto:mail@coodoo.de" class="text-brand-600 hover:underline">mail@coodoo.de</a>
+          </div>
+        </div>
 
-        <h2>Umsatzsteuer-ID</h2>
-        <p>Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz: DE283497556</p>
+        <div class="py-8 grid grid-cols-1 sm:grid-cols-3 gap-2">
+          <p class="font-display font-bold text-xs tracking-widest uppercase text-slate-400">Geschäftsführung</p>
+          <div class="sm:col-span-2 text-slate-700 text-sm">
+            Markus Kühle, Jan Marsh
+          </div>
+        </div>
+
+        <div class="py-8 grid grid-cols-1 sm:grid-cols-3 gap-2">
+          <p class="font-display font-bold text-xs tracking-widest uppercase text-slate-400">Handelsregister</p>
+          <div class="sm:col-span-2 text-slate-700 text-sm leading-relaxed">
+            Registergericht: Amtsgericht Mainz<br />
+            Registernummer: HRB 44076
+          </div>
+        </div>
+
+        <div class="py-8 grid grid-cols-1 sm:grid-cols-3 gap-2">
+          <p class="font-display font-bold text-xs tracking-widest uppercase text-slate-400">Umsatzsteuer-ID</p>
+          <div class="sm:col-span-2 text-slate-700 text-sm">
+            DE283497556
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
