@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Hero from '../components/sections/Hero.astro';
+import SocialProof from '../components/sections/SocialProof.astro';
 import Problems from '../components/sections/Problems.astro';
 import AppCareComparison from '../components/sections/AppCareComparison.astro';
 import Solution from '../components/sections/Solution.astro';
@@ -16,12 +17,13 @@ import FinalCTA from '../components/sections/FinalCTA.astro';
   description="App-Care ist das monatliche Betreuungspaket für deine Mobile App. Ein ganzes Expertenteam misst, analysiert und entwickelt deine App weiter — KPI-getrieben und messbar."
 >
   <Hero />
-  <Problems />
+  <SocialProof />
   <AppCareComparison />
   <Solution />
   <CockpitTeaser />
-  <PackagesOverview />
+  <Problems />
   <ReferencesTeaser />
+  <PackagesOverview />
   <TeamTeaser />
   <FinalCTA />
 </BaseLayout>

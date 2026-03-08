@@ -1,0 +1,57 @@
+---
+// Firmenlogos: Platzhalter durch { src: '/assets/logos/name.svg', alt: 'Firmenname' } ersetzen
+// Logos in public/assets/logos/ ablegen — SVG bevorzugt, alternativ PNG
+const logos = [
+  { placeholder: 'Kunde 1' },
+  { placeholder: 'Kunde 2' },
+  { placeholder: 'Kunde 3' },
+  { placeholder: 'Kunde 4' },
+  { placeholder: 'Kunde 5' },
+];
+
+const metrics = [
+  { value: '+51%', label: 'Mehr aktive Nutzer' },
+  { value: '+53%', label: 'Mehr Subscriptions' },
+  { value: '4,8', label: 'Ø Store-Rating' },
+  { value: '99,2%', label: 'Crash-freie Sessions' },
+];
+---
+
+<div class="bg-slate-50 border-y border-slate-100 py-10">
+  <div class="section-container">
+
+    <p class="text-center font-display text-xs font-bold tracking-widest uppercase text-slate-400 mb-8">
+      Vertraut von diesen Unternehmen
+    </p>
+
+    <!-- Firmenlogos -->
+    <div class="flex flex-wrap items-center justify-center gap-8 mb-10">
+      {logos.map((logo) => (
+        <div class="h-8 w-28 flex items-center justify-center flex-shrink-0">
+          {'src' in logo
+            ? <img src={(logo as any).src} alt={(logo as any).alt} class="max-h-8 max-w-full object-contain opacity-50 grayscale hover:opacity-80 hover:grayscale-0 transition-all duration-300" />
+            : <div class="w-full h-full rounded bg-slate-200 flex items-center justify-center">
+                <span class="text-[10px] font-display font-bold text-slate-400">{logo.placeholder}</span>
+              </div>
+          }
+        </div>
+      ))}
+    </div>
+
+    <!-- Metrics -->
+    <div class="flex flex-wrap items-center justify-center gap-x-10 gap-y-4">
+      {metrics.map((m, i) => (
+        <>
+          <div class="text-center">
+            <div class="font-display font-extrabold text-xl text-slate-900">{m.value}</div>
+            <div class="text-xs text-slate-400 mt-0.5">{m.label}</div>
+          </div>
+          {i < metrics.length - 1 && (
+            <div class="hidden sm:block w-px h-6 bg-slate-200" />
+          )}
+        </>
+      ))}
+    </div>
+
+  </div>
+</div>
