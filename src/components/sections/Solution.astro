@@ -11,7 +11,7 @@
           <span class="font-display text-xs font-bold tracking-widest uppercase text-brand-600">Management Summary</span>
         </div>
         <h2 class="section-title mb-6">
-          Jeden Monat weißt du, wo deine App steht – geprüft von Experten, nicht nur von KI.
+          Jeden Monat.<br />Geprüft von Experten.
         </h2>
         <p class="section-subtitle mb-10">
           Das Herzstück von App-Care: alle KPIs, Auffälligkeiten und konkrete Empfehlungen — KI-analysiert, vom coodoo-Team geprüft und im Cockpit freigegeben, bevor du ihn siehst.
@@ -50,11 +50,17 @@
 
       <!-- Right: PDF Preview -->
       <div class="flex justify-center">
-        <div class="relative max-w-sm w-full">
-          <!-- Shadow / depth layer -->
-          <div class="absolute inset-0 translate-x-3 translate-y-3 bg-slate-200 rounded-lg"></div>
-          <!-- PDF page -->
-          <div class="relative rounded-lg overflow-hidden shadow-lg border border-slate-200 bg-white">
+        <div class="relative w-full">
+          <!-- Second screenshot (behind) -->
+          <div class="absolute top-4 -right-4 w-[88%] rounded-lg overflow-hidden shadow-md border border-slate-200 bg-white rotate-2">
+            <img
+              src={`${import.meta.env.BASE_URL.replace(/\/?$/, '')}/assets/mgmt-summary/meteosol-Management-Summary-nutzerdaten.png`}
+              alt="Management Summary Nutzerdaten — Beispiel meteosol"
+              class="w-full"
+            />
+          </div>
+          <!-- First screenshot (front) -->
+          <div class="relative rounded-lg overflow-hidden shadow-lg border border-slate-200 bg-white -rotate-1">
             <img
               src={`${import.meta.env.BASE_URL.replace(/\/?$/, '')}/assets/mgmt-summary/meteosol-Management-Summary.jpg`}
               alt="Management Summary — Beispiel meteosol"

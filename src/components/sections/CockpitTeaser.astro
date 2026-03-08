@@ -1,0 +1,84 @@
+---
+const steps = [
+  {
+    number: '01',
+    title: 'Daten',
+    description: 'KPIs, Store-Bewertungen, Crashlytics und Release-Daten fließen automatisch ins Cockpit.',
+  },
+  {
+    number: '02',
+    title: 'Management Summary',
+    description: 'KI analysiert die Daten und erstellt einen monatlichen Report — expertengeprüft und freigegeben.',
+  },
+  {
+    number: '03',
+    title: 'Feature-Board',
+    description: 'Aus den Handlungsempfehlungen entstehen direkt im Cockpit priorisierte Features und Tasks.',
+  },
+  {
+    number: '04',
+    title: 'Release',
+    description: 'Umgesetzte Features werden mit Releases verknüpft — der Kreislauf beginnt von vorn.',
+  },
+];
+---
+
+<section class="section-padding bg-white">
+  <div class="section-container">
+
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <div class="flex items-center justify-center gap-3 mb-6">
+        <span class="w-8 h-px bg-brand-600"></span>
+        <span class="font-display text-xs font-bold tracking-widest uppercase text-brand-600">App-Care Cockpit</span>
+        <span class="w-8 h-px bg-brand-600"></span>
+      </div>
+      <h2 class="section-title mb-4">
+        Ein Tool. Der vollständige Kreislauf.
+      </h2>
+      <p class="section-subtitle">
+        Das App-Care Cockpit verbindet alle Datenquellen, den Management Summary, das Feature-Board und das Release Management — an einem Ort, ohne Tool-Wechsel.
+      </p>
+    </div>
+
+    <!-- Cycle steps -->
+    <div class="relative max-w-4xl mx-auto">
+      <!-- Connector line (desktop) -->
+      <div class="hidden lg:block absolute top-10 left-[12.5%] right-[12.5%] h-px bg-slate-200" aria-hidden="true"></div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        {steps.map((step, i) => (
+          <div class="relative flex flex-col items-center text-center">
+            <!-- Step number bubble -->
+            <div class={`relative z-10 w-20 h-20 rounded-full flex items-center justify-center mb-5 border-2 ${i === 1 ? 'bg-brand-600 border-brand-600' : 'bg-white border-slate-200'}`}>
+              <span class={`font-display font-extrabold text-sm ${i === 1 ? 'text-white' : 'text-slate-400'}`}>{step.number}</span>
+              {i < steps.length - 1 && (
+                <div class="lg:hidden absolute -right-4 top-1/2 -translate-y-1/2 text-slate-300">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+              )}
+            </div>
+            <h3 class={`font-display font-bold text-base mb-2 ${i === 1 ? 'text-brand-600' : 'text-slate-900'}`}>
+              {step.title}
+            </h3>
+            <p class="text-slate-500 text-sm leading-relaxed">
+              {step.description}
+            </p>
+          </div>
+        ))}
+      </div>
+
+      <!-- Loop arrow (desktop) -->
+      <div class="hidden lg:flex justify-center mt-8">
+        <div class="flex items-center gap-2 text-xs text-slate-400 font-display tracking-wide uppercase">
+          <svg class="w-4 h-4 text-brand-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+          </svg>
+          Jeden Monat von vorn
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
