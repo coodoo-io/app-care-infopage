@@ -3,7 +3,7 @@ name: Preview Deploy to Cloudflare Pages
 on:
   push:
     branches:
-      - main
+      - '**'
 
 jobs:
   preview:
@@ -17,6 +17,11 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
+      - name: Sanitize branch name
+        id: branch
+        run: |
+          SANITIZED=$(echo "preview-${{ github.ref_name }}" | sed 's/[^a-zA-Z0-9]/-/g' | sed 's/-\+/-/g' | sed 's/^-\|-$//g')
+          echo "name=$SANITIZED" >> $GITHUB_OUTPUT
       - uses: cloudflare/pages-action@v1
         id: deploy
         with:
@@ -24,11 +29,13 @@ jobs:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           projectName: app-care
           directory: dist
-          branch: preview-main
+          branch: ${{ steps.branch.outputs.name }}
       - name: Summary
         run: |
           echo "### Preview deployed" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Branch:** \`${{ steps.branch.outputs.name }}\`" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
           echo "**URL:** ${{ steps.deploy.outputs.url }}" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "**Alias:** https://preview-main.app-care.pages.dev" >> $GITHUB_STEP_SUMMARY
+          echo "**Alias:** https://${{ steps.branch.outputs.name }}.app-care.pages.dev" >> $GITHUB_STEP_SUMMARY
