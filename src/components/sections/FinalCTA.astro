@@ -1,40 +1,50 @@
 ---
+const base = import.meta.env.BASE_URL.replace(/\/?$/, '');
 ---
 
 <section class="section-padding bg-white">
   <div class="section-container">
     <div class="max-w-3xl mx-auto text-center">
       <h2 class="section-title mb-4">
-        Bereit, deine App auf das nächste Level zu bringen?
+        Bereit für den nächsten Schritt?
       </h2>
       <p class="section-subtitle mb-10">
-        Lass uns in einem kostenlosen 30-Minuten-Gespräch schauen, wie App-Care deiner App helfen kann. Kein Pitch. Kein Druck. Nur ehrliche Beratung.
+        30 Minuten, kostenlos, unverbindlich. Wir schauen gemeinsam, was deine App braucht.
       </p>
 
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
-        <a href={`${import.meta.env.BASE_URL.replace(/\/?$/, '')}/kontakt`} class="btn-primary text-lg px-8 py-4">
-          Kostenloses Gespräch buchen
+        <a href={`${base}/kontakt`} class="btn-primary px-8 py-4 text-sm">
+          Gespräch buchen
         </a>
-        <a href={`${import.meta.env.BASE_URL.replace(/\/?$/, '')}/pakete`} class="btn-secondary text-lg px-8 py-4">
+        <a href={`${base}/pakete`} class="btn-secondary px-8 py-4 text-sm">
           Pakete vergleichen
         </a>
       </div>
 
-      <div class="flex items-center justify-center gap-8 text-sm text-gray-500 mb-10">
-        <span class="flex items-center gap-1">✓ Kostenlos & unverbindlich</span>
-        <span class="flex items-center gap-1">✓ In 24h Antwort</span>
-        <span class="flex items-center gap-1">✓ Kein Risiko</span>
+      <div class="flex items-center justify-center gap-6 sm:gap-8 text-sm text-slate-400 mb-12">
+        <span class="flex items-center gap-1.5">
+          <svg class="w-4 h-4 text-brand-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+          Kostenlos
+        </span>
+        <span class="flex items-center gap-1.5">
+          <svg class="w-4 h-4 text-brand-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+          Antwort in 24h
+        </span>
+        <span class="flex items-center gap-1.5">
+          <svg class="w-4 h-4 text-brand-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+          Kein Risiko
+        </span>
       </div>
 
-      <div class="flex items-center justify-center gap-4 bg-gray-50 rounded-2xl px-6 py-4 max-w-sm mx-auto">
+      <div class="inline-flex items-center gap-4 bg-slate-50 border border-slate-200 rounded-xl px-6 py-4">
         <img
-          src={`${import.meta.env.BASE_URL.replace(/\/?$/, '')}/assets/Markus.jpg`}
+          src={`${base}/assets/Markus.jpg`}
           alt="Markus Kühle"
           class="w-12 h-12 rounded-full object-cover flex-shrink-0"
         />
         <div class="text-left">
-          <p class="font-semibold text-gray-900 text-sm leading-tight">Markus Kühle</p>
-          <p class="text-gray-500 text-xs">Geschäftsführer, coodoo GmbH · antwortet persönlich</p>
+          <p class="font-display font-bold text-slate-900 text-sm">Markus Kühle</p>
+          <p class="text-slate-400 text-xs">Geschäftsführer, coodoo GmbH</p>
         </div>
       </div>
     </div>

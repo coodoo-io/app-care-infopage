@@ -1,76 +1,69 @@
 ---
 const items = [
   {
-    icon: '💬',
-    title: 'Nutzerfeedback gezielt nutzen',
-    description: 'Jede Bewertung, jedes Feedback wird systematisch erfasst und in konkrete Verbesserungen übersetzt. Du weißt immer, was deine Nutzer wirklich wollen.',
+    title: 'Feedback in Features verwandeln',
+    description: 'Jede Store-Bewertung wird erfasst und in konkrete Verbesserungen übersetzt.',
   },
   {
-    icon: '📊',
-    title: 'Volle Klarheit über deine App',
-    description: 'Du siehst jederzeit wie deine App wirklich genutzt wird: Installationen, Verweildauer, Abbruchraten — alle KPIs verständlich aufbereitet im monatlichen Management Summary.',
-    link: { href: '/management-summary', label: 'Was ist der Management Summary?' },
+    title: 'Volle Transparenz per KPI-Report',
+    description: 'Installationen, Verweildauer, Abbruchraten — verständlich aufbereitet im monatlichen Management Summary.',
+    link: { href: '/management-summary', label: 'Management Summary ansehen' },
   },
   {
-    icon: '💡',
-    title: 'Expertise on Demand',
-    description: 'Keine Stellenausschreibung, kein Onboarding, kein Aufbau. Sofort einsatzbereite Mobile App Expertise — flexibel und monatlich kündbar.',
+    title: 'Expertise ohne Recruiting',
+    description: 'Sofort einsatzbereit, flexibel skalierbar, monatlich kündbar. Kein Onboarding nötig.',
   },
   {
-    icon: '👥',
-    title: 'Dein Expertenteam — immer verfügbar',
-    description: '11 Mobile App Experten mit allen nötigen Skills, dauerhaft an deiner Seite — ohne aufwändige Suche oder Einarbeitung.',
+    title: '11 Experten, ein Team',
+    description: 'Designer, Entwickler, QA — dauerhaft an deiner Seite, ohne Suche oder Einarbeitung.',
   },
   {
-    icon: '🚨',
-    title: 'Sofortreaktion bei kritischen Problemen',
-    description: 'Bei kritischen Bugs reagieren wir sofort — bevor deine Nutzer sie bemerken oder deine Store-Bewertungen darunter leiden.',
+    title: 'Sofortreaktion bei Bugs',
+    description: 'Kritische Probleme werden behoben, bevor deine Nutzer sie bemerken.',
   },
   {
-    icon: '✅',
-    title: 'Stabile App, begeisterte Nutzer',
-    description: 'Kontinuierliches Monitoring sorgt für technische Stabilität — Probleme werden erkannt und behoben bevor sie zum Problem werden.',
+    title: 'Stabilität durch Monitoring',
+    description: 'Probleme werden erkannt und behoben, bevor sie eskalieren.',
   },
 ];
 ---
 
-<section class="section-padding bg-gray-50">
+<section class="section-padding bg-white">
   <div class="section-container">
-    <div class="text-center max-w-2xl mx-auto mb-12">
-      <span class="badge-brand mb-4 inline-block">Was wir möglich machen</span>
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <div class="flex items-center justify-center gap-3 mb-6">
+        <span class="w-8 h-px bg-brand-600"></span>
+        <span class="font-display text-xs font-bold tracking-widest uppercase text-brand-600">Leistungen</span>
+        <span class="w-8 h-px bg-brand-600"></span>
+      </div>
       <h2 class="section-title mb-4">
-        So schöpft deine App ihr volles Potenzial aus
+        Volles Potenzial für deine App
       </h2>
       <p class="section-subtitle">
-        Mit den richtigen Daten, dem richtigen Team und den richtigen Prozessen wächst deine App — messbar und verlässlich.
+        Die richtigen Daten, das richtige Team, die richtigen Prozesse.
       </p>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       {items.map((item) => (
-        <div class="card group hover:border-brand-200 hover:border transition-all duration-200">
-          <div class="flex items-center gap-3 mb-3">
-            <div class="w-9 h-9 rounded-xl bg-brand-50 flex items-center justify-center flex-shrink-0 text-lg">
-              {item.icon}
-            </div>
-            <h3 class="font-display font-semibold text-lg text-gray-900">
-              {item.title}
-            </h3>
-          </div>
-          <p class="text-gray-600 text-sm leading-relaxed">
+        <div class="card group">
+          <h3 class="font-display font-bold text-base text-slate-900 mb-3">
+            {item.title}
+          </h3>
+          <p class="text-slate-500 text-sm leading-relaxed">
             {item.description}
           </p>
           {item.link && (
             <a
               href={`${import.meta.env.BASE_URL.replace(/\/?$/, '')}${item.link.href}`}
-              class="inline-flex items-center gap-1 text-brand-600 text-xs font-semibold mt-3 hover:underline"
+              class="inline-flex items-center gap-1 text-brand-600 text-xs font-semibold mt-4 hover:underline decoration-2 underline-offset-4"
             >
-              {item.link.label} →
+              {item.link.label}
+              <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
             </a>
           )}
         </div>
       ))}
     </div>
-
   </div>
 </section>

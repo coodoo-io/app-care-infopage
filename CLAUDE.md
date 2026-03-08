@@ -42,23 +42,24 @@ Sections render in this order: Hero → Problems → AppCareComparison → Solut
 
 All design tokens live in `tailwind.config.mjs`. Key custom tokens:
 
-- `brand-*` — Indigo scale (primary colour), `brand-600` (#4f46e5) for CTAs, `brand-950` (#1e1b4b) for dark sections
-- `accent-*` — Emerald scale, used sparingly for highlights
-- `font-display` — Plus Jakarta Sans (headlines)
+- `brand-*` — Blue scale (primary colour), `brand-600` (#2563eb) for CTAs, `brand-950` (#172554) for dark sections
+- No accent colour — single colour system, use brand-* at different intensities
+- Neutral greys use Tailwind's `slate-*` scale (cool blue undertone)
+- `font-display` — JetBrains Mono (headlines, buttons, labels)
 - `font-sans` — Inter (body)
 
 Reusable CSS component classes in `src/styles/global.css`:
 - Layout: `.section-container`, `.section-padding`
-- Typography: `.section-title`, `.section-subtitle`, `.text-gradient`
+- Typography: `.section-title`, `.section-subtitle`
 - UI: `.card`, `.card-highlight`, `.badge`, `.badge-brand`, `.badge-accent`, `.badge-gray`
-- Buttons: `.btn-primary`, `.btn-secondary`, `.btn-ghost`
-- Backgrounds: `.gradient-hero` (dark indigo, used on hero/page heroes), `.gradient-section` (light gray→brand-50)
+- Buttons: `.btn-primary` (mono, uppercase, tracking-wide), `.btn-secondary`, `.btn-ghost`
+- Backgrounds: `.gradient-hero` (resolves to `bg-brand-950`), `.gradient-section` (resolves to `bg-slate-50`)
 
 ### Assets
 
 - `public/assets/team/` — team photos as `.avif` files (Arend, Eike, Erik, Flo, Jan, Klemens, Marcel, Markus, Nico, Richard, Thanh)
 - `public/assets/mgmt-summary/` — real Management Summary screenshots (meteosol reference)
-- `public/favicon.svg` — SVG favicon (indigo gradient background, bar chart + emerald pulse line)
+- `public/favicon.svg` — SVG favicon
 - `docs/ci.md` — brand/CI reference document
 
 ### Key conventions

@@ -1,73 +1,76 @@
 ---
 const references = [
   {
-    app: 'WeatherPro App',
+    app: 'WeatherPro',
     category: 'Wetter & Lifestyle',
     kpis: [
       { label: 'Aktive Nutzer', before: '8.200', after: '12.400', change: '+51%' },
-      { label: 'Crash-freie Sessions', before: '94,1%', after: '99,2%', change: '+5,1pp' },
-      { label: 'App Store Rating', before: '3,8 ⭐', after: '4,7 ⭐', change: '+0,9' },
+      { label: 'Crash-frei', before: '94,1%', after: '99,2%', change: '+5,1pp' },
+      { label: 'Store Rating', before: '3,8', after: '4,7', change: '+0,9' },
     ],
-    testimonial: 'Endlich wissen wir, was in unserer App passiert. Der monatliche Report gibt uns Sicherheit und klare Handlungsempfehlungen.',
+    testimonial: 'Endlich wissen wir, was in unserer App passiert. Der monatliche Report gibt uns Sicherheit und klare Empfehlungen.',
   },
   {
-    app: 'HealthTrack App',
+    app: 'HealthTrack',
     category: 'Gesundheit & Fitness',
     kpis: [
-      { label: 'Aktive Subscriptions', before: '340', after: '520', change: '+53%' },
+      { label: 'Subscriptions', before: '340', after: '520', change: '+53%' },
       { label: 'Churn Rate', before: '8,2%', after: '4,1%', change: '-4,1pp' },
       { label: 'Session-Dauer', before: '4,2 Min', after: '6,8 Min', change: '+62%' },
     ],
-    testimonial: 'App-Care hat uns geholfen, die wirklich wichtigen KPIs zu verstehen und gezielt daran zu arbeiten.',
+    testimonial: 'App-Care hat uns geholfen, die wichtigen KPIs zu verstehen und gezielt daran zu arbeiten.',
   },
 ];
 ---
 
-<section class="section-padding bg-white">
+<section class="section-padding bg-slate-50">
   <div class="section-container">
-    <div class="text-center max-w-2xl mx-auto mb-12">
-      <span class="badge-brand mb-4 inline-block">Echte Ergebnisse</span>
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <div class="flex items-center justify-center gap-3 mb-6">
+        <span class="w-8 h-px bg-brand-600"></span>
+        <span class="font-display text-xs font-bold tracking-widest uppercase text-brand-600">Referenzen</span>
+        <span class="w-8 h-px bg-brand-600"></span>
+      </div>
       <h2 class="section-title mb-4">
-        Apps die mit App-Care wachsen
+        Ergebnisse, die für sich sprechen
       </h2>
       <p class="section-subtitle">
-        Messbare Ergebnisse, die für sich sprechen — in Zahlen.
+        Messbare Verbesserungen bei echten Apps.
       </p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
       {references.map((ref) => (
-        <div class="card border border-gray-100">
-          <div class="flex items-start justify-between mb-6">
-            <div>
-              <h3 class="font-display font-bold text-gray-900">{ref.app}</h3>
-              <span class="badge-gray text-xs mt-1">{ref.category}</span>
-            </div>
+        <div class="card">
+          <div class="mb-6">
+            <h3 class="font-display font-bold text-slate-900 text-lg">{ref.app}</h3>
+            <span class="badge-gray text-xs mt-1">{ref.category}</span>
           </div>
 
           <div class="space-y-3 mb-6">
             {ref.kpis.map((kpi) => (
               <div class="flex items-center justify-between text-sm">
-                <span class="text-gray-600">{kpi.label}</span>
+                <span class="text-slate-500">{kpi.label}</span>
                 <div class="flex items-center gap-3">
-                  <span class="text-gray-400 line-through">{kpi.before}</span>
-                  <span class="font-semibold text-gray-900">{kpi.after}</span>
-                  <span class="badge-accent text-xs">{kpi.change}</span>
+                  <span class="text-slate-300 line-through text-xs">{kpi.before}</span>
+                  <span class="font-display font-bold text-slate-900">{kpi.after}</span>
+                  <span class="badge bg-brand-50 text-brand-600 text-xs font-bold">{kpi.change}</span>
                 </div>
               </div>
             ))}
           </div>
 
-          <blockquote class="border-l-2 border-brand-200 pl-4 text-sm text-gray-600 italic">
+          <blockquote class="border-l-2 border-brand-600 pl-4 text-sm text-slate-500 italic">
             "{ref.testimonial}"
           </blockquote>
         </div>
       ))}
     </div>
 
-    <div class="text-center mt-8">
-      <a href={`${import.meta.env.BASE_URL.replace(/\/?$/, '')}/referenzen`} class="text-brand-600 font-semibold hover:underline text-sm">
-        Alle Referenzen ansehen →
+    <div class="text-center mt-10">
+      <a href={`${import.meta.env.BASE_URL.replace(/\/?$/, '')}/referenzen`} class="text-brand-600 font-semibold hover:underline decoration-2 underline-offset-4 text-sm inline-flex items-center gap-1">
+        Alle Referenzen
+        <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
       </a>
     </div>
   </div>

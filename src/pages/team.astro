@@ -114,25 +114,25 @@ const values = [
   <!-- Hero -->
   <section class="gradient-hero text-white py-20">
     <div class="section-container text-center">
-      <span class="badge bg-white/10 text-brand-200 mb-4 inline-block">Das Team</span>
+      <span class="badge bg-white/5 text-slate-300 mb-4 inline-block">Das Team</span>
       <h1 class="font-display font-bold text-4xl md:text-5xl text-white mb-6">
         11 Experten. Ein Team. Deine App.
       </h1>
-      <p class="text-brand-200 text-xl max-w-2xl mx-auto">
+      <p class="text-slate-300 text-xl max-w-2xl mx-auto">
         App-Care wird betrieben von coodoo GmbH — einem erfahrenen Mobile App Studio aus Mainz. Persönlich, kompetent, verlässlich.
       </p>
     </div>
   </section>
 
   <!-- Values -->
-  <section class="py-12 bg-white border-b border-gray-100">
+  <section class="py-12 bg-white border-b border-slate-100">
     <div class="section-container">
       <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
         {values.map((value) => (
           <div class="text-center">
-            <div class="w-14 h-14 rounded-2xl bg-brand-50 text-brand-600 flex items-center justify-center mx-auto mb-4" set:html={value.svg} />
-            <h3 class="font-display font-bold text-gray-900 text-base mb-2">{value.title}</h3>
-            <p class="text-gray-500 text-sm leading-relaxed">{value.desc}</p>
+            <div class="w-14 h-14 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center mx-auto mb-4" set:html={value.svg} />
+            <h3 class="font-display font-bold text-slate-900 text-base mb-2">{value.title}</h3>
+            <p class="text-slate-500 text-sm leading-relaxed">{value.desc}</p>
           </div>
         ))}
       </div>
@@ -140,7 +140,7 @@ const values = [
   </section>
 
   <!-- Team Grid -->
-  <section class="section-padding bg-gray-50">
+  <section class="section-padding bg-slate-50">
     <div class="section-container">
       <div class="text-center max-w-2xl mx-auto mb-12">
         <h2 class="section-title mb-4">Das coodoo Team</h2>
@@ -149,7 +149,7 @@ const values = [
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {teamMembers.map((member) => (
-          <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-200">
+          <div class="bg-white rounded-xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition-shadow duration-200">
             <div class="aspect-[4/3] overflow-hidden bg-brand-100">
               <img
                 src={`${base}/assets/team/${member.file}.avif`}
@@ -158,9 +158,9 @@ const values = [
               />
             </div>
             <div class="p-5">
-              <h3 class="font-display font-bold text-gray-900 text-lg mb-0.5">{member.name}</h3>
+              <h3 class="font-display font-bold text-slate-900 text-lg mb-0.5">{member.name}</h3>
               <p class="text-brand-600 text-sm font-medium mb-3">{member.role}</p>
-              <p class="text-gray-500 text-sm italic leading-relaxed mb-4">„{member.quote}"</p>
+              <p class="text-slate-500 text-sm italic leading-relaxed mb-4">„{member.quote}"</p>
               <div class="flex flex-wrap gap-1.5">
                 {member.skills.map((skill) => (
                   <span class="badge-gray text-xs">{skill}</span>
@@ -178,10 +178,10 @@ const values = [
     <div class="section-container max-w-3xl mx-auto text-center">
       <span class="badge-brand mb-4 inline-block">Über coodoo GmbH</span>
       <h2 class="section-title mb-6">Das Unternehmen hinter App-Care</h2>
-      <p class="text-gray-600 leading-relaxed mb-4">
+      <p class="text-slate-600 leading-relaxed mb-4">
         coodoo GmbH wurde in Mainz gegründet und hat sich auf Mobile App Entwicklung spezialisiert — nativ und cross-platform. Mit über 15 Jahren Erfahrung und einem crossfunktionalen Team haben wir über 100 Mobile Apps entwickelt und betreut.
       </p>
-      <p class="text-gray-600 leading-relaxed mb-8">
+      <p class="text-slate-600 leading-relaxed mb-8">
         App-Care ist unsere Antwort auf eine echte Marktlücke: App-Betreiber brauchen verlässliche Partner für die kontinuierliche Betreuung ihrer App — kein großes Entwicklungsprojekt, sondern ein dauerhaftes, strukturiertes Betreuungsmodell.
       </p>
       <a
@@ -203,9 +203,9 @@ const values = [
       <div class="flex flex-col items-center gap-3 mb-8">
         <img src={`${base}/assets/team/Markus.avif`} alt="Markus Kühle" class="w-20 h-20 rounded-full object-cover object-top shadow-md" />
         <div>
-          <p class="font-display font-bold text-gray-900">Markus Kühle</p>
+          <p class="font-display font-bold text-slate-900">Markus Kühle</p>
           <p class="text-brand-600 text-sm font-medium">Gründer & CEO</p>
-          <p class="text-gray-500 text-sm mt-1">Das Gespräch führst du persönlich mit mir.</p>
+          <p class="text-slate-500 text-sm mt-1">Das Gespräch führst du persönlich mit mir.</p>
         </div>
       </div>
       <a href={`${base}/kontakt`} class="btn-primary">Gespräch buchen</a>
