@@ -1,0 +1,43 @@
+<svg width="640" height="224" viewBox="0 0 640 224" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Benchmark-Richtwerte für die 4 wichtigsten KPIs: MAU-Wachstum gut 5–10% pro Monat kritisch unter 2%, Crash Rate gut unter 0,5% kritisch über 2%, Retention Day 7 gut über 25% kritisch unter 15%, Store Rating gut 4,5 und mehr kritisch unter 4,0">
+  <rect width="640" height="224" fill="#ffffff" rx="12"/>
+
+  <text x="320" y="22" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#9ca3af" letter-spacing="0.08em">BENCHMARK-RICHTWERTE AUF EINEN BLICK</text>
+
+  <!-- Header row -->
+  <text x="20" y="46" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#9ca3af">KPI</text>
+  <rect x="310" y="32" width="140" height="22" fill="#f0fdf4" rx="6"/>
+  <text x="380" y="46" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="700" fill="#16a34a">Gut</text>
+  <rect x="466" y="32" width="154" height="22" fill="#fef2f2" rx="6"/>
+  <text x="543" y="46" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="700" fill="#dc2626">Kritisch</text>
+
+  <!-- Divider -->
+  <line x1="20" y1="58" x2="620" y2="58" stroke="#f1f5f9" stroke-width="1.5"/>
+
+  <!-- Row 1: MAU-Wachstum -->
+  <text x="20" y="82" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="#1e293b">MAU-Wachstum</text>
+  <text x="20" y="98" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#94a3b8">Monthly Active Users</text>
+  <rect x="310" y="68" width="140" height="36" fill="#f0fdf4" rx="8"/>
+  <text x="380" y="91" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="#16a34a">5–10 % / Mo.</text>
+  <rect x="466" y="68" width="154" height="36" fill="#fef2f2" rx="8"/>
+  <text x="543" y="91" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="#dc2626">&lt; 2 % / Mo.</text>
+
+  <line x1="20" y1="112" x2="620" y2="112" stroke="#f1f5f9" stroke-width="1.5"/>
+
+  <!-- Row 2: Crash Rate -->
+  <text x="20" y="136" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="#1e293b">Crash Rate</text>
+  <text x="20" y="152" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#94a3b8">Firebase Crashlytics</text>
+  <rect x="310" y="122" width="140" height="36" fill="#f0fdf4" rx="8"/>
+  <text x="380" y="145" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="#16a34a">&lt; 0,5 %</text>
+  <rect x="466" y="122" width="154" height="36" fill="#fef2f2" rx="8"/>
+  <text x="543" y="145" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="#dc2626">&gt; 2 %</text>
+
+  <line x1="20" y1="166" x2="620" y2="166" stroke="#f1f5f9" stroke-width="1.5"/>
+
+  <!-- Row 3: Retention Day 7 -->
+  <text x="20" y="190" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="#1e293b">Retention Rate (Day 7)</text>
+  <text x="20" y="206" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#94a3b8">Nutzer nach 7 Tagen noch aktiv</text>
+  <rect x="310" y="176" width="140" height="36" fill="#f0fdf4" rx="8"/>
+  <text x="380" y="199" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="#16a34a">25 %+</text>
+  <rect x="466" y="176" width="154" height="36" fill="#fef2f2" rx="8"/>
+  <text x="543" y="199" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="#dc2626">&lt; 15 %</text>
+</svg>

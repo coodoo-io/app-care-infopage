@@ -1,0 +1,35 @@
+<svg width="640" height="268" viewBox="0 0 640 268" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="10 App-KPIs gruppiert in vier Kategorien: Engagement, Stabilität, Wachstum, Store und Umsatz">
+  <rect width="640" height="268" fill="#ffffff" rx="12"/>
+
+  <text x="320" y="22" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#9ca3af" letter-spacing="0.08em">10 KPIS — NACH KATEGORIE</text>
+
+  <!-- Card 1: Engagement (blau) -->
+  <rect x="20" y="34" width="290" height="104" fill="#eff6ff" rx="10"/>
+  <rect x="20" y="34" width="4" height="104" fill="#2563eb" rx="2"/>
+  <text x="40" y="58" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="700" fill="#1d4ed8" letter-spacing="0.04em">ENGAGEMENT</text>
+  <text x="40" y="80" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#1e40af">MAU</text>
+  <text x="40" y="98" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#1e40af">Stickiness (DAU / MAU)</text>
+  <text x="40" y="116" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#1e40af">Average Session Length</text>
+
+  <!-- Card 2: Stabilität (grün) -->
+  <rect x="330" y="34" width="290" height="104" fill="#f0fdf4" rx="10"/>
+  <rect x="330" y="34" width="4" height="104" fill="#16a34a" rx="2"/>
+  <text x="350" y="58" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="700" fill="#15803d" letter-spacing="0.04em">STABILITÄT</text>
+  <text x="350" y="80" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#166534">Crash Rate</text>
+  <text x="350" y="98" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#166534">Crash-freie Sessions</text>
+
+  <!-- Card 3: Wachstum (orange) -->
+  <rect x="20" y="152" width="290" height="104" fill="#fff7ed" rx="10"/>
+  <rect x="20" y="152" width="4" height="104" fill="#ea580c" rx="2"/>
+  <text x="40" y="176" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="700" fill="#c2410c" letter-spacing="0.04em">WACHSTUM</text>
+  <text x="40" y="198" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#9a3412">Retention Rate (Day 7 / Day 30)</text>
+  <text x="40" y="216" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#9a3412">Churn Rate (Subscriptions)</text>
+
+  <!-- Card 4: Store & Umsatz (slate) -->
+  <rect x="330" y="152" width="290" height="104" fill="#f8fafc" rx="10"/>
+  <rect x="330" y="152" width="4" height="104" fill="#475569" rx="2"/>
+  <text x="350" y="176" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="700" fill="#475569" letter-spacing="0.04em">STORE &amp; UMSATZ</text>
+  <text x="350" y="198" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#334155">App Store Rating</text>
+  <text x="350" y="216" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#334155">ARPU</text>
+  <text x="350" y="234" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#334155">Store Conversion Rate</text>
+</svg>

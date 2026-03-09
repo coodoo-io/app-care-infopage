@@ -12,6 +12,8 @@ Deine App ist live — aber wie weißt du, ob sie wirklich erfolgreich ist? App-
 
 Dieser Guide zeigt dir die 10 wichtigsten KPIs für Mobile Apps, wie du sie misst und was gute Werte sind.
 
+![10 App-KPIs nach Kategorie: Engagement, Stabilität, Wachstum, Store & Umsatz](/assets/blog/kpi-kategorien.svg)
+
 ## 1. Monthly Active Users (MAU)
 
 **Was es ist:** Anzahl einzigartiger Nutzer, die deine App in einem Monat mindestens einmal geöffnet haben.
@@ -87,6 +89,8 @@ Dieser Guide zeigt dir die 10 wichtigsten KPIs für Mobile Apps, wie du sie miss
 **Wo du es findest:** App Store Connect → Impressions vs. Downloads
 
 **Guter Benchmark:** 2-5% ist typisch. Über 5% ist stark.
+
+![Benchmark-Richtwerte für die 4 wichtigsten App-KPIs](/assets/blog/kpi-benchmarks.svg)
 
 ---
 
