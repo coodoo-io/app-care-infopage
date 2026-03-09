@@ -2,17 +2,21 @@
 const base = import.meta.env.BASE_URL.replace(/\/?$/, '');
 const logos = [
   { src: `${base}/assets/logos/deutsche-bahn.png`, alt: 'Deutsche Bahn' },
-  { src: `${base}/assets/logos/migros.jpg`, alt: 'Migros' },
-  { src: `${base}/assets/logos/wuerth.svg`, alt: 'Würth' },
-  { src: `${base}/assets/logos/winterhalter.svg`, alt: 'Winterhalter' },
+  { src: `${base}/assets/logos/migros.png`, alt: 'Migros' },
+  { src: `${base}/assets/logos/wuerth.png`, alt: 'Würth' },
+  { src: `${base}/assets/logos/winterhalter.png`, alt: 'Winterhalter' },
   { src: `${base}/assets/logos/uebe.png`, alt: 'UEBE Medical' },
-  { src: `${base}/assets/logos/vereinigte-hagel.svg`, alt: 'Vereinigte Hagel' },
-  { src: `${base}/assets/logos/schott.svg`, alt: 'SCHOTT' },
-  { src: `${base}/assets/logos/sport1.svg`, alt: 'Sport1' },
+  { src: `${base}/assets/logos/vereinigte-hagel.png`, alt: 'Vereinigte Hagel' },
+  { src: `${base}/assets/logos/schott.png`, alt: 'SCHOTT' },
+  { src: `${base}/assets/logos/sport1.png`, alt: 'Sport1' },
   { src: `${base}/assets/logos/immobilien-zeitung.png`, alt: 'Immobilien Zeitung' },
   { src: `${base}/assets/logos/blueplant.png`, alt: 'blueplant' },
   { src: `${base}/assets/logos/gilde-gruppe.png`, alt: 'GILDE Gruppe' },
-  { src: `${base}/assets/logos/die-friedliche-geburt.webp`, alt: 'Die Friedliche Geburt', bright: true },
+  { src: `${base}/assets/logos/die-friedliche-geburt.png`, alt: 'Die Friedliche Geburt', bright: true },
+  { src: `${base}/assets/logos/uvex.png`, alt: 'uvex group' },
+  { src: `${base}/assets/logos/krone.png`, alt: 'Krone' },
+  { src: `${base}/assets/logos/bibkat.png`, alt: 'BibKat' },
+  { src: `${base}/assets/logos/halbzeit.png`, alt: 'HALBZEIT' },
 ];
 
 const metrics = [
@@ -38,7 +42,7 @@ const metrics = [
             src={logo.src}
             alt={logo.alt}
             class={`max-h-7 object-contain grayscale hover:opacity-80 hover:grayscale-0 transition-all duration-300 ${logo.bright ? 'opacity-70' : 'opacity-40'}`}
-            loading="lazy"
+            loading="eager"
           />
         </div>
       ))}
@@ -73,7 +77,7 @@ const metrics = [
 
     let visible = 0;
     const tryShow = (index: number) => {
-      if (index >= shuffled.length || visible >= 6) return;
+      if (index >= shuffled.length || visible >= 8) return;
       const el = shuffled[index];
       const img = el.querySelector('img');
       if (!img) return;
