@@ -197,17 +197,34 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             </div>
           </div>
 
-          <!-- Calendly Inline Embed -->
+          <!-- Calendly Link -->
           <div class="card border-2 border-brand-100 bg-brand-50">
             <h2 class="font-display font-bold text-xl text-slate-900 mb-2">Direkt Termin buchen</h2>
-            <p class="text-slate-600 text-sm mb-4">
-              30 Min · kostenlos · unverbindlich
+            <p class="text-slate-600 text-sm mb-6">
+              Lieber gleich einen Gesprächstermin auswählen? Buche direkt einen freien Slot in unserem Kalender.
             </p>
-            <div
-              class="calendly-inline-widget rounded-xl overflow-hidden"
-              data-url="https://calendly.com/app-care-calendly-coodoo/30min?hide_event_type_details=1&hide_gdpr_banner=1&locale=de"
-              style="min-width:280px;height:700px;"
-            ></div>
+            <div class="flex flex-col gap-3 text-sm text-slate-500 mb-6">
+              {[
+                '30 Minuten · kostenlos · unverbindlich',
+                'Kein Pitch, nur ehrliche Beratung',
+                'Du sprichst direkt mit Markus',
+              ].map(item => (
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-brand-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                  </svg>
+                  {item}
+                </div>
+              ))}
+            </div>
+            <a
+              href="https://calendly.com/app-care-calendly-coodoo/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-primary w-full text-center"
+            >
+              Termin buchen →
+            </a>
           </div>
 
           <!-- Contact Info -->
@@ -251,5 +268,4 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     </div>
   </section>
 
-  <script is:inline src="https://assets.calendly.com/assets/external/widget.js" async></script>
 </BaseLayout>
