@@ -27,13 +27,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         <!-- Left: Form -->
         <div>
           <h2 class="font-display font-bold text-2xl text-slate-900 mb-2">Schreib uns</h2>
-          <p class="text-slate-600 mb-6">Wir antworten innerhalb von 48 Stunden.</p>
+          <p class="text-slate-600 mb-6">Wir antworten innerhalb von wenigen Stunden.</p>
 
-          <form
-            action="https://formspree.io/f/placeholder"
-            method="POST"
-            class="space-y-5"
-          >
+          <form id="contact-form" class="space-y-5">
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
                 <label for="name" class="block text-sm font-medium text-slate-700 mb-1">Name *</label>
@@ -71,18 +67,21 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             </div>
 
             <div>
-              <label for="paket" class="block text-sm font-medium text-slate-700 mb-1">Interesse an</label>
-              <select
-                id="paket"
-                name="paket"
-                class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent bg-white transition-shadow"
-              >
-                <option value="">Paket auswählen (optional)</option>
-                <option value="insight">App-Care Insight (€299/Monat)</option>
-                <option value="essentials">App-Care Essentials (€3.500/Monat)</option>
-                <option value="growth">App-Care Growth (€7.000/Monat)</option>
-                <option value="unsicher">Noch unsicher</option>
-              </select>
+              <p class="block text-sm font-medium text-slate-700 mb-2">Worum geht es? <span class="text-slate-400 font-normal">(optional)</span></p>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2" id="interesse-options">
+                {[
+                  { value: 'erstgespraech', label: 'Erstgespräch buchen', sub: '30 Min., kostenlos & unverbindlich' },
+                  { value: 'cockpit', label: 'App-Cockpit testen', sub: 'Solo-Zugang, keine Teambetreuung' },
+                  { value: 'teambetreuung', label: 'Teambetreuung anfragen', sub: 'Monatliche Betreuung mit festem Team' },
+                  { value: 'unsicher', label: 'Noch unsicher', sub: 'Einfach mal schauen, was möglich ist' },
+                ].map(({ value, label, sub }) => (
+                  <label class="interesse-card flex flex-col gap-0.5 px-4 py-3 rounded-xl border border-slate-200 cursor-pointer hover:border-brand-400 transition-colors has-[:checked]:border-brand-500 has-[:checked]:bg-brand-50">
+                    <input type="radio" name="paket" value={value} class="sr-only" />
+                    <span class="text-sm font-medium text-slate-900">{label}</span>
+                    <span class="text-xs text-slate-500">{sub}</span>
+                  </label>
+                ))}
+              </div>
             </div>
 
             <div>
@@ -97,10 +96,19 @@ import BaseLayout from '../layouts/BaseLayout.astro';
               ></textarea>
             </div>
 
-            <input type="hidden" name="_subject" value="Neue App-Care Anfrage" />
+            <!-- Honeypot: für echte Nutzer unsichtbar, Bots füllen es aus -->
+            <div aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;">
+              <label for="website">Website leer lassen</label>
+              <input type="text" id="website" name="website" tabindex="-1" autocomplete="off" />
+            </div>
+
+            <div id="form-error" class="hidden rounded-xl bg-red-50 border border-red-200 px-4 py-3 text-sm text-red-700">
+              Etwas ist schiefgelaufen. Bitte versuche es erneut oder schreib uns direkt an info@app-care.de.
+            </div>
 
             <button
               type="submit"
+              id="submit-btn"
               class="btn-primary w-full text-base"
             >
               Anfrage senden →
@@ -110,6 +118,53 @@ import BaseLayout from '../layouts/BaseLayout.astro';
               Deine Daten werden nur zur Bearbeitung deiner Anfrage genutzt.
             </p>
           </form>
+
+          <div id="form-success" class="hidden rounded-xl bg-brand-50 border border-brand-200 px-6 py-8 text-center">
+            <svg class="w-10 h-10 text-brand-600 mx-auto mb-4" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+            </svg>
+            <p class="font-display font-bold text-slate-900 text-lg mb-1">Nachricht erhalten.</p>
+            <p class="text-slate-600 text-sm">Wir melden uns innerhalb von wenigen Stunden bei dir.</p>
+          </div>
+
+          <script define:vars={{ apiUrl: import.meta.env.PUBLIC_CONTACT_API_URL }}>
+            const form = document.getElementById('contact-form');
+            const successEl = document.getElementById('form-success');
+            const errorEl = document.getElementById('form-error');
+            const submitBtn = document.getElementById('submit-btn');
+
+            form?.addEventListener('submit', async (e) => {
+              e.preventDefault();
+              errorEl.classList.add('hidden');
+              submitBtn.disabled = true;
+              submitBtn.textContent = 'Wird gesendet…';
+
+              if (form.website.value) return; // Honeypot ausgelöst → still ignorieren
+
+              const data = {
+                name: form.name.value,
+                email: form.email.value,
+                app: form.app.value,
+                message: `Paket: ${form.paket.value || '–'}\n\n${form.message.value}`,
+                website: form.website.value, // Honeypot — Edge Function prüft ob leer
+              };
+
+              try {
+                const res = await fetch(apiUrl, {
+                  method: 'POST',
+                  headers: { 'Content-Type': 'application/json' },
+                  body: JSON.stringify(data),
+                });
+                if (!res.ok) throw new Error();
+                form.classList.add('hidden');
+                successEl.classList.remove('hidden');
+              } catch {
+                errorEl.classList.remove('hidden');
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Anfrage senden →';
+              }
+            });
+          </script>
         </div>
 
         <!-- Right: Ansprechpartner + Calendly + Info -->
@@ -124,33 +179,35 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             />
             <div>
               <p class="font-display font-bold text-slate-900 text-lg leading-tight">Markus Kühle</p>
-              <p class="text-brand-600 text-sm font-medium mb-2">Geschäftsführer, coodoo GmbH</p>
-              <p class="text-slate-500 text-sm leading-relaxed">
-                Dipl. Informatiker (FH) · 20+ Jahre Berufserfahrung · Du sprichst direkt mit mir — kein Vertrieb, kein Umweg.
+              <p class="text-brand-600 text-sm font-medium mb-2">Direkt. Persönlich. Ohne Umweg.</p>
+              <p class="text-slate-500 text-sm leading-relaxed mb-3">
+                Du sprichst direkt mit mir — kein Vertrieb, kein Umweg.
               </p>
+              <a
+                href="https://www.linkedin.com/in/markus-kuehle/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-1.5 text-xs text-brand-600 hover:text-brand-700 font-medium transition-colors"
+              >
+                <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                </svg>
+                LinkedIn-Profil
+              </a>
             </div>
           </div>
 
-          <!-- Calendly -->
+          <!-- Calendly Inline Embed -->
           <div class="card border-2 border-brand-100 bg-brand-50">
             <h2 class="font-display font-bold text-xl text-slate-900 mb-2">Direkt Termin buchen</h2>
             <p class="text-slate-600 text-sm mb-4">
-              Lieber gleich einen Gesprächstermin auswählen? Buche direkt einen freien Slot in unserem Kalender.
+              30 Min · kostenlos · unverbindlich
             </p>
-            <!-- Calendly Embed Placeholder -->
-            <div class="bg-white rounded-xl border border-brand-100 p-8 text-center">
-              <div class="text-4xl mb-3">📅</div>
-              <p class="font-semibold text-slate-900 mb-1">Calendly-Terminbuchung</p>
-              <p class="text-sm text-slate-500 mb-4">30 Min · kostenlos · unverbindlich</p>
-              <a
-                href="https://calendly.com/placeholder"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="btn-primary text-sm"
-              >
-                Termin buchen →
-              </a>
-            </div>
+            <div
+              class="calendly-inline-widget rounded-xl overflow-hidden"
+              data-url="https://calendly.com/app-care-calendly-coodoo/30min?hide_event_type_details=1&hide_gdpr_banner=1"
+              style="min-width:280px;height:700px;"
+            ></div>
           </div>
 
           <!-- Contact Info -->
@@ -176,7 +233,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           <!-- Trust signals -->
           <div class="space-y-3">
             {[
-              'Antwort innerhalb von 48 Stunden',
+              'Antwort innerhalb von wenigen Stunden',
               'Kostenlos & unverbindlich',
               'Kein Pitch, nur ehrliche Beratung',
               '20+ Jahre Berufserfahrung im Team',
@@ -193,4 +250,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </div>
     </div>
   </section>
+
+  <script is:inline src="https://assets.calendly.com/assets/external/widget.js" async></script>
 </BaseLayout>
