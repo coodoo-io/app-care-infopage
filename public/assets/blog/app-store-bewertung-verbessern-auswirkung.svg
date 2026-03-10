@@ -1,0 +1,107 @@
+<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Auswirkung der App Store Bewertung auf Downloads und Conversion Rate" font-family="system-ui, sans-serif">
+  <title>App Store Bewertung: Auswirkung auf Nutzerverhalten</title>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="#f8fafc" rx="12"/>
+
+  <!-- Title -->
+  <text x="400" y="36" text-anchor="middle" font-size="15" font-weight="700" fill="#0f172a">Auswirkung der App Store Bewertung auf Nutzerverhalten</text>
+  <text x="400" y="54" text-anchor="middle" font-size="11" fill="#64748b">Conversion Rate und Sichtbarkeit nach Bewertungs-Level</text>
+
+  <!-- Rating zones: x positions for 3.0, 3.5, 4.0, 4.2, 4.5, 5.0 mapped to x=80..720 -->
+  <!-- Zone backgrounds -->
+  <!-- Red zone: 3.0–3.9 (x=80 to x=400) -->
+  <rect x="80" y="80" width="218" height="220" rx="6" fill="#fef2f2" stroke="#fca5a5" stroke-width="1"/>
+  <!-- Orange zone: 3.9–4.2 (x=298 to x=430) -->
+  <rect x="298" y="80" width="132" height="220" rx="6" fill="#fff7ed" stroke="#fdba74" stroke-width="1"/>
+  <!-- Blue zone: 4.2–4.4 (x=430 to x=560) -->
+  <rect x="430" y="80" width="130" height="220" rx="6" fill="#eff6ff" stroke="#93c5fd" stroke-width="1"/>
+  <!-- Green zone: 4.5–5.0 (x=560 to x=720) -->
+  <rect x="560" y="80" width="160" height="220" rx="6" fill="#f0fdf4" stroke="#86efac" stroke-width="1"/>
+
+  <!-- Zone labels at top -->
+  <text x="189" y="100" text-anchor="middle" font-size="11" font-weight="700" fill="#ef4444">SCHWACH</text>
+  <text x="189" y="114" text-anchor="middle" font-size="10" fill="#ef4444">3,0 – 3,9 Sterne</text>
+
+  <text x="364" y="100" text-anchor="middle" font-size="11" font-weight="700" fill="#f97316">DURCHSCHNITT</text>
+  <text x="364" y="114" text-anchor="middle" font-size="10" fill="#f97316">4,0 – 4,1 Sterne</text>
+
+  <text x="495" y="100" text-anchor="middle" font-size="11" font-weight="700" fill="#2563eb">GUT</text>
+  <text x="495" y="114" text-anchor="middle" font-size="10" fill="#2563eb">4,2 – 4,4 Sterne</text>
+
+  <text x="640" y="100" text-anchor="middle" font-size="11" font-weight="700" fill="#10b981">PREMIUM</text>
+  <text x="640" y="114" text-anchor="middle" font-size="10" fill="#10b981">4,5+ Sterne</text>
+
+  <!-- Divider lines at zone boundaries -->
+  <line x1="298" y1="80" x2="298" y2="300" stroke="#e2e8f0" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="430" y1="80" x2="430" y2="300" stroke="#e2e8f0" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="560" y1="80" x2="560" y2="300" stroke="#e2e8f0" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+  <!-- Critical threshold marker at 4.2 (x=430) -->
+  <polygon points="430,76 422,66 438,66" fill="#2563eb"/>
+  <text x="430" y="63" text-anchor="middle" font-size="10" font-weight="700" fill="#2563eb">4,2 — Kritischer Schwellwert</text>
+
+  <!-- Annotation boxes inside zones -->
+  <!-- Zone 1: Schwach -->
+  <rect x="92" y="128" width="194" height="60" rx="5" fill="white" stroke="#fca5a5" stroke-width="1"/>
+  <text x="189" y="146" text-anchor="middle" font-size="10" font-weight="600" fill="#b91c1c">Vertrauensverlust</text>
+  <text x="189" y="160" text-anchor="middle" font-size="10" fill="#64748b">Conversion Rate</text>
+  <text x="189" y="173" text-anchor="middle" font-size="12" font-weight="700" fill="#ef4444">–25 % bis –40 %</text>
+
+  <rect x="92" y="198" width="194" height="48" rx="5" fill="white" stroke="#fca5a5" stroke-width="1"/>
+  <text x="189" y="216" text-anchor="middle" font-size="10" fill="#64748b">Sichtbarkeit im Store</text>
+  <text x="189" y="233" text-anchor="middle" font-size="10" font-weight="600" fill="#b91c1c">Stark eingeschränkt</text>
+
+  <!-- Zone 2: Durchschnitt -->
+  <rect x="308" y="128" width="112" height="60" rx="5" fill="white" stroke="#fdba74" stroke-width="1"/>
+  <text x="364" y="146" text-anchor="middle" font-size="10" font-weight="600" fill="#c2410c">Branchenmittel</text>
+  <text x="364" y="160" text-anchor="middle" font-size="10" fill="#64748b">Conversion Rate</text>
+  <text x="364" y="173" text-anchor="middle" font-size="12" font-weight="700" fill="#f97316">Basis</text>
+
+  <rect x="308" y="198" width="112" height="48" rx="5" fill="white" stroke="#fdba74" stroke-width="1"/>
+  <text x="364" y="216" text-anchor="middle" font-size="10" fill="#64748b">Sichtbarkeit im Store</text>
+  <text x="364" y="233" text-anchor="middle" font-size="10" font-weight="600" fill="#c2410c">Normal</text>
+
+  <!-- Zone 3: Gut -->
+  <rect x="440" y="128" width="110" height="60" rx="5" fill="white" stroke="#93c5fd" stroke-width="1"/>
+  <text x="495" y="146" text-anchor="middle" font-size="10" font-weight="600" fill="#1d4ed8">Schwellwert erreicht</text>
+  <text x="495" y="160" text-anchor="middle" font-size="10" fill="#64748b">Conversion Rate</text>
+  <text x="495" y="173" text-anchor="middle" font-size="12" font-weight="700" fill="#2563eb">+12 % bis +18 %</text>
+
+  <rect x="440" y="198" width="110" height="48" rx="5" fill="white" stroke="#93c5fd" stroke-width="1"/>
+  <text x="495" y="216" text-anchor="middle" font-size="10" fill="#64748b">Sichtbarkeit im Store</text>
+  <text x="495" y="233" text-anchor="middle" font-size="10" font-weight="600" fill="#1d4ed8">Verbessert</text>
+
+  <!-- Zone 4: Premium -->
+  <rect x="571" y="128" width="137" height="60" rx="5" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="639" y="146" text-anchor="middle" font-size="10" font-weight="600" fill="#065f46">Premium-Zone</text>
+  <text x="639" y="160" text-anchor="middle" font-size="10" fill="#64748b">Conversion Rate</text>
+  <text x="639" y="173" text-anchor="middle" font-size="12" font-weight="700" fill="#10b981">+25 % bis +35 %</text>
+
+  <rect x="571" y="198" width="137" height="48" rx="5" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="639" y="216" text-anchor="middle" font-size="10" fill="#64748b">Sichtbarkeit im Store</text>
+  <text x="639" y="233" text-anchor="middle" font-size="10" font-weight="600" fill="#065f46">Featured-fähig</text>
+
+  <!-- Scale bar at bottom -->
+  <text x="80" y="318" font-size="11" fill="#94a3b8" text-anchor="middle">3,0</text>
+  <text x="189" y="318" font-size="11" fill="#94a3b8" text-anchor="middle">3,5</text>
+  <text x="298" y="318" font-size="11" fill="#94a3b8" text-anchor="middle">4,0</text>
+  <text x="430" y="318" font-size="11" fill="#2563eb" font-weight="700" text-anchor="middle">4,2</text>
+  <text x="560" y="318" font-size="11" fill="#94a3b8" text-anchor="middle">4,5</text>
+  <text x="720" y="318" font-size="11" fill="#94a3b8" text-anchor="middle">5,0</text>
+
+  <!-- Axis line -->
+  <line x1="80" y1="308" x2="720" y2="308" stroke="#cbd5e1" stroke-width="1.5"/>
+  <line x1="80" y1="305" x2="80" y2="311" stroke="#cbd5e1" stroke-width="1.5"/>
+  <line x1="189" y1="305" x2="189" y2="311" stroke="#cbd5e1" stroke-width="1.5"/>
+  <line x1="298" y1="305" x2="298" y2="311" stroke="#cbd5e1" stroke-width="1.5"/>
+  <line x1="430" y1="305" x2="430" y2="311" stroke="#2563eb" stroke-width="2"/>
+  <line x1="560" y1="305" x2="560" y2="311" stroke="#cbd5e1" stroke-width="1.5"/>
+  <line x1="720" y1="305" x2="720" y2="311" stroke="#cbd5e1" stroke-width="1.5"/>
+
+  <!-- Stars label -->
+  <text x="400" y="340" text-anchor="middle" font-size="10" fill="#94a3b8">Sterne-Bewertung im App Store</text>
+
+  <!-- Source note -->
+  <text x="400" y="385" text-anchor="middle" font-size="10" fill="#94a3b8">Conversion-Delta im Vergleich zum Branchendurchschnitt (4,0 Sterne) — Quelle: App Store Optimierungsstudien</text>
+</svg>

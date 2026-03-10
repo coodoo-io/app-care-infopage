@@ -1,0 +1,159 @@
+<svg viewBox="0 0 800 460" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Performance-Benchmarks Ampel-Matrix für alle 5 App-Metriken">
+  <title>App Performance Monitoring: Benchmark-Ampel für 5 Metriken</title>
+
+  <!-- Background -->
+  <rect width="800" height="460" fill="#f8fafc" rx="16"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="800" height="60" fill="#172554" rx="16"/>
+  <rect x="0" y="44" width="800" height="16" fill="#172554"/>
+  <text x="400" y="35" font-family="system-ui, sans-serif" font-size="17" font-weight="700" fill="#ffffff" text-anchor="middle">Performance-Benchmarks: Ampel-Bewertung</text>
+
+  <!-- Column headers -->
+  <!-- Metric column -->
+  <text x="140" y="88" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#475569" text-anchor="middle">METRIK</text>
+
+  <!-- Green header -->
+  <rect x="268" y="70" width="152" height="28" rx="6" fill="#10b981"/>
+  <text x="344" y="88" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">GUT</text>
+
+  <!-- Orange header -->
+  <rect x="432" y="70" width="152" height="28" rx="6" fill="#f97316"/>
+  <text x="508" y="88" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">AKZEPTABEL</text>
+
+  <!-- Red header -->
+  <rect x="596" y="70" width="152" height="28" rx="6" fill="#ef4444"/>
+  <text x="672" y="88" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">KRITISCH</text>
+
+  <!-- Divider line -->
+  <line x1="32" y1="106" x2="768" y2="106" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <!-- ===== ROW 1: Startup Time ===== -->
+  <rect x="32" y="112" width="736" height="62" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+
+  <!-- Icon: clock -->
+  <circle cx="64" cy="143" r="16" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+  <line x1="64" y1="132" x2="64" y2="143" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+  <line x1="64" y1="143" x2="72" y2="148" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="64" cy="143" r="2" fill="#2563eb"/>
+
+  <text x="140" y="137" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#1e293b" text-anchor="middle">App Startup Time</text>
+  <text x="140" y="157" font-family="system-ui, sans-serif" font-size="11" fill="#64748b" text-anchor="middle">Cold Start</text>
+
+  <!-- Green cell -->
+  <rect x="272" y="118" width="144" height="50" rx="6" fill="#f0fdf4" stroke="#10b981" stroke-width="1.5"/>
+  <circle cx="296" cy="143" r="6" fill="#10b981"/>
+  <text x="356" y="147" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#166534" text-anchor="middle">&lt; 2 Sekunden</text>
+
+  <!-- Orange cell -->
+  <rect x="436" y="118" width="144" height="50" rx="6" fill="#fff7ed" stroke="#f97316" stroke-width="1.5"/>
+  <circle cx="460" cy="143" r="6" fill="#f97316"/>
+  <text x="520" y="147" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#9a3412" text-anchor="middle">2 – 4 Sek.</text>
+
+  <!-- Red cell -->
+  <rect x="600" y="118" width="144" height="50" rx="6" fill="#fef2f2" stroke="#ef4444" stroke-width="1.5"/>
+  <circle cx="624" cy="143" r="6" fill="#ef4444"/>
+  <text x="684" y="147" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#991b1b" text-anchor="middle">&gt; 4 Sek.</text>
+
+  <!-- ===== ROW 2: Frame Rate ===== -->
+  <rect x="32" y="182" width="736" height="62" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+
+  <!-- Icon: fps bars -->
+  <rect x="50" y="130" width="0" height="0" fill="none"/>
+  <rect x="50" y="192" width="5" height="20" rx="1" fill="#10b981"/>
+  <rect x="58" y="197" width="5" height="15" rx="1" fill="#10b981"/>
+  <rect x="66" y="188" width="5" height="24" rx="1" fill="#10b981"/>
+  <rect x="74" y="194" width="5" height="18" rx="1" fill="#10b981"/>
+  <line x1="46" y1="214" x2="84" y2="214" stroke="#64748b" stroke-width="1"/>
+
+  <text x="140" y="207" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#1e293b" text-anchor="middle">Frame Rate</text>
+  <text x="140" y="227" font-family="system-ui, sans-serif" font-size="11" fill="#64748b" text-anchor="middle">UI-Flüssigkeit</text>
+
+  <rect x="272" y="188" width="144" height="50" rx="6" fill="#f0fdf4" stroke="#10b981" stroke-width="1.5"/>
+  <circle cx="296" cy="213" r="6" fill="#10b981"/>
+  <text x="356" y="217" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#166534" text-anchor="middle">60 fps</text>
+
+  <rect x="436" y="188" width="144" height="50" rx="6" fill="#fff7ed" stroke="#f97316" stroke-width="1.5"/>
+  <circle cx="460" cy="213" r="6" fill="#f97316"/>
+  <text x="520" y="217" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#9a3412" text-anchor="middle">30 – 59 fps</text>
+
+  <rect x="600" y="188" width="144" height="50" rx="6" fill="#fef2f2" stroke="#ef4444" stroke-width="1.5"/>
+  <circle cx="624" cy="213" r="6" fill="#ef4444"/>
+  <text x="684" y="217" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#991b1b" text-anchor="middle">&lt; 30 fps</text>
+
+  <!-- ===== ROW 3: Memory ===== -->
+  <rect x="32" y="252" width="736" height="62" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+
+  <!-- Icon: chip -->
+  <rect x="48" y="262" width="32" height="32" rx="4" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+  <rect x="54" y="268" width="20" height="20" rx="2" fill="#2563eb"/>
+  <line x1="42" y1="270" x2="48" y2="270" stroke="#2563eb" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="42" y1="278" x2="48" y2="278" stroke="#2563eb" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="80" y1="270" x2="86" y2="270" stroke="#2563eb" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="80" y1="278" x2="86" y2="278" stroke="#2563eb" stroke-width="1.5" stroke-linecap="round"/>
+
+  <text x="140" y="277" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#1e293b" text-anchor="middle">Memory Usage</text>
+  <text x="140" y="297" font-family="system-ui, sans-serif" font-size="11" fill="#64748b" text-anchor="middle">RAM-Baseline</text>
+
+  <rect x="272" y="258" width="144" height="50" rx="6" fill="#f0fdf4" stroke="#10b981" stroke-width="1.5"/>
+  <circle cx="296" cy="283" r="6" fill="#10b981"/>
+  <text x="356" y="287" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#166534" text-anchor="middle">&lt; 100 MB</text>
+
+  <rect x="436" y="258" width="144" height="50" rx="6" fill="#fff7ed" stroke="#f97316" stroke-width="1.5"/>
+  <circle cx="460" cy="283" r="6" fill="#f97316"/>
+  <text x="520" y="287" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#9a3412" text-anchor="middle">100 – 200 MB</text>
+
+  <rect x="600" y="258" width="144" height="50" rx="6" fill="#fef2f2" stroke="#ef4444" stroke-width="1.5"/>
+  <circle cx="624" cy="283" r="6" fill="#ef4444"/>
+  <text x="684" y="287" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#991b1b" text-anchor="middle">&gt; 200 MB</text>
+
+  <!-- ===== ROW 4: API-Latenz ===== -->
+  <rect x="32" y="322" width="736" height="62" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+
+  <!-- Icon: wifi waves -->
+  <path d="M64 358 L64 350" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+  <path d="M54 354 Q64 346 74 354" stroke="#2563eb" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M47 348 Q64 336 81 348" stroke="#2563eb" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <circle cx="64" cy="360" r="3" fill="#2563eb"/>
+
+  <text x="140" y="347" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#1e293b" text-anchor="middle">API-Latenz</text>
+  <text x="140" y="367" font-family="system-ui, sans-serif" font-size="11" fill="#64748b" text-anchor="middle">Netzwerk-Antwortzeit</text>
+
+  <rect x="272" y="328" width="144" height="50" rx="6" fill="#f0fdf4" stroke="#10b981" stroke-width="1.5"/>
+  <circle cx="296" cy="353" r="6" fill="#10b981"/>
+  <text x="356" y="357" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#166534" text-anchor="middle">&lt; 200 ms</text>
+
+  <rect x="436" y="328" width="144" height="50" rx="6" fill="#fff7ed" stroke="#f97316" stroke-width="1.5"/>
+  <circle cx="460" cy="353" r="6" fill="#f97316"/>
+  <text x="520" y="357" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#9a3412" text-anchor="middle">200 – 500 ms</text>
+
+  <rect x="600" y="328" width="144" height="50" rx="6" fill="#fef2f2" stroke="#ef4444" stroke-width="1.5"/>
+  <circle cx="624" cy="353" r="6" fill="#ef4444"/>
+  <text x="684" y="357" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#991b1b" text-anchor="middle">&gt; 500 ms</text>
+
+  <!-- ===== ROW 5: Battery ===== -->
+  <rect x="32" y="392" width="736" height="50" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+
+  <!-- Icon: battery -->
+  <rect x="46" y="403" width="34" height="20" rx="3" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+  <rect x="80" y="409" width="4" height="8" rx="1" fill="#2563eb"/>
+  <rect x="49" y="406" width="20" height="14" rx="2" fill="#10b981"/>
+
+  <text x="140" y="415" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#1e293b" text-anchor="middle">Battery Impact</text>
+  <text x="140" y="431" font-family="system-ui, sans-serif" font-size="11" fill="#64748b" text-anchor="middle">Stromverbrauch</text>
+
+  <rect x="272" y="398" width="144" height="38" rx="6" fill="#f0fdf4" stroke="#10b981" stroke-width="1.5"/>
+  <circle cx="296" cy="417" r="6" fill="#10b981"/>
+  <text x="356" y="421" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#166534" text-anchor="middle">Niedrig</text>
+
+  <rect x="436" y="398" width="144" height="38" rx="6" fill="#fff7ed" stroke="#f97316" stroke-width="1.5"/>
+  <circle cx="460" cy="417" r="6" fill="#f97316"/>
+  <text x="520" y="421" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#9a3412" text-anchor="middle">Mittel</text>
+
+  <rect x="600" y="398" width="144" height="38" rx="6" fill="#fef2f2" stroke="#ef4444" stroke-width="1.5"/>
+  <circle cx="624" cy="417" r="6" fill="#ef4444"/>
+  <text x="684" y="421" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#991b1b" text-anchor="middle">Hoch</text>
+
+  <!-- Footer -->
+  <text x="400" y="452" font-family="system-ui, sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">App-Care — app-care.pages.dev</text>
+</svg>

@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" role="img" aria-label="App Retention Rate: Drei Messpunkte im Überblick" font-family="system-ui, sans-serif">
+  <title>App Retention Rate Messpunkte: Day 1, Day 7, Day 30</title>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="#f8fafc" rx="12"/>
+
+  <!-- Header -->
+  <rect width="800" height="64" fill="#172554" rx="12"/>
+  <rect y="52" width="800" height="12" fill="#172554"/>
+  <text x="400" y="38" text-anchor="middle" fill="white" font-size="17" font-weight="700">App Retention Rate: Die drei Messpunkte im Überblick</text>
+
+  <!-- Subtitle -->
+  <text x="400" y="90" text-anchor="middle" fill="#64748b" font-size="13">Wie viele Nutzer kehren nach Installation zurück?</text>
+
+  <!-- Timeline base line -->
+  <line x1="80" y1="200" x2="720" y2="200" stroke="#cbd5e1" stroke-width="2"/>
+
+  <!-- Gradient arrow at end -->
+  <polygon points="720,194 736,200 720,206" fill="#cbd5e1"/>
+
+  <!-- Timeline label -->
+  <text x="746" y="204" fill="#64748b" font-size="12">Zeit</text>
+
+  <!-- Day 0 marker -->
+  <circle cx="80" cy="200" r="8" fill="#64748b"/>
+  <text x="80" y="228" text-anchor="middle" fill="#64748b" font-size="12" font-weight="600">Tag 0</text>
+  <text x="80" y="243" text-anchor="middle" fill="#64748b" font-size="11">Installation</text>
+
+  <!-- Connector lines from Day 0 to each point -->
+  <line x1="88" y1="200" x2="228" y2="200" stroke="#2563eb" stroke-width="2" stroke-dasharray="6,3"/>
+  <line x1="88" y1="200" x2="428" y2="200" stroke="#10b981" stroke-width="2" stroke-dasharray="6,3"/>
+  <line x1="88" y1="200" x2="668" y2="200" stroke="#f97316" stroke-width="2" stroke-dasharray="6,3"/>
+
+  <!-- DAY 1 node -->
+  <circle cx="240" cy="200" r="18" fill="#2563eb"/>
+  <text x="240" y="205" text-anchor="middle" fill="white" font-size="12" font-weight="700">D1</text>
+
+  <!-- Day 1 card above -->
+  <rect x="160" y="100" width="160" height="78" rx="8" fill="white" stroke="#2563eb" stroke-width="1.5"/>
+  <line x1="240" y1="178" x2="240" y2="182" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="240" y="120" text-anchor="middle" fill="#2563eb" font-size="13" font-weight="700">Day-1-Retention</text>
+  <text x="240" y="138" text-anchor="middle" fill="#1e293b" font-size="20" font-weight="800">25–40 %</text>
+  <text x="240" y="157" text-anchor="middle" fill="#64748b" font-size="11">Onboarding-Qualitat</text>
+  <text x="240" y="170" text-anchor="middle" fill="#64748b" font-size="11">entscheidet hier</text>
+
+  <!-- Day 1 label below -->
+  <text x="240" y="232" text-anchor="middle" fill="#2563eb" font-size="12" font-weight="600">Tag 1</text>
+  <text x="240" y="247" text-anchor="middle" fill="#64748b" font-size="11">Erster Eindruck</text>
+
+  <!-- DAY 7 node -->
+  <circle cx="440" cy="200" r="18" fill="#10b981"/>
+  <text x="440" y="205" text-anchor="middle" fill="white" font-size="12" font-weight="700">D7</text>
+
+  <!-- Day 7 card below -->
+  <rect x="360" y="226" width="160" height="78" rx="8" fill="white" stroke="#10b981" stroke-width="1.5"/>
+  <line x1="440" y1="218" x2="440" y2="226" stroke="#10b981" stroke-width="1.5"/>
+  <text x="440" y="246" text-anchor="middle" fill="#10b981" font-size="13" font-weight="700">Day-7-Retention</text>
+  <text x="440" y="264" text-anchor="middle" fill="#1e293b" font-size="20" font-weight="800">12–22 %</text>
+  <text x="440" y="283" text-anchor="middle" fill="#64748b" font-size="11">Aha-Moment und</text>
+  <text x="440" y="296" text-anchor="middle" fill="#64748b" font-size="11">Gewohnheitsbildung</text>
+
+  <!-- Day 7 label above -->
+  <text x="440" y="175" text-anchor="middle" fill="#10b981" font-size="12" font-weight="600">Tag 7</text>
+  <text x="440" y="161" text-anchor="middle" fill="#64748b" font-size="11">Gewohnheitsphase</text>
+
+  <!-- DAY 30 node -->
+  <circle cx="680" cy="200" r="18" fill="#f97316"/>
+  <text x="680" y="205" text-anchor="middle" fill="white" font-size="12" font-weight="700">D30</text>
+
+  <!-- Day 30 card above -->
+  <rect x="596" y="100" width="168" height="78" rx="8" fill="white" stroke="#f97316" stroke-width="1.5"/>
+  <line x1="680" y1="178" x2="680" y2="182" stroke="#f97316" stroke-width="1.5"/>
+  <text x="680" y="120" text-anchor="middle" fill="#f97316" font-size="13" font-weight="700">Day-30-Retention</text>
+  <text x="680" y="138" text-anchor="middle" fill="#1e293b" font-size="20" font-weight="800">5–14 %</text>
+  <text x="680" y="157" text-anchor="middle" fill="#64748b" font-size="11">Loyaler Kern —</text>
+  <text x="680" y="170" text-anchor="middle" fill="#64748b" font-size="11">Datenbindung zahlt sich aus</text>
+
+  <!-- Day 30 label below -->
+  <text x="680" y="232" text-anchor="middle" fill="#f97316" font-size="12" font-weight="600">Tag 30</text>
+  <text x="680" y="247" text-anchor="middle" fill="#64748b" font-size="11">Loyaler Kern</text>
+
+  <!-- Bottom note -->
+  <text x="400" y="375" text-anchor="middle" fill="#94a3b8" font-size="11">Branchenübergreifende Durchschnittswerte — Kategorie-Benchmarks variieren</text>
+</svg>

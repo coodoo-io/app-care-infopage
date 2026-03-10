@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" role="img" aria-label="Kumulativer Nutzerverlust bei 3%, 5% und 10% monatlichem Churn über 12 Monate" font-family="system-ui, sans-serif">
+  <title>App Churn Rate: Auswirkung über 12 Monate</title>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="#ffffff" rx="12"/>
+
+  <!-- Chart area definition: left=80, top=40, right=740, bottom=320 -->
+  <!-- Width=660, Height=280 -->
+
+  <!-- Horizontal grid lines at 20%, 40%, 60%, 80%, 100% -->
+  <!-- Y scale: 0% at y=320, 100% at y=40, so 1% = 2.8px -->
+  <!-- y for value v = 320 - (v * 2.8) -->
+  <!-- 100% -> y=40, 80% -> y=96, 60% -> y=152, 40% -> y=208, 20% -> y=264 -->
+
+  <line x1="80" y1="40" x2="740" y2="40" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="80" y1="96" x2="740" y2="96" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="80" y1="152" x2="740" y2="152" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="80" y1="208" x2="740" y2="208" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="80" y1="264" x2="740" y2="264" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="80" y1="320" x2="740" y2="320" stroke="#cbd5e1" stroke-width="1"/>
+
+  <!-- Y axis labels -->
+  <text x="68" y="44" text-anchor="end" font-size="12" fill="#64748b">100 %</text>
+  <text x="68" y="100" text-anchor="end" font-size="12" fill="#64748b">80 %</text>
+  <text x="68" y="156" text-anchor="end" font-size="12" fill="#64748b">60 %</text>
+  <text x="68" y="212" text-anchor="end" font-size="12" fill="#64748b">40 %</text>
+  <text x="68" y="268" text-anchor="end" font-size="12" fill="#64748b">20 %</text>
+  <text x="68" y="324" text-anchor="end" font-size="12" fill="#64748b">0 %</text>
+
+  <!-- Y axis label -->
+  <text x="18" y="185" text-anchor="middle" font-size="12" fill="#475569" transform="rotate(-90 18 185)">Verbleibende Nutzer</text>
+
+  <!-- X axis: months 0–12, 13 ticks, spacing = 660/12 = 55px -->
+  <!-- x for month m = 80 + m * 55 -->
+  <!-- Month 0: x=80, Month 1: x=135, ..., Month 12: x=740 -->
+
+  <!-- Vertical grid lines (light) for each month -->
+  <line x1="135" y1="40" x2="135" y2="320" stroke="#f1f5f9" stroke-width="1"/>
+  <line x1="190" y1="40" x2="190" y2="320" stroke="#f1f5f9" stroke-width="1"/>
+  <line x1="245" y1="40" x2="245" y2="320" stroke="#f1f5f9" stroke-width="1"/>
+  <line x1="300" y1="40" x2="300" y2="320" stroke="#f1f5f9" stroke-width="1"/>
+  <line x1="355" y1="40" x2="355" y2="320" stroke="#f1f5f9" stroke-width="1"/>
+  <line x1="410" y1="40" x2="410" y2="320" stroke="#f1f5f9" stroke-width="1"/>
+  <line x1="465" y1="40" x2="465" y2="320" stroke="#f1f5f9" stroke-width="1"/>
+  <line x1="520" y1="40" x2="520" y2="320" stroke="#f1f5f9" stroke-width="1"/>
+  <line x1="575" y1="40" x2="575" y2="320" stroke="#f1f5f9" stroke-width="1"/>
+  <line x1="630" y1="40" x2="630" y2="320" stroke="#f1f5f9" stroke-width="1"/>
+  <line x1="685" y1="40" x2="685" y2="320" stroke="#f1f5f9" stroke-width="1"/>
+
+  <!-- X axis tick labels -->
+  <text x="80" y="338" text-anchor="middle" font-size="11" fill="#64748b">0</text>
+  <text x="135" y="338" text-anchor="middle" font-size="11" fill="#64748b">1</text>
+  <text x="190" y="338" text-anchor="middle" font-size="11" fill="#64748b">2</text>
+  <text x="245" y="338" text-anchor="middle" font-size="11" fill="#64748b">3</text>
+  <text x="300" y="338" text-anchor="middle" font-size="11" fill="#64748b">4</text>
+  <text x="355" y="338" text-anchor="middle" font-size="11" fill="#64748b">5</text>
+  <text x="410" y="338" text-anchor="middle" font-size="11" fill="#64748b">6</text>
+  <text x="465" y="338" text-anchor="middle" font-size="11" fill="#64748b">7</text>
+  <text x="520" y="338" text-anchor="middle" font-size="11" fill="#64748b">8</text>
+  <text x="575" y="338" text-anchor="middle" font-size="11" fill="#64748b">9</text>
+  <text x="630" y="338" text-anchor="middle" font-size="11" fill="#64748b">10</text>
+  <text x="685" y="338" text-anchor="middle" font-size="11" fill="#64748b">11</text>
+  <text x="740" y="338" text-anchor="middle" font-size="11" fill="#64748b">12</text>
+
+  <!-- X axis label -->
+  <text x="410" y="360" text-anchor="middle" font-size="12" fill="#475569">Monate</text>
+
+  <!-- Chart title -->
+  <text x="410" y="22" text-anchor="middle" font-size="14" font-weight="600" fill="#1e293b">Kumulativer Nutzerverlust nach monatlicher Churn Rate</text>
+
+  <!--
+    Data points: y = 320 - (value * 2.8)
+    3% churn: 100, 97, 94.09, 91.27, 88.53, 85.87, 83.30, 80.80, 78.37, 76.02, 73.74, 71.52, 69.38
+    5% churn: 100, 95, 90.25, 85.74, 81.45, 77.38, 73.51, 69.83, 66.34, 63.02, 59.87, 56.88, 54.04
+    10% churn: 100, 90, 81, 72.9, 65.61, 59.05, 53.14, 47.83, 43.05, 38.74, 34.87, 31.38, 28.24
+  -->
+
+  <!-- 3% Churn line: #10b981 (emerald) -->
+  <!-- y values: 320-(v*2.8) -->
+  <!-- m=0: 320-280=40, m=1: 320-271.66=48.34, m=2: 320-263.45=56.55, m=3: 320-255.56=64.44 -->
+  <!-- m=4: 320-247.88=72.12, m=5: 320-240.44=79.56, m=6: 320-233.24=86.76 -->
+  <!-- m=7: 320-226.24=93.76, m=8: 320-219.44=100.56, m=9: 320-212.86=107.14 -->
+  <!-- m=10: 320-206.47=113.53, m=11: 320-200.26=119.74, m=12: 320-194.26=125.74 -->
+  <polyline
+    points="80,40 135,48 190,56 245,64 300,72 355,80 410,87 465,94 520,101 575,107 630,114 685,120 740,126"
+    fill="none"
+    stroke="#10b981"
+    stroke-width="2.5"
+    stroke-linejoin="round"
+    stroke-linecap="round"/>
+
+  <!-- 5% Churn line: #f97316 (orange) -->
+  <!-- y values: 320-(v*2.8) -->
+  <!-- m=0: 40, m=1: 320-266=54, m=2: 320-252.7=67.3, m=3: 320-240.07=79.93 -->
+  <!-- m=4: 320-228.06=91.94, m=5: 320-216.66=103.34, m=6: 320-205.83=114.17 -->
+  <!-- m=7: 320-195.52=124.48, m=8: 320-185.75=134.25, m=9: 320-176.46=143.54 -->
+  <!-- m=10: 320-167.64=152.36, m=11: 320-159.26=160.74, m=12: 320-151.31=168.69 -->
+  <polyline
+    points="80,40 135,54 190,67 245,80 300,92 355,103 410,114 465,125 520,134 575,144 630,152 685,161 740,169"
+    fill="none"
+    stroke="#f97316"
+    stroke-width="2.5"
+    stroke-linejoin="round"
+    stroke-linecap="round"/>
+
+  <!-- 10% Churn line: #ef4444 (red) -->
+  <!-- y values: 320-(v*2.8) -->
+  <!-- m=0: 40, m=1: 320-252=68, m=2: 320-226.8=93.2, m=3: 320-204.12=115.88 -->
+  <!-- m=4: 320-183.71=136.29, m=5: 320-165.34=154.66, m=6: 320-148.79=171.21 -->
+  <!-- m=7: 320-133.92=186.08, m=8: 320-120.54=199.46, m=9: 320-108.47=211.53 -->
+  <!-- m=10: 320-97.64=222.36, m=11: 320-87.86=232.14, m=12: 320-79.07=240.93 -->
+  <polyline
+    points="80,40 135,68 190,93 245,116 300,136 355,155 410,171 465,186 520,199 575,212 630,222 685,232 740,241"
+    fill="none"
+    stroke="#ef4444"
+    stroke-width="2.5"
+    stroke-linejoin="round"
+    stroke-linecap="round"/>
+
+  <!-- End-point labels -->
+  <text x="748" y="130" font-size="12" font-weight="600" fill="#10b981">~69 %</text>
+  <text x="748" y="173" font-size="12" font-weight="600" fill="#f97316">~54 %</text>
+  <text x="748" y="245" font-size="12" font-weight="600" fill="#ef4444">~28 %</text>
+
+  <!-- Legend -->
+  <rect x="80" y="372" width="16" height="3" fill="#10b981" rx="1.5"/>
+  <text x="102" y="378" font-size="12" fill="#334155">3 % monatlicher Churn</text>
+  <rect x="280" y="372" width="16" height="3" fill="#f97316" rx="1.5"/>
+  <text x="302" y="378" font-size="12" fill="#334155">5 % monatlicher Churn</text>
+  <rect x="480" y="372" width="16" height="3" fill="#ef4444" rx="1.5"/>
+  <text x="502" y="378" font-size="12" fill="#334155">10 % monatlicher Churn</text>
+</svg>

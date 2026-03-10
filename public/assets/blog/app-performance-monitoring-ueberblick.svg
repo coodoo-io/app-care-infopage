@@ -1,0 +1,114 @@
+<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Die 5 wichtigsten App Performance Metriken im Überblick">
+  <title>App Performance Monitoring: 5 Kernmetriken</title>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="#f8fafc" rx="16"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="800" height="64" fill="#172554" rx="16"/>
+  <rect x="0" y="48" width="800" height="16" fill="#172554"/>
+  <text x="400" y="38" font-family="system-ui, sans-serif" font-size="18" font-weight="700" fill="#ffffff" text-anchor="middle">App Performance Monitoring: Die 5 Kernmetriken</text>
+
+  <!-- Card 1: Startup Time -->
+  <rect x="32" y="88" width="136" height="280" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <!-- Icon: clock/timer shape -->
+  <circle cx="100" cy="148" r="28" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+  <line x1="100" y1="128" x2="100" y2="148" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="100" y1="148" x2="114" y2="156" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="100" cy="148" r="3" fill="#2563eb"/>
+  <!-- Small tick marks -->
+  <line x1="100" y1="122" x2="100" y2="126" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+  <line x1="126" y1="148" x2="122" y2="148" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+  <line x1="100" y1="174" x2="100" y2="170" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+  <line x1="74" y1="148" x2="78" y2="148" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+
+  <text x="100" y="206" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#1e293b" text-anchor="middle">Startup Time</text>
+  <text x="100" y="228" font-family="system-ui, sans-serif" font-size="11" fill="#64748b" text-anchor="middle">Cold Start</text>
+  <rect x="56" y="244" width="88" height="32" rx="8" fill="#10b981"/>
+  <text x="100" y="264" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">&lt; 2 Sek.</text>
+  <text x="100" y="300" font-family="system-ui, sans-serif" font-size="10" fill="#64748b" text-anchor="middle">Warm Start</text>
+  <text x="100" y="316" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#2563eb" text-anchor="middle">&lt; 1 Sek.</text>
+  <text x="100" y="342" font-family="system-ui, sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle">Zeit bis erster Frame</text>
+
+  <!-- Card 2: Frame Rate -->
+  <rect x="184" y="88" width="136" height="280" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <!-- Icon: film/fps bars -->
+  <rect x="232" y="122" width="8" height="36" rx="2" fill="#10b981"/>
+  <rect x="246" y="130" width="8" height="28" rx="2" fill="#10b981"/>
+  <rect x="260" y="120" width="8" height="38" rx="2" fill="#10b981"/>
+  <rect x="274" y="126" width="8" height="32" rx="2" fill="#10b981"/>
+  <line x1="224" y1="162" x2="292" y2="162" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="258" y="180" font-family="system-ui, sans-serif" font-size="9" fill="#64748b" text-anchor="middle">frames / sec</text>
+
+  <text x="252" y="210" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#1e293b" text-anchor="middle">Frame Rate</text>
+  <text x="252" y="232" font-family="system-ui, sans-serif" font-size="11" fill="#64748b" text-anchor="middle">UI-Flüssigkeit</text>
+  <rect x="208" y="248" width="88" height="32" rx="8" fill="#10b981"/>
+  <text x="252" y="268" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">60 fps</text>
+  <text x="252" y="304" font-family="system-ui, sans-serif" font-size="10" fill="#64748b" text-anchor="middle">Kritisch</text>
+  <text x="252" y="320" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#ef4444" text-anchor="middle">&lt; 30 fps</text>
+  <text x="252" y="346" font-family="system-ui, sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle">Janky Frames &lt; 5 %</text>
+
+  <!-- Card 3: Memory -->
+  <rect x="336" y="88" width="136" height="280" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <!-- Icon: chip/memory -->
+  <rect x="378" y="120" width="44" height="44" rx="6" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+  <rect x="386" y="128" width="28" height="28" rx="3" fill="#2563eb"/>
+  <line x1="370" y1="132" x2="378" y2="132" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+  <line x1="370" y1="142" x2="378" y2="142" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+  <line x1="370" y1="152" x2="378" y2="152" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+  <line x1="422" y1="132" x2="430" y2="132" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+  <line x1="422" y1="142" x2="430" y2="142" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+  <line x1="422" y1="152" x2="430" y2="152" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+  <line x1="390" y1="164" x2="390" y2="172" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+  <line x1="400" y1="164" x2="400" y2="172" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+  <line x1="410" y1="164" x2="410" y2="172" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+
+  <text x="404" y="206" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#1e293b" text-anchor="middle">Memory Usage</text>
+  <text x="404" y="228" font-family="system-ui, sans-serif" font-size="11" fill="#64748b" text-anchor="middle">RAM-Verbrauch</text>
+  <rect x="360" y="244" width="88" height="32" rx="8" fill="#10b981"/>
+  <text x="404" y="264" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">&lt; 100 MB</text>
+  <text x="404" y="300" font-family="system-ui, sans-serif" font-size="10" fill="#64748b" text-anchor="middle">Grenzwertig</text>
+  <text x="404" y="316" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#f97316" text-anchor="middle">&gt; 150 MB</text>
+  <text x="404" y="342" font-family="system-ui, sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle">Baseline-Wert, kein Peak</text>
+
+  <!-- Card 4: Netzwerk -->
+  <rect x="488" y="88" width="136" height="280" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <!-- Icon: wifi/network waves -->
+  <path d="M556 170 L556 158" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M540 162 Q556 150 572 162" stroke="#2563eb" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M530 154 Q556 136 582 154" stroke="#2563eb" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M522 146 Q556 122 590 146" stroke="#2563eb" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <circle cx="556" cy="172" r="4" fill="#2563eb"/>
+  <!-- small arrow indicating latency -->
+  <text x="556" y="192" font-family="system-ui, sans-serif" font-size="9" fill="#64748b" text-anchor="middle">Latenz</text>
+
+  <text x="556" y="212" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#1e293b" text-anchor="middle">Netzwerk-Latenz</text>
+  <text x="556" y="234" font-family="system-ui, sans-serif" font-size="11" fill="#64748b" text-anchor="middle">API-Antwortzeit</text>
+  <rect x="512" y="248" width="88" height="32" rx="8" fill="#10b981"/>
+  <text x="556" y="268" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">&lt; 200 ms</text>
+  <text x="556" y="304" font-family="system-ui, sans-serif" font-size="10" fill="#64748b" text-anchor="middle">Kritisch</text>
+  <text x="556" y="320" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#ef4444" text-anchor="middle">&gt; 1000 ms</text>
+  <text x="556" y="346" font-family="system-ui, sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle">p95-Latenz messen</text>
+
+  <!-- Card 5: Battery -->
+  <rect x="640" y="88" width="128" height="280" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <!-- Icon: battery -->
+  <rect x="673" y="124" width="60" height="32" rx="5" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+  <rect x="733" y="133" width="6" height="14" rx="2" fill="#2563eb"/>
+  <!-- Battery fill (green portion) -->
+  <rect x="677" y="128" width="38" height="24" rx="3" fill="#10b981"/>
+  <!-- Lightning bolt on battery -->
+  <path d="M708 130 L702 142 L707 142 L701 154 L713 140 L707 140 Z" fill="#2563eb"/>
+  <text x="704" y="175" font-family="system-ui, sans-serif" font-size="9" fill="#64748b" text-anchor="middle">Verbrauch</text>
+
+  <text x="704" y="208" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#1e293b" text-anchor="middle">Battery Impact</text>
+  <text x="704" y="230" font-family="system-ui, sans-serif" font-size="11" fill="#64748b" text-anchor="middle">Stromverbrauch</text>
+  <rect x="660" y="246" width="88" height="32" rx="8" fill="#10b981"/>
+  <text x="704" y="266" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">Niedrig</text>
+  <text x="704" y="302" font-family="system-ui, sans-serif" font-size="10" fill="#64748b" text-anchor="middle">Ziel: &lt; 5 % in</text>
+  <text x="704" y="318" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#2563eb" text-anchor="middle">10 Min. Nutzung</text>
+  <text x="704" y="344" font-family="system-ui, sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle">CPU + Netzwerk-Wakeups</text>
+
+  <!-- Footer label -->
+  <text x="400" y="390" font-family="system-ui, sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">App-Care — app-care.pages.dev</text>
+</svg>

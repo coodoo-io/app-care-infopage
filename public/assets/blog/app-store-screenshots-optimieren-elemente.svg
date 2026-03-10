@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="Anatomie eines konvertierenden App Store Screenshots" font-family="system-ui, sans-serif">
+  <title>App Store Screenshot: Optimale Elementverteilung</title>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="#f8fafc" rx="12"/>
+
+  <!-- Title -->
+  <text x="400" y="36" text-anchor="middle" font-size="16" font-weight="700" fill="#1e293b">Anatomie eines konvertierenden App Store Screenshots</text>
+
+  <!-- Phone frame -->
+  <rect x="288" y="58" width="154" height="310" rx="18" fill="#1e293b"/>
+  <rect x="294" y="66" width="142" height="294" rx="12" fill="#ffffff"/>
+
+  <!-- Zone 1 - Headline area inside phone -->
+  <rect x="294" y="66" width="142" height="88" rx="12" fill="#dbeafe"/>
+  <!-- Round bottom corners of zone 1 manually by overlapping -->
+  <rect x="294" y="130" width="142" height="24" fill="#dbeafe"/>
+
+  <!-- Zone 2 - UI/Visual area inside phone -->
+  <rect x="294" y="154" width="142" height="132" fill="#f0fdf4"/>
+
+  <!-- Zone 3 - Subtext area inside phone -->
+  <rect x="294" y="286" width="142" height="74" fill="#fff7ed"/>
+  <!-- Round bottom corners of zone 3 -->
+  <rect x="294" y="286" width="142" height="62" fill="#fff7ed"/>
+  <rect x="294" y="334" width="142" height="26" rx="0" fill="#fff7ed"/>
+  <!-- Apply bottom radius by clipping with the phone frame bottom-rounded rect -->
+
+  <!-- Phone frame overlay to clip zones at bottom -->
+  <rect x="288" y="58" width="154" height="310" rx="18" fill="none" stroke="#1e293b" stroke-width="6"/>
+
+  <!-- Zone 1 label elements -->
+  <!-- Headline placeholder lines -->
+  <rect x="308" y="80" width="118" height="10" rx="3" fill="#2563eb" opacity="0.7"/>
+  <rect x="318" y="96" width="94" height="8" rx="3" fill="#2563eb" opacity="0.4"/>
+  <!-- Zone badge inside phone -->
+  <rect x="308" y="112" width="46" height="16" rx="8" fill="#2563eb"/>
+  <text x="331" y="124" text-anchor="middle" font-size="9" font-weight="700" fill="#ffffff">Headline</text>
+
+  <!-- Zone 2 UI mockup elements -->
+  <rect x="304" y="164" width="122" height="6" rx="3" fill="#10b981" opacity="0.5"/>
+  <rect x="304" y="178" width="98" height="6" rx="3" fill="#10b981" opacity="0.3"/>
+  <rect x="304" y="196" width="122" height="52" rx="6" fill="#10b981" opacity="0.15"/>
+  <!-- Mini chart lines -->
+  <polyline points="312,238 326,222 340,230 354,210 368,218 382,206 396,220 410,212" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="304" y="256" width="122" height="20" rx="4" fill="#10b981" opacity="0.2"/>
+
+  <!-- Zone 2 badge -->
+  <rect x="308" y="164" width="52" height="16" rx="8" fill="#10b981"/>
+  <text x="334" y="176" text-anchor="middle" font-size="9" font-weight="700" fill="#ffffff">App-UI</text>
+
+  <!-- Zone 3 placeholder lines -->
+  <rect x="308" y="296" width="118" height="8" rx="3" fill="#f97316" opacity="0.5"/>
+  <rect x="318" y="312" width="94" height="8" rx="3" fill="#f97316" opacity="0.3"/>
+  <!-- Zone 3 badge -->
+  <rect x="308" y="328" width="46" height="16" rx="8" fill="#f97316"/>
+  <text x="331" y="340" text-anchor="middle" font-size="9" font-weight="700" fill="#ffffff">Subtext</text>
+
+  <!-- Zone separator lines inside phone -->
+  <line x1="294" y1="154" x2="436" y2="154" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="294" y1="286" x2="436" y2="286" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <!-- Left annotation panel - Zone 1 -->
+  <line x1="288" y1="110" x2="230" y2="110" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <circle cx="230" cy="110" r="3" fill="#2563eb"/>
+  <rect x="30" y="72" width="192" height="76" rx="8" fill="#ffffff" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="42" y="92" font-size="11" font-weight="700" fill="#2563eb">Zone 1 — Headline/Caption</text>
+  <text x="42" y="108" font-size="10" fill="#475569">Hauptbotschaft: Nutzen, nicht</text>
+  <text x="42" y="122" font-size="10" fill="#475569">Feature-Name. Mind. 36 pt,</text>
+  <text x="42" y="136" font-size="10" fill="#475569">in Vorschaugröße lesbar.</text>
+
+  <!-- Left annotation panel - Zone 2 -->
+  <line x1="288" y1="220" x2="230" y2="220" stroke="#10b981" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <circle cx="230" cy="220" r="3" fill="#10b981"/>
+  <rect x="30" y="174" width="192" height="90" rx="8" fill="#ffffff" stroke="#10b981" stroke-width="1.5"/>
+  <text x="42" y="194" font-size="11" font-weight="700" fill="#10b981">Zone 2 — App-UI / Feature</text>
+  <text x="42" y="210" font-size="10" fill="#475569">Feature im Nutzungskontext,</text>
+  <text x="42" y="224" font-size="10" fill="#475569">nicht leer. Befülltes Mockup</text>
+  <text x="42" y="238" font-size="10" fill="#475569">konvertiert besser als leeres</text>
+  <text x="42" y="252" font-size="10" fill="#475569">Interface.</text>
+
+  <!-- Left annotation panel - Zone 3 -->
+  <line x1="288" y1="322" x2="230" y2="322" stroke="#f97316" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <circle cx="230" cy="322" r="3" fill="#f97316"/>
+  <rect x="30" y="282" width="192" height="76" rx="8" fill="#ffffff" stroke="#f97316" stroke-width="1.5"/>
+  <text x="42" y="302" font-size="11" font-weight="700" fill="#f97316">Zone 3 — Subtext / CTA</text>
+  <text x="42" y="318" font-size="10" fill="#475569">Ergänzende Botschaft oder</text>
+  <text x="42" y="332" font-size="10" fill="#475569">Zahl: "Über 50.000 Nutzer".</text>
+  <text x="42" y="346" font-size="10" fill="#475569">Wird oft unterschätzt.</text>
+
+  <!-- Right annotation panel - general tips -->
+  <rect x="462" y="72" width="306" height="296" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="480" y="96" font-size="12" font-weight="700" fill="#1e293b">Gestaltungsprinzipien</text>
+
+  <!-- Tip items -->
+  <!-- Kontrast -->
+  <circle cx="484" cy="120" r="6" fill="#2563eb"/>
+  <text x="484" y="124" text-anchor="middle" font-size="8" font-weight="700" fill="#ffffff">1</text>
+  <text x="498" y="117" font-size="11" font-weight="600" fill="#1e293b">Kontrast vor Ästhetik</text>
+  <text x="498" y="131" font-size="10" fill="#475569">In Thumbnailgröße lesbar testen</text>
+
+  <!-- Konsistenz -->
+  <circle cx="484" cy="156" r="6" fill="#2563eb"/>
+  <text x="484" y="160" text-anchor="middle" font-size="8" font-weight="700" fill="#ffffff">2</text>
+  <text x="498" y="153" font-size="11" font-weight="600" fill="#1e293b">Konsistenz als Storytelling</text>
+  <text x="498" y="167" font-size="10" fill="#475569">Screenshots 1–5 als visuelle Serie</text>
+
+  <!-- Weniger Text -->
+  <circle cx="484" cy="192" r="6" fill="#2563eb"/>
+  <text x="484" y="196" text-anchor="middle" font-size="8" font-weight="700" fill="#ffffff">3</text>
+  <text x="498" y="189" font-size="11" font-weight="600" fill="#1e293b">Weniger Text ist mehr</text>
+  <text x="498" y="203" font-size="10" fill="#475569">Headline + ein Satz Subtext reichen</text>
+
+  <!-- Farbe -->
+  <circle cx="484" cy="228" r="6" fill="#2563eb"/>
+  <text x="484" y="232" text-anchor="middle" font-size="8" font-weight="700" fill="#ffffff">4</text>
+  <text x="498" y="225" font-size="11" font-weight="600" fill="#1e293b">Farbe als Signal</text>
+  <text x="498" y="239" font-size="10" fill="#475569">Einheitlicher Farbton über alle Screens</text>
+
+  <!-- Divider -->
+  <line x1="480" y1="260" x2="752" y2="260" stroke="#f1f5f9" stroke-width="1"/>
+
+  <!-- Stat box -->
+  <text x="480" y="284" font-size="11" font-weight="700" fill="#1e293b">Schlüsselzahlen</text>
+
+  <rect x="480" y="294" width="128" height="56" rx="8" fill="#eff6ff"/>
+  <text x="544" y="322" text-anchor="middle" font-size="26" font-weight="800" fill="#2563eb">35 %</text>
+  <text x="544" y="340" text-anchor="middle" font-size="9" fill="#475569">mehr Downloads durch</text>
+  <text x="544" y="352" text-anchor="middle" font-size="9" fill="#475569">optimierte Screenshots</text>
+
+  <rect x="620" y="294" width="128" height="56" rx="8" fill="#f0fdf4"/>
+  <text x="684" y="322" text-anchor="middle" font-size="26" font-weight="800" fill="#10b981">60 %</text>
+  <text x="684" y="340" text-anchor="middle" font-size="9" fill="#475569">der Entscheidungen fallen</text>
+  <text x="684" y="352" text-anchor="middle" font-size="9" fill="#475569">bei Screenshot 1–3</text>
+
+  <!-- Footer note -->
+  <text x="400" y="432" text-anchor="middle" font-size="10" fill="#94a3b8">Quelle: Splitmetrics / StoreMaven App Store Conversion Research</text>
+</svg>

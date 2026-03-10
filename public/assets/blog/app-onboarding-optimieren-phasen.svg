@@ -1,0 +1,88 @@
+<svg viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="App-Onboarding-Phasen von der Installation bis zum Aha-Moment" font-family="system-ui, sans-serif">
+  <title>App-Onboarding: Phasen und kritische Drop-off-Punkte</title>
+
+  <!-- Background -->
+  <rect width="800" height="300" fill="#f8fafc" rx="12"/>
+
+  <!-- Title -->
+  <text x="400" y="36" text-anchor="middle" font-size="15" font-weight="700" fill="#0f172a">App-Onboarding: Phasen und kritische Drop-off-Punkte</text>
+
+  <!-- Timeline base line -->
+  <line x1="60" y1="150" x2="740" y2="150" stroke="#cbd5e1" stroke-width="2"/>
+
+  <!-- Arrow at end of line -->
+  <polygon points="740,145 752,150 740,155" fill="#cbd5e1"/>
+
+  <!-- Phase 1: Installation -->
+  <circle cx="100" cy="150" r="22" fill="#2563eb"/>
+  <text x="100" y="155" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff">1</text>
+  <text x="100" y="196" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">Installation</text>
+  <text x="100" y="211" text-anchor="middle" font-size="10" fill="#64748b">App Store</text>
+
+  <!-- Connector line 1 to 2 -->
+  <line x1="122" y1="150" x2="218" y2="150" stroke="#2563eb" stroke-width="2" stroke-dasharray="4,3"/>
+
+  <!-- Drop-off marker 1 -->
+  <circle cx="170" cy="150" r="8" fill="#ef4444"/>
+  <text x="170" y="154" text-anchor="middle" font-size="9" font-weight="700" fill="#ffffff">!</text>
+  <text x="170" y="126" text-anchor="middle" font-size="9" fill="#ef4444" font-weight="600">~20 % brechen</text>
+  <text x="170" y="138" text-anchor="middle" font-size="9" fill="#ef4444">vor 1. Öffnung ab</text>
+
+  <!-- Phase 2: Erstes Öffnen -->
+  <circle cx="240" cy="150" r="22" fill="#2563eb"/>
+  <text x="240" y="155" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff">2</text>
+  <text x="240" y="196" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">Erstes Öffnen</text>
+  <text x="240" y="211" text-anchor="middle" font-size="10" fill="#64748b">Erster Eindruck</text>
+
+  <!-- Connector line 2 to 3 -->
+  <line x1="262" y1="150" x2="358" y2="150" stroke="#2563eb" stroke-width="2" stroke-dasharray="4,3"/>
+
+  <!-- Drop-off marker 2 -->
+  <circle cx="310" cy="150" r="8" fill="#ef4444"/>
+  <text x="310" y="154" text-anchor="middle" font-size="9" font-weight="700" fill="#ffffff">!</text>
+  <text x="310" y="126" text-anchor="middle" font-size="9" fill="#ef4444" font-weight="600">~35 % brechen</text>
+  <text x="310" y="138" text-anchor="middle" font-size="9" fill="#ef4444">im Flow ab</text>
+
+  <!-- Phase 3: Onboarding-Flow -->
+  <circle cx="380" cy="150" r="22" fill="#f97316"/>
+  <text x="380" y="155" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff">3</text>
+  <text x="380" y="196" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">Onboarding-Flow</text>
+  <text x="380" y="211" text-anchor="middle" font-size="10" fill="#64748b">Screens &amp; Setup</text>
+
+  <!-- Connector line 3 to 4 -->
+  <line x1="402" y1="150" x2="498" y2="150" stroke="#10b981" stroke-width="2" stroke-dasharray="4,3"/>
+
+  <!-- Drop-off marker 3 -->
+  <circle cx="450" cy="150" r="8" fill="#ef4444"/>
+  <text x="450" y="154" text-anchor="middle" font-size="9" font-weight="700" fill="#ffffff">!</text>
+  <text x="450" y="126" text-anchor="middle" font-size="9" fill="#ef4444" font-weight="600">~22 % brechen</text>
+  <text x="450" y="138" text-anchor="middle" font-size="9" fill="#ef4444">vor Aha-Moment ab</text>
+
+  <!-- Phase 4: Aha-Moment -->
+  <circle cx="520" cy="150" r="22" fill="#10b981"/>
+  <text x="520" y="155" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff">4</text>
+  <text x="520" y="196" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">Aha-Moment</text>
+  <text x="520" y="211" text-anchor="middle" font-size="10" fill="#64748b">Erster Mehrwert</text>
+
+  <!-- Connector line 4 to 5 -->
+  <line x1="542" y1="150" x2="638" y2="150" stroke="#10b981" stroke-width="2"/>
+
+  <!-- Phase 5: Aktive Nutzung -->
+  <circle cx="660" cy="150" r="22" fill="#10b981"/>
+  <text x="660" y="155" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff">5</text>
+  <text x="660" y="196" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">Aktive Nutzung</text>
+  <text x="660" y="211" text-anchor="middle" font-size="10" fill="#64748b">Wiederkehr &amp; Retention</text>
+
+  <!-- Legend -->
+  <rect x="60" y="240" width="12" height="12" rx="6" fill="#2563eb"/>
+  <text x="78" y="251" font-size="10" fill="#64748b">Onboarding-Phase</text>
+  <rect x="190" y="240" width="12" height="12" rx="6" fill="#10b981"/>
+  <text x="208" y="251" font-size="10" fill="#64748b">Zielzustand</text>
+  <rect x="300" y="240" width="12" height="12" rx="6" fill="#ef4444"/>
+  <text x="318" y="251" font-size="10" fill="#64748b">Kritischer Drop-off-Punkt</text>
+  <rect x="480" y="240" width="12" height="12" rx="6" fill="#f97316"/>
+  <text x="498" y="251" font-size="10" fill="#64748b">Schlüsselphase mit höchstem Optimierungspotenzial</text>
+
+  <!-- Source note -->
+  <text x="400" y="285" text-anchor="middle" font-size="9" fill="#94a3b8">Quelle: App-Care — Richtwerte aus Branchendaten (AppsFlyer, Statista). Abweichungen je App-Typ möglich.</text>
+</svg>

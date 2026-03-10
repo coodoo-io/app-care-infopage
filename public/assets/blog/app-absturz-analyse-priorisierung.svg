@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" role="img" aria-label="Crash-Priorisierungs-Matrix: Auswirkung vs. Häufigkeit">
+  <title>Crash-Priorisierungs-Matrix: Auswirkung vs. Häufigkeit</title>
+  <defs>
+    <style>
+      .axis-label  { font-family: system-ui, sans-serif; font-size: 12px; font-weight: 700; fill: #475569; text-anchor: middle; }
+      .axis-tick   { font-family: system-ui, sans-serif; font-size: 11px; fill: #94a3b8; text-anchor: middle; }
+      .quad-title  { font-family: system-ui, sans-serif; font-size: 13px; font-weight: 700; text-anchor: middle; }
+      .quad-sub    { font-family: system-ui, sans-serif; font-size: 11px; text-anchor: middle; }
+      .badge-text  { font-family: system-ui, sans-serif; font-size: 10px; font-weight: 700; text-anchor: middle; }
+      .chart-title { font-family: system-ui, sans-serif; font-size: 15px; font-weight: 700; fill: #1e293b; text-anchor: middle; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="300" fill="#f8fafc" rx="12"/>
+
+  <!-- Title -->
+  <text x="400" y="30" class="chart-title">Crash-Priorisierungs-Matrix</text>
+
+  <!-- Matrix area: x 80–740, y 50–260 -->
+  <!-- Quadrant coordinates:
+       Top-left    (Selten + Hoch):   x=80,  y=50,  w=330, h=105
+       Top-right   (Häufig + Hoch):   x=410, y=50,  w=330, h=105
+       Bottom-left (Selten + Niedrig):x=80,  y=155, w=330, h=105
+       Bottom-right(Häufig + Niedrig):x=410, y=155, w=330, h=105
+  -->
+
+  <!-- Q2: Selten + Hohe Auswirkung — orange (Bald beheben) -->
+  <rect x="80" y="50" width="330" height="105" rx="8" fill="#fff7ed" stroke="#f97316" stroke-width="1.5"/>
+  <text x="245" y="88" class="quad-title" fill="#c2410c">Selten + Hohe Auswirkung</text>
+  <text x="245" y="108" class="quad-sub" fill="#9a3412">Bald beheben</text>
+  <text x="245" y="124" class="quad-sub" fill="#9a3412">Kritische Pfade (Login, Checkout)</text>
+  <!-- Badge -->
+  <rect x="195" y="134" width="100" height="18" rx="9" fill="#f97316"/>
+  <text x="245" y="147" class="badge-text" fill="#ffffff">Nächster Sprint</text>
+
+  <!-- Q1: Häufig + Hohe Auswirkung — red (Sofort beheben) -->
+  <rect x="410" y="50" width="330" height="105" rx="8" fill="#fef2f2" stroke="#ef4444" stroke-width="2"/>
+  <text x="575" y="88" class="quad-title" fill="#b91c1c">Häufig + Hohe Auswirkung</text>
+  <text x="575" y="108" class="quad-sub" fill="#991b1b">Sofort beheben</text>
+  <text x="575" y="124" class="quad-sub" fill="#991b1b">Direkte Auswirkung auf Rating</text>
+  <!-- Badge -->
+  <rect x="525" y="134" width="100" height="18" rx="9" fill="#ef4444"/>
+  <text x="575" y="147" class="badge-text" fill="#ffffff">Jetzt handeln</text>
+
+  <!-- Q3: Selten + Niedrige Auswirkung — gray (Backlog) -->
+  <rect x="80" y="155" width="330" height="105" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="245" y="193" class="quad-title" fill="#64748b">Selten + Niedrige Auswirkung</text>
+  <text x="245" y="213" class="quad-sub" fill="#64748b">Backlog</text>
+  <text x="245" y="229" class="quad-sub" fill="#64748b">Notieren, nicht aktiv priorisieren</text>
+  <!-- Badge -->
+  <rect x="195" y="239" width="100" height="18" rx="9" fill="#94a3b8"/>
+  <text x="245" y="252" class="badge-text" fill="#ffffff">Backlog</text>
+
+  <!-- Q4: Häufig + Niedrige Auswirkung — amber (Beobachten) -->
+  <rect x="410" y="155" width="330" height="105" rx="8" fill="#fffbeb" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="575" y="193" class="quad-title" fill="#b45309">Häufig + Niedrige Auswirkung</text>
+  <text x="575" y="213" class="quad-sub" fill="#92400e">Beobachten</text>
+  <text x="575" y="229" class="quad-sub" fill="#92400e">In technische Schulden einplanen</text>
+  <!-- Badge -->
+  <rect x="525" y="239" width="100" height="18" rx="9" fill="#f59e0b"/>
+  <text x="575" y="252" class="badge-text" fill="#ffffff">Bald planen</text>
+
+  <!-- Axis lines -->
+  <!-- Vertical center divider -->
+  <line x1="410" y1="44" x2="410" y2="266" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <!-- Horizontal center divider -->
+  <line x1="74" y1="155" x2="746" y2="155" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="4 3"/>
+
+  <!-- Y-axis label -->
+  <text transform="translate(22, 155) rotate(-90)" class="axis-label" text-anchor="middle">Auswirkung</text>
+  <!-- Y-axis ticks -->
+  <text x="58" y="104" class="axis-tick">Hoch</text>
+  <text x="58" y="214" class="axis-tick">Niedrig</text>
+
+  <!-- X-axis label -->
+  <text x="410" y="290" class="axis-label">Häufigkeit</text>
+  <!-- X-axis ticks -->
+  <text x="245" y="278" class="axis-tick">Selten</text>
+  <text x="575" y="278" class="axis-tick">Häufig</text>
+</svg>

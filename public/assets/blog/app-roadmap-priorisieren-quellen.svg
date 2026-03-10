@@ -1,0 +1,88 @@
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Die drei Datenquellen für die App-Roadmap-Priorisierung">
+  <title>App-Roadmap: Drei Datenquellen im Überblick</title>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="#ffffff" rx="12"/>
+
+  <!-- Header label -->
+  <text x="400" y="28" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#9ca3af" letter-spacing="0.08em">DREI DATENQUELLEN FÜR DIE APP-ROADMAP-PRIORISIERUNG</text>
+
+  <!-- Column 1: Nutzerdaten (blue) -->
+  <rect x="24" y="48" width="218" height="230" fill="#eff6ff" rx="10"/>
+  <rect x="24" y="48" width="218" height="6" fill="#2563eb" rx="3"/>
+
+  <text x="133" y="80" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#1d4ed8" letter-spacing="0.04em">NUTZUNGSDATEN</text>
+
+  <!-- Icon: bar chart simplified -->
+  <rect x="116" y="90" width="8" height="18" fill="#2563eb" rx="1"/>
+  <rect x="128" y="84" width="8" height="24" fill="#2563eb" rx="1"/>
+  <rect x="140" y="96" width="8" height="12" fill="#93c5fd" rx="1"/>
+
+  <line x1="44" y1="124" x2="222" y2="124" stroke="#bfdbfe" stroke-width="1"/>
+
+  <text x="44" y="144" font-family="system-ui, sans-serif" font-size="12" fill="#1e40af" font-weight="600">Analytics</text>
+  <text x="44" y="162" font-family="system-ui, sans-serif" font-size="11" fill="#3b82f6">Feature-Adoption-Rate</text>
+  <text x="44" y="178" font-family="system-ui, sans-serif" font-size="11" fill="#3b82f6">Funnel-Abbrüche</text>
+  <text x="44" y="194" font-family="system-ui, sans-serif" font-size="11" fill="#3b82f6">Session-Tiefe</text>
+
+  <text x="44" y="216" font-family="system-ui, sans-serif" font-size="12" fill="#1e40af" font-weight="600">Heatmaps &amp; Recordings</text>
+  <text x="44" y="234" font-family="system-ui, sans-serif" font-size="11" fill="#3b82f6">Klick- und Scroll-Muster</text>
+  <text x="44" y="250" font-family="system-ui, sans-serif" font-size="11" fill="#3b82f6">Abbruchpunkte</text>
+
+  <!-- Column 2: Nutzerfeedback (green) -->
+  <rect x="291" y="48" width="218" height="230" fill="#f0fdf4" rx="10"/>
+  <rect x="291" y="48" width="218" height="6" fill="#10b981" rx="3"/>
+
+  <text x="400" y="80" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#065f46" letter-spacing="0.04em">NUTZERFEEDBACK</text>
+
+  <!-- Icon: speech bubble simplified -->
+  <rect x="388" y="88" width="24" height="18" fill="#10b981" rx="4"/>
+  <polygon points="392,106 388,114 398,106" fill="#10b981"/>
+
+  <line x1="311" y1="124" x2="489" y2="124" stroke="#bbf7d0" stroke-width="1"/>
+
+  <text x="311" y="144" font-family="system-ui, sans-serif" font-size="12" fill="#065f46" font-weight="600">Store-Reviews</text>
+  <text x="311" y="162" font-family="system-ui, sans-serif" font-size="11" fill="#059669">1-Stern-Reviews auswerten</text>
+  <text x="311" y="178" font-family="system-ui, sans-serif" font-size="11" fill="#059669">Feature-Requests erkennen</text>
+
+  <text x="311" y="200" font-family="system-ui, sans-serif" font-size="12" fill="#065f46" font-weight="600">Support &amp; Interviews</text>
+  <text x="311" y="218" font-family="system-ui, sans-serif" font-size="11" fill="#059669">Wiederkehrende Themen</text>
+  <text x="311" y="234" font-family="system-ui, sans-serif" font-size="11" fill="#059669">In-App-Umfragen (NPS)</text>
+  <text x="311" y="250" font-family="system-ui, sans-serif" font-size="11" fill="#059669">Nutzerinterviews</text>
+
+  <!-- Column 3: Business-KPIs (orange) -->
+  <rect x="558" y="48" width="218" height="230" fill="#fff7ed" rx="10"/>
+  <rect x="558" y="48" width="218" height="6" fill="#f97316" rx="3"/>
+
+  <text x="667" y="80" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#9a3412" letter-spacing="0.04em">BUSINESS-KPIS</text>
+
+  <!-- Icon: trend arrow -->
+  <polyline points="648,108 658,96 668,102 678,90" fill="none" stroke="#f97316" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="678,90 684,90 681,96" fill="#f97316"/>
+
+  <line x1="578" y1="124" x2="756" y2="124" stroke="#fed7aa" stroke-width="1"/>
+
+  <text x="578" y="144" font-family="system-ui, sans-serif" font-size="12" fill="#9a3412" font-weight="600">Engagement</text>
+  <text x="578" y="162" font-family="system-ui, sans-serif" font-size="11" fill="#ea580c">Retention Rate (D7 / D30)</text>
+  <text x="578" y="178" font-family="system-ui, sans-serif" font-size="11" fill="#ea580c">DAU / MAU</text>
+
+  <text x="578" y="200" font-family="system-ui, sans-serif" font-size="12" fill="#9a3412" font-weight="600">Monetarisierung</text>
+  <text x="578" y="218" font-family="system-ui, sans-serif" font-size="11" fill="#ea580c">Churn Rate</text>
+  <text x="578" y="234" font-family="system-ui, sans-serif" font-size="11" fill="#ea580c">ARPU</text>
+  <text x="578" y="250" font-family="system-ui, sans-serif" font-size="11" fill="#ea580c">Conversion Rate</text>
+
+  <!-- Arrows pointing down to center result box -->
+  <line x1="133" y1="282" x2="133" y2="316" stroke="#2563eb" stroke-width="2" stroke-dasharray="4,3"/>
+  <polygon points="129,312 133,322 137,312" fill="#2563eb"/>
+
+  <line x1="400" y1="282" x2="400" y2="316" stroke="#10b981" stroke-width="2" stroke-dasharray="4,3"/>
+  <polygon points="396,312 400,322 404,312" fill="#10b981"/>
+
+  <line x1="667" y1="282" x2="667" y2="316" stroke="#f97316" stroke-width="2" stroke-dasharray="4,3"/>
+  <polygon points="663,312 667,322 671,312" fill="#f97316"/>
+
+  <!-- Center result box -->
+  <rect x="180" y="326" width="440" height="52" fill="#172554" rx="10"/>
+  <text x="400" y="348" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#ffffff" letter-spacing="0.02em">Priorisierte App-Roadmap</text>
+  <text x="400" y="366" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#93c5fd">Datengetrieben. Messbar. Ausgerichtet an Business-Zielen.</text>
+</svg>

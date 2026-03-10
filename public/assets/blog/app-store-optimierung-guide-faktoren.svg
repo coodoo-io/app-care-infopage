@@ -1,0 +1,117 @@
+<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ASO-Faktoren nach Einfluss-Stärke: horizontales Balkendiagramm" font-family="system-ui, sans-serif">
+  <title>ASO-Faktoren: On-Metadata vs. Off-Metadata im Einfluss-Vergleich</title>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="#f8fafc" rx="12"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="800" height="60" fill="#172554" rx="12"/>
+  <rect x="0" y="48" width="800" height="12" fill="#172554"/>
+  <text x="400" y="37" text-anchor="middle" font-size="18" font-weight="700" fill="#ffffff" letter-spacing="0.5">Einfluss-Stärke der wichtigsten ASO-Faktoren</text>
+
+  <!-- Y-axis labels area: x=20 to 220, bars from x=220 to x=740 -->
+  <!-- Scale labels -->
+  <text x="220" y="88" font-size="10" fill="#94a3b8" text-anchor="middle">0</text>
+  <text x="352" y="88" font-size="10" fill="#94a3b8" text-anchor="middle">25</text>
+  <text x="480" y="88" font-size="10" fill="#94a3b8" text-anchor="middle">50</text>
+  <text x="610" y="88" font-size="10" fill="#94a3b8" text-anchor="middle">75</text>
+  <text x="740" y="88" font-size="10" fill="#94a3b8" text-anchor="middle">100</text>
+
+  <!-- Grid lines -->
+  <line x1="220" y1="90" x2="220" y2="390" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="352" y1="90" x2="352" y2="390" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="480" y1="90" x2="480" y2="390" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="610" y1="90" x2="610" y2="390" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="740" y1="90" x2="740" y2="390" stroke="#e2e8f0" stroke-width="1"/>
+
+  <!-- Scale header -->
+  <text x="480" y="78" text-anchor="middle" font-size="10" fill="#64748b">Einfluss-Index (0 = kein Einfluss, 100 = maximaler Einfluss)</text>
+
+  <!-- Row 1: App-Name/Titel — sehr hoch 95 -->
+  <!-- bar width: 95% of 520 = 494 -->
+  <rect x="20" y="100" width="196" height="34" fill="transparent"/>
+  <text x="210" y="122" font-size="12" font-weight="600" fill="#1e293b" text-anchor="end">App-Name / Titel</text>
+  <rect x="222" y="101" width="494" height="32" fill="#2563eb" rx="4"/>
+  <rect x="222" y="101" width="494" height="16" fill="#3b82f6" rx="4"/>
+  <rect x="222" y="109" width="494" height="8" fill="#2563eb"/>
+  <text x="724" y="122" font-size="11" font-weight="700" fill="#1e40af" text-anchor="start">  Sehr hoch</text>
+  <text x="460" y="122" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">95 / 100</text>
+  <!-- Category tag -->
+  <rect x="20" y="103" width="68" height="16" fill="#eff6ff" rx="3"/>
+  <text x="54" y="115" text-anchor="middle" font-size="9" fill="#2563eb" font-weight="600">On-Metadata</text>
+
+  <!-- Row 2: Downloads-Volumen — hoch 88 -->
+  <!-- bar width: 88% of 520 = 458 -->
+  <text x="210" y="162" font-size="12" font-weight="600" fill="#1e293b" text-anchor="end">Downloads-Volumen</text>
+  <rect x="222" y="141" width="458" height="32" fill="#10b981" rx="4"/>
+  <rect x="222" y="141" width="458" height="16" fill="#34d399" rx="4"/>
+  <rect x="222" y="149" width="458" height="8" fill="#10b981"/>
+  <text x="688" y="162" font-size="11" font-weight="700" fill="#065f46" text-anchor="start">  Hoch</text>
+  <text x="448" y="162" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">88 / 100</text>
+  <rect x="20" y="143" width="68" height="16" fill="#f0fdf4" rx="3"/>
+  <text x="54" y="155" text-anchor="middle" font-size="9" fill="#10b981" font-weight="600">Off-Metadata</text>
+
+  <!-- Row 3: Bewertungs-Durchschnitt — hoch 85 -->
+  <!-- bar width: 85% of 520 = 442 -->
+  <text x="210" y="202" font-size="12" font-weight="600" fill="#1e293b" text-anchor="end">Bewertungs-Durchschnitt</text>
+  <rect x="222" y="181" width="442" height="32" fill="#10b981" rx="4"/>
+  <rect x="222" y="181" width="442" height="16" fill="#34d399" rx="4"/>
+  <rect x="222" y="189" width="442" height="8" fill="#10b981"/>
+  <text x="672" y="202" font-size="11" font-weight="700" fill="#065f46" text-anchor="start">  Hoch</text>
+  <text x="440" y="202" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">85 / 100</text>
+  <rect x="20" y="183" width="68" height="16" fill="#f0fdf4" rx="3"/>
+  <text x="54" y="195" text-anchor="middle" font-size="9" fill="#10b981" font-weight="600">Off-Metadata</text>
+
+  <!-- Row 4: Keywords iOS — hoch 80 -->
+  <!-- bar width: 80% of 520 = 416 -->
+  <text x="210" y="242" font-size="12" font-weight="600" fill="#1e293b" text-anchor="end">Keywords (iOS)</text>
+  <rect x="222" y="221" width="416" height="32" fill="#2563eb" rx="4"/>
+  <rect x="222" y="221" width="416" height="16" fill="#3b82f6" rx="4"/>
+  <rect x="222" y="229" width="416" height="8" fill="#2563eb"/>
+  <text x="646" y="242" font-size="11" font-weight="700" fill="#1e40af" text-anchor="start">  Hoch</text>
+  <text x="428" y="242" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">80 / 100</text>
+  <rect x="20" y="223" width="68" height="16" fill="#eff6ff" rx="3"/>
+  <text x="54" y="235" text-anchor="middle" font-size="9" fill="#2563eb" font-weight="600">On-Metadata</text>
+
+  <!-- Row 5: Screenshots — mittel-hoch 70 -->
+  <!-- bar width: 70% of 520 = 364 -->
+  <text x="210" y="282" font-size="12" font-weight="600" fill="#1e293b" text-anchor="end">Screenshots</text>
+  <rect x="222" y="261" width="364" height="32" fill="#f97316" rx="4"/>
+  <rect x="222" y="261" width="364" height="16" fill="#fb923c" rx="4"/>
+  <rect x="222" y="269" width="364" height="8" fill="#f97316"/>
+  <text x="594" y="282" font-size="11" font-weight="700" fill="#7c2d12" text-anchor="start">  Mittel-hoch</text>
+  <text x="402" y="282" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">70 / 100</text>
+  <rect x="20" y="263" width="68" height="16" fill="#fff7ed" rx="3"/>
+  <text x="54" y="275" text-anchor="middle" font-size="9" fill="#f97316" font-weight="600">Conversion</text>
+
+  <!-- Row 6: Update-Häufigkeit — mittel 55 -->
+  <!-- bar width: 55% of 520 = 286 -->
+  <text x="210" y="322" font-size="12" font-weight="600" fill="#1e293b" text-anchor="end">Update-Häufigkeit</text>
+  <rect x="222" y="301" width="286" height="32" fill="#10b981" rx="4"/>
+  <rect x="222" y="301" width="286" height="16" fill="#34d399" rx="4"/>
+  <rect x="222" y="309" width="286" height="8" fill="#10b981"/>
+  <text x="516" y="322" font-size="11" font-weight="700" fill="#065f46" text-anchor="start">  Mittel</text>
+  <text x="362" y="322" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">55 / 100</text>
+  <rect x="20" y="303" width="68" height="16" fill="#f0fdf4" rx="3"/>
+  <text x="54" y="315" text-anchor="middle" font-size="9" fill="#10b981" font-weight="600">Off-Metadata</text>
+
+  <!-- Row 7: Beschreibung iOS — niedrig 30 -->
+  <!-- bar width: 30% of 520 = 156 -->
+  <text x="210" y="362" font-size="12" font-weight="600" fill="#1e293b" text-anchor="end">Beschreibung (iOS)</text>
+  <rect x="222" y="341" width="156" height="32" fill="#94a3b8" rx="4"/>
+  <rect x="222" y="341" width="156" height="16" fill="#cbd5e1" rx="4"/>
+  <rect x="222" y="349" width="156" height="8" fill="#94a3b8"/>
+  <text x="386" y="362" font-size="11" font-weight="700" fill="#475569" text-anchor="start">  Niedrig (kein Ranking)</text>
+  <rect x="20" y="343" width="68" height="16" fill="#eff6ff" rx="3"/>
+  <text x="54" y="355" text-anchor="middle" font-size="9" fill="#2563eb" font-weight="600">On-Metadata</text>
+
+  <!-- Legend -->
+  <rect x="30" y="400" width="12" height="12" fill="#2563eb" rx="2"/>
+  <text x="48" y="411" font-size="11" fill="#475569">On-Metadata</text>
+  <rect x="140" y="400" width="12" height="12" fill="#10b981" rx="2"/>
+  <text x="158" y="411" font-size="11" fill="#475569">Off-Metadata</text>
+  <rect x="260" y="400" width="12" height="12" fill="#f97316" rx="2"/>
+  <text x="278" y="411" font-size="11" fill="#475569">Conversion</text>
+
+  <text x="740" y="411" text-anchor="end" font-size="10" fill="#94a3b8">App-Care — app-care.pages.dev</text>
+</svg>

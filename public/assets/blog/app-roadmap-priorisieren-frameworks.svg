@@ -1,0 +1,126 @@
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Vergleich der drei Priorisierungs-Frameworks: RICE, MoSCoW und Impact/Effort">
+  <title>Priorisierungs-Framework-Vergleich: RICE vs. MoSCoW vs. Impact/Effort</title>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="#ffffff" rx="12"/>
+
+  <!-- Header label -->
+  <text x="400" y="28" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#9ca3af" letter-spacing="0.08em">PRIORISIERUNGS-FRAMEWORKS IM VERGLEICH</text>
+
+  <!-- Table header row -->
+  <rect x="24" y="42" width="752" height="36" fill="#f8fafc" rx="6"/>
+
+  <text x="100" y="65" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#475569" letter-spacing="0.05em">FRAMEWORK</text>
+  <text x="280" y="65" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#475569" letter-spacing="0.05em">STÄRKEN</text>
+  <text x="480" y="65" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#475569" letter-spacing="0.05em">SCHWÄCHEN</text>
+  <text x="680" y="65" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#475569" letter-spacing="0.05em">AM BESTEN FÜR</text>
+
+  <!-- Vertical dividers in header -->
+  <line x1="190" y1="42" x2="190" y2="78" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="380" y1="42" x2="380" y2="78" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="580" y1="42" x2="580" y2="78" stroke="#e2e8f0" stroke-width="1"/>
+
+  <!-- ============================================================ -->
+  <!-- Row 1: RICE -->
+  <!-- ============================================================ -->
+  <rect x="24" y="82" width="752" height="96" fill="#eff6ff" rx="6"/>
+  <rect x="24" y="82" width="4" height="96" fill="#2563eb" rx="2"/>
+
+  <!-- Framework name -->
+  <text x="106" y="118" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18" font-weight="800" fill="#2563eb">RICE</text>
+  <text x="106" y="136" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#3b82f6">Reach · Impact</text>
+  <text x="106" y="150" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#3b82f6">Confidence · Effort</text>
+
+  <!-- RICE formula chip -->
+  <rect x="40" y="158" width="132" height="14" fill="#dbeafe" rx="3"/>
+  <text x="106" y="168" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#1e40af" font-weight="600">(R × I × C) / E = Score</text>
+
+  <!-- Divider -->
+  <line x1="190" y1="82" x2="190" y2="178" stroke="#bfdbfe" stroke-width="1"/>
+  <line x1="380" y1="82" x2="380" y2="178" stroke="#bfdbfe" stroke-width="1"/>
+  <line x1="580" y1="82" x2="580" y2="178" stroke="#bfdbfe" stroke-width="1"/>
+
+  <!-- Stärken -->
+  <text x="200" y="106" font-family="system-ui, sans-serif" font-size="12" fill="#1e40af" font-weight="600">+ Quantitativ &amp; reproduzierbar</text>
+  <text x="200" y="124" font-family="system-ui, sans-serif" font-size="11" fill="#3b82f6">Scores sind vergleichbar und</text>
+  <text x="200" y="140" font-family="system-ui, sans-serif" font-size="11" fill="#3b82f6">nachvollziehbar dokumentiert</text>
+  <text x="200" y="158" font-family="system-ui, sans-serif" font-size="12" fill="#1e40af" font-weight="600">+ Berücksichtigt Unsicherheit</text>
+  <text x="200" y="172" font-family="system-ui, sans-serif" font-size="11" fill="#3b82f6">Confidence-Faktor beugt Bias vor</text>
+
+  <!-- Schwächen -->
+  <text x="390" y="106" font-family="system-ui, sans-serif" font-size="12" fill="#7c3aed" font-weight="600">- Aufwändig in der Pflege</text>
+  <text x="390" y="124" font-family="system-ui, sans-serif" font-size="11" fill="#8b5cf6">Erfordert verlässliche Daten</text>
+  <text x="390" y="140" font-family="system-ui, sans-serif" font-size="11" fill="#8b5cf6">für alle vier Dimensionen</text>
+  <text x="390" y="158" font-family="system-ui, sans-serif" font-size="12" fill="#7c3aed" font-weight="600">- Scheingenauigkeit</text>
+  <text x="390" y="172" font-family="system-ui, sans-serif" font-size="11" fill="#8b5cf6">Zahlen können Sicherheit vortäuschen</text>
+
+  <!-- Am besten für -->
+  <rect x="592" y="92" width="172" height="74" fill="#dbeafe" rx="6"/>
+  <text x="678" y="112" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#1e40af" font-weight="700">Größere Teams</text>
+  <text x="678" y="130" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#1e40af">Quartals-Roadmap</text>
+  <text x="678" y="148" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#1e40af">mit parallelen</text>
+  <text x="678" y="166" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#1e40af">Initiativen</text>
+
+  <!-- ============================================================ -->
+  <!-- Row 2: MoSCoW -->
+  <!-- ============================================================ -->
+  <rect x="24" y="186" width="752" height="96" fill="#f0fdf4" rx="6"/>
+  <rect x="24" y="186" width="4" height="96" fill="#10b981" rx="2"/>
+
+  <text x="106" y="222" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" font-weight="800" fill="#065f46">MoSCoW</text>
+  <text x="106" y="240" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#059669">Must · Should</text>
+  <text x="106" y="254" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#059669">Could · Won't</text>
+
+  <line x1="190" y1="186" x2="190" y2="282" stroke="#bbf7d0" stroke-width="1"/>
+  <line x1="380" y1="186" x2="380" y2="282" stroke="#bbf7d0" stroke-width="1"/>
+  <line x1="580" y1="186" x2="580" y2="282" stroke="#bbf7d0" stroke-width="1"/>
+
+  <text x="200" y="210" font-family="system-ui, sans-serif" font-size="12" fill="#065f46" font-weight="600">+ Schnell durchführbar</text>
+  <text x="200" y="228" font-family="system-ui, sans-serif" font-size="11" fill="#059669">Kein Zahlenmaterial nötig,</text>
+  <text x="200" y="244" font-family="system-ui, sans-serif" font-size="11" fill="#059669">sofort verständlich</text>
+  <text x="200" y="262" font-family="system-ui, sans-serif" font-size="12" fill="#065f46" font-weight="600">+ Gut für Stakeholder-Alignment</text>
+  <text x="200" y="276" font-family="system-ui, sans-serif" font-size="11" fill="#059669">Klare Sprache für alle Rollen</text>
+
+  <text x="390" y="210" font-family="system-ui, sans-serif" font-size="12" fill="#7c3aed" font-weight="600">- Sehr subjektiv</text>
+  <text x="390" y="228" font-family="system-ui, sans-serif" font-size="11" fill="#8b5cf6">Ohne Kriterien landet vieles</text>
+  <text x="390" y="244" font-family="system-ui, sans-serif" font-size="11" fill="#8b5cf6">in "Must Have"</text>
+  <text x="390" y="262" font-family="system-ui, sans-serif" font-size="12" fill="#7c3aed" font-weight="600">- Kein Wert-Aufwand-Verhältnis</text>
+  <text x="390" y="276" font-family="system-ui, sans-serif" font-size="11" fill="#8b5cf6">Effort wird nicht bewertet</text>
+
+  <rect x="592" y="196" width="172" height="74" fill="#d1fae5" rx="6"/>
+  <text x="678" y="216" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#065f46" font-weight="700">Sprint-Planung</text>
+  <text x="678" y="234" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#065f46">Schnelle Sortierung</text>
+  <text x="678" y="252" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#065f46">im Team-Workshop</text>
+
+  <!-- ============================================================ -->
+  <!-- Row 3: Impact/Effort -->
+  <!-- ============================================================ -->
+  <rect x="24" y="290" width="752" height="96" fill="#fff7ed" rx="6"/>
+  <rect x="24" y="290" width="4" height="96" fill="#f97316" rx="2"/>
+
+  <text x="106" y="320" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="800" fill="#9a3412">Impact /</text>
+  <text x="106" y="336" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="800" fill="#9a3412">Effort</text>
+  <text x="106" y="352" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#ea580c">2×2-Matrix</text>
+
+  <line x1="190" y1="290" x2="190" y2="386" stroke="#fed7aa" stroke-width="1"/>
+  <line x1="380" y1="290" x2="380" y2="386" stroke="#fed7aa" stroke-width="1"/>
+  <line x1="580" y1="290" x2="580" y2="386" stroke="#fed7aa" stroke-width="1"/>
+
+  <text x="200" y="314" font-family="system-ui, sans-serif" font-size="12" fill="#9a3412" font-weight="600">+ Visuell &amp; intuitiv</text>
+  <text x="200" y="332" font-family="system-ui, sans-serif" font-size="11" fill="#ea580c">Quick Wins sofort sichtbar,</text>
+  <text x="200" y="348" font-family="system-ui, sans-serif" font-size="11" fill="#ea580c">keine Zahlen erforderlich</text>
+  <text x="200" y="366" font-family="system-ui, sans-serif" font-size="12" fill="#9a3412" font-weight="600">+ Ideal als Einstieg</text>
+  <text x="200" y="380" font-family="system-ui, sans-serif" font-size="11" fill="#ea580c">Gute Vorsortierung vor RICE</text>
+
+  <text x="390" y="314" font-family="system-ui, sans-serif" font-size="12" fill="#7c3aed" font-weight="600">- Grob und zweidimensional</text>
+  <text x="390" y="332" font-family="system-ui, sans-serif" font-size="11" fill="#8b5cf6">Reichweite und Confidence</text>
+  <text x="390" y="348" font-family="system-ui, sans-serif" font-size="11" fill="#8b5cf6">werden nicht erfasst</text>
+  <text x="390" y="366" font-family="system-ui, sans-serif" font-size="12" fill="#7c3aed" font-weight="600">- Bias zu einfachen Features</text>
+  <text x="390" y="380" font-family="system-ui, sans-serif" font-size="11" fill="#8b5cf6">Quick Wins werden überbetont</text>
+
+  <rect x="592" y="300" width="172" height="74" fill="#ffedd5" rx="6"/>
+  <text x="678" y="320" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#9a3412" font-weight="700">Erste Orientierung</text>
+  <text x="678" y="338" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#9a3412">Workshop &amp;</text>
+  <text x="678" y="356" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#9a3412">Vorsortierung</text>
+  <text x="678" y="374" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#9a3412">vor RICE</text>
+</svg>

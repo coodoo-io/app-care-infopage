@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" role="img" aria-label="App Retention Rate Benchmarks nach Kategorie: Gaming, E-Commerce, Finance, Health and Fitness" font-family="system-ui, sans-serif">
+  <title>App Retention Rate Benchmarks: Day-1, Day-7, Day-30 nach App-Kategorie</title>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="#f8fafc" rx="12"/>
+
+  <!-- Header -->
+  <rect width="800" height="64" fill="#172554" rx="12"/>
+  <rect y="52" width="800" height="12" fill="#172554"/>
+  <text x="400" y="38" text-anchor="middle" fill="white" font-size="17" font-weight="700">Retention Rate Benchmarks nach App-Kategorie</text>
+
+  <!-- Chart area: starts y=80, ends y=320 — height 240 -->
+  <!-- Max value reference: 40% => full bar height 240px => 1% = 6px -->
+
+  <!-- Y-axis grid lines and labels -->
+  <!-- 0% at y=320, 10% at y=260, 20% at y=200, 30% at y=140, 40% at y=80 -->
+  <line x1="70" y1="320" x2="760" y2="320" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="70" y1="260" x2="760" y2="260" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="70" y1="200" x2="760" y2="200" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="70" y1="140" x2="760" y2="140" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="70" y1="80" x2="760" y2="80" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <text x="62" y="324" text-anchor="end" fill="#94a3b8" font-size="11">0 %</text>
+  <text x="62" y="264" text-anchor="end" fill="#94a3b8" font-size="11">10 %</text>
+  <text x="62" y="204" text-anchor="end" fill="#94a3b8" font-size="11">20 %</text>
+  <text x="62" y="144" text-anchor="end" fill="#94a3b8" font-size="11">30 %</text>
+  <text x="62" y="84" text-anchor="end" fill="#94a3b8" font-size="11">40 %</text>
+
+  <!-- Y-axis line -->
+  <line x1="70" y1="80" x2="70" y2="320" stroke="#cbd5e1" stroke-width="1.5"/>
+
+  <!-- ===================== -->
+  <!-- GROUP 1: GAMING       -->
+  <!-- Center x=175, group width=120, 3 bars each 28px wide, gap 8px -->
+  <!-- bars x: 131, 167, 203 -->
+
+  <!-- Gaming Day-1: 32% => height=192, y=128 -->
+  <rect x="131" y="128" width="28" height="192" rx="3" fill="#2563eb"/>
+  <text x="145" y="122" text-anchor="middle" fill="#2563eb" font-size="11" font-weight="600">32 %</text>
+
+  <!-- Gaming Day-7: 12% => height=72, y=248 -->
+  <rect x="167" y="248" width="28" height="72" rx="3" fill="#10b981"/>
+  <text x="181" y="242" text-anchor="middle" fill="#10b981" font-size="11" font-weight="600">12 %</text>
+
+  <!-- Gaming Day-30: 5% => height=30, y=290 -->
+  <rect x="203" y="290" width="28" height="30" rx="3" fill="#f97316"/>
+  <text x="217" y="284" text-anchor="middle" fill="#f97316" font-size="11" font-weight="600">5 %</text>
+
+  <!-- Gaming label -->
+  <text x="175" y="340" text-anchor="middle" fill="#1e293b" font-size="12" font-weight="600">Gaming</text>
+
+  <!-- ======================== -->
+  <!-- GROUP 2: E-COMMERCE      -->
+  <!-- Center x=345, bars: 301, 337, 373 -->
+
+  <!-- E-Commerce Day-1: 38% => height=228, y=92 -->
+  <rect x="301" y="92" width="28" height="228" rx="3" fill="#2563eb"/>
+  <text x="315" y="86" text-anchor="middle" fill="#2563eb" font-size="11" font-weight="600">38 %</text>
+
+  <!-- E-Commerce Day-7: 16% => height=96, y=224 -->
+  <rect x="337" y="224" width="28" height="96" rx="3" fill="#10b981"/>
+  <text x="351" y="218" text-anchor="middle" fill="#10b981" font-size="11" font-weight="600">16 %</text>
+
+  <!-- E-Commerce Day-30: 8% => height=48, y=272 -->
+  <rect x="373" y="272" width="28" height="48" rx="3" fill="#f97316"/>
+  <text x="387" y="266" text-anchor="middle" fill="#f97316" font-size="11" font-weight="600">8 %</text>
+
+  <!-- E-Commerce label -->
+  <text x="345" y="340" text-anchor="middle" fill="#1e293b" font-size="12" font-weight="600">E-Commerce</text>
+
+  <!-- ======================== -->
+  <!-- GROUP 3: FINANCE         -->
+  <!-- Center x=515, bars: 471, 507, 543 -->
+
+  <!-- Finance Day-1: 36% => height=216, y=104 -->
+  <rect x="471" y="104" width="28" height="216" rx="3" fill="#2563eb"/>
+  <text x="485" y="98" text-anchor="middle" fill="#2563eb" font-size="11" font-weight="600">36 %</text>
+
+  <!-- Finance Day-7: 20% => height=120, y=200 -->
+  <rect x="507" y="200" width="28" height="120" rx="3" fill="#10b981"/>
+  <text x="521" y="194" text-anchor="middle" fill="#10b981" font-size="11" font-weight="600">20 %</text>
+
+  <!-- Finance Day-30: 12% => height=72, y=248 -->
+  <rect x="543" y="248" width="28" height="72" rx="3" fill="#f97316"/>
+  <text x="557" y="242" text-anchor="middle" fill="#f97316" font-size="11" font-weight="600">12 %</text>
+
+  <!-- Finance label -->
+  <text x="515" y="340" text-anchor="middle" fill="#1e293b" font-size="12" font-weight="600">Finance</text>
+
+  <!-- ============================ -->
+  <!-- GROUP 4: HEALTH & FITNESS    -->
+  <!-- Center x=685, bars: 641, 677, 713 -->
+
+  <!-- Health Day-1: 40% => height=240, y=80 -->
+  <rect x="641" y="80" width="28" height="240" rx="3" fill="#2563eb"/>
+  <text x="655" y="74" text-anchor="middle" fill="#2563eb" font-size="11" font-weight="600">40 %</text>
+
+  <!-- Health Day-7: 22% => height=132, y=188 -->
+  <rect x="677" y="188" width="28" height="132" rx="3" fill="#10b981"/>
+  <text x="691" y="182" text-anchor="middle" fill="#10b981" font-size="11" font-weight="600">22 %</text>
+
+  <!-- Health Day-30: 14% => height=84, y=236 -->
+  <rect x="713" y="236" width="28" height="84" rx="3" fill="#f97316"/>
+  <text x="727" y="230" text-anchor="middle" fill="#f97316" font-size="11" font-weight="600">14 %</text>
+
+  <!-- Health label -->
+  <text x="685" y="340" text-anchor="middle" fill="#1e293b" font-size="12" font-weight="600">Health &amp; Fitness</text>
+
+  <!-- ===================== -->
+  <!-- LEGEND                -->
+  <!-- ===================== -->
+  <rect x="185" y="360" width="14" height="14" rx="2" fill="#2563eb"/>
+  <text x="204" y="372" fill="#1e293b" font-size="12">Day-1-Retention</text>
+
+  <rect x="336" y="360" width="14" height="14" rx="2" fill="#10b981"/>
+  <text x="355" y="372" fill="#1e293b" font-size="12">Day-7-Retention</text>
+
+  <rect x="487" y="360" width="14" height="14" rx="2" fill="#f97316"/>
+  <text x="506" y="372" fill="#1e293b" font-size="12">Day-30-Retention</text>
+</svg>

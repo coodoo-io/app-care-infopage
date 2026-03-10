@@ -1,0 +1,112 @@
+<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Benchmark: Durchschnittliche App Store Bewertungen nach Kategorie" font-family="system-ui, sans-serif">
+  <title>Benchmark: Durchschnittliche App Store Bewertungen nach App-Kategorie</title>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="#f8fafc" rx="12"/>
+
+  <!-- Title -->
+  <text x="400" y="34" text-anchor="middle" font-size="15" font-weight="700" fill="#0f172a">Durchschnittliche App Store Bewertungen nach Kategorie</text>
+  <text x="400" y="52" text-anchor="middle" font-size="11" fill="#64748b">iOS vs. Android — Benchmark-Vergleich 2024</text>
+
+  <!-- Legend -->
+  <rect x="540" y="68" width="14" height="14" rx="3" fill="#2563eb"/>
+  <text x="558" y="80" font-size="11" fill="#334155">iOS App Store</text>
+  <rect x="640" y="68" width="14" height="14" rx="3" fill="#10b981"/>
+  <text x="658" y="80" font-size="11" fill="#334155">Google Play</text>
+
+  <!-- Chart area -->
+  <!-- Y-axis: 3.5 to 4.6, chart area y=90 to y=310, height=220 -->
+  <!-- Scale: 1.1 range → 220px, so 1 star = 200px -->
+  <!-- y = 310 - (value - 3.5) * 200 -->
+
+  <!-- Y-axis grid lines and labels -->
+  <!-- 3.5 → y=310, 3.8 → y=250, 4.0 → y=210, 4.2 → y=170, 4.4 → y=130, 4.6 → y=90 -->
+  <line x1="90" y1="90" x2="750" y2="90" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="78" y="94" text-anchor="end" font-size="10" fill="#94a3b8">4,6</text>
+
+  <line x1="90" y1="130" x2="750" y2="130" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="78" y="134" text-anchor="end" font-size="10" fill="#94a3b8">4,4</text>
+
+  <line x1="90" y1="170" x2="750" y2="170" stroke="#2563eb" stroke-width="1" stroke-dasharray="4,3" opacity="0.4"/>
+  <text x="78" y="174" text-anchor="end" font-size="10" fill="#2563eb" font-weight="600">4,2</text>
+
+  <line x1="90" y1="210" x2="750" y2="210" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="78" y="214" text-anchor="end" font-size="10" fill="#94a3b8">4,0</text>
+
+  <line x1="90" y1="250" x2="750" y2="250" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="78" y="254" text-anchor="end" font-size="10" fill="#94a3b8">3,8</text>
+
+  <line x1="90" y1="310" x2="750" y2="310" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="78" y="314" text-anchor="end" font-size="10" fill="#94a3b8">3,5</text>
+
+  <!-- Y-axis line -->
+  <line x1="90" y1="85" x2="90" y2="312" stroke="#cbd5e1" stroke-width="1.5"/>
+
+  <!-- Critical threshold label -->
+  <text x="754" y="174" font-size="9" fill="#2563eb" font-weight="600">Schwellwert</text>
+
+  <!-- Categories: Gaming, Finance, Health, Shopping, Productivity -->
+  <!-- 5 categories, each group = 110px wide, starting x=100 -->
+  <!-- Group centers: 145, 255, 365, 475, 595, 715 (actually 5 categories = 5 groups, spacing 110px, first at ~140) -->
+  <!-- x positions: 140, 250, 360, 470, 580 for group centers, bar width 24, gap 8 between bars -->
+
+  <!-- Helpers: bar height = (value - 3.5) * 200 -->
+
+  <!-- ===== Gaming: iOS 4.1 → h=120, y=190; Android 4.0 → h=100, y=210 ===== -->
+  <!-- iOS bar -->
+  <rect x="118" y="190" width="26" height="120" rx="3" fill="#2563eb"/>
+  <text x="131" y="186" text-anchor="middle" font-size="10" font-weight="600" fill="#2563eb">4,1</text>
+  <!-- Android bar -->
+  <rect x="150" y="210" width="26" height="100" rx="3" fill="#10b981"/>
+  <text x="163" y="206" text-anchor="middle" font-size="10" font-weight="600" fill="#10b981">4,0</text>
+  <!-- Category label -->
+  <text x="147" y="330" text-anchor="middle" font-size="11" font-weight="600" fill="#334155">Gaming</text>
+
+  <!-- ===== Finance: iOS 4.3 → h=160, y=150; Android 4.2 → h=140, y=170 ===== -->
+  <rect x="228" y="150" width="26" height="160" rx="3" fill="#2563eb"/>
+  <text x="241" y="146" text-anchor="middle" font-size="10" font-weight="600" fill="#2563eb">4,3</text>
+  <rect x="260" y="170" width="26" height="140" rx="3" fill="#10b981"/>
+  <text x="273" y="166" text-anchor="middle" font-size="10" font-weight="600" fill="#10b981">4,2</text>
+  <text x="257" y="330" text-anchor="middle" font-size="11" font-weight="600" fill="#334155">Finance</text>
+
+  <!-- ===== Health: iOS 4.4 → h=180, y=130; Android 4.3 → h=160, y=150 ===== -->
+  <rect x="338" y="130" width="26" height="180" rx="3" fill="#2563eb"/>
+  <text x="351" y="126" text-anchor="middle" font-size="10" font-weight="600" fill="#2563eb">4,4</text>
+  <rect x="370" y="150" width="26" height="160" rx="3" fill="#10b981"/>
+  <text x="383" y="146" text-anchor="middle" font-size="10" font-weight="600" fill="#10b981">4,3</text>
+  <text x="367" y="330" text-anchor="middle" font-size="11" font-weight="600" fill="#334155">Health</text>
+
+  <!-- ===== Shopping: iOS 4.2 → h=140, y=170; Android 4.0 → h=100, y=210 ===== -->
+  <rect x="448" y="170" width="26" height="140" rx="3" fill="#2563eb"/>
+  <text x="461" y="166" text-anchor="middle" font-size="10" font-weight="600" fill="#2563eb">4,2</text>
+  <rect x="480" y="210" width="26" height="100" rx="3" fill="#10b981"/>
+  <text x="493" y="206" text-anchor="middle" font-size="10" font-weight="600" fill="#10b981">4,0</text>
+  <text x="477" y="330" text-anchor="middle" font-size="11" font-weight="600" fill="#334155">Shopping</text>
+
+  <!-- ===== Productivity: iOS 4.3 → h=160, y=150; Android 4.1 → h=120, y=190 ===== -->
+  <rect x="558" y="150" width="26" height="160" rx="3" fill="#2563eb"/>
+  <text x="571" y="146" text-anchor="middle" font-size="10" font-weight="600" fill="#2563eb">4,3</text>
+  <rect x="590" y="190" width="26" height="120" rx="3" fill="#10b981"/>
+  <text x="603" y="186" text-anchor="middle" font-size="10" font-weight="600" fill="#10b981">4,1</text>
+  <text x="587" y="330" text-anchor="middle" font-size="11" font-weight="600" fill="#334155">Productivity</text>
+
+  <!-- ===== Social: iOS 4.1 → h=120, y=190; Android 3.9 → h=80, y=230 ===== -->
+  <rect x="668" y="190" width="26" height="120" rx="3" fill="#2563eb"/>
+  <text x="681" y="186" text-anchor="middle" font-size="10" font-weight="600" fill="#2563eb">4,1</text>
+  <rect x="700" y="230" width="26" height="80" rx="3" fill="#10b981"/>
+  <text x="713" y="226" text-anchor="middle" font-size="10" font-weight="600" fill="#10b981">3,9</text>
+  <text x="697" y="330" text-anchor="middle" font-size="11" font-weight="600" fill="#334155">Social</text>
+
+  <!-- Critical threshold line (4.2 = y=170) bold -->
+  <line x1="90" y1="170" x2="750" y2="170" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="6,4"/>
+
+  <!-- Source note -->
+  <text x="400" y="370" text-anchor="middle" font-size="10" fill="#94a3b8">Richtwerte 2024 — App Store Optimierungsanalysen. Einzelne Apps können deutlich abweichen.</text>
+
+  <!-- X-axis category separator lines (light) -->
+  <line x1="200" y1="305" x2="200" y2="315" stroke="#cbd5e1" stroke-width="1"/>
+  <line x1="310" y1="305" x2="310" y2="315" stroke="#cbd5e1" stroke-width="1"/>
+  <line x1="420" y1="305" x2="420" y2="315" stroke="#cbd5e1" stroke-width="1"/>
+  <line x1="530" y1="305" x2="530" y2="315" stroke="#cbd5e1" stroke-width="1"/>
+  <line x1="640" y1="305" x2="640" y2="315" stroke="#cbd5e1" stroke-width="1"/>
+</svg>

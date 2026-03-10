@@ -1,0 +1,131 @@
+<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ASO-Faktoren: On-Metadata, Off-Metadata und Conversion-Hebel im Überblick" font-family="system-ui, sans-serif">
+  <title>App Store Optimierung: Die drei Hebel-Kategorien</title>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="#f8fafc" rx="12"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="800" height="60" fill="#172554" rx="12"/>
+  <rect x="0" y="48" width="800" height="12" fill="#172554"/>
+  <text x="400" y="37" text-anchor="middle" font-size="18" font-weight="700" fill="#ffffff" letter-spacing="0.5">ASO-Faktoren im Überblick</text>
+
+  <!-- Column 1: On-Metadata -->
+  <rect x="30" y="80" width="228" height="340" fill="#eff6ff" rx="10" stroke="#2563eb" stroke-width="1.5"/>
+  <rect x="30" y="80" width="228" height="44" fill="#2563eb" rx="10"/>
+  <rect x="30" y="110" width="228" height="14" fill="#2563eb"/>
+  <text x="144" y="108" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">On-Metadata</text>
+
+  <!-- On-Metadata items -->
+  <rect x="48" y="142" width="192" height="36" fill="#ffffff" rx="6" stroke="#bfdbfe" stroke-width="1"/>
+  <circle cx="66" cy="160" r="8" fill="#2563eb"/>
+  <text x="66" y="164" text-anchor="middle" font-size="10" font-weight="700" fill="#ffffff">T</text>
+  <text x="82" y="157" font-size="12" font-weight="600" fill="#1e3a8a">App-Name / Titel</text>
+  <text x="82" y="170" font-size="10" fill="#64748b">Max. 30 Zeichen</text>
+
+  <rect x="48" y="186" width="192" height="36" fill="#ffffff" rx="6" stroke="#bfdbfe" stroke-width="1"/>
+  <circle cx="66" cy="204" r="8" fill="#2563eb"/>
+  <text x="66" y="208" text-anchor="middle" font-size="10" font-weight="700" fill="#ffffff">K</text>
+  <text x="82" y="201" font-size="12" font-weight="600" fill="#1e3a8a">Keyword-Feld (iOS)</text>
+  <text x="82" y="214" font-size="10" fill="#64748b">100 Zeichen Budget</text>
+
+  <rect x="48" y="230" width="192" height="36" fill="#ffffff" rx="6" stroke="#bfdbfe" stroke-width="1"/>
+  <circle cx="66" cy="248" r="8" fill="#2563eb"/>
+  <text x="66" y="252" text-anchor="middle" font-size="10" font-weight="700" fill="#ffffff">S</text>
+  <text x="82" y="245" font-size="12" font-weight="600" fill="#1e3a8a">Subtitle / Kurzbeschr.</text>
+  <text x="82" y="258" font-size="10" fill="#64748b">30–80 Zeichen</text>
+
+  <rect x="48" y="274" width="192" height="36" fill="#ffffff" rx="6" stroke="#bfdbfe" stroke-width="1"/>
+  <circle cx="66" cy="292" r="8" fill="#2563eb"/>
+  <text x="66" y="296" text-anchor="middle" font-size="10" font-weight="700" fill="#ffffff">B</text>
+  <text x="82" y="289" font-size="12" font-weight="600" fill="#1e3a8a">Beschreibung</text>
+  <text x="82" y="302" font-size="10" fill="#64748b">Indexiert bei Google Play</text>
+
+  <rect x="48" y="318" width="192" height="36" fill="#ffffff" rx="6" stroke="#bfdbfe" stroke-width="1"/>
+  <circle cx="66" cy="336" r="8" fill="#2563eb"/>
+  <text x="66" y="340" text-anchor="middle" font-size="10" font-weight="700" fill="#ffffff">I</text>
+  <text x="82" y="333" font-size="12" font-weight="600" fill="#1e3a8a">Icon</text>
+  <text x="82" y="346" font-size="10" fill="#64748b">Erstes Sichtbarkeitssignal</text>
+
+  <text x="144" y="395" text-anchor="middle" font-size="11" font-weight="600" fill="#2563eb">Direkt steuerbar</text>
+
+  <!-- Column 2: Off-Metadata -->
+  <rect x="286" y="80" width="228" height="340" fill="#f0fdf4" rx="10" stroke="#10b981" stroke-width="1.5"/>
+  <rect x="286" y="80" width="228" height="44" fill="#10b981" rx="10"/>
+  <rect x="286" y="110" width="228" height="14" fill="#10b981"/>
+  <text x="400" y="108" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">Off-Metadata</text>
+
+  <!-- Off-Metadata items -->
+  <rect x="304" y="142" width="192" height="36" fill="#ffffff" rx="6" stroke="#a7f3d0" stroke-width="1"/>
+  <circle cx="322" cy="160" r="8" fill="#10b981"/>
+  <text x="322" y="164" text-anchor="middle" font-size="10" font-weight="700" fill="#ffffff">R</text>
+  <text x="338" y="157" font-size="12" font-weight="600" fill="#065f46">Bewertungs-Durchschnitt</text>
+  <text x="338" y="170" font-size="10" fill="#64748b">Ziel: 4,5+ Sterne</text>
+
+  <rect x="304" y="186" width="192" height="36" fill="#ffffff" rx="6" stroke="#a7f3d0" stroke-width="1"/>
+  <circle cx="322" cy="204" r="8" fill="#10b981"/>
+  <text x="322" y="208" text-anchor="middle" font-size="10" font-weight="700" fill="#ffffff">A</text>
+  <text x="338" y="201" font-size="12" font-weight="600" fill="#065f46">Bewertungsanzahl</text>
+  <text x="338" y="214" font-size="10" fill="#64748b">Volumen = Vertrauen</text>
+
+  <rect x="304" y="230" width="192" height="36" fill="#ffffff" rx="6" stroke="#a7f3d0" stroke-width="1"/>
+  <circle cx="322" cy="248" r="8" fill="#10b981"/>
+  <text x="322" y="252" text-anchor="middle" font-size="10" font-weight="700" fill="#ffffff">D</text>
+  <text x="338" y="245" font-size="12" font-weight="600" fill="#065f46">Download-Volumen</text>
+  <text x="338" y="258" font-size="10" fill="#64748b">Starkes Ranking-Signal</text>
+
+  <rect x="304" y="274" width="192" height="36" fill="#ffffff" rx="6" stroke="#a7f3d0" stroke-width="1"/>
+  <circle cx="322" cy="292" r="8" fill="#10b981"/>
+  <text x="322" y="296" text-anchor="middle" font-size="10" font-weight="700" fill="#ffffff">U</text>
+  <text x="338" y="289" font-size="12" font-weight="600" fill="#065f46">Update-Häufigkeit</text>
+  <text x="338" y="302" font-size="10" fill="#64748b">Bes. bei Google Play</text>
+
+  <rect x="304" y="318" width="192" height="36" fill="#ffffff" rx="6" stroke="#a7f3d0" stroke-width="1"/>
+  <circle cx="322" cy="336" r="8" fill="#10b981"/>
+  <text x="322" y="340" text-anchor="middle" font-size="10" font-weight="700" fill="#ffffff">L</text>
+  <text x="338" y="333" font-size="12" font-weight="600" fill="#065f46">Externe Backlinks</text>
+  <text x="338" y="346" font-size="10" fill="#64748b">Wirkung bei Google Play</text>
+
+  <text x="400" y="395" text-anchor="middle" font-size="11" font-weight="600" fill="#10b981">Indirekt beeinflussbar</text>
+
+  <!-- Column 3: Conversion -->
+  <rect x="542" y="80" width="228" height="340" fill="#fff7ed" rx="10" stroke="#f97316" stroke-width="1.5"/>
+  <rect x="542" y="80" width="228" height="44" fill="#f97316" rx="10"/>
+  <rect x="542" y="110" width="228" height="14" fill="#f97316"/>
+  <text x="656" y="108" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">Conversion</text>
+
+  <!-- Conversion items -->
+  <rect x="560" y="142" width="192" height="36" fill="#ffffff" rx="6" stroke="#fed7aa" stroke-width="1"/>
+  <circle cx="578" cy="160" r="8" fill="#f97316"/>
+  <text x="578" y="164" text-anchor="middle" font-size="10" font-weight="700" fill="#ffffff">S</text>
+  <text x="594" y="157" font-size="12" font-weight="600" fill="#7c2d12">Screenshots</text>
+  <text x="594" y="170" font-size="10" fill="#64748b">Wichtigster Conversion-Faktor</text>
+
+  <rect x="560" y="186" width="192" height="36" fill="#ffffff" rx="6" stroke="#fed7aa" stroke-width="1"/>
+  <circle cx="578" cy="204" r="8" fill="#f97316"/>
+  <text x="578" y="208" text-anchor="middle" font-size="10" font-weight="700" fill="#ffffff">V</text>
+  <text x="594" y="201" font-size="12" font-weight="600" fill="#7c2d12">Preview-Video</text>
+  <text x="594" y="214" font-size="10" fill="#64748b">+20–30% Conversion</text>
+
+  <rect x="560" y="230" width="192" height="36" fill="#ffffff" rx="6" stroke="#fed7aa" stroke-width="1"/>
+  <circle cx="578" cy="248" r="8" fill="#f97316"/>
+  <text x="578" y="252" text-anchor="middle" font-size="10" font-weight="700" fill="#ffffff">F</text>
+  <text x="594" y="245" font-size="12" font-weight="600" fill="#7c2d12">Feature Graphic</text>
+  <text x="594" y="258" font-size="10" fill="#64748b">Nur Google Play</text>
+
+  <rect x="560" y="274" width="192" height="36" fill="#ffffff" rx="6" stroke="#fed7aa" stroke-width="1"/>
+  <circle cx="578" cy="292" r="8" fill="#f97316"/>
+  <text x="578" y="296" text-anchor="middle" font-size="10" font-weight="700" fill="#ffffff">I</text>
+  <text x="594" y="289" font-size="12" font-weight="600" fill="#7c2d12">Icon-Design</text>
+  <text x="594" y="302" font-size="10" fill="#64748b">Bis 15% mehr Installs</text>
+
+  <rect x="560" y="318" width="192" height="36" fill="#ffffff" rx="6" stroke="#fed7aa" stroke-width="1"/>
+  <circle cx="578" cy="336" r="8" fill="#f97316"/>
+  <text x="578" y="340" text-anchor="middle" font-size="10" font-weight="700" fill="#ffffff">A</text>
+  <text x="594" y="333" font-size="12" font-weight="600" fill="#7c2d12">A/B-Tests</text>
+  <text x="594" y="346" font-size="10" fill="#64748b">Iterative Optimierung</text>
+
+  <text x="656" y="395" text-anchor="middle" font-size="11" font-weight="600" fill="#f97316">Installationsrate steigern</text>
+
+  <!-- Footer note -->
+  <text x="400" y="435" text-anchor="middle" font-size="10" fill="#94a3b8">App-Care — app-care.pages.dev</text>
+</svg>

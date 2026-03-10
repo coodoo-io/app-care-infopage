@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" role="img" aria-label="Durchschnittliche App-Update-Häufigkeit nach Kategorie in Tagen">
+  <title>App-Release-Kadenz nach Kategorie: Durchschnittliche Tage zwischen Updates</title>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="#f8fafc" rx="12"/>
+
+  <!-- Title -->
+  <text x="400" y="36" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#0f172a" text-anchor="middle">App Update Häufigkeit nach Kategorie</text>
+  <text x="400" y="56" font-family="system-ui, sans-serif" font-size="12" fill="#64748b" text-anchor="middle">Durchschnittliche Tage zwischen App-Releases (Top-Apps)</text>
+
+  <!-- Grid lines -->
+  <line x1="160" y1="80" x2="760" y2="80" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="160" y1="110" x2="760" y2="110" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="160" y1="140" x2="760" y2="140" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="160" y1="170" x2="760" y2="170" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="160" y1="200" x2="760" y2="200" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="160" y1="230" x2="760" y2="230" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="160" y1="260" x2="760" y2="260" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="160" y1="290" x2="760" y2="290" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="160" y1="320" x2="760" y2="320" stroke="#e2e8f0" stroke-width="1"/>
+
+  <!-- Y-axis baseline -->
+  <line x1="160" y1="78" x2="160" y2="330" stroke="#cbd5e1" stroke-width="1.5"/>
+  <!-- X-axis baseline -->
+  <line x1="160" y1="330" x2="760" y2="330" stroke="#cbd5e1" stroke-width="1.5"/>
+
+  <!-- Scale: 30 days = 250px → 1 day ≈ 8.33px, bars start at x=160 -->
+
+  <!-- Bar: Gaming — 7 days → 58px -->
+  <rect x="175" y="108" width="58" height="222" fill="#2563eb" rx="4"/>
+  <text x="204" y="100" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#2563eb" text-anchor="middle">7 Tage</text>
+
+  <!-- Bar: Social Media — 10 days → 83px -->
+  <rect x="270" y="83" width="83" height="247" fill="#10b981" rx="4"/>
+  <text x="312" y="75" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#10b981" text-anchor="middle">10 Tage</text>
+
+  <!-- Bar: E-Commerce — 14 days → 117px -->
+  <rect x="378" y="213" width="117" height="117" fill="#2563eb" rx="4"/>
+  <text x="437" y="205" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#2563eb" text-anchor="middle">14 Tage</text>
+
+  <!-- Bar: Health & Fitness — 18 days → 150px -->
+  <rect x="510" y="180" width="150" height="150" fill="#f97316" rx="4"/>
+  <text x="585" y="172" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#f97316" text-anchor="middle">18 Tage</text>
+
+  <!-- Reposition: use horizontal bar chart instead for clarity -->
+  <!-- Actually let's redo as horizontal bars which are clearer for category labels -->
+
+  <!-- OVERRIDE: horizontal bar chart -->
+  <!-- Clear previous rects by covering with bg -->
+  <rect width="800" height="400" fill="#f8fafc" rx="12"/>
+
+  <!-- Title again -->
+  <text x="400" y="36" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#0f172a" text-anchor="middle">App Update Häufigkeit nach Kategorie</text>
+  <text x="400" y="56" font-family="system-ui, sans-serif" font-size="12" fill="#64748b" text-anchor="middle">Durchschnittliche Tage zwischen App-Releases (Top-Apps)</text>
+
+  <!-- Horizontal bars: left labels, bars to the right -->
+  <!-- Chart area: x=170 (labels), bar start x=290, bar max width=420 (for 30 days) -->
+  <!-- 1 day = 14px, max 30 days = 420px -->
+
+  <!-- Row 1: Gaming 7 days = 98px -->
+  <text x="280" y="96" font-family="system-ui, sans-serif" font-size="13" fill="#334155" text-anchor="end">Gaming</text>
+  <rect x="290" y="80" width="98" height="26" fill="#2563eb" rx="4"/>
+  <text x="396" y="98" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#1d4ed8" text-anchor="start" dx="6">7 Tage</text>
+
+  <!-- Row 2: Social Media 10 days = 140px -->
+  <text x="280" y="138" font-family="system-ui, sans-serif" font-size="13" fill="#334155" text-anchor="end">Social Media</text>
+  <rect x="290" y="122" width="140" height="26" fill="#10b981" rx="4"/>
+  <text x="438" y="140" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#059669" text-anchor="start" dx="6">10 Tage</text>
+
+  <!-- Row 3: E-Commerce 14 days = 196px -->
+  <text x="280" y="180" font-family="system-ui, sans-serif" font-size="13" fill="#334155" text-anchor="end">E-Commerce</text>
+  <rect x="290" y="164" width="196" height="26" fill="#2563eb" rx="4"/>
+  <text x="494" y="182" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#1d4ed8" text-anchor="start" dx="6">14 Tage</text>
+
+  <!-- Row 4: Health & Fitness 18 days = 252px -->
+  <text x="280" y="222" font-family="system-ui, sans-serif" font-size="13" fill="#334155" text-anchor="end">Health &amp; Fitness</text>
+  <rect x="290" y="206" width="252" height="26" fill="#f97316" rx="4"/>
+  <text x="550" y="224" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#ea580c" text-anchor="start" dx="6">18 Tage</text>
+
+  <!-- Row 5: Finance 21 days = 294px -->
+  <text x="280" y="264" font-family="system-ui, sans-serif" font-size="13" fill="#334155" text-anchor="end">Finance</text>
+  <rect x="290" y="248" width="294" height="26" fill="#10b981" rx="4"/>
+  <text x="592" y="266" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#059669" text-anchor="start" dx="6">21 Tage</text>
+
+  <!-- Row 6: Enterprise/B2B 30 days = 420px -->
+  <text x="280" y="306" font-family="system-ui, sans-serif" font-size="13" fill="#334155" text-anchor="end">Enterprise / B2B</text>
+  <rect x="290" y="290" width="420" height="26" fill="#64748b" rx="4"/>
+  <text x="718" y="308" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#475569" text-anchor="start" dx="6">30 Tage</text>
+
+  <!-- X-axis label -->
+  <text x="500" y="350" font-family="system-ui, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">Tage zwischen Updates (kürzer = häufiger)</text>
+
+  <!-- Source note -->
+  <text x="400" y="378" font-family="system-ui, sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">Quelle: App-Care Analyse der Top-100-Apps im Apple App Store nach Kategorie</text>
+</svg>

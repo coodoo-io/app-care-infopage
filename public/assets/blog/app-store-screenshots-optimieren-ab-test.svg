@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="A/B-Test-Prioritäten für App Store Screenshots" font-family="system-ui, sans-serif">
+  <title>App Store Screenshot A/B-Test: Prioritätsliste nach Einfluss-Stärke</title>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="#f8fafc" rx="12"/>
+
+  <!-- Title -->
+  <text x="400" y="36" text-anchor="middle" font-size="16" font-weight="700" fill="#1e293b">A/B-Test-Prioritäten für App Store Screenshots</text>
+  <text x="400" y="56" text-anchor="middle" font-size="12" fill="#64748b">Was du testen solltest — geordnet nach Einfluss auf die Conversion</text>
+
+  <!-- Column headers -->
+  <text x="50" y="90" font-size="11" font-weight="700" fill="#94a3b8">PRIORITÄT</text>
+  <text x="110" y="90" font-size="11" font-weight="700" fill="#94a3b8">TESTOBJEKT</text>
+  <text x="440" y="90" font-size="11" font-weight="700" fill="#94a3b8">EINFLUSS-STÄRKE</text>
+  <text x="680" y="90" font-size="11" font-weight="700" fill="#94a3b8">HINWEIS</text>
+
+  <!-- Divider under headers -->
+  <line x1="32" y1="96" x2="768" y2="96" stroke="#e2e8f0" stroke-width="1"/>
+
+  <!-- ===================== ROW 1 ===================== -->
+  <rect x="32" y="100" width="736" height="60" rx="8" fill="#eff6ff"/>
+
+  <!-- Priority badge -->
+  <rect x="44" y="116" width="28" height="28" rx="14" fill="#2563eb"/>
+  <text x="58" y="134" text-anchor="middle" font-size="14" font-weight="800" fill="#ffffff">1</text>
+
+  <!-- Label -->
+  <text x="90" y="128" font-size="13" font-weight="700" fill="#1e293b">Screenshot 1 Headline</text>
+  <text x="90" y="146" font-size="10" fill="#475569">Value Proposition, Tonalität, Formulierungsvarianten</text>
+
+  <!-- Impact bar: sehr hoch -->
+  <rect x="440" y="118" width="200" height="16" rx="8" fill="#e2e8f0"/>
+  <rect x="440" y="118" width="200" height="16" rx="8" fill="#2563eb"/>
+  <text x="650" y="130" font-size="10" font-weight="700" fill="#2563eb" dx="6">sehr hoch</text>
+
+  <!-- Tip -->
+  <text x="680" y="128" font-size="10" fill="#475569">Teste zuerst</text>
+
+  <!-- ===================== ROW 2 ===================== -->
+  <rect x="32" y="168" width="736" height="60" rx="8" fill="#f0fdf4"/>
+
+  <rect x="44" y="184" width="28" height="28" rx="14" fill="#10b981"/>
+  <text x="58" y="202" text-anchor="middle" font-size="14" font-weight="800" fill="#ffffff">2</text>
+
+  <text x="90" y="196" font-size="13" font-weight="700" fill="#1e293b">Screenshot-Reihenfolge</text>
+  <text x="90" y="214" font-size="10" fill="#475569">Welche Features zuerst erscheinen, Story-Reihenfolge</text>
+
+  <rect x="440" y="186" width="200" height="16" rx="8" fill="#e2e8f0"/>
+  <rect x="440" y="186" width="170" height="16" rx="8" fill="#10b981"/>
+  <text x="650" y="198" font-size="10" font-weight="700" fill="#10b981" dx="6">hoch</text>
+
+  <text x="680" y="196" font-size="10" fill="#475569">Früh testen</text>
+
+  <!-- ===================== ROW 3 ===================== -->
+  <rect x="32" y="236" width="736" height="60" rx="8" fill="#fff7ed"/>
+
+  <rect x="44" y="252" width="28" height="28" rx="14" fill="#f97316"/>
+  <text x="58" y="270" text-anchor="middle" font-size="14" font-weight="800" fill="#ffffff">3</text>
+
+  <text x="90" y="264" font-size="13" font-weight="700" fill="#1e293b">Hintergrundfarbe</text>
+  <text x="90" y="282" font-size="10" fill="#475569">Hell vs. dunkel, Markenfarbe vs. neutral, Grid-Erkennbarkeit</text>
+
+  <rect x="440" y="254" width="200" height="16" rx="8" fill="#e2e8f0"/>
+  <rect x="440" y="254" width="130" height="16" rx="8" fill="#f97316"/>
+  <text x="650" y="266" font-size="10" font-weight="700" fill="#f97316" dx="6">mittel</text>
+
+  <text x="680" y="264" font-size="10" fill="#475569">Bei Redesign</text>
+
+  <!-- ===================== ROW 4 ===================== -->
+  <rect x="32" y="304" width="736" height="60" rx="8" fill="#fefce8"/>
+
+  <rect x="44" y="320" width="28" height="28" rx="14" fill="#ca8a04"/>
+  <text x="58" y="338" text-anchor="middle" font-size="14" font-weight="800" fill="#ffffff">4</text>
+
+  <text x="90" y="332" font-size="13" font-weight="700" fill="#1e293b">Hochformat vs. Querformat</text>
+  <text x="90" y="350" font-size="10" fill="#475569">Portrait vs. Landscape — je nach App-Typ unterschiedlich</text>
+
+  <rect x="440" y="322" width="200" height="16" rx="8" fill="#e2e8f0"/>
+  <rect x="440" y="322" width="130" height="16" rx="8" fill="#ca8a04"/>
+  <text x="650" y="334" font-size="10" font-weight="700" fill="#ca8a04" dx="6">mittel</text>
+
+  <text x="680" y="332" font-size="10" fill="#475569">Vor Launch klären</text>
+
+  <!-- ===================== ROW 5 ===================== -->
+  <rect x="32" y="372" width="736" height="60" rx="8" fill="#f8fafc"/>
+
+  <rect x="44" y="388" width="28" height="28" rx="14" fill="#94a3b8"/>
+  <text x="58" y="406" text-anchor="middle" font-size="14" font-weight="800" fill="#ffffff">5</text>
+
+  <text x="90" y="400" font-size="13" font-weight="700" fill="#1e293b">Caption-Text</text>
+  <text x="90" y="418" font-size="10" fill="#475569">Wording-Varianten bei gleichem visuellen Konzept</text>
+
+  <rect x="440" y="390" width="200" height="16" rx="8" fill="#e2e8f0"/>
+  <rect x="440" y="390" width="90" height="16" rx="8" fill="#94a3b8"/>
+  <text x="650" y="402" font-size="10" font-weight="700" fill="#64748b" dx="6">niedrig–mittel</text>
+
+  <text x="680" y="400" font-size="10" fill="#475569">Feintuning</text>
+
+  <!-- Scale legend -->
+  <text x="440" y="108" font-size="9" fill="#94a3b8">niedrig</text>
+  <text x="622" y="108" font-size="9" fill="#94a3b8">sehr hoch</text>
+  <rect x="440" y="112" width="200" height="4" rx="2" fill="#e2e8f0"/>
+  <!-- Gradient indicator dots -->
+  <circle cx="440" cy="114" r="2" fill="#94a3b8"/>
+  <circle cx="490" cy="114" r="2" fill="#94a3b8"/>
+  <circle cx="540" cy="114" r="2" fill="#94a3b8"/>
+  <circle cx="590" cy="114" r="2" fill="#94a3b8"/>
+  <circle cx="640" cy="114" r="2" fill="#94a3b8"/>
+</svg>

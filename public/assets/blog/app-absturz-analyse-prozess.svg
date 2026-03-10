@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" role="img" aria-label="App-Absturz analysieren: 5-Schritte-Prozess von der Erkennung zum Fix">
+  <title>App-Absturz-Analyse: Der 5-Schritte-Prozess</title>
+  <defs>
+    <style>
+      .label-main { font-family: system-ui, sans-serif; font-size: 13px; font-weight: 700; fill: #ffffff; text-anchor: middle; }
+      .label-sub  { font-family: system-ui, sans-serif; font-size: 10px; fill: #ffffff; text-anchor: middle; opacity: 0.9; }
+      .step-num   { font-family: system-ui, sans-serif; font-size: 11px; font-weight: 700; fill: #ffffff; text-anchor: middle; opacity: 0.75; }
+      .heading    { font-family: system-ui, sans-serif; font-size: 15px; font-weight: 700; fill: #1e293b; text-anchor: middle; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="300" fill="#f8fafc" rx="12"/>
+
+  <!-- Title -->
+  <text x="400" y="36" class="heading">App-Absturz analysieren: 5-Schritte-Prozess</text>
+
+  <!-- Step boxes and arrows — 5 steps, evenly spaced -->
+  <!-- Step 1: Erkennen — brand-600 blue -->
+  <rect x="24" y="72" width="124" height="148" rx="10" fill="#2563eb"/>
+  <text x="86" y="104" class="step-num">Schritt 1</text>
+  <text x="86" y="128" class="label-main">Erkennen</text>
+  <text x="86" y="149" class="label-sub">Crash-Reporting</text>
+  <text x="86" y="163" class="label-sub">Alert auslösen</text>
+  <text x="86" y="177" class="label-sub">Crash-Rate</text>
+  <text x="86" y="191" class="label-sub">prüfen</text>
+
+  <!-- Arrow 1→2 -->
+  <polygon points="156,146 176,136 176,156" fill="#94a3b8"/>
+  <line x1="148" y1="146" x2="176" y2="146" stroke="#94a3b8" stroke-width="2"/>
+
+  <!-- Step 2: Verstehen — indigo -->
+  <rect x="184" y="72" width="124" height="148" rx="10" fill="#4f46e5"/>
+  <text x="246" y="104" class="step-num">Schritt 2</text>
+  <text x="246" y="128" class="label-main">Verstehen</text>
+  <text x="246" y="149" class="label-sub">Stack Trace</text>
+  <text x="246" y="163" class="label-sub">lesen</text>
+  <text x="246" y="177" class="label-sub">Breadcrumbs</text>
+  <text x="246" y="191" class="label-sub">auswerten</text>
+
+  <!-- Arrow 2→3 -->
+  <polygon points="316,146 336,136 336,156" fill="#94a3b8"/>
+  <line x1="308" y1="146" x2="336" y2="146" stroke="#94a3b8" stroke-width="2"/>
+
+  <!-- Step 3: Reproduzieren — orange -->
+  <rect x="344" y="72" width="124" height="148" rx="10" fill="#f97316"/>
+  <text x="406" y="104" class="step-num">Schritt 3</text>
+  <text x="406" y="128" class="label-main">Reproduzieren</text>
+  <text x="406" y="149" class="label-sub">Crash isolieren</text>
+  <text x="406" y="163" class="label-sub">Ursache vs.</text>
+  <text x="406" y="177" class="label-sub">Symptom</text>
+  <text x="406" y="191" class="label-sub">unterscheiden</text>
+
+  <!-- Arrow 3→4 -->
+  <polygon points="476,146 496,136 496,156" fill="#94a3b8"/>
+  <line x1="468" y1="146" x2="496" y2="146" stroke="#94a3b8" stroke-width="2"/>
+
+  <!-- Step 4: Fix — red -->
+  <rect x="504" y="72" width="124" height="148" rx="10" fill="#ef4444"/>
+  <text x="566" y="104" class="step-num">Schritt 4</text>
+  <text x="566" y="128" class="label-main">Fix</text>
+  <text x="566" y="149" class="label-sub">Ursache</text>
+  <text x="566" y="163" class="label-sub">beheben</text>
+  <text x="566" y="177" class="label-sub">Tests schreiben</text>
+  <text x="566" y="191" class="label-sub">Beta-Rollout</text>
+
+  <!-- Arrow 4→5 -->
+  <polygon points="636,146 656,136 656,156" fill="#94a3b8"/>
+  <line x1="628" y1="146" x2="656" y2="146" stroke="#94a3b8" stroke-width="2"/>
+
+  <!-- Step 5: Verifizieren — green -->
+  <rect x="664" y="72" width="112" height="148" rx="10" fill="#10b981"/>
+  <text x="720" y="104" class="step-num">Schritt 5</text>
+  <text x="720" y="128" class="label-main">Verifizieren</text>
+  <text x="720" y="149" class="label-sub">Crash-Rate</text>
+  <text x="720" y="163" class="label-sub">im Monitoring</text>
+  <text x="720" y="177" class="label-sub">beobachten</text>
+  <text x="720" y="191" class="label-sub">Issue schliessen</text>
+
+  <!-- Bottom legend bar -->
+  <rect x="24" y="244" width="752" height="40" rx="8" fill="#e2e8f0"/>
+  <text x="400" y="269" font-family="system-ui, sans-serif" font-size="12" fill="#475569" text-anchor="middle">Crashes betreffen durchschnittlich 0,5–2 % aller Sessions — ein strukturierter Prozess verkürzt die Zeit bis zum Fix deutlich</text>
+</svg>

@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350" role="img" aria-label="DAU/MAU-Benchmarks nach App-Kategorie: Von Social bis Gaming">
+  <title>DAU/MAU-Ratio Benchmarks nach App-Kategorie</title>
+  <defs>
+    <style>
+      text { font-family: system-ui, sans-serif; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="350" fill="#f8fafc" rx="12"/>
+
+  <!-- Title -->
+  <text x="400" y="34" text-anchor="middle" font-size="15" font-weight="700" fill="#0f172a">DAU/MAU-Benchmarks nach App-Kategorie</text>
+  <text x="400" y="52" text-anchor="middle" font-size="12" fill="#64748b">Stickiness-Richtwerte — hoeherer Wert bedeutet staerkeres taegliches Engagement</text>
+
+  <!-- Chart area: labels from y=75 to y=305, bar starts at x=230, max bar width = 490 (for 70%) -->
+  <!-- Scale: 1% = 7px, so 70% = 490px -->
+
+  <!-- "Gut" threshold line at 20% = x=230 + 140 = 370 -->
+  <line x1="370" y1="68" x2="370" y2="315" stroke="#f97316" stroke-width="1.5" stroke-dasharray="5,4"/>
+  <text x="373" y="67" font-size="10" fill="#f97316" font-weight="600">Gut (&gt; 20 %)</text>
+
+  <!-- "Sehr gut" threshold line at 40% = x=230 + 280 = 510 -->
+  <line x1="510" y1="68" x2="510" y2="315" stroke="#10b981" stroke-width="1.5" stroke-dasharray="5,4"/>
+  <text x="513" y="67" font-size="10" fill="#10b981" font-weight="600">Sehr gut (&gt; 40 %)</text>
+
+  <!-- Row height = 35, starting y = 90 -->
+
+  <!-- Row 1: Social/Messaging 65% = 455px -->
+  <text x="222" y="104" text-anchor="end" font-size="12" fill="#0f172a" font-weight="500">Social &amp; Messaging</text>
+  <rect x="230" y="90" width="455" height="22" rx="4" fill="#2563eb"/>
+  <text x="692" y="105" font-size="12" font-weight="700" fill="#2563eb">65 %</text>
+
+  <!-- Row 2: Utility 33% = 231px -->
+  <text x="222" y="139" text-anchor="end" font-size="12" fill="#0f172a" font-weight="500">Utility-Apps</text>
+  <rect x="230" y="125" width="231" height="22" rx="4" fill="#3b82f6"/>
+  <text x="468" y="140" font-size="12" font-weight="700" fill="#3b82f6">33 %</text>
+
+  <!-- Row 3: Gaming 30% = 210px -->
+  <text x="222" y="174" text-anchor="end" font-size="12" fill="#0f172a" font-weight="500">Gaming (Casual)</text>
+  <rect x="230" y="160" width="210" height="22" rx="4" fill="#6366f1"/>
+  <text x="447" y="175" font-size="12" font-weight="700" fill="#6366f1">30 %</text>
+
+  <!-- Row 4: Finance 22% = 154px -->
+  <text x="222" y="209" text-anchor="end" font-size="12" fill="#0f172a" font-weight="500">Finance &amp; Banking</text>
+  <rect x="230" y="195" width="154" height="22" rx="4" fill="#f97316"/>
+  <text x="391" y="210" font-size="12" font-weight="700" fill="#f97316">22 %</text>
+
+  <!-- Row 5: Health 18% = 126px -->
+  <text x="222" y="244" text-anchor="end" font-size="12" fill="#0f172a" font-weight="500">Health &amp; Fitness</text>
+  <rect x="230" y="230" width="126" height="22" rx="4" fill="#f59e0b"/>
+  <text x="363" y="245" font-size="12" font-weight="700" fill="#f59e0b">18 %</text>
+
+  <!-- Row 6: E-Commerce 12% = 84px -->
+  <text x="222" y="279" text-anchor="end" font-size="12" fill="#0f172a" font-weight="500">E-Commerce</text>
+  <rect x="230" y="265" width="84" height="22" rx="4" fill="#94a3b8"/>
+  <text x="321" y="280" font-size="12" font-weight="700" fill="#94a3b8">12 %</text>
+
+  <!-- Row 7: Enterprise 8% = 56px -->
+  <text x="222" y="314" text-anchor="end" font-size="12" fill="#0f172a" font-weight="500">Enterprise / B2B</text>
+  <rect x="230" y="300" width="56" height="22" rx="4" fill="#cbd5e1"/>
+  <text x="293" y="315" font-size="12" font-weight="700" fill="#94a3b8">8 %</text>
+
+  <!-- X axis line -->
+  <line x1="230" y1="325" x2="730" y2="325" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <!-- X axis ticks and labels -->
+  <line x1="230" y1="322" x2="230" y2="328" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="230" y="338" text-anchor="middle" font-size="10" fill="#94a3b8">0 %</text>
+
+  <line x1="300" y1="322" x2="300" y2="328" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="300" y="338" text-anchor="middle" font-size="10" fill="#94a3b8">10 %</text>
+
+  <line x1="370" y1="322" x2="370" y2="328" stroke="#f97316" stroke-width="1.5"/>
+  <text x="370" y="338" text-anchor="middle" font-size="10" fill="#f97316">20 %</text>
+
+  <line x1="440" y1="322" x2="440" y2="328" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="440" y="338" text-anchor="middle" font-size="10" fill="#94a3b8">30 %</text>
+
+  <line x1="510" y1="322" x2="510" y2="328" stroke="#10b981" stroke-width="1.5"/>
+  <text x="510" y="338" text-anchor="middle" font-size="10" fill="#10b981">40 %</text>
+
+  <line x1="580" y1="322" x2="580" y2="328" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="580" y="338" text-anchor="middle" font-size="10" fill="#94a3b8">50 %</text>
+
+  <line x1="650" y1="322" x2="650" y2="328" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="650" y="338" text-anchor="middle" font-size="10" fill="#94a3b8">60 %</text>
+
+  <line x1="720" y1="322" x2="720" y2="328" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="720" y="338" text-anchor="middle" font-size="10" fill="#94a3b8">70 %</text>
+</svg>
