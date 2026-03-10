@@ -78,7 +78,7 @@ const formatDate = (date: Date) =>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
               {rest.map((post) => (
                 <article class="card border border-slate-100 hover:border-brand-200 transition-colors group flex flex-col">
-                  <div class="flex items-center gap-2 mb-3">
+                  <div class="flex items-center justify-between mb-3">
                     <span class="badge-brand text-xs">{post.data.category}</span>
                     <time class="text-xs text-slate-400">{formatDate(post.data.pubDate)}</time>
                   </div>
