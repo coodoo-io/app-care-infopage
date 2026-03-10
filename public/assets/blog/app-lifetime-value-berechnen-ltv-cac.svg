@@ -1,0 +1,118 @@
+<svg viewBox="0 0 800 350" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="LTV:CAC-Verhältnis: Was die Kennzahl bedeutet und welche Werte gut sind" font-family="system-ui, sans-serif">
+  <title>LTV:CAC-Verhältnis: Ampel-Skala mit Kategorien-Benchmarks</title>
+
+  <!-- Background -->
+  <rect width="800" height="350" fill="#f8fafc" rx="12"/>
+
+  <!-- Header bar -->
+  <rect x="0" y="0" width="800" height="56" fill="#172554" rx="12"/>
+  <rect x="0" y="44" width="800" height="12" fill="#172554"/>
+  <text x="400" y="34" text-anchor="middle" font-size="17" font-weight="700" fill="white" letter-spacing="0.3">LTV:CAC-Verhältnis — Ampel-Skala für profitables Wachstum</text>
+
+  <!-- === SCALE BAR === -->
+  <!-- Scale background track -->
+  <rect x="48" y="94" width="704" height="36" rx="18" fill="#e2e8f0"/>
+
+  <!-- Segment 1: < 1:1 (rot) -->
+  <rect x="48" y="94" width="140" height="36" rx="18" fill="#ef4444"/>
+  <rect x="138" y="94" width="50" height="36" fill="#ef4444"/>
+
+  <!-- Segment 2: 1:1 – 3:1 (orange) -->
+  <rect x="188" y="94" width="186" height="36" fill="#f97316"/>
+
+  <!-- Segment 3: 3:1 – 5:1 (grün) -->
+  <rect x="374" y="94" width="186" height="36" fill="#10b981"/>
+
+  <!-- Segment 4: > 5:1 (dunkelgrün) -->
+  <rect x="560" y="94" width="192" height="36" rx="18" fill="#059669"/>
+  <rect x="560" y="94" width="18" height="36" fill="#10b981"/>
+
+  <!-- Scale labels inside bar -->
+  <text x="118" y="118" text-anchor="middle" font-size="13" font-weight="700" fill="white">unter 1:1</text>
+  <text x="281" y="118" text-anchor="middle" font-size="13" font-weight="700" fill="white">1:1 – 3:1</text>
+  <text x="467" y="118" text-anchor="middle" font-size="13" font-weight="700" fill="white">3:1 – 5:1</text>
+  <text x="656" y="118" text-anchor="middle" font-size="13" font-weight="700" fill="white">über 5:1</text>
+
+  <!-- Tick marks / dividers -->
+  <line x1="188" y1="88" x2="188" y2="136" stroke="white" stroke-width="2.5"/>
+  <line x1="374" y1="88" x2="374" y2="136" stroke="white" stroke-width="2.5"/>
+  <line x1="560" y1="88" x2="560" y2="136" stroke="white" stroke-width="2.5"/>
+
+  <!-- Tick labels below bar -->
+  <text x="188" y="152" text-anchor="middle" font-size="11" fill="#64748b">1:1</text>
+  <text x="374" y="152" text-anchor="middle" font-size="11" fill="#64748b">3:1</text>
+  <text x="560" y="152" text-anchor="middle" font-size="11" fill="#64748b">5:1</text>
+
+  <!-- === BEDEUTUNGS-KARTEN === -->
+  <!-- Card 1: Verlust -->
+  <rect x="48" y="162" width="153" height="88" rx="8" fill="white" stroke="#ef4444" stroke-width="1.5"/>
+  <rect x="48" y="162" width="153" height="8" rx="4" fill="#ef4444"/>
+  <rect x="48" y="166" width="153" height="4" fill="#ef4444"/>
+  <text x="124" y="196" text-anchor="middle" font-size="12" font-weight="700" fill="#b91c1c">Verlustgeschaeft</text>
+  <text x="124" y="213" text-anchor="middle" font-size="11" fill="#475569">Jeder neue Nutzer</text>
+  <text x="124" y="228" text-anchor="middle" font-size="11" fill="#475569">kostet unterm Strich</text>
+  <text x="124" y="240" text-anchor="middle" font-size="10" fill="#ef4444" font-weight="600">Kein skalierbares Modell</text>
+
+  <!-- Card 2: Break-even -->
+  <rect x="219" y="162" width="153" height="88" rx="8" fill="white" stroke="#f97316" stroke-width="1.5"/>
+  <rect x="219" y="162" width="153" height="8" rx="4" fill="#f97316"/>
+  <rect x="219" y="166" width="153" height="4" fill="#f97316"/>
+  <text x="295" y="196" text-anchor="middle" font-size="12" font-weight="700" fill="#c2410c">Break-even</text>
+  <text x="295" y="213" text-anchor="middle" font-size="11" fill="#475569">Kosten gedeckt, aber</text>
+  <text x="295" y="228" text-anchor="middle" font-size="11" fill="#475569">kein Wachstumspuffer</text>
+  <text x="295" y="240" text-anchor="middle" font-size="10" fill="#f97316" font-weight="600">Optimierungsbedarf</text>
+
+  <!-- Card 3: Profitables Wachstum -->
+  <rect x="390" y="162" width="153" height="88" rx="8" fill="white" stroke="#10b981" stroke-width="1.5"/>
+  <rect x="390" y="162" width="153" height="8" rx="4" fill="#10b981"/>
+  <rect x="390" y="166" width="153" height="4" fill="#10b981"/>
+  <text x="466" y="196" text-anchor="middle" font-size="12" font-weight="700" fill="#065f46">Profitables Wachstum</text>
+  <text x="466" y="213" text-anchor="middle" font-size="11" fill="#475569">Spielraum fuer Team,</text>
+  <text x="466" y="228" text-anchor="middle" font-size="11" fill="#475569">Produkt &amp; weitere Akquise</text>
+  <text x="466" y="240" text-anchor="middle" font-size="10" fill="#10b981" font-weight="600">Ziel: &gt; 3:1</text>
+
+  <!-- Card 4: Sehr gut -->
+  <rect x="561" y="162" width="191" height="88" rx="8" fill="white" stroke="#059669" stroke-width="1.5"/>
+  <rect x="561" y="162" width="191" height="8" rx="4" fill="#059669"/>
+  <rect x="561" y="166" width="191" height="4" fill="#059669"/>
+  <text x="656" y="196" text-anchor="middle" font-size="12" font-weight="700" fill="#064e3b">Sehr gut</text>
+  <text x="656" y="213" text-anchor="middle" font-size="11" fill="#475569">Mehr Budget in Akquise</text>
+  <text x="656" y="228" text-anchor="middle" font-size="11" fill="#475569">investieren lohnt sich</text>
+  <text x="656" y="240" text-anchor="middle" font-size="10" fill="#059669" font-weight="600">Skalierungspotenzial nutzen</text>
+
+  <!-- === BENCHMARKS === -->
+  <text x="48" y="278" font-size="12" font-weight="700" fill="#1e3a5f">Kategorie-Benchmarks auf der Skala</text>
+  <line x1="48" y1="285" x2="752" y2="285" stroke="#e2e8f0" stroke-width="1"/>
+
+  <!-- Gaming dot ~0.8:1 → pos ~118 -->
+  <circle cx="118" cy="310" r="7" fill="#ef4444"/>
+  <text x="118" y="332" text-anchor="middle" font-size="10" fill="#475569">Gaming</text>
+  <text x="118" y="344" text-anchor="middle" font-size="9" fill="#94a3b8">~1–2:1</text>
+
+  <!-- E-Commerce dot ~2:1 → between 188 and 374 → ~280 -->
+  <circle cx="280" cy="310" r="7" fill="#f97316"/>
+  <text x="280" y="332" text-anchor="middle" font-size="10" fill="#475569">E-Commerce</text>
+  <text x="280" y="344" text-anchor="middle" font-size="9" fill="#94a3b8">~2–3:1</text>
+
+  <!-- Finance dot ~3.5:1 → between 374 and 560 → ~420 -->
+  <circle cx="420" cy="310" r="7" fill="#10b981"/>
+  <text x="420" y="332" text-anchor="middle" font-size="10" fill="#475569">Finance</text>
+  <text x="420" y="344" text-anchor="middle" font-size="9" fill="#94a3b8">~3–4:1</text>
+
+  <!-- Subscription dot ~4.5:1 → ~500 -->
+  <circle cx="510" cy="310" r="7" fill="#10b981"/>
+  <text x="510" y="332" text-anchor="middle" font-size="10" fill="#475569">Subscription</text>
+  <text x="510" y="344" text-anchor="middle" font-size="9" fill="#94a3b8">~4–5:1</text>
+
+  <!-- B2B dot ~6:1 → beyond 560 → ~620 -->
+  <circle cx="630" cy="310" r="7" fill="#059669"/>
+  <text x="630" y="332" text-anchor="middle" font-size="10" fill="#475569">B2B/SaaS</text>
+  <text x="630" y="344" text-anchor="middle" font-size="9" fill="#94a3b8">~5–8:1</text>
+
+  <!-- Connecting lines from dots to scale -->
+  <line x1="118" y1="130" x2="118" y2="300" stroke="#ef4444" stroke-width="1" stroke-dasharray="4,3" opacity="0.5"/>
+  <line x1="280" y1="130" x2="280" y2="300" stroke="#f97316" stroke-width="1" stroke-dasharray="4,3" opacity="0.5"/>
+  <line x1="420" y1="130" x2="420" y2="300" stroke="#10b981" stroke-width="1" stroke-dasharray="4,3" opacity="0.5"/>
+  <line x1="510" y1="130" x2="510" y2="300" stroke="#10b981" stroke-width="1" stroke-dasharray="4,3" opacity="0.5"/>
+  <line x1="630" y1="130" x2="630" y2="300" stroke="#059669" stroke-width="1" stroke-dasharray="4,3" opacity="0.5"/>
+</svg>

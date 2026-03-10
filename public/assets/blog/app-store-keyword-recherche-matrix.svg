@@ -1,0 +1,87 @@
+<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Keyword-Priorisierungs-Matrix: Suchvolumen vs. Wettbewerb mit vier Quadranten" font-family="system-ui, sans-serif">
+  <title>Keyword-Priorisierungs-Matrix: Suchvolumen vs. Wettbewerb</title>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="#f8fafc" rx="12"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="800" height="56" fill="#172554" rx="12"/>
+  <rect x="0" y="44" width="800" height="12" fill="#172554"/>
+  <text x="400" y="34" text-anchor="middle" font-size="17" font-weight="700" fill="#ffffff" letter-spacing="0.5">Keyword-Priorisierungs-Matrix</text>
+
+  <!-- Matrix area: x=80..760, y=72..360 -->
+  <!-- Quadrant backgrounds -->
+
+  <!-- Q2: Hohes Volumen + Niedriger Wettbewerb = Goldzone (oben links) -->
+  <rect x="80" y="72" width="340" height="144" fill="#f0fdf4" rx="0" stroke="#10b981" stroke-width="1"/>
+
+  <!-- Q1: Hohes Volumen + Hoher Wettbewerb = Langfristig aufbauen (oben rechts) -->
+  <rect x="420" y="72" width="340" height="144" fill="#fff7ed" rx="0" stroke="#f97316" stroke-width="1"/>
+
+  <!-- Q3: Niedriges Volumen + Niedriger Wettbewerb = Quick Wins (unten links) -->
+  <rect x="80" y="216" width="340" height="144" fill="#eff6ff" rx="0" stroke="#2563eb" stroke-width="1"/>
+
+  <!-- Q4: Niedriges Volumen + Hoher Wettbewerb = Vermeiden (unten rechts) -->
+  <rect x="420" y="216" width="340" height="144" fill="#fef2f2" rx="0" stroke="#ef4444" stroke-width="1"/>
+
+  <!-- Axis lines -->
+  <line x1="80" y1="72" x2="80" y2="360" stroke="#334155" stroke-width="2"/>
+  <line x1="80" y1="360" x2="760" y2="360" stroke="#334155" stroke-width="2"/>
+  <!-- Center dividers -->
+  <line x1="420" y1="72" x2="420" y2="360" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <line x1="80" y1="216" x2="760" y2="216" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="6,4"/>
+
+  <!-- Y-Axis label -->
+  <text x="20" y="220" text-anchor="middle" font-size="12" font-weight="700" fill="#334155" transform="rotate(-90, 20, 220)">Suchvolumen</text>
+  <!-- Y-Axis tick labels -->
+  <text x="70" y="100" text-anchor="end" font-size="11" fill="#64748b">Hoch</text>
+  <text x="70" y="344" text-anchor="end" font-size="11" fill="#64748b">Niedrig</text>
+
+  <!-- X-Axis label -->
+  <text x="420" y="392" text-anchor="middle" font-size="12" font-weight="700" fill="#334155">Wettbewerb</text>
+  <!-- X-Axis tick labels -->
+  <text x="100" y="378" text-anchor="start" font-size="11" fill="#64748b">Niedrig</text>
+  <text x="740" y="378" text-anchor="end" font-size="11" fill="#64748b">Hoch</text>
+
+  <!-- Q2: Goldzone -->
+  <rect x="92" y="82" width="120" height="28" fill="#10b981" rx="6"/>
+  <text x="152" y="101" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">Goldzone</text>
+  <text x="250" y="120" text-anchor="middle" font-size="12" font-weight="600" fill="#065f46">Sofort angreifen</text>
+  <text x="250" y="138" text-anchor="middle" font-size="11" fill="#065f46">Hohes Volumen,</text>
+  <text x="250" y="153" text-anchor="middle" font-size="11" fill="#065f46">geringer Wettbewerb</text>
+  <text x="250" y="173" text-anchor="middle" font-size="11" fill="#6b7280">Hochste Prioritaet — selten,</text>
+  <text x="250" y="187" text-anchor="middle" font-size="11" fill="#6b7280">aber Gold wert</text>
+
+  <!-- Star symbol for Goldzone -->
+  <polygon points="152,84 155,92 164,92 157,97 160,106 152,101 144,106 147,97 140,92 149,92" fill="#fbbf24" stroke="none"/>
+
+  <!-- Q1: Langfristig aufbauen -->
+  <rect x="432" y="82" width="168" height="28" fill="#f97316" rx="6"/>
+  <text x="516" y="101" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">Langfristig aufbauen</text>
+  <text x="590" y="120" text-anchor="middle" font-size="12" font-weight="600" fill="#7c2d12">Mittelfristig investieren</text>
+  <text x="590" y="138" text-anchor="middle" font-size="11" fill="#7c2d12">Hohes Volumen,</text>
+  <text x="590" y="153" text-anchor="middle" font-size="11" fill="#7c2d12">hoher Wettbewerb</text>
+  <text x="590" y="173" text-anchor="middle" font-size="11" fill="#6b7280">Erfordert starke Off-Metadata</text>
+  <text x="590" y="187" text-anchor="middle" font-size="11" fill="#6b7280">(Downloads, Ratings)</text>
+
+  <!-- Q3: Quick Wins -->
+  <rect x="92" y="226" width="110" height="28" fill="#2563eb" rx="6"/>
+  <text x="147" y="245" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">Quick Wins</text>
+  <text x="250" y="264" text-anchor="middle" font-size="12" font-weight="600" fill="#1e3a8a">Gute Erganzung</text>
+  <text x="250" y="282" text-anchor="middle" font-size="11" fill="#1e3a8a">Niedriges Volumen,</text>
+  <text x="250" y="297" text-anchor="middle" font-size="11" fill="#1e3a8a">geringer Wettbewerb</text>
+  <text x="250" y="317" text-anchor="middle" font-size="11" fill="#6b7280">Long-tail Nischen,</text>
+  <text x="250" y="331" text-anchor="middle" font-size="11" fill="#6b7280">hohe Conversion-Rate</text>
+
+  <!-- Q4: Vermeiden -->
+  <rect x="432" y="226" width="100" height="28" fill="#ef4444" rx="6"/>
+  <text x="482" y="245" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">Vermeiden</text>
+  <text x="590" y="264" text-anchor="middle" font-size="12" font-weight="600" fill="#991b1b">Nicht investieren</text>
+  <text x="590" y="282" text-anchor="middle" font-size="11" fill="#991b1b">Niedriges Volumen,</text>
+  <text x="590" y="297" text-anchor="middle" font-size="11" fill="#991b1b">hoher Wettbewerb</text>
+  <text x="590" y="317" text-anchor="middle" font-size="11" fill="#6b7280">Grosster Aufwand,</text>
+  <text x="590" y="331" text-anchor="middle" font-size="11" fill="#6b7280">geringste Wirkung</text>
+
+  <!-- Footer -->
+  <text x="400" y="390" text-anchor="middle" font-size="10" fill="#94a3b8">App-Care — app-care.pages.dev</text>
+</svg>

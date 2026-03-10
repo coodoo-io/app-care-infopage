@@ -1,0 +1,85 @@
+<svg viewBox="0 0 800 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Anatomie guter App Release Notes: Struktur und Aufbau" font-family="system-ui, sans-serif">
+  <title>Release Notes: Anatomie eines guten Update-Textes</title>
+
+  <!-- Background -->
+  <rect width="800" height="420" fill="#f8fafc" rx="12"/>
+
+  <!-- Title -->
+  <text x="400" y="38" text-anchor="middle" font-size="17" font-weight="700" fill="#0f172a">Anatomie guter App Release Notes</text>
+  <text x="400" y="58" text-anchor="middle" font-size="13" fill="#64748b">So ist ein Update-Text im App Store aufgebaut</text>
+
+  <!-- Phone frame -->
+  <rect x="60" y="78" width="260" height="310" rx="18" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+  <rect x="72" y="92" width="236" height="284" rx="8" fill="#f1f5f9"/>
+  <!-- Phone notch -->
+  <rect x="150" y="80" width="60" height="10" rx="5" fill="#0f172a"/>
+
+  <!-- App Store content inside phone -->
+  <text x="190" y="116" text-anchor="middle" font-size="9" font-weight="700" fill="#0f172a">App Store · Neue Funktionen</text>
+  <line x1="76" y1="122" x2="304" y2="122" stroke="#e2e8f0" stroke-width="1"/>
+
+  <!-- Zone 1: Hook lines (highlighted) -->
+  <rect x="76" y="126" width="232" height="46" rx="4" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="84" y="141" font-size="8.5" font-weight="600" fill="#1e40af">Schnellere Ladezeiten und neues Dashboard</text>
+  <text x="84" y="154" font-size="8" fill="#1e3a8a">Das Dashboard lädt jetzt 40 % schneller —</text>
+  <text x="84" y="164" font-size="8" fill="#1e3a8a">basierend auf eurem Feedback.</text>
+
+  <!-- Zone 2: Top features -->
+  <rect x="76" y="178" width="232" height="70" rx="4" fill="#f0fdf4" stroke="#10b981" stroke-width="1.5"/>
+  <text x="84" y="193" font-size="8" fill="#065f46">· Neuer Übersichtsscreen mit allen KPIs</text>
+  <text x="84" y="206" font-size="8" fill="#065f46">· Push-Benachrichtigungen nach Kategorie</text>
+  <text x="84" y="219" font-size="8" fill="#065f46">· Dark Mode auf allen Screens einheitlich</text>
+  <text x="84" y="232" font-size="8" fill="#065f46">· Offline-Modus verbessert</text>
+  <text x="84" y="242" font-size="7.5" fill="#6b7280">  (nach unten scrollen für mehr)</text>
+
+  <!-- Zone 3: Bug fixes -->
+  <rect x="76" y="254" width="232" height="38" rx="4" fill="#fff7ed" stroke="#f97316" stroke-width="1.5"/>
+  <text x="84" y="268" font-size="8" fill="#7c2d12">· 3 Abstürze beim Login behoben</text>
+  <text x="84" y="280" font-size="8" fill="#7c2d12">· Anzeigefehler im Profil-Bereich behoben</text>
+
+  <!-- Zone 4: CTA -->
+  <rect x="76" y="298" width="232" height="26" rx="4" fill="#fdf4ff" stroke="#a855f7" stroke-width="1.5"/>
+  <text x="190" y="315" text-anchor="middle" font-size="8" fill="#6b21a8">Danke für euer Feedback! Schreibt uns.</text>
+
+  <!-- Right side: Legend / Annotation -->
+  <!-- Zone 1 annotation -->
+  <line x1="308" y1="149" x2="380" y2="149" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <circle cx="308" cy="149" r="3" fill="#2563eb"/>
+  <rect x="382" y="104" width="352" height="90" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+  <!-- Annotation badge -->
+  <rect x="390" y="112" width="200" height="20" rx="4" fill="#2563eb"/>
+  <text x="490" y="126" text-anchor="middle" font-size="10" font-weight="700" fill="#ffffff">Sichtbar ohne "mehr anzeigen"</text>
+  <text x="558" y="126" text-anchor="end" font-size="9" fill="#ffffff">— ca. 150 Zeichen</text>
+  <text x="390" y="154" font-size="11" font-weight="700" fill="#1e40af">Zeile 1–2: Hook &amp; Hauptversprechen</text>
+  <text x="390" y="170" font-size="10" fill="#1e40af">Nutzensprache, keine Entwicklersprache.</text>
+  <text x="390" y="184" font-size="10" fill="#1e40af">Was ändert sich für den Nutzer?</text>
+
+  <!-- "Diese 3 Zeilen entscheiden" callout -->
+  <rect x="382" y="200" width="352" height="26" rx="6" fill="#2563eb"/>
+  <text x="558" y="218" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff">Diese 3 Zeilen entscheiden, ob jemand weiterliest</text>
+
+  <!-- Zone 2 annotation -->
+  <line x1="308" y1="213" x2="380" y2="250" stroke="#10b981" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <circle cx="308" cy="213" r="3" fill="#10b981"/>
+  <rect x="382" y="234" width="352" height="62" rx="8" fill="#f0fdf4" stroke="#10b981" stroke-width="1.5"/>
+  <text x="390" y="252" font-size="11" font-weight="700" fill="#065f46">Zeile 3–5: Top-3-Features</text>
+  <text x="390" y="268" font-size="10" fill="#065f46">Kurze Aufzählung der wichtigsten Neuerungen</text>
+  <text x="390" y="282" font-size="10" fill="#065f46">in nutzerfreundlicher Sprache.</text>
+
+  <!-- Zone 3 annotation -->
+  <line x1="308" y1="273" x2="380" y2="315" stroke="#f97316" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <circle cx="308" cy="273" r="3" fill="#f97316"/>
+  <rect x="382" y="303" width="352" height="46" rx="8" fill="#fff7ed" stroke="#f97316" stroke-width="1.5"/>
+  <text x="390" y="320" font-size="11" font-weight="700" fill="#9a3412">Rest: Bug-Fixes &amp; technische Details</text>
+  <text x="390" y="337" font-size="10" fill="#9a3412">Konkret benennen, welche Bugs behoben wurden.</text>
+
+  <!-- Zone 4 annotation -->
+  <line x1="308" y1="311" x2="380" y2="370" stroke="#a855f7" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <circle cx="308" cy="311" r="3" fill="#a855f7"/>
+  <rect x="382" y="357" width="352" height="40" rx="8" fill="#fdf4ff" stroke="#a855f7" stroke-width="1.5"/>
+  <text x="390" y="374" font-size="11" font-weight="700" fill="#6b21a8">Abschluss (optional): Danke &amp; Feedback-CTA</text>
+  <text x="390" y="388" font-size="10" fill="#6b21a8">Kurzer Satz — zeigt, dass das Team zuhört.</text>
+
+  <!-- Bottom note -->
+  <text x="400" y="410" text-anchor="middle" font-size="10" fill="#94a3b8">iOS: max. 4.000 Zeichen · Empfohlen: unter 800 Zeichen · Erste 2–3 Zeilen ohne Klick sichtbar</text>
+</svg>

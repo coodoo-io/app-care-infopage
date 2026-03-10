@@ -1,0 +1,146 @@
+<svg width="800" height="420" viewBox="0 0 800 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Analytics-Setup-Checkliste: Pflicht-Events und KPIs nach Priorität">
+  <title>Analytics-Setup-Checkliste: Pflicht-Events nach Priorität 1, 2 und 3</title>
+  <rect width="800" height="420" fill="#ffffff" rx="12"/>
+
+  <!-- Headline -->
+  <text x="400" y="28" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#9ca3af" letter-spacing="0.08em">ANALYTICS-SETUP — PFLICHT-EVENTS NACH PRIORITÄT</text>
+
+  <!-- ========================== -->
+  <!-- Spalte 1: Priorität 1     -->
+  <!-- ========================== -->
+  <rect x="20" y="44" width="238" height="356" fill="#eff6ff" rx="10"/>
+  <rect x="20" y="44" width="238" height="42" fill="#2563eb" rx="10"/>
+  <rect x="20" y="68" width="238" height="18" fill="#2563eb"/>
+
+  <text x="139" y="61" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#ffffff" letter-spacing="0.06em">PRIORITÄT 1</text>
+  <text x="139" y="77" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#bfdbfe">Pflicht ab Tag 1</text>
+
+  <!-- Event-Einträge P1 -->
+  <!-- app_open -->
+  <rect x="36" y="102" width="14" height="14" fill="#ffffff" stroke="#2563eb" stroke-width="1.5" rx="3"/>
+  <polyline points="38,109 41,112 48,105" fill="none" stroke="#2563eb" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="58" y="113" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#1e40af">app_open</text>
+  <text x="58" y="126" font-family="system-ui, sans-serif" font-size="10" fill="#3b82f6">DAU / MAU Basis</text>
+
+  <!-- screen_view -->
+  <rect x="36" y="142" width="14" height="14" fill="#ffffff" stroke="#2563eb" stroke-width="1.5" rx="3"/>
+  <polyline points="38,149 41,152 48,145" fill="none" stroke="#2563eb" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="58" y="153" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#1e40af">screen_view</text>
+  <text x="58" y="166" font-family="system-ui, sans-serif" font-size="10" fill="#3b82f6">Navigation-Flow</text>
+
+  <!-- user_signup -->
+  <rect x="36" y="182" width="14" height="14" fill="#ffffff" stroke="#2563eb" stroke-width="1.5" rx="3"/>
+  <polyline points="38,189 41,192 48,185" fill="none" stroke="#2563eb" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="58" y="193" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#1e40af">user_signup</text>
+  <text x="58" y="206" font-family="system-ui, sans-serif" font-size="10" fill="#3b82f6">Lifecycle-Start</text>
+
+  <!-- first_purchase -->
+  <rect x="36" y="222" width="14" height="14" fill="#ffffff" stroke="#2563eb" stroke-width="1.5" rx="3"/>
+  <polyline points="38,229 41,232 48,225" fill="none" stroke="#2563eb" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="58" y="233" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#1e40af">first_purchase</text>
+  <text x="58" y="246" font-family="system-ui, sans-serif" font-size="10" fill="#3b82f6">LTV &amp; Conversion</text>
+
+  <!-- crash_event -->
+  <rect x="36" y="262" width="14" height="14" fill="#ffffff" stroke="#2563eb" stroke-width="1.5" rx="3"/>
+  <polyline points="38,269 41,272 48,265" fill="none" stroke="#2563eb" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="58" y="273" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#1e40af">crash_event</text>
+  <text x="58" y="286" font-family="system-ui, sans-serif" font-size="10" fill="#3b82f6">Stabilitätsmessung</text>
+
+  <!-- api_error -->
+  <rect x="36" y="302" width="14" height="14" fill="#ffffff" stroke="#2563eb" stroke-width="1.5" rx="3"/>
+  <polyline points="38,309 41,312 48,305" fill="none" stroke="#2563eb" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="58" y="313" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#1e40af">api_error</text>
+  <text x="58" y="326" font-family="system-ui, sans-serif" font-size="10" fill="#3b82f6">Technische Qualität</text>
+
+  <!-- Badge -->
+  <rect x="36" y="364" width="186" height="26" fill="#dbeafe" rx="6"/>
+  <text x="129" y="381" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#1d4ed8">Mindest-Set: 6 Core-Events</text>
+
+  <!-- ========================== -->
+  <!-- Spalte 2: Priorität 2     -->
+  <!-- ========================== -->
+  <rect x="281" y="44" width="238" height="356" fill="#f0fdf4" rx="10"/>
+  <rect x="281" y="44" width="238" height="42" fill="#10b981" rx="10"/>
+  <rect x="281" y="68" width="238" height="18" fill="#10b981"/>
+
+  <text x="400" y="61" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#ffffff" letter-spacing="0.06em">PRIORITÄT 2</text>
+  <text x="400" y="77" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#a7f3d0">Innerhalb Monat 1</text>
+
+  <!-- onboarding_step_X -->
+  <rect x="297" y="102" width="14" height="14" fill="#ffffff" stroke="#10b981" stroke-width="1.5" rx="3"/>
+  <text x="319" y="113" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#065f46">onboarding_step_X</text>
+  <text x="319" y="126" font-family="system-ui, sans-serif" font-size="10" fill="#10b981">Funnel-Analyse</text>
+
+  <!-- onboarding_complete -->
+  <rect x="297" y="142" width="14" height="14" fill="#ffffff" stroke="#10b981" stroke-width="1.5" rx="3"/>
+  <text x="319" y="153" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#065f46">onboarding_complete</text>
+  <text x="319" y="166" font-family="system-ui, sans-serif" font-size="10" fill="#10b981">Completion-Rate</text>
+
+  <!-- feature_used -->
+  <rect x="297" y="182" width="14" height="14" fill="#ffffff" stroke="#10b981" stroke-width="1.5" rx="3"/>
+  <text x="319" y="193" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#065f46">feature_used</text>
+  <text x="319" y="206" font-family="system-ui, sans-serif" font-size="10" fill="#10b981">Adoption-Rate</text>
+
+  <!-- search_performed -->
+  <rect x="297" y="222" width="14" height="14" fill="#ffffff" stroke="#10b981" stroke-width="1.5" rx="3"/>
+  <text x="319" y="233" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#065f46">search_performed</text>
+  <text x="319" y="246" font-family="system-ui, sans-serif" font-size="10" fill="#10b981">Suchanfragen-Analyse</text>
+
+  <!-- rating_prompt_shown -->
+  <rect x="297" y="262" width="14" height="14" fill="#ffffff" stroke="#10b981" stroke-width="1.5" rx="3"/>
+  <text x="319" y="273" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#065f46">rating_prompt_shown</text>
+  <text x="319" y="286" font-family="system-ui, sans-serif" font-size="10" fill="#10b981">Bewertungs-Funnel</text>
+
+  <!-- push_notification_opened -->
+  <rect x="297" y="302" width="14" height="14" fill="#ffffff" stroke="#10b981" stroke-width="1.5" rx="3"/>
+  <text x="319" y="313" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#065f46">push_notification_*</text>
+  <text x="319" y="326" font-family="system-ui, sans-serif" font-size="10" fill="#10b981">Push-Engagement</text>
+
+  <!-- Badge -->
+  <rect x="297" y="364" width="206" height="26" fill="#d1fae5" rx="6"/>
+  <text x="400" y="381" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#065f46">Ziel: 14–20 Events nach Monat 1</text>
+
+  <!-- ========================== -->
+  <!-- Spalte 3: Priorität 3     -->
+  <!-- ========================== -->
+  <rect x="542" y="44" width="238" height="356" fill="#fff7ed" rx="10"/>
+  <rect x="542" y="44" width="238" height="42" fill="#f97316" rx="10"/>
+  <rect x="542" y="68" width="238" height="18" fill="#f97316"/>
+
+  <text x="661" y="61" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#ffffff" letter-spacing="0.06em">PRIORITÄT 3</text>
+  <text x="661" y="77" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#fed7aa">Später optimieren</text>
+
+  <!-- share_content -->
+  <rect x="558" y="102" width="14" height="14" fill="#ffffff" stroke="#f97316" stroke-width="1.5" rx="3"/>
+  <text x="580" y="113" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#9a3412">share_content</text>
+  <text x="580" y="126" font-family="system-ui, sans-serif" font-size="10" fill="#f97316">Virales Wachstum</text>
+
+  <!-- notification_opened -->
+  <rect x="558" y="142" width="14" height="14" fill="#ffffff" stroke="#f97316" stroke-width="1.5" rx="3"/>
+  <text x="580" y="153" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#9a3412">notification_settings_*</text>
+  <text x="580" y="166" font-family="system-ui, sans-serif" font-size="10" fill="#f97316">Opt-in / Opt-out</text>
+
+  <!-- settings_changed -->
+  <rect x="558" y="182" width="14" height="14" fill="#ffffff" stroke="#f97316" stroke-width="1.5" rx="3"/>
+  <text x="580" y="193" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#9a3412">settings_changed</text>
+  <text x="580" y="206" font-family="system-ui, sans-serif" font-size="10" fill="#f97316">Präferenz-Analyse</text>
+
+  <!-- support_opened -->
+  <rect x="558" y="222" width="14" height="14" fill="#ffffff" stroke="#f97316" stroke-width="1.5" rx="3"/>
+  <text x="580" y="233" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#9a3412">support_opened</text>
+  <text x="580" y="246" font-family="system-ui, sans-serif" font-size="10" fill="#f97316">Support-Analyse</text>
+
+  <!-- subscription_cancelled -->
+  <rect x="558" y="262" width="14" height="14" fill="#ffffff" stroke="#f97316" stroke-width="1.5" rx="3"/>
+  <text x="580" y="273" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#9a3412">subscription_cancelled</text>
+  <text x="580" y="286" font-family="system-ui, sans-serif" font-size="10" fill="#f97316">Churn-Analyse</text>
+
+  <!-- Hinweis -->
+  <rect x="558" y="302" width="14" height="14" fill="#ffffff" stroke="#f97316" stroke-width="1.5" rx="3"/>
+  <text x="580" y="313" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#9a3412">... weitere nach Bedarf</text>
+  <text x="580" y="326" font-family="system-ui, sans-serif" font-size="10" fill="#f97316">Auf analytische Fragen reagieren</text>
+
+  <!-- Badge -->
+  <rect x="558" y="364" width="206" height="26" fill="#ffedd5" rx="6"/>
+  <text x="661" y="381" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#9a3412">Gesamt-Ziel: max. 30 Events</text>
+</svg>

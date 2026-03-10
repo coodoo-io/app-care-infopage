@@ -1,0 +1,89 @@
+<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="App Store Keyword-Typen: Brand, Generic und Long-tail im Vergleich" font-family="system-ui, sans-serif">
+  <title>App Store Keyword-Recherche: Die drei Keyword-Typen</title>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="#f8fafc" rx="12"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="800" height="56" fill="#172554" rx="12"/>
+  <rect x="0" y="44" width="800" height="12" fill="#172554"/>
+  <text x="400" y="34" text-anchor="middle" font-size="17" font-weight="700" fill="#ffffff" letter-spacing="0.5">Keyword-Typen im Vergleich</text>
+
+  <!-- Column 1: Brand Keywords -->
+  <rect x="24" y="76" width="232" height="296" fill="#eff6ff" rx="10" stroke="#2563eb" stroke-width="1.5"/>
+  <rect x="24" y="76" width="232" height="46" fill="#2563eb" rx="10"/>
+  <rect x="24" y="108" width="232" height="14" fill="#2563eb"/>
+  <text x="140" y="105" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">Brand Keywords</text>
+
+  <!-- Brand: property rows -->
+  <rect x="40" y="136" width="200" height="44" fill="#ffffff" rx="6" stroke="#bfdbfe" stroke-width="1"/>
+  <text x="54" y="153" font-size="11" font-weight="600" fill="#1e3a8a">Suchvolumen</text>
+  <text x="54" y="169" font-size="11" fill="#64748b">Hoch (bei bekannter Marke)</text>
+
+  <rect x="40" y="188" width="200" height="44" fill="#ffffff" rx="6" stroke="#bfdbfe" stroke-width="1"/>
+  <text x="54" y="205" font-size="11" font-weight="600" fill="#1e3a8a">Wettbewerb</text>
+  <text x="54" y="221" font-size="11" fill="#64748b">Gering (eigene Marke)</text>
+
+  <rect x="40" y="240" width="200" height="44" fill="#ffffff" rx="6" stroke="#bfdbfe" stroke-width="1"/>
+  <text x="54" y="257" font-size="11" font-weight="600" fill="#1e3a8a">Conversion-Rate</text>
+  <text x="54" y="273" font-size="11" fill="#64748b">Sehr hoch</text>
+
+  <rect x="40" y="292" width="200" height="44" fill="#dbeafe" rx="6"/>
+  <text x="54" y="309" font-size="11" font-weight="600" fill="#1e3a8a">Beispiel</text>
+  <text x="54" y="325" font-size="11" fill="#2563eb">"MyBrand", "MyApp Name"</text>
+
+  <text x="140" y="358" text-anchor="middle" font-size="11" font-weight="600" fill="#2563eb">Markenschutz &amp; Verteidigung</text>
+
+  <!-- Column 2: Generic / Broad Keywords -->
+  <rect x="284" y="76" width="232" height="296" fill="#fff7ed" rx="10" stroke="#f97316" stroke-width="1.5"/>
+  <rect x="284" y="76" width="232" height="46" fill="#f97316" rx="10"/>
+  <rect x="284" y="108" width="232" height="14" fill="#f97316"/>
+  <text x="400" y="105" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">Broad Keywords</text>
+
+  <!-- Broad: property rows -->
+  <rect x="300" y="136" width="200" height="44" fill="#ffffff" rx="6" stroke="#fed7aa" stroke-width="1"/>
+  <text x="314" y="153" font-size="11" font-weight="600" fill="#7c2d12">Suchvolumen</text>
+  <text x="314" y="169" font-size="11" fill="#64748b">Sehr hoch</text>
+
+  <rect x="300" y="188" width="200" height="44" fill="#ffffff" rx="6" stroke="#fed7aa" stroke-width="1"/>
+  <text x="314" y="205" font-size="11" font-weight="600" fill="#7c2d12">Wettbewerb</text>
+  <text x="314" y="221" font-size="11" fill="#64748b">Sehr hoch</text>
+
+  <rect x="300" y="240" width="200" height="44" fill="#ffffff" rx="6" stroke="#fed7aa" stroke-width="1"/>
+  <text x="314" y="257" font-size="11" font-weight="600" fill="#7c2d12">Conversion-Rate</text>
+  <text x="314" y="273" font-size="11" fill="#64748b">Mittel (diffuse Absicht)</text>
+
+  <rect x="300" y="292" width="200" height="44" fill="#ffedd5" rx="6"/>
+  <text x="314" y="309" font-size="11" font-weight="600" fill="#7c2d12">Beispiel</text>
+  <text x="314" y="325" font-size="11" fill="#f97316">"fitness app", "buchhaltung"</text>
+
+  <text x="400" y="358" text-anchor="middle" font-size="11" font-weight="600" fill="#f97316">Langfristige Aufbau-Strategie</text>
+
+  <!-- Column 3: Long-tail Keywords -->
+  <rect x="544" y="76" width="232" height="296" fill="#f0fdf4" rx="10" stroke="#10b981" stroke-width="1.5"/>
+  <rect x="544" y="76" width="232" height="46" fill="#10b981" rx="10"/>
+  <rect x="544" y="108" width="232" height="14" fill="#10b981"/>
+  <text x="660" y="105" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">Long-tail Keywords</text>
+
+  <!-- Long-tail: property rows -->
+  <rect x="560" y="136" width="200" height="44" fill="#ffffff" rx="6" stroke="#a7f3d0" stroke-width="1"/>
+  <text x="574" y="153" font-size="11" font-weight="600" fill="#065f46">Suchvolumen</text>
+  <text x="574" y="169" font-size="11" fill="#64748b">Niedriger (pro Term)</text>
+
+  <rect x="560" y="188" width="200" height="44" fill="#ffffff" rx="6" stroke="#a7f3d0" stroke-width="1"/>
+  <text x="574" y="205" font-size="11" font-weight="600" fill="#065f46">Wettbewerb</text>
+  <text x="574" y="221" font-size="11" fill="#64748b">Niedrig bis mittel</text>
+
+  <rect x="560" y="240" width="200" height="44" fill="#ffffff" rx="6" stroke="#a7f3d0" stroke-width="1"/>
+  <text x="574" y="257" font-size="11" font-weight="600" fill="#065f46">Conversion-Rate</text>
+  <text x="574" y="273" font-size="11" fill="#64748b">Hoch (klare Absicht)</text>
+
+  <rect x="560" y="292" width="200" height="44" fill="#dcfce7" rx="6"/>
+  <text x="574" y="309" font-size="11" font-weight="600" fill="#065f46">Beispiel</text>
+  <text x="574" y="325" font-size="10" fill="#10b981">"fitness app anfänger zuhause"</text>
+
+  <text x="660" y="358" text-anchor="middle" font-size="11" font-weight="600" fill="#10b981">Schnellste Sichtbarkeits-Gewinne</text>
+
+  <!-- Footer -->
+  <text x="400" y="388" text-anchor="middle" font-size="10" fill="#94a3b8">App-Care — app-care.pages.dev</text>
+</svg>

@@ -1,0 +1,100 @@
+<svg viewBox="0 0 800 380" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Analytics, Session Replay und Heatmap im Vergleich" font-family="system-ui, sans-serif">
+  <title>App Analytics-Tools im Vergleich: Analytics vs. Session Replay vs. Heatmap</title>
+
+  <!-- Background -->
+  <rect width="800" height="380" fill="#f8fafc" rx="12"/>
+
+  <!-- Header bar -->
+  <rect x="0" y="0" width="800" height="56" fill="#172554" rx="12"/>
+  <rect x="0" y="44" width="800" height="12" fill="#172554"/>
+  <text x="400" y="34" text-anchor="middle" fill="white" font-size="17" font-weight="700" letter-spacing="0.3">Analytics-Tools im Vergleich</text>
+
+  <!-- Column headers -->
+  <!-- Analytics column -->
+  <rect x="24" y="72" width="232" height="44" fill="#2563eb" rx="8"/>
+  <text x="140" y="99" text-anchor="middle" fill="white" font-size="15" font-weight="700">Analytics</text>
+
+  <!-- Session Replay column -->
+  <rect x="284" y="72" width="232" height="44" fill="#10b981" rx="8"/>
+  <text x="400" y="99" text-anchor="middle" fill="white" font-size="15" font-weight="700">Session Replay</text>
+
+  <!-- Heatmap column -->
+  <rect x="544" y="72" width="232" height="44" fill="#f97316" rx="8"/>
+  <text x="660" y="99" text-anchor="middle" fill="white" font-size="15" font-weight="700">Heatmap</text>
+
+  <!-- Row 1: Was es zeigt -->
+  <!-- Row label -->
+  <rect x="0" y="128" width="800" height="62" fill="white"/>
+  <text x="14" y="147" fill="#475569" font-size="11" font-weight="600" text-transform="uppercase" letter-spacing="0.5">WAS ES ZEIGT</text>
+
+  <!-- Analytics: Was es zeigt -->
+  <rect x="28" y="140" width="224" height="38" fill="#dbeafe" rx="6"/>
+  <text x="140" y="163" text-anchor="middle" fill="#1e40af" font-size="13" font-weight="600">Zahlen &amp; Trends</text>
+
+  <!-- Session Replay: Was es zeigt -->
+  <rect x="288" y="140" width="224" height="38" fill="#d1fae5" rx="6"/>
+  <text x="400" y="156" text-anchor="middle" fill="#065f46" font-size="13" font-weight="600">Einzelne</text>
+  <text x="400" y="172" text-anchor="middle" fill="#065f46" font-size="13" font-weight="600">Nutzersessions</text>
+
+  <!-- Heatmap: Was es zeigt -->
+  <rect x="548" y="140" width="224" height="38" fill="#ffedd5" rx="6"/>
+  <text x="660" y="156" text-anchor="middle" fill="#9a3412" font-size="13" font-weight="600">Aggregiertes</text>
+  <text x="660" y="172" text-anchor="middle" fill="#9a3412" font-size="13" font-weight="600">Nutzungsverhalten</text>
+
+  <!-- Row 2: Was es NICHT zeigt -->
+  <rect x="0" y="190" width="800" height="62" fill="#f8fafc"/>
+  <text x="14" y="209" fill="#475569" font-size="11" font-weight="600" letter-spacing="0.5">WAS ES NICHT ZEIGT</text>
+
+  <!-- Analytics: Was es nicht zeigt -->
+  <rect x="28" y="202" width="224" height="38" fill="#dbeafe" rx="6"/>
+  <text x="140" y="218" text-anchor="middle" fill="#1e40af" font-size="13">Warum etwas</text>
+  <text x="140" y="234" text-anchor="middle" fill="#1e40af" font-size="13">passiert</text>
+
+  <!-- Session Replay: Was es nicht zeigt -->
+  <rect x="288" y="202" width="224" height="38" fill="#d1fae5" rx="6"/>
+  <text x="400" y="218" text-anchor="middle" fill="#065f46" font-size="13">Statistische</text>
+  <text x="400" y="234" text-anchor="middle" fill="#065f46" font-size="13">Aussagen</text>
+
+  <!-- Heatmap: Was es nicht zeigt -->
+  <rect x="548" y="202" width="224" height="38" fill="#ffedd5" rx="6"/>
+  <text x="660" y="218" text-anchor="middle" fill="#9a3412" font-size="13">Zeitlicher</text>
+  <text x="660" y="234" text-anchor="middle" fill="#9a3412" font-size="13">Verlauf</text>
+
+  <!-- Row 3: Am besten für -->
+  <rect x="0" y="252" width="800" height="62" fill="white"/>
+  <text x="14" y="271" fill="#475569" font-size="11" font-weight="600" letter-spacing="0.5">AM BESTEN FÜR</text>
+
+  <!-- Analytics: Am besten für -->
+  <rect x="28" y="264" width="224" height="38" fill="#2563eb" rx="6"/>
+  <text x="140" y="287" text-anchor="middle" fill="white" font-size="13" font-weight="600">KPI-Monitoring</text>
+
+  <!-- Session Replay: Am besten für -->
+  <rect x="288" y="264" width="224" height="38" fill="#10b981" rx="6"/>
+  <text x="400" y="280" text-anchor="middle" fill="white" font-size="13" font-weight="600">Bug-Suche &amp;</text>
+  <text x="400" y="296" text-anchor="middle" fill="white" font-size="13" font-weight="600">UX-Probleme</text>
+
+  <!-- Heatmap: Am besten für -->
+  <rect x="548" y="264" width="224" height="38" fill="#f97316" rx="6"/>
+  <text x="660" y="287" text-anchor="middle" fill="white" font-size="13" font-weight="600">Screen-Optimierung</text>
+
+  <!-- Row 4: Datenmenge -->
+  <rect x="0" y="314" width="800" height="54" fill="#f8fafc" rx="0"/>
+  <rect x="0" y="354" width="800" height="14" fill="#f8fafc" rx="12"/>
+  <text x="14" y="333" fill="#475569" font-size="11" font-weight="600" letter-spacing="0.5">DATENMENGE</text>
+
+  <!-- Analytics -->
+  <text x="140" y="351" text-anchor="middle" fill="#2563eb" font-size="13" font-weight="600">Alle Nutzer</text>
+
+  <!-- Session Replay -->
+  <text x="400" y="351" text-anchor="middle" fill="#10b981" font-size="13" font-weight="600">Stichprobe</text>
+
+  <!-- Heatmap -->
+  <text x="660" y="351" text-anchor="middle" fill="#f97316" font-size="13" font-weight="600">Alle Nutzer</text>
+
+  <!-- Column dividers -->
+  <line x1="268" y1="68" x2="268" y2="370" stroke="#e2e8f0" stroke-width="1.5"/>
+  <line x1="528" y1="68" x2="528" y2="370" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <!-- Bottom border -->
+  <rect x="0" y="368" width="800" height="12" fill="#f8fafc" rx="12"/>
+</svg>
