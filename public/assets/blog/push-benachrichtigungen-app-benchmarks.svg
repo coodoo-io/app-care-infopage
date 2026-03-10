@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" role="img" aria-label="Push-Benachrichtigungen: Opt-in-Rate und Öffnungsrate nach App-Kategorie" font-family="system-ui, sans-serif">
+  <title>Push-Benachrichtigungen Benchmarks: Opt-in und Öffnungsrate</title>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="#ffffff" rx="12"/>
+
+  <!-- Chart title -->
+  <text x="400" y="28" text-anchor="middle" font-size="14" font-weight="600" fill="#1e293b">Opt-in-Rate und Öffnungsrate nach App-Kategorie</text>
+  <text x="400" y="44" text-anchor="middle" font-size="11" fill="#94a3b8">Benchmark-Richtwerte — iOS Opt-in-Rate und Ø Öffnungsrate je Kategorie</text>
+
+  <!--
+    Chart area: left=170, top=65, right=750, bottom=340
+    5 category groups, each group uses 2 bars side by side
+    Group height spacing: (340-65) / 5 = 55px per group
+    Group centers at: 65+27=92, 92+55=147, 147+55=202, 202+55=257, 257+55=312
+
+    Bars: 20px height each, 4px gap between pair
+    Bar 1 (Opt-in) top = center - 12, bottom = center + 2  (height 20)
+    Bar 2 (Öffnungsrate) top = center + 4, bottom = center + 20 (height 16)
+
+    X scale: 0% at x=170, 100% at x=750 → width=580px, 1%=5.8px
+    For Opt-in (max ~60%): x_end = 170 + value * 5.8
+    For Öffnungsrate (max ~8%): same scale — too squished. Use dual scale.
+
+    Use two sub-scales:
+    - Left half (170–460): Opt-in 0–50% → 1%=5.8px (range ~60%, width=348px)
+    - Right half: separate axis
+
+    Better: single axis 0–70% for Opt-in, secondary axis 0–10% for Öffnungsrate
+    Draw Öffnungsrate bars scaled ×7 to visually compare on same chart width.
+
+    Scale: x = 170 + value * 5.8  (for values 0–100% where 100% → 750)
+    Opt-in values: News=60%, E-Com=45%, Finance=55%, Gaming=40%, Health=50%
+    x ends: 60→518, 45→431, 55→489, 40→402, 50→460
+
+    Öffnungsrate values: News=8%, E-Com=5%, Finance=7%, Gaming=4%, Health=6%
+    To make them visible on same 0–100% scale, multiply by 7:
+    Scaled: News=56%, E-Com=35%, Finance=49%, Gaming=28%, Health=42%
+    x ends: 56→495, 35→373, 49→454, 28→332, 42→414
+  -->
+
+  <!-- Y axis line -->
+  <line x1="170" y1="60" x2="170" y2="345" stroke="#cbd5e1" stroke-width="1"/>
+
+  <!-- X axis grid lines (0 to 70%, step 10%) -->
+  <!-- x for 10% = 170+58=228, 20%=286, 30%=344, 40%=402, 50%=460, 60%=518, 70%=576 -->
+  <line x1="228" y1="60" x2="228" y2="345" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="4,4"/>
+  <line x1="286" y1="60" x2="286" y2="345" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="4,4"/>
+  <line x1="344" y1="60" x2="344" y2="345" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="4,4"/>
+  <line x1="402" y1="60" x2="402" y2="345" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="4,4"/>
+  <line x1="460" y1="60" x2="460" y2="345" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="4,4"/>
+  <line x1="518" y1="60" x2="518" y2="345" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="4,4"/>
+  <line x1="576" y1="60" x2="576" y2="345" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="4,4"/>
+
+  <!-- X axis labels (Opt-in scale) -->
+  <text x="170" y="360" text-anchor="middle" font-size="10" fill="#64748b">0 %</text>
+  <text x="228" y="360" text-anchor="middle" font-size="10" fill="#64748b">10 %</text>
+  <text x="286" y="360" text-anchor="middle" font-size="10" fill="#64748b">20 %</text>
+  <text x="344" y="360" text-anchor="middle" font-size="10" fill="#64748b">30 %</text>
+  <text x="402" y="360" text-anchor="middle" font-size="10" fill="#64748b">40 %</text>
+  <text x="460" y="360" text-anchor="middle" font-size="10" fill="#64748b">50 %</text>
+  <text x="518" y="360" text-anchor="middle" font-size="10" fill="#64748b">60 %</text>
+  <text x="576" y="360" text-anchor="middle" font-size="10" fill="#64748b">70 %</text>
+
+  <!-- X axis label -->
+  <text x="373" y="378" text-anchor="middle" font-size="11" fill="#475569">Opt-in-Rate (obere Balken) · Öffnungsrate skaliert ×7 (untere Balken)</text>
+
+  <!-- ======= ROW 1: News / Medien ======= -->
+  <!-- Group center y = 92 -->
+  <text x="162" y="88" text-anchor="end" font-size="12" fill="#334155">News</text>
+  <!-- Opt-in 60% → x_end=518 -->
+  <rect x="170" y="72" width="348" height="18" fill="#2563eb" rx="3"/>
+  <text x="524" y="85" font-size="11" font-weight="600" fill="#1d4ed8">60 %</text>
+  <!-- Öffnungsrate 8% scaled ×7=56% → x_end=495 -->
+  <rect x="170" y="93" width="325" height="14" fill="#10b981" rx="3"/>
+  <text x="501" y="104" font-size="11" font-weight="600" fill="#065f46">8 %</text>
+
+  <!-- ======= ROW 2: Finance ======= -->
+  <!-- Group center y = 147 -->
+  <text x="162" y="143" text-anchor="end" font-size="12" fill="#334155">Finance</text>
+  <!-- Opt-in 55% → 170+319=489 -->
+  <rect x="170" y="127" width="319" height="18" fill="#2563eb" rx="3"/>
+  <text x="495" y="140" font-size="11" font-weight="600" fill="#1d4ed8">55 %</text>
+  <!-- Öffnungsrate 7% scaled ×7=49% → 170+284=454 -->
+  <rect x="170" y="148" width="284" height="14" fill="#10b981" rx="3"/>
+  <text x="460" y="159" font-size="11" font-weight="600" fill="#065f46">7 %</text>
+
+  <!-- ======= ROW 3: Health ======= -->
+  <!-- Group center y = 202 -->
+  <text x="162" y="198" text-anchor="end" font-size="12" fill="#334155">Health</text>
+  <!-- Opt-in 50% → 170+290=460 -->
+  <rect x="170" y="182" width="290" height="18" fill="#2563eb" rx="3"/>
+  <text x="466" y="195" font-size="11" font-weight="600" fill="#1d4ed8">50 %</text>
+  <!-- Öffnungsrate 6% scaled ×7=42% → 170+244=414 -->
+  <rect x="170" y="203" width="244" height="14" fill="#10b981" rx="3"/>
+  <text x="420" y="214" font-size="11" font-weight="600" fill="#065f46">6 %</text>
+
+  <!-- ======= ROW 4: E-Commerce ======= -->
+  <!-- Group center y = 257 -->
+  <text x="162" y="253" text-anchor="end" font-size="12" fill="#334155">E-Commerce</text>
+  <!-- Opt-in 45% → 170+261=431 -->
+  <rect x="170" y="237" width="261" height="18" fill="#2563eb" rx="3"/>
+  <text x="437" y="250" font-size="11" font-weight="600" fill="#1d4ed8">45 %</text>
+  <!-- Öffnungsrate 5% scaled ×7=35% → 170+203=373 -->
+  <rect x="170" y="258" width="203" height="14" fill="#10b981" rx="3"/>
+  <text x="379" y="269" font-size="11" font-weight="600" fill="#065f46">5 %</text>
+
+  <!-- ======= ROW 5: Gaming ======= -->
+  <!-- Group center y = 312 -->
+  <text x="162" y="308" text-anchor="end" font-size="12" fill="#334155">Gaming</text>
+  <!-- Opt-in 40% → 170+232=402 -->
+  <rect x="170" y="292" width="232" height="18" fill="#2563eb" rx="3"/>
+  <text x="408" y="305" font-size="11" font-weight="600" fill="#1d4ed8">40 %</text>
+  <!-- Öffnungsrate 4% scaled ×7=28% → 170+162=332 -->
+  <rect x="170" y="313" width="162" height="14" fill="#10b981" rx="3"/>
+  <text x="338" y="324" font-size="11" font-weight="600" fill="#065f46">4 %</text>
+
+  <!-- Legend -->
+  <rect x="530" y="290" width="14" height="12" fill="#2563eb" rx="2"/>
+  <text x="549" y="301" font-size="11" fill="#334155">Opt-in-Rate (iOS)</text>
+  <rect x="530" y="310" width="14" height="10" fill="#10b981" rx="2"/>
+  <text x="549" y="320" font-size="11" fill="#334155">Öffnungsrate</text>
+</svg>

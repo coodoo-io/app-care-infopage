@@ -1,0 +1,93 @@
+<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Testbare App Store Elemente nach Einfluss auf die Conversion Rate" font-family="system-ui, sans-serif">
+  <title>App Store A/B-Test: Testbare Elemente und ihr Conversion-Einfluss</title>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="#f8fafc" rx="12"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="800" height="56" fill="#172554" rx="12"/>
+  <rect x="0" y="44" width="800" height="12" fill="#172554"/>
+  <text x="400" y="34" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" letter-spacing="0.3">Testbare App Store Elemente — Einfluss auf die Conversion Rate</text>
+
+  <!-- Legend -->
+  <rect x="490" y="70" width="14" height="14" fill="#2563eb" rx="2"/>
+  <text x="509" y="82" font-size="11" fill="#475569">sehr hoch / hoch</text>
+  <rect x="590" y="70" width="14" height="14" fill="#10b981" rx="2"/>
+  <text x="609" y="82" font-size="11" fill="#475569">mittel–hoch</text>
+  <rect x="680" y="70" width="14" height="14" fill="#f97316" rx="2"/>
+  <text x="699" y="82" font-size="11" fill="#475569">mittel / niedrig</text>
+
+  <!-- Row backgrounds alternating -->
+  <rect x="20" y="100" width="760" height="38" fill="#ffffff" rx="6"/>
+  <rect x="20" y="144" width="760" height="38" fill="#f1f5f9" rx="6"/>
+  <rect x="20" y="188" width="760" height="38" fill="#ffffff" rx="6"/>
+  <rect x="20" y="232" width="760" height="38" fill="#f1f5f9" rx="6"/>
+  <rect x="20" y="276" width="760" height="38" fill="#ffffff" rx="6"/>
+  <rect x="20" y="320" width="760" height="38" fill="#f1f5f9" rx="6"/>
+  <rect x="20" y="364" width="760" height="38" fill="#ffffff" rx="6"/>
+
+  <!-- Rank badges + labels -->
+  <!-- 1. Screenshot 1 -->
+  <rect x="28" y="109" width="22" height="22" fill="#2563eb" rx="4"/>
+  <text x="39" y="124" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">1</text>
+  <text x="62" y="124" font-size="13" font-weight="600" fill="#1e293b">Screenshot 1 (erster Screenshot)</text>
+  <text x="62" y="135" font-size="10" fill="#64748b">Headline, Bildsprache, Farbton — in Suchergebnissen sichtbar</text>
+  <!-- Bar -->
+  <rect x="360" y="112" width="370" height="16" fill="#e2e8f0" rx="8"/>
+  <rect x="360" y="112" width="340" height="16" fill="#2563eb" rx="8"/>
+  <text x="706" y="124" font-size="11" font-weight="700" fill="#1e40af">Sehr hoch</text>
+
+  <!-- 2. App-Icon -->
+  <rect x="28" y="153" width="22" height="22" fill="#2563eb" rx="4"/>
+  <text x="39" y="168" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">2</text>
+  <text x="62" y="168" font-size="13" font-weight="600" fill="#1e293b">App-Icon</text>
+  <text x="62" y="179" font-size="10" fill="#64748b">Motiv, Farbgebung, Komplexität — immer in Suchergebnissen</text>
+  <rect x="360" y="156" width="370" height="16" fill="#e2e8f0" rx="8"/>
+  <rect x="360" y="156" width="290" height="16" fill="#2563eb" rx="8"/>
+  <text x="706" y="168" font-size="11" font-weight="700" fill="#1e40af">Hoch</text>
+
+  <!-- 3. Screenshot-Reihenfolge -->
+  <rect x="28" y="197" width="22" height="22" fill="#2563eb" rx="4"/>
+  <text x="39" y="212" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">3</text>
+  <text x="62" y="212" font-size="13" font-weight="600" fill="#1e293b">Screenshot-Reihenfolge</text>
+  <text x="62" y="223" font-size="10" fill="#64748b">Welche Features kommen zuerst? Kein Asset-Aufwand</text>
+  <rect x="360" y="200" width="370" height="16" fill="#e2e8f0" rx="8"/>
+  <rect x="360" y="200" width="255" height="16" fill="#2563eb" rx="8"/>
+  <text x="706" y="212" font-size="11" font-weight="700" fill="#1e40af">Hoch</text>
+
+  <!-- 4. Preview-Video -->
+  <rect x="28" y="241" width="22" height="22" fill="#10b981" rx="4"/>
+  <text x="39" y="256" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">4</text>
+  <text x="62" y="256" font-size="13" font-weight="600" fill="#1e293b">Preview-Video</text>
+  <text x="62" y="267" font-size="10" fill="#64748b">Wird vor Screenshots angezeigt — hoher Produktionsaufwand</text>
+  <rect x="360" y="244" width="370" height="16" fill="#e2e8f0" rx="8"/>
+  <rect x="360" y="244" width="210" height="16" fill="#10b981" rx="8"/>
+  <text x="706" y="256" font-size="11" font-weight="700" fill="#047857">Mittel–hoch</text>
+
+  <!-- 5. App-Name/Untertitel -->
+  <rect x="28" y="285" width="22" height="22" fill="#10b981" rx="4"/>
+  <text x="39" y="300" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">5</text>
+  <text x="62" y="300" font-size="13" font-weight="600" fill="#1e293b">App-Name / Untertitel</text>
+  <text x="62" y="311" font-size="10" fill="#64748b">Eingeschränkt testbar (iOS: Promotional Text; Play: Kurztitel)</text>
+  <rect x="360" y="288" width="370" height="16" fill="#e2e8f0" rx="8"/>
+  <rect x="360" y="288" width="160" height="16" fill="#10b981" rx="8"/>
+  <text x="706" y="300" font-size="11" font-weight="700" fill="#047857">Mittel</text>
+
+  <!-- 6. Feature Graphic -->
+  <rect x="28" y="329" width="22" height="22" fill="#f97316" rx="4"/>
+  <text x="39" y="344" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">6</text>
+  <text x="62" y="344" font-size="13" font-weight="600" fill="#1e293b">Feature Graphic (Android)</text>
+  <text x="62" y="355" font-size="10" fill="#64748b">1024 × 500 px Banner oben auf der App-Seite im Play Store</text>
+  <rect x="360" y="332" width="370" height="16" fill="#e2e8f0" rx="8"/>
+  <rect x="360" y="332" width="130" height="16" fill="#f97316" rx="8"/>
+  <text x="706" y="344" font-size="11" font-weight="700" fill="#c2410c">Mittel</text>
+
+  <!-- 7. Kurzbeschreibung -->
+  <rect x="28" y="373" width="22" height="22" fill="#f97316" rx="4"/>
+  <text x="39" y="388" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">7</text>
+  <text x="62" y="388" font-size="13" font-weight="600" fill="#1e293b">Kurzbeschreibung / Promotional Text</text>
+  <text x="62" y="399" font-size="10" fill="#64748b">Geringer visueller Effekt — lohnt sich bei hohem Traffic</text>
+  <rect x="360" y="376" width="370" height="16" fill="#e2e8f0" rx="8"/>
+  <rect x="360" y="376" width="80" height="16" fill="#f97316" rx="8"/>
+  <text x="706" y="388" font-size="11" font-weight="700" fill="#c2410c">Niedrig–mittel</text>
+</svg>

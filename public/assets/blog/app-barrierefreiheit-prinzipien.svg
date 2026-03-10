@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" role="img" aria-label="Die vier WCAG-Prinzipien für App-Barrierefreiheit: Wahrnehmbar, Bedienbar, Verständlich, Robust" font-family="system-ui, sans-serif">
+  <title>App-Barrierefreiheit: Die vier WCAG-Prinzipien</title>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="#f8fafc" rx="12"/>
+
+  <!-- Header -->
+  <rect width="800" height="64" fill="#172554" rx="12"/>
+  <rect y="52" width="800" height="12" fill="#172554"/>
+  <text x="400" y="38" text-anchor="middle" fill="white" font-size="17" font-weight="700">Die vier WCAG-Prinzipien für App-Barrierefreiheit</text>
+
+  <!-- Subtitle -->
+  <text x="400" y="88" text-anchor="middle" fill="#64748b" font-size="13">WCAG 2.1 Level AA — der gesetzliche Mindeststandard seit Juni 2025</text>
+
+  <!-- === TILE 1: Wahrnehmbar === -->
+  <rect x="30" y="108" width="170" height="264" rx="10" fill="white" stroke="#2563eb" stroke-width="2"/>
+
+  <!-- Accent bar -->
+  <rect x="30" y="108" width="170" height="6" fill="#2563eb" rx="10"/>
+  <rect x="30" y="110" width="170" height="4" fill="#2563eb"/>
+
+  <!-- Icon circle -->
+  <circle cx="115" cy="158" r="26" fill="#eff6ff"/>
+  <!-- Eye icon simplified -->
+  <ellipse cx="115" cy="158" rx="14" ry="9" fill="none" stroke="#2563eb" stroke-width="2"/>
+  <circle cx="115" cy="158" r="4" fill="#2563eb"/>
+
+  <!-- Title -->
+  <text x="115" y="204" text-anchor="middle" fill="#2563eb" font-size="14" font-weight="700">Wahrnehmbar</text>
+  <text x="115" y="220" text-anchor="middle" fill="#64748b" font-size="11">Perceivable</text>
+
+  <!-- Divider -->
+  <line x1="50" y1="232" x2="180" y2="232" stroke="#e2e8f0" stroke-width="1"/>
+
+  <!-- Items -->
+  <rect x="50" y="244" width="7" height="7" rx="1" fill="#2563eb"/>
+  <text x="64" y="252" fill="#1e293b" font-size="11">Alt-Texte für Bilder</text>
+
+  <rect x="50" y="262" width="7" height="7" rx="1" fill="#2563eb"/>
+  <text x="64" y="270" fill="#1e293b" font-size="11">Kontrast min. 4,5:1</text>
+
+  <rect x="50" y="280" width="7" height="7" rx="1" fill="#2563eb"/>
+  <text x="64" y="288" fill="#1e293b" font-size="11">Captions für Videos</text>
+
+  <rect x="50" y="298" width="7" height="7" rx="1" fill="#2563eb"/>
+  <text x="64" y="306" fill="#1e293b" font-size="11">Text skalierbar 200 %</text>
+
+  <rect x="50" y="316" width="7" height="7" rx="1" fill="#2563eb"/>
+  <text x="64" y="324" fill="#1e293b" font-size="11">Kein Farbe-only-Signal</text>
+
+  <!-- WCAG Level badge -->
+  <rect x="60" y="346" width="110" height="18" rx="9" fill="#eff6ff"/>
+  <text x="115" y="359" text-anchor="middle" fill="#2563eb" font-size="10" font-weight="600">Prinzip 1 von 4</text>
+
+  <!-- === TILE 2: Bedienbar === -->
+  <rect x="215" y="108" width="170" height="264" rx="10" fill="white" stroke="#10b981" stroke-width="2"/>
+  <rect x="215" y="108" width="170" height="6" fill="#10b981" rx="10"/>
+  <rect x="215" y="110" width="170" height="4" fill="#10b981"/>
+
+  <!-- Hand/touch icon -->
+  <circle cx="300" cy="158" r="26" fill="#ecfdf5"/>
+  <!-- Finger pointer simplified -->
+  <rect x="294" y="144" width="8" height="20" rx="4" fill="#10b981"/>
+  <rect x="284" y="154" width="8" height="16" rx="4" fill="#10b981"/>
+  <rect x="304" y="156" width="8" height="14" rx="4" fill="#10b981"/>
+
+  <text x="300" y="204" text-anchor="middle" fill="#10b981" font-size="14" font-weight="700">Bedienbar</text>
+  <text x="300" y="220" text-anchor="middle" fill="#64748b" font-size="11">Operable</text>
+
+  <line x1="235" y1="232" x2="365" y2="232" stroke="#e2e8f0" stroke-width="1"/>
+
+  <rect x="235" y="244" width="7" height="7" rx="1" fill="#10b981"/>
+  <text x="249" y="252" fill="#1e293b" font-size="11">Touch-Targets 44 × 44 pt</text>
+
+  <rect x="235" y="262" width="7" height="7" rx="1" fill="#10b981"/>
+  <text x="249" y="270" fill="#1e293b" font-size="11">Keyboard-Navigation</text>
+
+  <rect x="235" y="280" width="7" height="7" rx="1" fill="#10b981"/>
+  <text x="249" y="288" fill="#1e293b" font-size="11">Switch-Access-Support</text>
+
+  <rect x="235" y="298" width="7" height="7" rx="1" fill="#10b981"/>
+  <text x="249" y="306" fill="#1e293b" font-size="11">Keine Zeitlimits</text>
+
+  <rect x="235" y="316" width="7" height="7" rx="1" fill="#10b981"/>
+  <text x="249" y="324" fill="#1e293b" font-size="11">Kein Flackern (&gt; 3 Hz)</text>
+
+  <rect x="245" y="346" width="110" height="18" rx="9" fill="#ecfdf5"/>
+  <text x="300" y="359" text-anchor="middle" fill="#10b981" font-size="10" font-weight="600">Prinzip 2 von 4</text>
+
+  <!-- === TILE 3: Verständlich === -->
+  <rect x="400" y="108" width="170" height="264" rx="10" fill="white" stroke="#f97316" stroke-width="2"/>
+  <rect x="400" y="108" width="170" height="6" fill="#f97316" rx="10"/>
+  <rect x="400" y="110" width="170" height="4" fill="#f97316"/>
+
+  <!-- Chat bubble icon simplified -->
+  <circle cx="485" cy="158" r="26" fill="#fff7ed"/>
+  <rect x="471" y="145" width="28" height="20" rx="5" fill="#f97316"/>
+  <polygon points="475,165 471,173 481,165" fill="#f97316"/>
+  <rect x="476" y="150" width="14" height="3" rx="1" fill="white"/>
+  <rect x="476" y="156" width="10" height="3" rx="1" fill="white"/>
+
+  <text x="485" y="204" text-anchor="middle" fill="#f97316" font-size="14" font-weight="700">Verständlich</text>
+  <text x="485" y="220" text-anchor="middle" fill="#64748b" font-size="11">Understandable</text>
+
+  <line x1="420" y1="232" x2="550" y2="232" stroke="#e2e8f0" stroke-width="1"/>
+
+  <rect x="420" y="244" width="7" height="7" rx="1" fill="#f97316"/>
+  <text x="434" y="252" fill="#1e293b" font-size="11">Klare, einfache Sprache</text>
+
+  <rect x="420" y="262" width="7" height="7" rx="1" fill="#f97316"/>
+  <text x="434" y="270" fill="#1e293b" font-size="11">Konsistente Navigation</text>
+
+  <rect x="420" y="280" width="7" height="7" rx="1" fill="#f97316"/>
+  <text x="434" y="288" fill="#1e293b" font-size="11">Sprechende Fehlerhinweise</text>
+
+  <rect x="420" y="298" width="7" height="7" rx="1" fill="#f97316"/>
+  <text x="434" y="306" fill="#1e293b" font-size="11">Formulare prüfbar</text>
+
+  <rect x="420" y="316" width="7" height="7" rx="1" fill="#f97316"/>
+  <text x="434" y="324" fill="#1e293b" font-size="11">Autocomplete-Support</text>
+
+  <rect x="430" y="346" width="110" height="18" rx="9" fill="#fff7ed"/>
+  <text x="485" y="359" text-anchor="middle" fill="#f97316" font-size="10" font-weight="600">Prinzip 3 von 4</text>
+
+  <!-- === TILE 4: Robust === -->
+  <rect x="585" y="108" width="185" height="264" rx="10" fill="white" stroke="#8b5cf6" stroke-width="2"/>
+  <rect x="585" y="108" width="185" height="6" fill="#8b5cf6" rx="10"/>
+  <rect x="585" y="110" width="185" height="4" fill="#8b5cf6"/>
+
+  <!-- Shield icon simplified -->
+  <circle cx="677" cy="158" r="26" fill="#f5f3ff"/>
+  <path d="M677 134 L694 141 L694 155 Q694 167 677 174 Q660 167 660 155 L660 141 Z" fill="#8b5cf6"/>
+  <path d="M670 155 L675 161 L684 150" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <text x="677" y="204" text-anchor="middle" fill="#8b5cf6" font-size="14" font-weight="700">Robust</text>
+  <text x="677" y="220" text-anchor="middle" fill="#64748b" font-size="11">Robust</text>
+
+  <line x1="605" y1="232" x2="750" y2="232" stroke="#e2e8f0" stroke-width="1"/>
+
+  <rect x="605" y="244" width="7" height="7" rx="1" fill="#8b5cf6"/>
+  <text x="619" y="252" fill="#1e293b" font-size="11">Screen-Reader-Kompatibilität</text>
+
+  <rect x="605" y="262" width="7" height="7" rx="1" fill="#8b5cf6"/>
+  <text x="619" y="270" fill="#1e293b" font-size="11">Native Accessibility-APIs</text>
+
+  <rect x="605" y="280" width="7" height="7" rx="1" fill="#8b5cf6"/>
+  <text x="619" y="288" fill="#1e293b" font-size="11">Semantische Struktur</text>
+
+  <rect x="605" y="298" width="7" height="7" rx="1" fill="#8b5cf6"/>
+  <text x="619" y="306" fill="#1e293b" font-size="11">Zustandsinformationen</text>
+
+  <rect x="605" y="316" width="7" height="7" rx="1" fill="#8b5cf6"/>
+  <text x="619" y="324" fill="#1e293b" font-size="11">Assistive Technologies</text>
+
+  <rect x="622" y="346" width="110" height="18" rx="9" fill="#f5f3ff"/>
+  <text x="677" y="359" text-anchor="middle" fill="#8b5cf6" font-size="10" font-weight="600">Prinzip 4 von 4</text>
+
+  <!-- Bottom note -->
+  <text x="400" y="390" text-anchor="middle" fill="#94a3b8" font-size="11">Quelle: W3C Web Content Accessibility Guidelines (WCAG) 2.1 — Mindeststandard: Level AA</text>
+</svg>

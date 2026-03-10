@@ -1,0 +1,170 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" role="img" aria-label="Push-Benachrichtigungs-Timing: Beste Sendezeiten nach Wochentag und Uhrzeit" font-family="system-ui, sans-serif">
+  <title>Push-Benachrichtigungen Timing: Beste Sendezeiten nach Wochentag und Uhrzeit</title>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="#ffffff" rx="12"/>
+
+  <!-- Title -->
+  <text x="400" y="28" text-anchor="middle" font-size="14" font-weight="600" fill="#1e293b">Beste Sendezeiten für Push-Benachrichtigungen</text>
+  <text x="400" y="44" text-anchor="middle" font-size="11" fill="#94a3b8">Heatmap: Grün = gut · Orange = mittel · Rot = vermeiden</text>
+
+  <!--
+    Grid layout:
+    Rows = 7 Wochentage (Mo–So)
+    Cols = 4 Tageszeiten: Morgen 7–9h, Mittag 12–14h, Abend 18–21h, Nacht 22–6h
+
+    Chart area:
+    - Row labels: x=10–130
+    - Col headers: centered in each cell
+    - Grid starts at x=140, ends at x=780
+    - Col width = (780-140)/4 = 160px
+    - Col centers: 140+80=220, 380, 540, 700
+
+    - Grid top: y=65, bottom: y=360
+    - Row height = (360-65)/7 = ~42px
+    - Row centers: 65+21=86, 128, 170, 212, 254, 296, 338
+
+    Cell inner rect: width=150, height=34, rx=6
+    Cell x start = col_center - 75
+    Cell y start = row_center - 17
+
+    Colors:
+    - Gut (grün): fill=#d1fae5, stroke=#10b981, text=#065f46
+    - Mittel (orange): fill=#ffedd5, stroke=#f97316, text=#7c2d12
+    - Schlecht (rot): fill=#fee2e2, stroke=#ef4444, text=#7f1d1d
+
+    Timing matrix (rows=days, cols=Morgen/Mittag/Abend/Nacht):
+    Mo: gut / mittel / gut / schlecht
+    Di: gut / mittel / gut / schlecht
+    Mi: gut / mittel / gut / schlecht
+    Do: gut / mittel / gut / schlecht
+    Fr: gut / gut   / gut / schlecht
+    Sa: mittel / gut / mittel / schlecht
+    So: mittel / gut / mittel / schlecht
+  -->
+
+  <!-- Column headers -->
+  <text x="220" y="60" text-anchor="middle" font-size="12" font-weight="600" fill="#1e293b">Morgen</text>
+  <text x="220" y="72" text-anchor="middle" font-size="10" fill="#64748b">7–9 Uhr</text>
+  <text x="380" y="60" text-anchor="middle" font-size="12" font-weight="600" fill="#1e293b">Mittag</text>
+  <text x="380" y="72" text-anchor="middle" font-size="10" fill="#64748b">12–14 Uhr</text>
+  <text x="540" y="60" text-anchor="middle" font-size="12" font-weight="600" fill="#1e293b">Abend</text>
+  <text x="540" y="72" text-anchor="middle" font-size="10" fill="#64748b">18–21 Uhr</text>
+  <text x="700" y="60" text-anchor="middle" font-size="12" font-weight="600" fill="#1e293b">Nacht</text>
+  <text x="700" y="72" text-anchor="middle" font-size="10" fill="#64748b">22–6 Uhr</text>
+
+  <!-- Row labels -->
+  <text x="128" y="91" text-anchor="end" font-size="12" fill="#334155">Montag</text>
+  <text x="128" y="133" text-anchor="end" font-size="12" fill="#334155">Dienstag</text>
+  <text x="128" y="175" text-anchor="end" font-size="12" fill="#334155">Mittwoch</text>
+  <text x="128" y="217" text-anchor="end" font-size="12" fill="#334155">Donnerstag</text>
+  <text x="128" y="259" text-anchor="end" font-size="12" fill="#334155">Freitag</text>
+  <text x="128" y="301" text-anchor="end" font-size="12" fill="#334155">Samstag</text>
+  <text x="128" y="343" text-anchor="end" font-size="12" fill="#334155">Sonntag</text>
+
+  <!-- ===== ROW 1: Montag (center y=86) ===== -->
+  <!-- Morgen: gut -->
+  <rect x="145" y="74" width="150" height="28" fill="#d1fae5" stroke="#10b981" stroke-width="1.5" rx="5"/>
+  <text x="220" y="92" text-anchor="middle" font-size="11" font-weight="600" fill="#065f46">Gut</text>
+  <!-- Mittag: mittel -->
+  <rect x="305" y="74" width="150" height="28" fill="#ffedd5" stroke="#f97316" stroke-width="1.5" rx="5"/>
+  <text x="380" y="92" text-anchor="middle" font-size="11" font-weight="600" fill="#7c2d12">Mittel</text>
+  <!-- Abend: gut -->
+  <rect x="465" y="74" width="150" height="28" fill="#d1fae5" stroke="#10b981" stroke-width="1.5" rx="5"/>
+  <text x="540" y="92" text-anchor="middle" font-size="11" font-weight="600" fill="#065f46">Gut</text>
+  <!-- Nacht: schlecht -->
+  <rect x="625" y="74" width="150" height="28" fill="#fee2e2" stroke="#ef4444" stroke-width="1.5" rx="5"/>
+  <text x="700" y="92" text-anchor="middle" font-size="11" font-weight="600" fill="#7f1d1d">Vermeiden</text>
+
+  <!-- ===== ROW 2: Dienstag (center y=128) ===== -->
+  <!-- Morgen: gut -->
+  <rect x="145" y="116" width="150" height="28" fill="#d1fae5" stroke="#10b981" stroke-width="1.5" rx="5"/>
+  <text x="220" y="134" text-anchor="middle" font-size="11" font-weight="600" fill="#065f46">Gut</text>
+  <!-- Mittag: mittel -->
+  <rect x="305" y="116" width="150" height="28" fill="#ffedd5" stroke="#f97316" stroke-width="1.5" rx="5"/>
+  <text x="380" y="134" text-anchor="middle" font-size="11" font-weight="600" fill="#7c2d12">Mittel</text>
+  <!-- Abend: gut -->
+  <rect x="465" y="116" width="150" height="28" fill="#d1fae5" stroke="#10b981" stroke-width="1.5" rx="5"/>
+  <text x="540" y="134" text-anchor="middle" font-size="11" font-weight="600" fill="#065f46">Gut</text>
+  <!-- Nacht: schlecht -->
+  <rect x="625" y="116" width="150" height="28" fill="#fee2e2" stroke="#ef4444" stroke-width="1.5" rx="5"/>
+  <text x="700" y="134" text-anchor="middle" font-size="11" font-weight="600" fill="#7f1d1d">Vermeiden</text>
+
+  <!-- ===== ROW 3: Mittwoch (center y=170) ===== -->
+  <!-- Morgen: gut -->
+  <rect x="145" y="158" width="150" height="28" fill="#d1fae5" stroke="#10b981" stroke-width="1.5" rx="5"/>
+  <text x="220" y="176" text-anchor="middle" font-size="11" font-weight="600" fill="#065f46">Gut</text>
+  <!-- Mittag: mittel -->
+  <rect x="305" y="158" width="150" height="28" fill="#ffedd5" stroke="#f97316" stroke-width="1.5" rx="5"/>
+  <text x="380" y="176" text-anchor="middle" font-size="11" font-weight="600" fill="#7c2d12">Mittel</text>
+  <!-- Abend: gut -->
+  <rect x="465" y="158" width="150" height="28" fill="#d1fae5" stroke="#10b981" stroke-width="1.5" rx="5"/>
+  <text x="540" y="176" text-anchor="middle" font-size="11" font-weight="600" fill="#065f46">Gut</text>
+  <!-- Nacht: schlecht -->
+  <rect x="625" y="158" width="150" height="28" fill="#fee2e2" stroke="#ef4444" stroke-width="1.5" rx="5"/>
+  <text x="700" y="176" text-anchor="middle" font-size="11" font-weight="600" fill="#7f1d1d">Vermeiden</text>
+
+  <!-- ===== ROW 4: Donnerstag (center y=212) ===== -->
+  <!-- Morgen: gut -->
+  <rect x="145" y="200" width="150" height="28" fill="#d1fae5" stroke="#10b981" stroke-width="1.5" rx="5"/>
+  <text x="220" y="218" text-anchor="middle" font-size="11" font-weight="600" fill="#065f46">Gut</text>
+  <!-- Mittag: mittel -->
+  <rect x="305" y="200" width="150" height="28" fill="#ffedd5" stroke="#f97316" stroke-width="1.5" rx="5"/>
+  <text x="380" y="218" text-anchor="middle" font-size="11" font-weight="600" fill="#7c2d12">Mittel</text>
+  <!-- Abend: gut -->
+  <rect x="465" y="200" width="150" height="28" fill="#d1fae5" stroke="#10b981" stroke-width="1.5" rx="5"/>
+  <text x="540" y="218" text-anchor="middle" font-size="11" font-weight="600" fill="#065f46">Gut</text>
+  <!-- Nacht: schlecht -->
+  <rect x="625" y="200" width="150" height="28" fill="#fee2e2" stroke="#ef4444" stroke-width="1.5" rx="5"/>
+  <text x="700" y="218" text-anchor="middle" font-size="11" font-weight="600" fill="#7f1d1d">Vermeiden</text>
+
+  <!-- ===== ROW 5: Freitag (center y=254) ===== -->
+  <!-- Morgen: gut -->
+  <rect x="145" y="242" width="150" height="28" fill="#d1fae5" stroke="#10b981" stroke-width="1.5" rx="5"/>
+  <text x="220" y="260" text-anchor="middle" font-size="11" font-weight="600" fill="#065f46">Gut</text>
+  <!-- Mittag: gut -->
+  <rect x="305" y="242" width="150" height="28" fill="#d1fae5" stroke="#10b981" stroke-width="1.5" rx="5"/>
+  <text x="380" y="260" text-anchor="middle" font-size="11" font-weight="600" fill="#065f46">Gut</text>
+  <!-- Abend: gut -->
+  <rect x="465" y="242" width="150" height="28" fill="#d1fae5" stroke="#10b981" stroke-width="1.5" rx="5"/>
+  <text x="540" y="260" text-anchor="middle" font-size="11" font-weight="600" fill="#065f46">Gut</text>
+  <!-- Nacht: schlecht -->
+  <rect x="625" y="242" width="150" height="28" fill="#fee2e2" stroke="#ef4444" stroke-width="1.5" rx="5"/>
+  <text x="700" y="260" text-anchor="middle" font-size="11" font-weight="600" fill="#7f1d1d">Vermeiden</text>
+
+  <!-- ===== ROW 6: Samstag (center y=296) ===== -->
+  <!-- Morgen: mittel -->
+  <rect x="145" y="284" width="150" height="28" fill="#ffedd5" stroke="#f97316" stroke-width="1.5" rx="5"/>
+  <text x="220" y="302" text-anchor="middle" font-size="11" font-weight="600" fill="#7c2d12">Mittel</text>
+  <!-- Mittag: gut -->
+  <rect x="305" y="284" width="150" height="28" fill="#d1fae5" stroke="#10b981" stroke-width="1.5" rx="5"/>
+  <text x="380" y="302" text-anchor="middle" font-size="11" font-weight="600" fill="#065f46">Gut</text>
+  <!-- Abend: mittel -->
+  <rect x="465" y="284" width="150" height="28" fill="#ffedd5" stroke="#f97316" stroke-width="1.5" rx="5"/>
+  <text x="540" y="302" text-anchor="middle" font-size="11" font-weight="600" fill="#7c2d12">Mittel</text>
+  <!-- Nacht: schlecht -->
+  <rect x="625" y="284" width="150" height="28" fill="#fee2e2" stroke="#ef4444" stroke-width="1.5" rx="5"/>
+  <text x="700" y="302" text-anchor="middle" font-size="11" font-weight="600" fill="#7f1d1d">Vermeiden</text>
+
+  <!-- ===== ROW 7: Sonntag (center y=338) ===== -->
+  <!-- Morgen: mittel -->
+  <rect x="145" y="326" width="150" height="28" fill="#ffedd5" stroke="#f97316" stroke-width="1.5" rx="5"/>
+  <text x="220" y="344" text-anchor="middle" font-size="11" font-weight="600" fill="#7c2d12">Mittel</text>
+  <!-- Mittag: gut -->
+  <rect x="305" y="326" width="150" height="28" fill="#d1fae5" stroke="#10b981" stroke-width="1.5" rx="5"/>
+  <text x="380" y="344" text-anchor="middle" font-size="11" font-weight="600" fill="#065f46">Gut</text>
+  <!-- Abend: mittel -->
+  <rect x="465" y="326" width="150" height="28" fill="#ffedd5" stroke="#f97316" stroke-width="1.5" rx="5"/>
+  <text x="540" y="344" text-anchor="middle" font-size="11" font-weight="600" fill="#7c2d12">Mittel</text>
+  <!-- Nacht: schlecht -->
+  <rect x="625" y="326" width="150" height="28" fill="#fee2e2" stroke="#ef4444" stroke-width="1.5" rx="5"/>
+  <text x="700" y="344" text-anchor="middle" font-size="11" font-weight="600" fill="#7f1d1d">Vermeiden</text>
+
+  <!-- Legend -->
+  <rect x="148" y="372" width="14" height="12" fill="#d1fae5" stroke="#10b981" stroke-width="1.5" rx="2"/>
+  <text x="167" y="382" font-size="11" fill="#334155">Gut (hohe Öffnungsrate)</text>
+  <rect x="330" y="372" width="14" height="12" fill="#ffedd5" stroke="#f97316" stroke-width="1.5" rx="2"/>
+  <text x="349" y="382" font-size="11" fill="#334155">Mittel</text>
+  <rect x="410" y="372" width="14" height="12" fill="#fee2e2" stroke="#ef4444" stroke-width="1.5" rx="2"/>
+  <text x="429" y="382" font-size="11" fill="#334155">Vermeiden (Opt-out-Risiko)</text>
+</svg>

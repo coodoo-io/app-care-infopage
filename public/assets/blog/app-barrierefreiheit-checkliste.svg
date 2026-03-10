@@ -1,0 +1,161 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="Accessibility-Checkliste für mobile Apps mit den Kategorien Visuell, Interaktion und Screen Reader" font-family="system-ui, sans-serif">
+  <title>Accessibility-Checkliste: Die wichtigsten Prüfpunkte für mobile Apps</title>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="#f8fafc" rx="12"/>
+
+  <!-- Header -->
+  <rect width="800" height="64" fill="#172554" rx="12"/>
+  <rect y="52" width="800" height="12" fill="#172554"/>
+  <text x="400" y="38" text-anchor="middle" fill="white" font-size="17" font-weight="700">Accessibility-Checkliste für mobile Apps</text>
+
+  <!-- Subtitle -->
+  <text x="400" y="88" text-anchor="middle" fill="#64748b" font-size="13">WCAG 2.1 AA — Prüfpunkte vor dem Release</text>
+
+  <!-- ===== COLUMN 1: Visuell ===== -->
+  <rect x="30" y="104" width="230" height="322" rx="10" fill="white" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <!-- Category header -->
+  <rect x="30" y="104" width="230" height="44" rx="10" fill="#2563eb"/>
+  <rect x="30" y="128" width="230" height="20" fill="#2563eb"/>
+  <text x="145" y="131" text-anchor="middle" fill="white" font-size="13" font-weight="700">Visuell</text>
+
+  <!-- Item 1: checked -->
+  <rect x="46" y="162" width="20" height="20" rx="4" fill="#10b981"/>
+  <path d="M51 172 L56 178 L65 165" stroke="white" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="74" y="173" fill="#1e293b" font-size="11.5" font-weight="500">Kontrast min. 4,5:1</text>
+  <text x="74" y="186" fill="#64748b" font-size="10">für normalen Text (AA)</text>
+
+  <!-- Item 2: unchecked -->
+  <rect x="46" y="202" width="20" height="20" rx="4" fill="white" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="74" y="213" fill="#1e293b" font-size="11.5" font-weight="500">Kontrast min. 3:1</text>
+  <text x="74" y="226" fill="#64748b" font-size="10">für großen Text (18pt+)</text>
+
+  <!-- Item 3: checked -->
+  <rect x="46" y="242" width="20" height="20" rx="4" fill="#10b981"/>
+  <path d="M51 252 L56 258 L65 245" stroke="white" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="74" y="253" fill="#1e293b" font-size="11.5" font-weight="500">Text skalierbar bis 200 %</text>
+  <text x="74" y="266" fill="#64748b" font-size="10">ohne Informationsverlust</text>
+
+  <!-- Item 4: unchecked -->
+  <rect x="46" y="282" width="20" height="20" rx="4" fill="white" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="74" y="293" fill="#1e293b" font-size="11.5" font-weight="500">Keine reine Farbkodierung</text>
+  <text x="74" y="306" fill="#64748b" font-size="10">Symbol oder Text ergänzen</text>
+
+  <!-- Item 5: checked -->
+  <rect x="46" y="322" width="20" height="20" rx="4" fill="#10b981"/>
+  <path d="M51 332 L56 338 L65 325" stroke="white" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="74" y="333" fill="#1e293b" font-size="11.5" font-weight="500">Alt-Texte für alle Bilder</text>
+  <text x="74" y="346" fill="#64748b" font-size="10">dekorative Bilder leer lassen</text>
+
+  <!-- Item 6: unchecked -->
+  <rect x="46" y="362" width="20" height="20" rx="4" fill="white" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="74" y="373" fill="#1e293b" font-size="11.5" font-weight="500">Dark Mode getestet</text>
+  <text x="74" y="386" fill="#64748b" font-size="10">Kontraste in beiden Modi</text>
+
+  <!-- Score badge column 1 -->
+  <rect x="46" y="404" width="198" height="14" rx="4" fill="#e2e8f0"/>
+  <rect x="46" y="404" width="99" height="14" rx="4" fill="#10b981"/>
+  <text x="145" y="414" text-anchor="middle" fill="white" font-size="9" font-weight="700">3 von 6 geprüft</text>
+
+  <!-- ===== COLUMN 2: Interaktion ===== -->
+  <rect x="285" y="104" width="230" height="322" rx="10" fill="white" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <rect x="285" y="104" width="230" height="44" rx="10" fill="#10b981"/>
+  <rect x="285" y="128" width="230" height="20" fill="#10b981"/>
+  <text x="400" y="131" text-anchor="middle" fill="white" font-size="13" font-weight="700">Interaktion</text>
+
+  <!-- Item 1: checked -->
+  <rect x="301" y="162" width="20" height="20" rx="4" fill="#10b981"/>
+  <path d="M306 172 L311 178 L320 165" stroke="white" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="329" y="173" fill="#1e293b" font-size="11.5" font-weight="500">Touch-Targets 44 × 44 pt</text>
+  <text x="329" y="186" fill="#64748b" font-size="10">Apple- und Google-Empfehlung</text>
+
+  <!-- Item 2: checked -->
+  <rect x="301" y="202" width="20" height="20" rx="4" fill="#10b981"/>
+  <path d="M306 212 L311 218 L320 205" stroke="white" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="329" y="213" fill="#1e293b" font-size="11.5" font-weight="500">Keyboard-Navigation</text>
+  <text x="329" y="226" fill="#64748b" font-size="10">alle Funktionen erreichbar</text>
+
+  <!-- Item 3: unchecked -->
+  <rect x="301" y="242" width="20" height="20" rx="4" fill="white" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="329" y="253" fill="#1e293b" font-size="11.5" font-weight="500">Keine Zeitlimits</text>
+  <text x="329" y="266" fill="#64748b" font-size="10">oder Verlängerungsoption</text>
+
+  <!-- Item 4: checked -->
+  <rect x="301" y="282" width="20" height="20" rx="4" fill="#10b981"/>
+  <path d="M306 292 L311 298 L320 285" stroke="white" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="329" y="293" fill="#1e293b" font-size="11.5" font-weight="500">Gesten haben Alternativen</text>
+  <text x="329" y="306" fill="#64748b" font-size="10">Button statt Swipe-only</text>
+
+  <!-- Item 5: unchecked -->
+  <rect x="301" y="322" width="20" height="20" rx="4" fill="white" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="329" y="333" fill="#1e293b" font-size="11.5" font-weight="500">Fokus-Reihenfolge logisch</text>
+  <text x="329" y="346" fill="#64748b" font-size="10">bei Modals und Overlays</text>
+
+  <!-- Item 6: checked -->
+  <rect x="301" y="362" width="20" height="20" rx="4" fill="#10b981"/>
+  <path d="M306 372 L311 378 L320 365" stroke="white" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="329" y="373" fill="#1e293b" font-size="11.5" font-weight="500">Kein Flackern über 3 Hz</text>
+  <text x="329" y="386" fill="#64748b" font-size="10">Anfallsrisiko minimiert</text>
+
+  <!-- Score badge column 2 -->
+  <rect x="301" y="404" width="198" height="14" rx="4" fill="#e2e8f0"/>
+  <rect x="301" y="404" width="132" height="14" rx="4" fill="#10b981"/>
+  <text x="400" y="414" text-anchor="middle" fill="white" font-size="9" font-weight="700">4 von 6 geprüft</text>
+
+  <!-- ===== COLUMN 3: Screen Reader ===== -->
+  <rect x="540" y="104" width="230" height="322" rx="10" fill="white" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <rect x="540" y="104" width="230" height="44" rx="10" fill="#8b5cf6"/>
+  <rect x="540" y="128" width="230" height="20" fill="#8b5cf6"/>
+  <text x="655" y="131" text-anchor="middle" fill="white" font-size="13" font-weight="700">Screen Reader</text>
+
+  <!-- Item 1: checked -->
+  <rect x="556" y="162" width="20" height="20" rx="4" fill="#10b981"/>
+  <path d="M561 172 L566 178 L575 165" stroke="white" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="584" y="173" fill="#1e293b" font-size="11.5" font-weight="500">VoiceOver (iOS) getestet</text>
+  <text x="584" y="186" fill="#64748b" font-size="10">vollständige User Journey</text>
+
+  <!-- Item 2: unchecked -->
+  <rect x="556" y="202" width="20" height="20" rx="4" fill="white" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="584" y="213" fill="#1e293b" font-size="11.5" font-weight="500">TalkBack (Android) getestet</text>
+  <text x="584" y="226" fill="#64748b" font-size="10">vollständige User Journey</text>
+
+  <!-- Item 3: checked -->
+  <rect x="556" y="242" width="20" height="20" rx="4" fill="#10b981"/>
+  <path d="M561 252 L566 258 L575 245" stroke="white" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="584" y="253" fill="#1e293b" font-size="11.5" font-weight="500">Buttons haben Labels</text>
+  <text x="584" y="266" fill="#64748b" font-size="10">kein Icon ohne Text</text>
+
+  <!-- Item 4: checked -->
+  <rect x="556" y="282" width="20" height="20" rx="4" fill="#10b981"/>
+  <path d="M561 292 L566 298 L575 285" stroke="white" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="584" y="293" fill="#1e293b" font-size="11.5" font-weight="500">Zustände kommuniziert</text>
+  <text x="584" y="306" fill="#64748b" font-size="10">aktiv, deaktiviert, selektiert</text>
+
+  <!-- Item 5: unchecked -->
+  <rect x="556" y="322" width="20" height="20" rx="4" fill="white" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="584" y="333" fill="#1e293b" font-size="11.5" font-weight="500">Dynamische Änderungen</text>
+  <text x="584" y="346" fill="#64748b" font-size="10">Announcements bei Updates</text>
+
+  <!-- Item 6: checked -->
+  <rect x="556" y="362" width="20" height="20" rx="4" fill="#10b981"/>
+  <path d="M561 372 L566 378 L575 365" stroke="white" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="584" y="373" fill="#1e293b" font-size="11.5" font-weight="500">Semantische Struktur</text>
+  <text x="584" y="386" fill="#64748b" font-size="10">Rollen und Hierarchie korrekt</text>
+
+  <!-- Score badge column 3 -->
+  <rect x="556" y="404" width="198" height="14" rx="4" fill="#e2e8f0"/>
+  <rect x="556" y="404" width="132" height="14" rx="4" fill="#10b981"/>
+  <text x="655" y="414" text-anchor="middle" fill="white" font-size="9" font-weight="700">4 von 6 geprüft</text>
+
+  <!-- Legend -->
+  <rect x="46" y="432" width="14" height="14" rx="3" fill="#10b981"/>
+  <text x="66" y="443" fill="#475569" font-size="11">Geprüft</text>
+
+  <rect x="130" y="432" width="14" height="14" rx="3" fill="white" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="150" y="443" fill="#475569" font-size="11">Offen</text>
+
+  <text x="400" y="443" text-anchor="middle" fill="#94a3b8" font-size="11">Beispiel-Status — Prüfstand variiert je nach App und Entwicklungsstand</text>
+</svg>

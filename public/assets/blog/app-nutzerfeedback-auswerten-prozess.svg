@@ -1,0 +1,92 @@
+<svg viewBox="0 0 800 350" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Feedback-zu-Roadmap Prozess: Von der Sammlung bis zur Priorisierung" font-family="system-ui, sans-serif">
+  <title>Feedback-zu-Roadmap-Prozess: Sammeln, Kategorisieren, Priorisieren, Einplanen, Umsetzen, Informieren</title>
+
+  <!-- Background -->
+  <rect width="800" height="350" fill="#f8fafc" rx="12"/>
+
+  <!-- Headline -->
+  <text x="400" y="34" text-anchor="middle" font-size="15" font-weight="700" fill="#0f172a">Von Feedback zur Roadmap: Der Kreislauf</text>
+
+  <!-- ===== Step definitions =====
+       6 steps arranged in a horizontal row, with a curved return arrow underneath
+       Each step: circle + label + sub-label
+       x positions: 80, 195, 310, 490, 605, 720
+  -->
+
+  <!-- Step connectors (forward arrows) -->
+  <!-- 1 -> 2 -->
+  <line x1="115" y1="135" x2="158" y2="135" stroke="#cbd5e1" stroke-width="2"/>
+  <polygon points="155,130 161,135 155,140" fill="#cbd5e1"/>
+  <!-- 2 -> 3 -->
+  <line x1="230" y1="135" x2="273" y2="135" stroke="#cbd5e1" stroke-width="2"/>
+  <polygon points="270,130 276,135 270,140" fill="#cbd5e1"/>
+  <!-- 3 -> 4 -->
+  <line x1="345" y1="135" x2="453" y2="135" stroke="#cbd5e1" stroke-width="2"/>
+  <polygon points="450,130 456,135 450,140" fill="#cbd5e1"/>
+  <!-- 4 -> 5 -->
+  <line x1="525" y1="135" x2="568" y2="135" stroke="#cbd5e1" stroke-width="2"/>
+  <polygon points="565,130 571,135 565,140" fill="#cbd5e1"/>
+  <!-- 5 -> 6 -->
+  <line x1="640" y1="135" x2="683" y2="135" stroke="#cbd5e1" stroke-width="2"/>
+  <polygon points="680,130 686,135 680,140" fill="#cbd5e1"/>
+
+  <!-- === Step 1: Sammeln === -->
+  <circle cx="80" cy="135" r="34" fill="#2563eb"/>
+  <text x="80" y="130" text-anchor="middle" font-size="19" fill="#fff">1</text>
+  <text x="80" y="147" text-anchor="middle" font-size="10" font-weight="600" fill="#bfdbfe">Sammeln</text>
+  <text x="80" y="186" text-anchor="middle" font-size="10" fill="#475569">Store Reviews</text>
+  <text x="80" y="200" text-anchor="middle" font-size="10" fill="#475569">Support-Tickets</text>
+  <text x="80" y="214" text-anchor="middle" font-size="10" fill="#475569">In-App-Surveys</text>
+
+  <!-- === Step 2: Kategorisieren === -->
+  <circle cx="195" cy="135" r="34" fill="#0891b2"/>
+  <text x="195" y="130" text-anchor="middle" font-size="19" fill="#fff">2</text>
+  <text x="195" y="147" text-anchor="middle" font-size="10" font-weight="600" fill="#cffafe">Kategorisieren</text>
+  <text x="195" y="186" text-anchor="middle" font-size="10" fill="#475569">Bug / Feature</text>
+  <text x="195" y="200" text-anchor="middle" font-size="10" fill="#475569">UX-Problem</text>
+  <text x="195" y="214" text-anchor="middle" font-size="10" fill="#475569">+ Häufigkeit</text>
+
+  <!-- === Step 3: Priorisieren === -->
+  <circle cx="310" cy="135" r="34" fill="#d97706"/>
+  <text x="310" y="130" text-anchor="middle" font-size="19" fill="#fff">3</text>
+  <text x="310" y="147" text-anchor="middle" font-size="10" font-weight="600" fill="#fef3c7">Priorisieren</text>
+  <text x="310" y="186" text-anchor="middle" font-size="10" fill="#475569">Häufigkeit</text>
+  <text x="310" y="200" text-anchor="middle" font-size="10" fill="#475569">× Impact</text>
+  <text x="310" y="214" text-anchor="middle" font-size="10" fill="#475569">+ Analytics</text>
+
+  <!-- === Step 4: Roadmap === -->
+  <circle cx="490" cy="135" r="34" fill="#7c3aed"/>
+  <text x="490" y="130" text-anchor="middle" font-size="19" fill="#fff">4</text>
+  <text x="490" y="147" text-anchor="middle" font-size="10" font-weight="600" fill="#ede9fe">Roadmap</text>
+  <text x="490" y="186" text-anchor="middle" font-size="10" fill="#475569">Quartal planen</text>
+  <text x="490" y="200" text-anchor="middle" font-size="10" fill="#475569">Sprint setzen</text>
+  <text x="490" y="214" text-anchor="middle" font-size="10" fill="#475569">RICE-Score</text>
+
+  <!-- === Step 5: Umsetzen === -->
+  <circle cx="605" cy="135" r="34" fill="#10b981"/>
+  <text x="605" y="130" text-anchor="middle" font-size="19" fill="#fff">5</text>
+  <text x="605" y="147" text-anchor="middle" font-size="10" font-weight="600" fill="#d1fae5">Umsetzen</text>
+  <text x="605" y="186" text-anchor="middle" font-size="10" fill="#475569">Feature bauen</text>
+  <text x="605" y="200" text-anchor="middle" font-size="10" fill="#475569">Bug fixen</text>
+  <text x="605" y="214" text-anchor="middle" font-size="10" fill="#475569">UX verbessern</text>
+
+  <!-- === Step 6: Informieren === -->
+  <circle cx="720" cy="135" r="34" fill="#e11d48"/>
+  <text x="720" y="130" text-anchor="middle" font-size="19" fill="#fff">6</text>
+  <text x="720" y="147" text-anchor="middle" font-size="10" font-weight="600" fill="#fecdd3">Informieren</text>
+  <text x="720" y="186" text-anchor="middle" font-size="10" fill="#475569">Review antworten</text>
+  <text x="720" y="200" text-anchor="middle" font-size="10" fill="#475569">Release Notes</text>
+  <text x="720" y="214" text-anchor="middle" font-size="10" fill="#475569">+1,7 Sterne Ø</text>
+
+  <!-- === Return arrow (curved path back from step 6 to step 1) === -->
+  <path d="M720 169 Q720 300 400 300 Q80 300 80 169"
+        fill="none" stroke="#2563eb" stroke-width="2" stroke-dasharray="6,4"/>
+  <!-- Arrowhead pointing up at step 1 -->
+  <polygon points="75,172 80,167 85,172" fill="#2563eb"/>
+
+  <!-- Return label -->
+  <text x="400" y="294" text-anchor="middle" font-size="11" fill="#2563eb" font-weight="600">Kontinuierlicher Kreislauf — monatlich wiederholen</text>
+
+  <!-- Bottom footnote -->
+  <text x="400" y="336" text-anchor="middle" font-size="11" fill="#94a3b8">Ab 50 Reviews/Monat: strukturiert kategorisieren · Ab 200 Reviews/Monat: Sentiment-Analyse sinnvoll</text>
+</svg>

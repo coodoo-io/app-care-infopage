@@ -1,0 +1,75 @@
+<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="App-Nutzerfeedback: Die drei Quellen und ihre Zusammenführung" font-family="system-ui, sans-serif">
+  <title>App-Nutzerfeedback-Quellen: Store Reviews, Support und In-App-Feedback</title>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="#f8fafc" rx="12"/>
+
+  <!-- Headline -->
+  <text x="400" y="38" text-anchor="middle" font-size="15" font-weight="700" fill="#0f172a">Die drei Feedback-Quellen und ihre Zusammenführung</text>
+
+  <!-- === Source Box 1: Store Reviews === -->
+  <rect x="30" y="70" width="190" height="130" rx="10" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+  <rect x="30" y="70" width="190" height="36" rx="10" fill="#2563eb"/>
+  <rect x="30" y="96" width="190" height="10" fill="#2563eb"/>
+  <text x="125" y="94" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">Store Reviews</text>
+  <!-- iOS + Android icons as simple shapes -->
+  <circle cx="90" cy="126" r="18" fill="#dbeafe"/>
+  <text x="90" y="131" text-anchor="middle" font-size="13" font-weight="700" fill="#2563eb">iOS</text>
+  <circle cx="160" cy="126" r="18" fill="#dbeafe"/>
+  <text x="160" y="131" text-anchor="middle" font-size="11" font-weight="700" fill="#2563eb">Play</text>
+  <text x="125" y="162" text-anchor="middle" font-size="11" fill="#1e40af">täglich &amp; öffentlich</text>
+  <text x="125" y="178" text-anchor="middle" font-size="11" fill="#1e40af">kostenlos, unbeauftragt</text>
+
+  <!-- === Source Box 2: Support / In-App Feedback === -->
+  <rect x="305" y="70" width="190" height="130" rx="10" fill="#f0fdf4" stroke="#10b981" stroke-width="1.5"/>
+  <rect x="305" y="70" width="190" height="36" rx="10" fill="#10b981"/>
+  <rect x="305" y="96" width="190" height="10" fill="#10b981"/>
+  <text x="400" y="94" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">Support-Tickets</text>
+  <!-- envelope icon -->
+  <rect x="368" y="108" width="64" height="44" rx="5" fill="#d1fae5"/>
+  <polyline points="368,108 400,130 432,108" fill="none" stroke="#10b981" stroke-width="2"/>
+  <text x="400" y="162" text-anchor="middle" font-size="11" fill="#065f46">direkt &amp; detailliert</text>
+  <text x="400" y="178" text-anchor="middle" font-size="11" fill="#065f46">konkrete Probleme</text>
+
+  <!-- === Source Box 3: In-App Surveys / NPS === -->
+  <rect x="580" y="70" width="190" height="130" rx="10" fill="#faf5ff" stroke="#8b5cf6" stroke-width="1.5"/>
+  <rect x="580" y="70" width="190" height="36" rx="10" fill="#8b5cf6"/>
+  <rect x="580" y="96" width="190" height="10" fill="#8b5cf6"/>
+  <text x="675" y="94" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">In-App Surveys / NPS</text>
+  <!-- Bar chart icon -->
+  <rect x="645" y="128" width="14" height="24" rx="2" fill="#c4b5fd"/>
+  <rect x="664" y="118" width="14" height="34" rx="2" fill="#8b5cf6"/>
+  <rect x="683" y="122" width="14" height="30" rx="2" fill="#c4b5fd"/>
+  <text x="675" y="162" text-anchor="middle" font-size="11" fill="#5b21b6">strukturiert</text>
+  <text x="675" y="178" text-anchor="middle" font-size="11" fill="#5b21b6">quantifizierbar</text>
+
+  <!-- === Converging arrows === -->
+  <!-- From Box 1 -->
+  <line x1="125" y1="200" x2="125" y2="238" stroke="#2563eb" stroke-width="2" stroke-dasharray="4,3"/>
+  <line x1="125" y1="238" x2="360" y2="270" stroke="#2563eb" stroke-width="2"/>
+  <polygon points="356,263 360,270 364,263" fill="#2563eb"/>
+
+  <!-- From Box 2 -->
+  <line x1="400" y1="200" x2="400" y2="262" stroke="#10b981" stroke-width="2"/>
+  <polygon points="396,258 400,265 404,258" fill="#10b981"/>
+
+  <!-- From Box 3 -->
+  <line x1="675" y1="200" x2="675" y2="238" stroke="#8b5cf6" stroke-width="2" stroke-dasharray="4,3"/>
+  <line x1="675" y1="238" x2="440" y2="270" stroke="#8b5cf6" stroke-width="2"/>
+  <polygon points="436,263 440,270 444,263" fill="#8b5cf6"/>
+
+  <!-- === Central collection box === -->
+  <rect x="268" y="265" width="264" height="90" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+  <text x="400" y="293" text-anchor="middle" font-size="13" font-weight="700" fill="#f1f5f9">Feedback-Datenbank</text>
+  <text x="400" y="313" text-anchor="middle" font-size="12" fill="#94a3b8">Sammeln  ·  Kategorisieren  ·  Analysieren</text>
+  <!-- Tag pills -->
+  <rect x="285" y="326" width="68" height="20" rx="10" fill="#dc2626"/>
+  <text x="319" y="340" text-anchor="middle" font-size="10" font-weight="600" fill="#fff">Bug-Report</text>
+  <rect x="363" y="326" width="78" height="20" rx="10" fill="#d97706"/>
+  <text x="402" y="340" text-anchor="middle" font-size="10" font-weight="600" fill="#fff">Feature-Request</text>
+  <rect x="451" y="326" width="68" height="20" rx="10" fill="#0891b2"/>
+  <text x="485" y="340" text-anchor="middle" font-size="10" font-weight="600" fill="#fff">UX-Problem</text>
+
+  <!-- Bottom label -->
+  <text x="400" y="390" text-anchor="middle" font-size="11" fill="#64748b">80 % aller Reviews fallen in drei Kategorien — systematische Erfassung macht sie priorisierbar</text>
+</svg>

@@ -1,0 +1,256 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" role="img" aria-label="Entscheidungsmatrix: Welches Monetarisierungsmodell für welchen App-Typ" font-family="system-ui, sans-serif">
+  <title>App-Monetarisierungs-Entscheidungsmatrix nach App-Typ</title>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="#f8fafc" rx="12"/>
+
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" font-size="15" font-weight="700" fill="#1e293b">Welches Modell passt zu welchem App-Typ?</text>
+
+  <!-- Legend -->
+  <!-- Green = empfohlen -->
+  <circle cx="106" cy="52" r="7" fill="#10b981"/>
+  <text x="118" y="57" font-size="11" fill="#334155">Empfohlen</text>
+  <!-- Orange = möglich -->
+  <circle cx="200" cy="52" r="7" fill="#f97316"/>
+  <text x="212" y="57" font-size="11" fill="#334155">Möglich</text>
+  <!-- Gray = nicht empfohlen -->
+  <circle cx="280" cy="52" r="7" fill="#cbd5e1"/>
+  <text x="292" y="57" font-size="11" fill="#334155">Nicht empfohlen</text>
+
+  <!--
+    Layout:
+    Row header col: x=20, width=130
+    5 data cols (Freemium, Subscription, IAP, Paid, Werbung), each width=120
+    Col x positions: 150, 270, 390, 510, 630
+    Col center x:    210, 330, 450, 570, 690
+
+    Row header y:    80 (header), 118 (Gaming), 158 (Productivity), 198 (Content), 238 (B2B), 278 (Utility)
+    Row height: 40
+    Cell center y: 138 (Gaming), 178 (Productivity), 218 (Content), 258 (B2B), 298 (Utility)
+  -->
+
+  <!-- Table background white -->
+  <rect x="20" y="66" width="762" height="260" fill="#ffffff" rx="8" stroke="#e2e8f0" stroke-width="1"/>
+
+  <!-- Header row background -->
+  <rect x="20" y="66" width="762" height="36" fill="#1e293b" rx="8"/>
+  <rect x="20" y="87" width="762" height="15" fill="#1e293b"/>
+
+  <!-- Alternating row backgrounds -->
+  <rect x="20" y="102" width="762" height="40" fill="#f8fafc"/>
+  <rect x="20" y="142" width="762" height="40" fill="#ffffff"/>
+  <rect x="20" y="182" width="762" height="40" fill="#f8fafc"/>
+  <rect x="20" y="222" width="762" height="40" fill="#ffffff"/>
+  <rect x="20" y="262" width="762" height="40" fill="#f8fafc"/>
+  <!-- Bottom radius fix -->
+  <rect x="20" y="286" width="762" height="36" fill="#f8fafc"/>
+  <rect x="20" y="295" width="762" height="27" rx="0" fill="#f8fafc"/>
+
+  <!-- Vertical dividers -->
+  <line x1="150" y1="66" x2="150" y2="302" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="270" y1="66" x2="270" y2="302" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="390" y1="66" x2="390" y2="302" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="510" y1="66" x2="510" y2="302" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="630" y1="66" x2="630" y2="302" stroke="#e2e8f0" stroke-width="1"/>
+
+  <!-- Horizontal dividers between rows -->
+  <line x1="20" y1="142" x2="782" y2="142" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="20" y1="182" x2="782" y2="182" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="20" y1="222" x2="782" y2="222" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="20" y1="262" x2="782" y2="262" stroke="#e2e8f0" stroke-width="1"/>
+
+  <!-- Header labels -->
+  <text x="85" y="89" text-anchor="middle" font-size="12" font-weight="600" fill="#f1f5f9">App-Typ</text>
+  <text x="210" y="89" text-anchor="middle" font-size="12" font-weight="600" fill="#f1f5f9">Freemium</text>
+  <text x="330" y="89" text-anchor="middle" font-size="12" font-weight="600" fill="#f1f5f9">Subscription</text>
+  <text x="450" y="89" text-anchor="middle" font-size="12" font-weight="600" fill="#f1f5f9">In-App-Käufe</text>
+  <text x="570" y="89" text-anchor="middle" font-size="12" font-weight="600" fill="#f1f5f9">Paid App</text>
+  <text x="690" y="89" text-anchor="middle" font-size="12" font-weight="600" fill="#f1f5f9">Werbung</text>
+
+  <!-- Row labels -->
+  <!-- Gaming: y center 122 -->
+  <text x="30" y="117" font-size="12" font-weight="600" fill="#334155">Gaming</text>
+  <text x="30" y="131" font-size="10" fill="#94a3b8">Mobile Games</text>
+
+  <!-- Productivity: y center 162 -->
+  <text x="30" y="157" font-size="12" font-weight="600" fill="#334155">Productivity</text>
+  <text x="30" y="171" font-size="10" fill="#94a3b8">Tools, SaaS</text>
+
+  <!-- Content: y center 202 -->
+  <text x="30" y="197" font-size="12" font-weight="600" fill="#334155">Content</text>
+  <text x="30" y="211" font-size="10" fill="#94a3b8">Media, Streaming</text>
+
+  <!-- B2B: y center 242 -->
+  <text x="30" y="237" font-size="12" font-weight="600" fill="#334155">B2B</text>
+  <text x="30" y="251" font-size="10" fill="#94a3b8">Unternehmens-Apps</text>
+
+  <!-- Utility: y center 282 -->
+  <text x="30" y="277" font-size="12" font-weight="600" fill="#334155">Utility</text>
+  <text x="30" y="291" font-size="10" fill="#94a3b8">Werkzeuge, Tools</text>
+
+  <!--
+    Matrix cells — circles with check/label
+    Color coding:
+      Green (#10b981)  = empfohlen
+      Orange (#f97316) = möglich
+      Gray (#cbd5e1)   = nicht empfohlen
+
+    Row Gaming (cy=122):
+      Freemium=210,122    möglich
+      Subscription=330,122  möglich
+      IAP=450,122           empfohlen
+      Paid=570,122          nicht empfohlen
+      Werbung=690,122       empfohlen
+
+    Row Productivity (cy=162):
+      Freemium=210,162    empfohlen
+      Subscription=330,162  empfohlen
+      IAP=450,162           möglich
+      Paid=570,162          möglich
+      Werbung=690,162       nicht empfohlen
+
+    Row Content (cy=202):
+      Freemium=210,202    möglich
+      Subscription=330,202  empfohlen
+      IAP=450,202           möglich
+      Paid=570,202          nicht empfohlen
+      Werbung=690,202       empfohlen
+
+    Row B2B (cy=242):
+      Freemium=210,242    möglich
+      Subscription=330,242  empfohlen
+      IAP=450,242           nicht empfohlen
+      Paid=570,242          möglich
+      Werbung=690,242       nicht empfohlen
+
+    Row Utility (cy=282):
+      Freemium=210,282    empfohlen
+      Subscription=330,282  möglich
+      IAP=450,282           nicht empfohlen
+      Paid=570,282          möglich
+      Werbung=690,282       möglich
+  -->
+
+  <!-- Gaming row -->
+  <!-- Freemium: möglich -->
+  <circle cx="210" cy="122" r="12" fill="#fff7ed"/>
+  <circle cx="210" cy="122" r="8" fill="#f97316"/>
+  <text x="210" y="126" text-anchor="middle" font-size="10" font-weight="700" fill="#ffffff">~</text>
+  <!-- Subscription: möglich -->
+  <circle cx="330" cy="122" r="12" fill="#fff7ed"/>
+  <circle cx="330" cy="122" r="8" fill="#f97316"/>
+  <text x="330" y="126" text-anchor="middle" font-size="10" font-weight="700" fill="#ffffff">~</text>
+  <!-- IAP: empfohlen -->
+  <circle cx="450" cy="122" r="12" fill="#ecfdf5"/>
+  <circle cx="450" cy="122" r="8" fill="#10b981"/>
+  <text x="450" y="126" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff">✓</text>
+  <!-- Paid: nicht empfohlen -->
+  <circle cx="570" cy="122" r="12" fill="#f8fafc"/>
+  <circle cx="570" cy="122" r="8" fill="#cbd5e1"/>
+  <text x="570" y="126" text-anchor="middle" font-size="11" font-weight="700" fill="#94a3b8">×</text>
+  <!-- Werbung: empfohlen -->
+  <circle cx="690" cy="122" r="12" fill="#ecfdf5"/>
+  <circle cx="690" cy="122" r="8" fill="#10b981"/>
+  <text x="690" y="126" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff">✓</text>
+
+  <!-- Productivity row -->
+  <!-- Freemium: empfohlen -->
+  <circle cx="210" cy="162" r="12" fill="#ecfdf5"/>
+  <circle cx="210" cy="162" r="8" fill="#10b981"/>
+  <text x="210" y="166" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff">✓</text>
+  <!-- Subscription: empfohlen -->
+  <circle cx="330" cy="162" r="12" fill="#ecfdf5"/>
+  <circle cx="330" cy="162" r="8" fill="#10b981"/>
+  <text x="330" y="166" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff">✓</text>
+  <!-- IAP: möglich -->
+  <circle cx="450" cy="162" r="12" fill="#fff7ed"/>
+  <circle cx="450" cy="162" r="8" fill="#f97316"/>
+  <text x="450" y="166" text-anchor="middle" font-size="10" font-weight="700" fill="#ffffff">~</text>
+  <!-- Paid: möglich -->
+  <circle cx="570" cy="162" r="12" fill="#fff7ed"/>
+  <circle cx="570" cy="162" r="8" fill="#f97316"/>
+  <text x="570" y="166" text-anchor="middle" font-size="10" font-weight="700" fill="#ffffff">~</text>
+  <!-- Werbung: nicht empfohlen -->
+  <circle cx="690" cy="162" r="12" fill="#f8fafc"/>
+  <circle cx="690" cy="162" r="8" fill="#cbd5e1"/>
+  <text x="690" y="166" text-anchor="middle" font-size="11" font-weight="700" fill="#94a3b8">×</text>
+
+  <!-- Content row -->
+  <!-- Freemium: möglich -->
+  <circle cx="210" cy="202" r="12" fill="#fff7ed"/>
+  <circle cx="210" cy="202" r="8" fill="#f97316"/>
+  <text x="210" y="206" text-anchor="middle" font-size="10" font-weight="700" fill="#ffffff">~</text>
+  <!-- Subscription: empfohlen -->
+  <circle cx="330" cy="202" r="12" fill="#ecfdf5"/>
+  <circle cx="330" cy="202" r="8" fill="#10b981"/>
+  <text x="330" y="206" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff">✓</text>
+  <!-- IAP: möglich -->
+  <circle cx="450" cy="202" r="12" fill="#fff7ed"/>
+  <circle cx="450" cy="202" r="8" fill="#f97316"/>
+  <text x="450" y="206" text-anchor="middle" font-size="10" font-weight="700" fill="#ffffff">~</text>
+  <!-- Paid: nicht empfohlen -->
+  <circle cx="570" cy="202" r="12" fill="#f8fafc"/>
+  <circle cx="570" cy="202" r="8" fill="#cbd5e1"/>
+  <text x="570" y="206" text-anchor="middle" font-size="11" font-weight="700" fill="#94a3b8">×</text>
+  <!-- Werbung: empfohlen -->
+  <circle cx="690" cy="202" r="12" fill="#ecfdf5"/>
+  <circle cx="690" cy="202" r="8" fill="#10b981"/>
+  <text x="690" y="206" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff">✓</text>
+
+  <!-- B2B row -->
+  <!-- Freemium: möglich -->
+  <circle cx="210" cy="242" r="12" fill="#fff7ed"/>
+  <circle cx="210" cy="242" r="8" fill="#f97316"/>
+  <text x="210" y="246" text-anchor="middle" font-size="10" font-weight="700" fill="#ffffff">~</text>
+  <!-- Subscription: empfohlen -->
+  <circle cx="330" cy="242" r="12" fill="#ecfdf5"/>
+  <circle cx="330" cy="242" r="8" fill="#10b981"/>
+  <text x="330" y="246" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff">✓</text>
+  <!-- IAP: nicht empfohlen -->
+  <circle cx="450" cy="242" r="12" fill="#f8fafc"/>
+  <circle cx="450" cy="242" r="8" fill="#cbd5e1"/>
+  <text x="450" y="246" text-anchor="middle" font-size="11" font-weight="700" fill="#94a3b8">×</text>
+  <!-- Paid: möglich -->
+  <circle cx="570" cy="242" r="12" fill="#fff7ed"/>
+  <circle cx="570" cy="242" r="8" fill="#f97316"/>
+  <text x="570" y="246" text-anchor="middle" font-size="10" font-weight="700" fill="#ffffff">~</text>
+  <!-- Werbung: nicht empfohlen -->
+  <circle cx="690" cy="242" r="12" fill="#f8fafc"/>
+  <circle cx="690" cy="242" r="8" fill="#cbd5e1"/>
+  <text x="690" y="246" text-anchor="middle" font-size="11" font-weight="700" fill="#94a3b8">×</text>
+
+  <!-- Utility row -->
+  <!-- Freemium: empfohlen -->
+  <circle cx="210" cy="282" r="12" fill="#ecfdf5"/>
+  <circle cx="210" cy="282" r="8" fill="#10b981"/>
+  <text x="210" y="286" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff">✓</text>
+  <!-- Subscription: möglich -->
+  <circle cx="330" cy="282" r="12" fill="#fff7ed"/>
+  <circle cx="330" cy="282" r="8" fill="#f97316"/>
+  <text x="330" y="286" text-anchor="middle" font-size="10" font-weight="700" fill="#ffffff">~</text>
+  <!-- IAP: nicht empfohlen -->
+  <circle cx="450" cy="282" r="12" fill="#f8fafc"/>
+  <circle cx="450" cy="282" r="8" fill="#cbd5e1"/>
+  <text x="450" y="286" text-anchor="middle" font-size="11" font-weight="700" fill="#94a3b8">×</text>
+  <!-- Paid: möglich -->
+  <circle cx="570" cy="282" r="12" fill="#fff7ed"/>
+  <circle cx="570" cy="282" r="8" fill="#f97316"/>
+  <text x="570" y="286" text-anchor="middle" font-size="10" font-weight="700" fill="#ffffff">~</text>
+  <!-- Werbung: möglich -->
+  <circle cx="690" cy="282" r="12" fill="#fff7ed"/>
+  <circle cx="690" cy="282" r="8" fill="#f97316"/>
+  <text x="690" y="286" text-anchor="middle" font-size="10" font-weight="700" fill="#ffffff">~</text>
+
+  <!-- Table outer border -->
+  <rect x="20" y="66" width="762" height="236" fill="none" rx="8" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <!-- Bottom note -->
+  <text x="400" y="328" text-anchor="middle" font-size="10" fill="#64748b">Die Matrix zeigt Empfehlungen — Hybridmodelle (z. B. Freemium + Subscription) sind in vielen Kategorien die beste Wahl.</text>
+
+  <!-- Second legend row with note about ✓ vs ~ vs × -->
+  <text x="400" y="348" text-anchor="middle" font-size="10" fill="#94a3b8">✓ = Primärmodell empfohlen  ·  ~ = Als Ergänzung möglich  ·  × = Strukturell ungeeignet</text>
+
+  <!-- Source note -->
+  <text x="400" y="372" text-anchor="middle" font-size="10" fill="#cbd5e1">app-care.pages.dev — App-Monetarisierungs-Guide</text>
+</svg>

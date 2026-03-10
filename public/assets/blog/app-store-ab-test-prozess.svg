@@ -1,0 +1,125 @@
+<svg viewBox="0 0 800 350" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A/B-Test-Prozess von der Hypothese zum statistisch signifikanten Ergebnis" font-family="system-ui, sans-serif">
+  <title>A/B-Test-Prozess: Von der Hypothese zum statistisch signifikanten Ergebnis</title>
+
+  <!-- Background -->
+  <rect width="800" height="350" fill="#f8fafc" rx="12"/>
+
+  <!-- Header bar -->
+  <rect x="0" y="0" width="800" height="48" fill="#172554" rx="12"/>
+  <rect x="0" y="36" width="800" height="12" fill="#172554"/>
+  <text x="400" y="28" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff" letter-spacing="0.3">A/B-Test-Prozess: Von der Hypothese zum signifikanten Ergebnis</text>
+
+  <!-- Step boxes: y center = 150 -->
+  <!-- Step 1 -->
+  <rect x="20" y="80" width="118" height="80" fill="#2563eb" rx="10"/>
+  <text x="79" y="115" text-anchor="middle" font-size="22" font-weight="700" fill="#ffffff">1</text>
+  <text x="79" y="134" text-anchor="middle" font-size="11" font-weight="700" fill="#bfdbfe">Hypothese</text>
+  <text x="79" y="148" text-anchor="middle" font-size="11" fill="#bfdbfe">formulieren</text>
+
+  <!-- Arrow 1→2 -->
+  <line x1="138" y1="120" x2="158" y2="120" stroke="#94a3b8" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="158,115 168,120 158,125" fill="#94a3b8"/>
+
+  <!-- Step 2 -->
+  <rect x="168" y="80" width="118" height="80" fill="#2563eb" rx="10"/>
+  <text x="227" y="115" text-anchor="middle" font-size="22" font-weight="700" fill="#ffffff">2</text>
+  <text x="227" y="134" text-anchor="middle" font-size="11" font-weight="700" fill="#bfdbfe">Variante</text>
+  <text x="227" y="148" text-anchor="middle" font-size="11" fill="#bfdbfe">erstellen</text>
+
+  <!-- Arrow 2→3 -->
+  <line x1="286" y1="120" x2="306" y2="120" stroke="#94a3b8" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="306,115 316,120 306,125" fill="#94a3b8"/>
+
+  <!-- Step 3 -->
+  <rect x="316" y="80" width="118" height="80" fill="#2563eb" rx="10"/>
+  <text x="375" y="115" text-anchor="middle" font-size="22" font-weight="700" fill="#ffffff">3</text>
+  <text x="375" y="134" text-anchor="middle" font-size="11" font-weight="700" fill="#bfdbfe">Test</text>
+  <text x="375" y="148" text-anchor="middle" font-size="11" fill="#bfdbfe">aufsetzen</text>
+
+  <!-- Arrow 3→4 -->
+  <line x1="434" y1="120" x2="454" y2="120" stroke="#94a3b8" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="454,115 464,120 454,125" fill="#94a3b8"/>
+
+  <!-- Step 4 -->
+  <rect x="464" y="80" width="118" height="80" fill="#2563eb" rx="10"/>
+  <text x="523" y="108" text-anchor="middle" font-size="22" font-weight="700" fill="#ffffff">4</text>
+  <text x="523" y="127" text-anchor="middle" font-size="11" font-weight="700" fill="#bfdbfe">Laufen lassen</text>
+  <text x="523" y="141" text-anchor="middle" font-size="10" fill="#93c5fd">iOS: min. 90 Tage</text>
+  <text x="523" y="153" text-anchor="middle" font-size="10" fill="#93c5fd">Play: min. 7 Tage</text>
+
+  <!-- Arrow 4→5 -->
+  <line x1="582" y1="120" x2="602" y2="120" stroke="#94a3b8" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="602,115 612,120 602,125" fill="#94a3b8"/>
+
+  <!-- Step 5 -->
+  <rect x="612" y="80" width="118" height="80" fill="#2563eb" rx="10"/>
+  <text x="671" y="115" text-anchor="middle" font-size="22" font-weight="700" fill="#ffffff">5</text>
+  <text x="671" y="134" text-anchor="middle" font-size="11" font-weight="700" fill="#bfdbfe">Auswerten &amp;</text>
+  <text x="671" y="148" text-anchor="middle" font-size="11" fill="#bfdbfe">entscheiden</text>
+
+  <!-- Step sub-labels -->
+  <text x="79" y="175" text-anchor="middle" font-size="10" fill="#475569">"Was testen wir</text>
+  <text x="79" y="186" text-anchor="middle" font-size="10" fill="#475569">und warum?"</text>
+
+  <text x="227" y="175" text-anchor="middle" font-size="10" fill="#475569">1 Variable ändern,</text>
+  <text x="227" y="186" text-anchor="middle" font-size="10" fill="#475569">Assets produzieren</text>
+
+  <text x="375" y="175" text-anchor="middle" font-size="10" fill="#475569">PPO oder Play</text>
+  <text x="375" y="186" text-anchor="middle" font-size="10" fill="#475569">Experiments starten</text>
+
+  <text x="523" y="175" text-anchor="middle" font-size="10" fill="#475569">Kein Peeking —</text>
+  <text x="523" y="186" text-anchor="middle" font-size="10" fill="#475569">Signifikanz abwarten</text>
+
+  <text x="671" y="175" text-anchor="middle" font-size="10" fill="#475569">95 % Konfidenz</text>
+  <text x="671" y="186" text-anchor="middle" font-size="10" fill="#475569">als Mindeststandard</text>
+
+  <!-- Arrow from Step 5 downward to diamond -->
+  <line x1="671" y1="160" x2="671" y2="208" stroke="#94a3b8" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="666,208 676,208 671,218" fill="#94a3b8"/>
+
+  <!-- Decision Diamond -->
+  <polygon points="671,220 720,255 671,290 622,255" fill="#1e40af" stroke="#2563eb" stroke-width="2"/>
+  <text x="671" y="250" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">Signifikant</text>
+  <text x="671" y="264" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">erreicht?</text>
+
+  <!-- Yes branch → right: Implementieren -->
+  <line x1="720" y1="255" x2="760" y2="255" stroke="#10b981" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="760,250 770,255 760,260" fill="#10b981"/>
+  <text x="725" y="245" font-size="10" font-weight="600" fill="#10b981">Ja</text>
+  <rect x="770" y="232" width="10" height="46" fill="#10b981" rx="2"/>
+  <!-- Implementieren box -->
+  <rect x="755" y="228" width="25" height="54" fill="none"/>
+  <text x="784" y="249" font-size="11" font-weight="700" fill="#047857">Gewinner</text>
+  <text x="784" y="263" font-size="11" font-weight="700" fill="#047857">imple-</text>
+  <text x="784" y="277" font-size="11" font-weight="700" fill="#047857">mentieren</text>
+  <rect x="776" y="228" width="22" height="54" fill="#d1fae5" rx="6"/>
+  <text x="787" y="249" text-anchor="middle" font-size="10" font-weight="700" fill="#047857">Im-</text>
+  <text x="787" y="263" text-anchor="middle" font-size="10" font-weight="700" fill="#047857">ple-</text>
+  <text x="787" y="277" text-anchor="middle" font-size="10" font-weight="700" fill="#047857">men-</text>
+  <!-- Clean up — rewrite implementieren box -->
+
+  <!-- No branch → left: Weiter testen -->
+  <line x1="622" y1="255" x2="582" y2="255" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="582,250 572,255 582,260" fill="#ef4444"/>
+  <text x="573" y="245" text-anchor="end" font-size="10" font-weight="600" fill="#ef4444">Nein</text>
+
+  <!-- Loop back up to Step 4 -->
+  <line x1="572" y1="255" x2="523" y2="255" stroke="#ef4444" stroke-width="2" stroke-dasharray="5,4" stroke-linecap="round"/>
+  <line x1="523" y1="255" x2="523" y2="210" stroke="#ef4444" stroke-width="2" stroke-dasharray="5,4" stroke-linecap="round"/>
+  <text x="545" y="272" text-anchor="middle" font-size="10" fill="#b91c1c">Laufzeit verlängern</text>
+  <polygon points="518,210 528,210 523,200" fill="#ef4444"/>
+
+  <!-- Implementieren box clean -->
+  <rect x="755" y="228" width="38" height="54" fill="#d1fae5" rx="8"/>
+  <text x="774" y="249" text-anchor="middle" font-size="10" font-weight="700" fill="#047857">Imple-</text>
+  <text x="774" y="263" text-anchor="middle" font-size="10" font-weight="700" fill="#047857">men-</text>
+  <text x="774" y="277" text-anchor="middle" font-size="10" font-weight="700" fill="#047857">tieren</text>
+
+  <!-- Yes arrow -->
+  <line x1="720" y1="255" x2="753" y2="255" stroke="#10b981" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="753,250 763,255 753,260" fill="#10b981"/>
+  <text x="737" y="248" text-anchor="middle" font-size="10" font-weight="600" fill="#10b981">Ja</text>
+
+  <!-- Footer note -->
+  <text x="400" y="332" text-anchor="middle" font-size="10" fill="#64748b">Standard: 95 % Konfidenzintervall — iOS min. 90 Tage Traffic — Google Play min. 250 Conversions pro Variante</text>
+</svg>

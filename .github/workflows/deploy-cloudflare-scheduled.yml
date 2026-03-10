@@ -1,0 +1,26 @@
+name: Scheduled Deploy to Cloudflare Pages
+
+on:
+  schedule:
+    # Täglich um 06:00 UTC — veröffentlicht geplante Blog-Artikel automatisch
+    - cron: '0 6 * * *'
+  workflow_dispatch: # Manueller Trigger über GitHub UI
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: app-care
+          directory: dist
+          branch: main
